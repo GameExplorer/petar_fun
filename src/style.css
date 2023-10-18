@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Thrones';
+    src: url('@/assets/Fonts/GameOfThrones.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Thrones';
+}
+
+.background {
+    background-color: #16161a;
+    color: #fffffe;
+}
+
+.background2 {
+    background-color: #242629;
+    color: #fffffe;
+}
