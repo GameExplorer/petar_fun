@@ -3,7 +3,6 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     extend: {
@@ -14,6 +13,6 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [require("./node_modules/tw-elements/dist/plugin.cjs")]
+  plugins: []
 }
 

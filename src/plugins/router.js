@@ -15,8 +15,15 @@ const routes = [
         meta: {
             title: 'Thrones',
         },
-        pageTitle: 'Thrones',
         component: () => import('@/views/Thrones.vue'),
+    },
+    {
+        path: '/mountains',
+        name: 'Mountains',
+        meta: {
+            title: 'Mountains',
+        },
+        component: () => import('@/views/Mountains.vue'),
     }
 ]
 

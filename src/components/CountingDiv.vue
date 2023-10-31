@@ -1,6 +1,6 @@
 <template>
   <div class="py-10">
-    <div class="text-xl md:text-2xl  sm:text-lg text-left px-12">
+    <div class="text-xl md:text-3xl  sm:text-lg text-left px-12">
       Since his last book George R.R. Martin has published 
       <span class="text-3xl text-[#7F5AF0] font-bold">{{ currentNumber }}</span> books. That is a lot of books
       <!-- horizonal image scroll animation css -->
