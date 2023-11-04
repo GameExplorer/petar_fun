@@ -23,7 +23,7 @@ export default {
 
 </script>
 
-<template class="v-cloak">
+<template v-cloak>
   <div class="text-Font">
     <div class="background">
       <div class="container mx-auto text-thrones">
@@ -77,19 +77,8 @@ export default {
       </div>
       <div class="background2 p-10">
         <div class="text text-4xl md:text-3xl py-10 text-right">
-          Jon could have said You Are My Queen
-          <span class="text-5xl text-[#7F5AF0] font-semibold">{{ Math.ceil(daysPassed * 5) }}</span> times.
-        </div>
-      </div>
-      <div class="background p-10">
-        <div class="text text-4xl md:text-3xl py-10 text-left">
           Earth was hitted by 
           <span class="text-5xl text-[#7F5AF0] font-semibold">{{ Math.ceil(daysPassed * 30 ) }}</span> Meteors.
-        </div>
-      </div>
-      <div class="background2 p-10">
-        <div class="text text-4xl md:text-3xl py-10 text-right">
-          Gangman Style happened
         </div>
       </div>
       <div class="background p-10">
