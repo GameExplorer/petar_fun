@@ -36,31 +36,113 @@ Shishapangma 8012m / 26285ft
         <div class="bg-[#64ccc5] py-64">
                 GORE 2 - 4.9K MOUNTAINS
         </div>
-        <div class="bg-[#eeeeee] mountains2k grid grid-cols-8 gap-16">
-            <div class="col-span-2">01</div>
+        <h1 class="bg-[#eeeeee] text-center text-6xl pt-2">1999M</h1>
+        <div class="bg-[#eeeeee] pt-8 pl-20 pb-[2000px] grid grid-cols-8 gap-16">
             <div class="col-span-2">
-                <img src="public/Images/test.webp" alt="Everest"/>
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-span-2">03</div>
-            <div class="col-span-2">04</div>
-            <!-- classic zoom-->
+            <div class="col-span-2 mt-24">
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-span-2">
-                <div class="growImage">
-                    <img src="public/Images/test2.png" alt="Everest"/>
-                    <span>Everest 8848m / 29028ft</span>
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- alternative zoom-->
             <div class="col-span-2">
                 <div class="group/item growImage">
-                    <img src="public/Images/test2.png" alt="Everest"/>
+                    <img src="/Images/test2.png" alt="Everest"/>
                     <div class="group-hover/edit invisible group-hover/item:visible">
-                        <span class="group-hover/opacity-100">Everest 8848m / 29028ft</span>
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-span-2">07</div>
-            <div>08</div>
+            <div class="col-span-2">
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="group/item growImage">
+                    <img src="/Images/test2.png" alt="Everest"/>
+                    <div class="group-hover/edit invisible group-hover/item:visible">
+                        <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100 ">
+                            Name: Name<br>
+                            Height: m / ft<br>
+                            Location: <br>
+                            First Ascent: 19..<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>09</div>
             <div>10</div>
             <div>11</div>
@@ -71,6 +153,10 @@ Shishapangma 8012m / 26285ft
             <div>16</div>
                 GORE 0 - 1.9K MOUNTAINS/HILLS
         </div>
+        <div class="bg-[#5e5e] py-12">
+            Mountains from smallest to the tallest
+        </div>
+        
     </div>
 </template>
 
@@ -93,17 +179,17 @@ body {
 
 .growImage {
     opacity: 0.5;
-    transition: 1s ease;
+    transition: 1.1s ease;
 }
 
 .growImage:hover {
     /*opacity: 1;*/
+    opacity: 1;
     transform: scale(1.1);
-    transition: 1s ease;
+    transition: 1.1s ease;
     /*box-shadow: 15px 10px 15px rgba(16, 15, 8, 0.944);*/
     filter: drop-shadow(15px 0 12px rgba(0, 0, 0, 0.7));
     transform: translateX(-4px);
-    opacity: 1;
 }
 
 </style>
