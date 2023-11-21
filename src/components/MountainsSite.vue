@@ -5,6 +5,10 @@ export default {
       number: 0,
       maxNumber: 8884,
       lastScrollTop: 0,
+      mountains1k: [
+          { name: 'Mount Everest', height: '8,848 meters', country: 'Nepal', firstAscent: 'May 29, 1953' },
+          { name: 'Triglav', height: '2,864 meters', country: 'Slovenia', firstAscent: 'Jul 1, 1884' }  
+      ]
     };
   },
   mounted() {
@@ -33,11 +37,11 @@ export default {
 <template>
   <div v-cloak @wheel="handleScroll">
     <!-- Sticky div in the center -->
-    <div class="stickyDiv">
+    <div class="heightMeter text-2xl lg:text-2xl md:text-xl ls:text-lg text-white p-6">
       <h1>{{ number }}</h1>
     </div>
     <div class="scrollContent" ref="scrollDiv">
-      <div class="testback">
+      <div class="backgroundColors">
         <div class="Everest">
           Here we put Everest Image with A 8864M on top of it maybe animation?
         </div>
@@ -165,10 +169,22 @@ export default {
           <div>13</div>
           <div>14</div>
           <div>15</div>
-          <div>16</div>
+          <div class="col-span-2">
+            <div class="group/item growImage" v-for="mountain in mountains1k" :key="mountain.Triglav">
+              <img src="/Images/test2.png" alt="Everest" />
+              <div class="group-hover/edit invisible group-hover/item:visible">
+                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
+                  Name: {{ mountain.name }}<br />
+                  Height: {{ mountain.height }}<br />
+                  Location: {{ mountain.country }} <br />
+                  First Ascent: {{ mountain.firstAscent }}<br />
+                </div>
+              </div>
+            </div>
+          </div>
           GORE 0 - 1.9K MOUNTAINS/HILLS
         </div>
-        <div class="bg-[#d8c596] pb-[26rem]">
+        <div class="bg-[#d8c596] pb-[26rem] ">
           <div class="grid justify-items-center">
             <div class="text-3xl lg:text-4xl md:text-3xl ls:text-2xl">
                 Made by Petar Petrović
@@ -181,38 +197,42 @@ export default {
 </template>
 
 <style>
-/* Style for sticky div */
-.stickyDiv {
+/* Style for height meter */
+.heightMeter {
   position: fixed;
   top: 50%;
   right: 10%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 8px;
+  border-bottom: 0.2rem solid white;
 }
 
 /* Style for the scrollable content */
 .scrollContent {
-  /* Add your desired styles */
-  height: 2000px; /* Example height to create scrolling */
+    height: 2000px; 
 }
-.testback {
-  background-color: rgb(100, 204, 197);
+/* Color gradient background */
+.backgroundColors {
+  background-color: rgba(248, 209, 201, 1);
   background: linear-gradient(
     0deg,
-    rgba(238, 238, 238, 1) 0%,
-    rgba(100, 204, 197, 1) 33%,
-    rgba(23, 107, 135, 1) 66%,
-    rgba(5, 59, 80, 1) 100%
+    rgba(248, 209, 201, 1) 16%,
+    rgba(210, 165, 168, 1) 32%,
+    rgba(165, 143, 155, 1) 48%,
+    rgba(106, 118, 139, 1) 64%,
+    rgba(80, 99, 124, 1) 80%,
+    rgba(51, 73, 97, 1) 90%
   );
 }
+
+/* Style for the scrollable content */
 @font-face {
-  font-family: "Maston";
-  src: url("@/assets/Fonts/MRKMaston-Bold.ttf") format("truetype");
+  font-family: "ArchiaRegular";
+  src: url("@/assets/Fonts/archia-regular.woff") format("truetype");
 }
 
 body {
-  font-family: "Maston";
+  font-family: "ArchiaRegular";
+  font-weight: 400;
 }
 
 .mountains2k {
@@ -220,6 +240,7 @@ body {
   padding-bottom: 50rem;
   padding-left: 5rem;
 }
+
 
 .growImage {
   opacity: 0.5;
