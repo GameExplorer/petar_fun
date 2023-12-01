@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'ASOIAFBooks',
   data() {
     return {
       currentNumber: 0,
