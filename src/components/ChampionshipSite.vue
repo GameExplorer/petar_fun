@@ -1,13 +1,15 @@
 <template>
-  <div class="bg-[#00192D] text-white outline-2">
+  <div class="bg-[#00192D] text-white outline-8" :class="currentTeamClass">
     <div class="text-4xl text-center pt-24">
       How many days has passed since teams' last F1 Championship
     </div>
     <div class="text-center mt-24 text-4xl">
       <div v-if="buttonClickedRB">
-        Days since RedBull last championship: <br>
-        <span class="text-4xl text-yellow-400 font-bold">{{ redBullDate }}</span>
-        <div>Date: 10/24/2023 - Suzuka </div>
+        Days since RedBull last championship: <br />
+        <div class="text-8xl text-yellow-400 font-bold pt-4 pb-2">
+          {{ redBullDate }}
+        </div>
+        <div class="pt-2 pb-4">Date: 10/24/2023 - Suzuka</div>
       </div>
       <div v-else-if="buttonClickedFr">{{ ferrariDate }}</div>
       <div v-else-if="buttonClickedAt">Has Never Won Constructor</div>
@@ -28,9 +30,9 @@
         <div>2011</div>
         <div>2012</div>
         <div>2013</div>
+      </div>
     </div>
-    </div>
-    <div class="grid object-none object-bottom place-items-center">
+    <div class="grid object-none object-bottom place-items-center pb-12">
       <ul class="inline mx-2">
         <button
           class="mx-4 bg-white text-black px-4 rounded-lg text-2xl"
@@ -56,7 +58,7 @@
 export default {
   data() {
     return {
-      buttonClickedRB: false,
+      buttonClickedRB: true,
       buttonClickedFr: false,
       buttonClickedAt: false,
     };
@@ -79,26 +81,57 @@ export default {
     alphaTauriDate() {
       return `Has never won constructor`;
     },
+    currentTeamClass() {
+      if (this.buttonClickedRB) {
+        this.currentTeam = "RedBull"; // Set current team to RedBull when buttonClickedRB is true
+        return "redbull"; // Apply 'redbull' class when buttonClickedRB is true
+      } else if (this.buttonClickedFr) {
+        this.currentTeam = "Ferrari";
+        return "ferrari";
+      } else if (this.buttonClickedAt) {
+        this.currentTeam = "Alpha Tauri";
+        return "alphatauri";
+      }
+      return ""; // Default class if no button is clicked
+    },
   },
   methods: {
     toggleRedBull() {
       this.buttonClickedRB = !this.buttonClickedRB;
+      this.currentTeam = "RedBull";
       if (this.buttonClickedRB) {
         this.buttonClickedFr = false; // Close Ferrari information if Red Bull is clicked
       }
     },
     toggleFerrari() {
       this.buttonClickedFr = !this.buttonClickedFr;
+      this.currentTeam = "Ferrari";
       if (this.buttonClickedFr) {
         this.buttonClickedRB = false; // Close Red Bull information if Ferrari is clicked
+        this.buttonClickedAt = false; // Close Alpha Tauri information if Ferrari is clicked
       }
     },
     toggleAlphaTauri() {
       this.buttonClickedAt = !this.buttonClickedAt;
+      this.currentTeam = "Alpha Tauri";
       if (this.buttonClickedAt) {
         this.buttonClickedRB = false; // Close Red Bull information if Alpha Tauri is clicked
+        this.buttonClickedFr = false; // Close Ferrari information if Alpha Tauri is clicked
       }
     },
   },
 };
 </script>
+
+<style>
+.redbull {
+  background-color: #00192d;
+}
+.ferrari {
+  background-color: #dc0000;
+}
+
+.alphatauri {
+  background-color: #2b4562;
+}
+</style>
