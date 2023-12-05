@@ -1,4 +1,7 @@
 <template>
+  <div class="text-4xl text-center pt-24 text-white" :class="currentTeamClass">
+    How many days has passed since teams' last F1 Championship
+  </div>
   <div
     class="bg-[#00192D] text-white outline-8 grid grid-cols-3 gap-8"
     :class="currentTeamClass"
@@ -6,23 +9,71 @@
     <div class="col-span-1">
       <div
         id="stats"
-        class="left mt-64 mx-8 px-6 pl-4 pt-2 pb-4 text-xl border-2 border-pink-400 float-left position-absolute shadow-[0_35px_100px_-15px_rgba(0,0,0,0.3)] shadow-purple-400"
+        class="left mt-52 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl rounded-lg border-2 border-pink-400 float-left position-absolute shadow-[0_35px_100px_-15px_rgba(0,0,0,0.3)] shadow-purple-400"
       >
         <div v-if="buttonClickedRB">
+          <div class="mt-2 mb-2 font-bold text-center">Stats</div>
+          <div class="hover:bg-gray-400 hover:text-black p-2 rounded-md">
+            Race debut: <span class="font-semibold">Australia, 2005</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Race starts: <span>369</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Poles: <span>95</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Podiums: <span>264</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Wins: <span>113</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Fastest laps: <span>95</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Points: <span>7248</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Constructors Championship: <span>6</span>
+          </div>
+          <div class="hover:bg-gray-300 hover:text-black">
+            Drivers Championship: <span>7</span>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <h3>Race Debut</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  RedBull debut race in Australia 2005 sees them finish...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div v-else-if="buttonClickedFr">
           <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
-          <div>Race debut: <span class="font-semibold">2005</span></div>
-          <div>Race starts: <span>369</span></div>
-          <div>Poles: <span>95</span></div>
-          <div>Podiums: <span>264</span></div>
-          <div>Wins: <span>113</span></div>
+          <div class="p-2">
+            Race debut: <span class="font-semibold">1950</span>
+          </div>
+          <div>Race starts: <span>1000</span></div>
+          <div>Poles: <span>100</span></div>
+          <div>Podiums: <span>300</span></div>
+          <div>Wins: <span>200</span></div>
           <div>Fastest laps: <span>95</span></div>
           <div>Points: <span>7248</span></div>
           <div>Constructors Championship: <span>6</span></div>
           <div>Drivers Championship: <span>7</span></div>
         </div>
-        <div v-else-if="buttonClickedFr">
+        <div v-else-if="buttonClickedMe">
           <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
-          <div>Race debut: <span class="font-semibold">1950</span></div>
+          <div class="p-2">
+            Race debut: <span class="font-semibold">1950</span>
+          </div>
           <div>Race starts: <span>1000</span></div>
           <div>Poles: <span>100</span></div>
           <div>Podiums: <span>300</span></div>
@@ -36,14 +87,16 @@
     </div>
     <div class="col-span-1">
       <div class="text-4xl text-center pt-24">
-        How many days has passed since teams' last F1 Championship
         <div class="text-center mt-24 text-4xl">
           <div class="pt-2 pb-8" v-if="buttonClickedRB">
             Days since RedBull last championship: <br />
             <div class="text-8xl text-[#FFD700] font-bold pt-4 pb-2">
               {{ redBullDate }}
             </div>
-            <div class="pt-2 pb-8">Date: 10/24/2023 - Suzuka GP</div>
+            <div class="pt-2 pb-8">Date: 10/24/2023 - Japanese GP</div>
+            <div class="text-gray-200 text-xl">
+              Last champion: Max Verstappen
+            </div>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedFr">
             Days since Ferrari last <br />championship: <br />
@@ -54,11 +107,42 @@
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedMe">
             Days since Mercedes last championship: <br />
-            <div class="text-7xl text-white font-bold pt-4 pb-2">
+            <div class="text-8xl text-white font-bold pt-4 pb-2">
               {{ mercedesDate }}
             </div>
+            <div class="pt-2 pb-8">Date: 12/12/2022 - Abu Dhabi GP</div>
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedMc">
+            Days since Mclaren last won championship:<br />
+            <div class="text-8xl text-white font-bold pt-4 pb-2">
+              {{ mclarenDate }}
+            </div>
+            <div class="pt-2 pb-8">Date: 11/01/1998 - Japanese GP</div>
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedAm">
+            Has Never Won Constructor
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedAl">
+            Days since Alpine last won championship:<br />
+            <div class="text-8xl text-white font-bold pt-4 pb-2">
+              {{ alpineDate }}
+            </div>
+            <div class="pt-2 pb-8">Date: 10/22/2005 - Brazilian GP</div>
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedWi">
+            Days since Williams last won championship:<br />
+            <div class="text-8xl text-white font-bold pt-4 pb-2">
+              {{ williamsDate }}
+            </div>
+            <div class="pt-2 pb-8">Date: 10/12/1997 - Japanese GP</div>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedAt">
+            Has Never Won Constructor
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedAr">
+            Has Never Won Constructor
+          </div>
+          <div class="pt-2 pb-8" v-else-if="buttonClickedHa">
             Has Never Won Constructor
           </div>
         </div>
@@ -80,7 +164,7 @@
     </div>
 
     <div
-      class="grid object-none object-bottom place-items-center pb-12 pt-20 col-span-4"
+      class="grid object-none object-bottom place-items-center pb-32 pt-24 col-span-4"
     >
       <ul class="inline mx-2">
         <button
@@ -146,6 +230,22 @@
       </ul>
     </div>
   </div>
+
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <h3>Design</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum
+          cumque minus iste veritatis provident at.
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -180,23 +280,35 @@ export default {
       return `${diffDays}`;
     },
     mercedesDate() {
-      const days = new Date("11/24/2020");
+      const days = new Date("12/12/2021");
       const today = new Date();
       const diffTime = Math.abs(today - days);
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
       return `${diffDays}`;
     },
     mclarenDate() {
-      return `Has never won constructor`;
+      const days = new Date("11/01/1998");
+      const today = new Date();
+      const diffTime = Math.abs(today - days);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
+      return `${diffDays}`;
     },
     astonMartinDate() {
       return `Has never won constructor`;
     },
     alpineDate() {
-      return `Has never won constructor`;
+      const days = new Date("10/22/2006");
+      const today = new Date();
+      const diffTime = Math.abs(today - days);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
+      return `${diffDays}`;
     },
     williamsDate() {
-      return `Has never won constructor`;
+      const days = new Date("10/12/1997");
+      const today = new Date();
+      const diffTime = Math.abs(today - days);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
+      return `${diffDays}`;
     },
     alphaTauriDate() {
       return `Has never won constructor`;
@@ -239,7 +351,7 @@ export default {
         this.currentTeam = "Haas";
         return "haas";
       }
-      return ""; // Default class if no button is clicked
+      return "redbull"; // Default class if no button is clicked
     },
   },
   methods: {
@@ -436,5 +548,89 @@ export default {
 
 .haas {
   background-color: #b6babd;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  color: #000
+}
+
+.card .face {
+  width: 250px;
+  height: 150px;
+  transition: 0.5s;
+}
+
+.card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(50px);
+}
+
+.card:hover .face.face1 {
+  background: #ff0057;
+  transform: translateY(0);
+}
+
+.card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.card .face.face1 .content img {
+  max-width: 50px;
+}
+
+.card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
 }
 </style>
