@@ -40,20 +40,6 @@
           <div class="hover:bg-gray-300 hover:text-black">
             Drivers Championship: <span>7</span>
           </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <h3>Race Debut</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  RedBull debut race in Australia 2005 sees them finish...
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         <div v-else-if="buttonClickedFr">
           <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
@@ -90,13 +76,14 @@
         <div class="text-center mt-24 text-4xl">
           <div class="pt-2 pb-8" v-if="buttonClickedRB">
             Days since RedBull last championship: <br />
-            <div class="text-8xl text-[#FFD700] font-bold pt-4 pb-2">
+            <div class="text-8xl gold-text font-bold pt-4 pb-2">
               {{ redBullDate }}
             </div>
-            <div class="pt-2 pb-8">Date: 10/24/2023 - Japanese GP</div>
-            <div class="text-gray-200 text-xl">
-              Last champion: Max Verstappen
-            </div>
+            <div class="pt-2 pb-8">10/24/2023 - Japanese GP</div>
+            <span class="text-2xl">Last champion:<br></span>
+            <span class="shiny text-4xl pt-4">
+              <span class="inner-shiny">Max Verstappen</span>
+            </span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedFr">
             Days since Ferrari last <br />championship: <br />
@@ -151,14 +138,35 @@
     <div class="col-span-1">
       <div
         id="champions"
-        class="right mt-64 mr-8 pr-8 text-xl border-2 float-right position-absolute"
+        class="right mt-52 mr-8 pr-8 text-xl text-center grid float-right position-absolute"
       >
-        <h5>List of Constructors Years</h5>
+        <h5>WINNING YEARS</h5>
         <div>
-          <span
-            >2010 2011 2012 2013<br />
-            2022 2023</span
-          >
+          <div class="desc hover:border-b-2 hover:border-red-400">
+            2010
+            <div class="hide bg-white text-black">RedBull wins first title</div>
+          </div>
+        </div>
+        <div class="group/item">
+          <div class="hover:border-b-2 hover:border-red-400 group-hover/edit">
+            2011
+            <div class="invisible group-hover/item:visible">
+              RedBull dominates 2011<br />
+              and wins its second title
+            </div>
+          </div>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+            >2012<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+            >2013<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+            >2022<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+            >2023<br
+          /></span>
         </div>
       </div>
     </div>
@@ -228,22 +236,6 @@
           Haas
         </button>
       </ul>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="face face1">
-      <div class="content">
-        <h3>Design</h3>
-      </div>
-    </div>
-    <div class="face face2">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum
-          cumque minus iste veritatis provident at.
-        </p>
-      </div>
     </div>
   </div>
 </template>
@@ -512,6 +504,83 @@ export default {
 </script>
 
 <style>
+.shiny
+{
+  color: #F5C21B;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5C21B), to(#D17000));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.inner-shiny::after, .inner-shiny::before
+{
+		animation: sparkle 3.5s infinite;
+  animation-timing-function: linear;
+	background: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF, 0 0 35px #FFF;
+  content: "";
+  display: block;
+  height: 10px;
+  opacity: 0.7;
+  position: absolute;
+  width: 10px;
+}
+
+.inner-shiny::before
+{
+animation-delay: 0.2s;
+  height: 12px;
+  left: 0.02em;
+  top: 0.95em;
+  width: 0.25em;
+}
+
+.inner-shiny::after
+{
+  top: 0.32em;
+  right: -5px;
+}
+
+@keyframes sparkle
+{
+  0%   { opacity: 0; }
+  30%  { opacity: 0; }
+  40%  { opacity: 0.8; }
+  60%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.gold-text {
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gold-text:after {
+  z-index: -1;
+  position: absolute;
+  text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
+    5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
 .redbull {
   background-color: #00192d;
 }
@@ -548,89 +617,5 @@ export default {
 
 .haas {
   background-color: #b6babd;
-}
-
-.card {
-  position: relative;
-  cursor: pointer;
-  color: #000
-}
-
-.card .face {
-  width: 250px;
-  height: 150px;
-  transition: 0.5s;
-}
-
-.card .face.face1 {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(50px);
-}
-
-.card:hover .face.face1 {
-  background: #ff0057;
-  transform: translateY(0);
-}
-
-.card .face.face1 .content {
-  opacity: 0.2;
-  transition: 0.5s;
-}
-
-.card:hover .face.face1 .content {
-  opacity: 1;
-}
-
-.card .face.face1 .content img {
-  max-width: 50px;
-}
-
-.card .face.face1 .content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.card .face.face2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
-}
-
-.card:hover .face.face2 {
-  transform: translateY(0);
-}
-
-.card .face.face2 .content p {
-  margin: 0;
-  padding: 0;
-}
-
-.card .face.face2 .content a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.card .face.face2 .content a:hover {
-  background: #333;
-  color: #fff;
 }
 </style>

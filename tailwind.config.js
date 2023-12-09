@@ -13,6 +13,6 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: []
+  plugins: [],
 }
 
