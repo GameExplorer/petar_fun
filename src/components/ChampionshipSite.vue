@@ -1,5 +1,5 @@
 <template>
-  <div class="text-4xl text-center pt-24 text-white" :class="currentTeamClass">
+  <div class="text-4xl text-center pt-10 text-white" :class="currentTeamClass">
     How many days has passed since teams' last F1 Championship
   </div>
   <div
@@ -9,36 +9,36 @@
     <div class="col-span-1">
       <div
         id="stats"
-        class="left mt-52 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl rounded-lg border-2 border-pink-400 float-left position-absolute shadow-[0_35px_100px_-15px_rgba(0,0,0,0.3)] shadow-purple-400"
+        class="left mt-36 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute "
       >
-        <div v-if="buttonClickedRB">
+        <div v-if="buttonClickedRB" class="animated-border-box">
           <div class="mt-2 mb-2 font-bold text-center">Stats</div>
-          <div class="hover:bg-gray-400 hover:text-black p-2 rounded-md">
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
             Race debut: <span class="font-semibold">Australia, 2005</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Race starts: <span>369</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Race starts: <span class="font-semibold">369</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Poles: <span>95</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Poles: <span class="font-semibold">95</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Podiums: <span>264</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Podiums: <span class="font-semibold">264</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Wins: <span>113</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Wins: <span class="font-semibold">113</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Fastest laps: <span>95</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Fastest laps: <span class="font-semibold">95</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Points: <span>7248</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Points: <span class="font-semibold">7248</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Constructors Championship: <span>6</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Constructor's Championship: <span class="font-semibold">6</span>
           </div>
-          <div class="hover:bg-gray-300 hover:text-black">
-            Drivers Championship: <span>7</span>
+          <div class="hover:border-b-2 hover:border-red-400 p-2">
+            Driver's Championship: <span class="font-semibold">7</span>
           </div>
         </div>
         <div v-else-if="buttonClickedFr">
@@ -73,15 +73,15 @@
     </div>
     <div class="col-span-1">
       <div class="text-4xl text-center pt-24">
-        <div class="text-center mt-24 text-4xl">
-          <div class="pt-2 pb-8" v-if="buttonClickedRB">
-            Days since RedBull last championship: <br />
-            <div class="text-8xl gold-text font-bold pt-4 pb-2">
-              {{ redBullDate }}
+        <div class="text-center mt-8 text-4xl">
+          <div class="pt-2 pb-8 shiny" v-if="buttonClickedRB">
+            Days elapsed since RedBull's previous championship: <br />
+            <div class="text-9xl gold-text font-bold pt-8 pb-2 silver">
+                <span class="shine">{{ redBullDate }}</span>
             </div>
-            <div class="pt-2 pb-8">10/24/2023 - Japanese GP</div>
-            <span class="text-2xl">Last champion:<br></span>
-            <span class="shiny text-4xl pt-4">
+            <div class="pt-4 pb-10">24-10-2023 - Japanese GP</div>
+            <span class="text-2xl">Last champion:<br /></span>
+            <span class="shiny gold-text text-5xl pt-4">
               <span class="inner-shiny">Max Verstappen</span>
             </span>
           </div>
@@ -142,7 +142,31 @@
       >
         <h5>WINNING YEARS</h5>
         <div>
-          <div class="desc hover:border-b-2 hover:border-red-400">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!--<img src="Images/test2.png" alt="testImage">-->2010
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!--<img src="Images/test2.png" alt="testImage">-->2010
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <!--<div class="desc hover:border-b-2 hover:border-red-400">
             2010
             <div class="hide bg-white text-black">RedBull wins first title</div>
           </div>
@@ -166,7 +190,7 @@
           /></span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400"
             >2023<br
-          /></span>
+          /></span>-->
         </div>
       </div>
     </div>
@@ -504,10 +528,128 @@ export default {
 </script>
 
 <style>
-.shiny
-{
-  color: #F5C21B;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F5C21B), to(#D17000));
+.animated-border-box, .animated-border-box-glow{
+  position: absolute;
+  overflow: hidden; 
+  z-index: 0;
+  /* Border Radius */
+  border-radius: 10px;
+}
+
+.animated-border-box-glow{
+  overflow: hidden;
+}
+
+.animated-border-box:before, .animated-border-box-glow:before {
+  content: '';
+  z-index: -2;
+  text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+	width: 99999px;
+	height: 99999px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+  /*border color, change middle color*/
+	background-image: conic-gradient(rgba(0,0,0,0), #1976ed, rgba(0,0,0,0) 25%);
+  /* change speed here */
+	animation: rotate 4s linear infinite;
+}
+
+.animated-border-box:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+  /* border width */
+	left: 5px;
+	top: 5px;
+  /* double the px from the border width left */
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+  /*bg color*/
+	background: #00192d;
+  /*box border radius*/
+	border-radius: 7px;
+}
+
+@keyframes rotate {
+	100% {
+		transform: translate(-50%, -50%) rotate(1turn);
+	}
+}
+
+
+.silver {
+  text-decoration: none;
+  text-transform: uppercase;
+  mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from { mask-position: 150%; }
+  to { mask-position: -50%; }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* style for the front side of the card */
+.flip-card-front {
+  background-color: #16161a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}
+
+/* style for the back side of the card */
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.shiny {
+  color: #f5c21b;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f5c21b),
+    to(#d17000)
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -517,43 +659,51 @@ export default {
   text-transform: uppercase;
 }
 
-.inner-shiny::after, .inner-shiny::before
-{
-		animation: sparkle 3.5s infinite;
+.inner-shiny::after,
+.inner-shiny::before {
+  animation: sparkle 3.5s infinite;
   animation-timing-function: linear;
-	background: #FFF;
+  background: #fff;
   border-radius: 100%;
-  box-shadow: 0 0 15px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF, 0 0 35px #FFF;
+  box-shadow: 0 0 15px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
   content: "";
   display: block;
-  height: 10px;
+  height: 15px;
   opacity: 0.7;
   position: absolute;
-  width: 10px;
+  width: 15px;
 }
 
-.inner-shiny::before
-{
-animation-delay: 0.2s;
+.inner-shiny::before {
+  animation-delay: 0.2s;
   height: 12px;
-  left: 0.02em;
+  left: 0.12em;
   top: 0.95em;
   width: 0.25em;
 }
 
-.inner-shiny::after
-{
-  top: 0.32em;
-  right: -5px;
+.inner-shiny::after {
+  top: 0.52em;
+  right: -2px;
 }
 
-@keyframes sparkle
-{
-  0%   { opacity: 0; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0.8; }
-  60%  { opacity: 0; }
-  100% { opacity: 0; }
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .gold-text {
