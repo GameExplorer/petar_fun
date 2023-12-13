@@ -9,7 +9,7 @@
     <div class="col-span-1">
       <div
         id="stats"
-        class="left mt-36 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute "
+        class="left mt-36 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
       >
         <div v-if="buttonClickedRB" class="animated-border-box">
           <div class="mt-2 mb-2 font-bold text-center">Stats</div>
@@ -77,7 +77,7 @@
           <div class="pt-2 pb-8 shiny" v-if="buttonClickedRB">
             Days elapsed since RedBull's previous championship: <br />
             <div class="text-9xl gold-text font-bold pt-8 pb-2 silver">
-                <span class="shine">{{ redBullDate }}</span>
+              <span class="shine">{{ redBullDate }}</span>
             </div>
             <div class="pt-4 pb-10">24-10-2023 - Japanese GP</div>
             <span class="text-2xl">Last champion:<br /></span>
@@ -528,117 +528,83 @@ export default {
 </script>
 
 <style>
-.animated-border-box, .animated-border-box-glow{
+.animated-border-box,
+.animated-border-box-glow {
   position: absolute;
-  overflow: hidden; 
+  overflow: hidden;
   z-index: 0;
-  /* Border Radius */
   border-radius: 10px;
 }
 
-.animated-border-box-glow{
+.animated-border-box-glow {
   overflow: hidden;
 }
 
-.animated-border-box:before, .animated-border-box-glow:before {
-  content: '';
+.animated-border-box:before,
+.animated-border-box-glow:before {
+  content: "";
   z-index: -2;
   text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(0deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
   position: absolute;
-	width: 99999px;
-	height: 99999px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   /*border color, change middle color*/
-	background-image: conic-gradient(rgba(0,0,0,0), #1976ed, rgba(0,0,0,0) 25%);
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #0a2aef,
+    rgba(0, 0, 0, 0) 25%
+  );
   /* change speed here */
-	animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 
 .animated-border-box:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
+  content: "";
+  position: absolute;
+  z-index: -1;
   /* border width */
-	left: 5px;
-	top: 5px;
+  left: 5px;
+  top: 5px;
   /* double the px from the border width left */
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   /*bg color*/
-	background: #00192d;
+  background: #00192d;
   /*box border radius*/
-	border-radius: 7px;
+  border-radius: 7px;
 }
 
 @keyframes rotate {
-	100% {
-		transform: translate(-50%, -50%) rotate(1turn);
-	}
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
 }
-
 
 .silver {
   text-decoration: none;
   text-transform: uppercase;
-  mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   mask-size: 200%;
   animation: shine 2s linear infinite;
 }
 
 @keyframes shine {
-  from { mask-position: 150%; }
-  to { mask-position: -50%; }
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* style for the front side of the card */
-.flip-card-front {
-  background-color: #16161a;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75em;
-}
-
-/* style for the back side of the card */
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
+  from {
+    mask-position: 150%;
+  }
+  to {
+    mask-position: -50%;
+  }
 }
 
 .shiny {
