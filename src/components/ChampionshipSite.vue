@@ -9,36 +9,56 @@
     <div class="col-span-1">
       <div
         id="stats"
-        class="left mt-36 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
+        class="left mt-40 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
       >
-        <div v-if="buttonClickedRB" class="animated-border-box">
+        <div v-if="buttonClickedRB" class="animated-border-box p-4">
           <div class="mt-2 mb-2 font-bold text-center">Stats</div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Race debut: <span class="font-semibold">Australia, 2005</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">2005, Australia</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Race starts: <span class="font-semibold">369</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">369</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Poles: <span class="font-semibold">95</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">95</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Podiums: <span class="font-semibold">264</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">264</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Wins: <span class="font-semibold">113</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">113</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Fastest laps: <span class="font-semibold">95</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">95</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Points: <span class="font-semibold">7248</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">7248</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Constructor's Championship: <span class="font-semibold">6</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">6</span></span
+            >
           </div>
-          <div class="hover:border-b-2 hover:border-red-400 p-2">
-            Driver's Championship: <span class="font-semibold">7</span>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">7</span></span
+            >
           </div>
         </div>
         <div v-else-if="buttonClickedFr">
@@ -533,7 +553,7 @@ export default {
   position: absolute;
   overflow: hidden;
   z-index: 0;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 
 .animated-border-box-glow {
@@ -576,7 +596,7 @@ export default {
   /*bg color*/
   background: #00192d;
   /*box border radius*/
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 @keyframes rotate {
