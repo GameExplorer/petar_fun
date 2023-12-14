@@ -11,8 +11,8 @@
         id="stats"
         class="left mt-40 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
       >
-        <div v-if="buttonClickedRB" class="animated-border-box p-4">
-          <div class="mt-2 mb-2 font-bold text-center">Stats</div>
+        <div v-if="buttonClickedRB" class="p-4 animated-border-box">
+          <div class="mt-2 mb-2 font-bold text-center">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Race debut:
@@ -61,19 +61,55 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedFr">
-          <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
+        <div v-else-if="buttonClickedFr" class="p-4 animated-border-boxfr">
+          <div class="mt-2 mb-2 font-bold text-center">STATS</div>
           <div class="p-2">
-            Race debut: <span class="font-semibold">1950</span>
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">2005, Australia</span></span
+            >
           </div>
-          <div>Race starts: <span>1000</span></div>
-          <div>Poles: <span>100</span></div>
-          <div>Podiums: <span>300</span></div>
-          <div>Wins: <span>200</span></div>
-          <div>Fastest laps: <span>95</span></div>
-          <div>Points: <span>7248</span></div>
-          <div>Constructors Championship: <span>6</span></div>
-          <div>Drivers Championship: <span>7</span></div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">369</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">95</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">264</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">113</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">95</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">7248</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">6</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">7</span></span
+            >
+          </div>
         </div>
         <div v-else-if="buttonClickedMe">
           <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
@@ -106,11 +142,13 @@
             </span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedFr">
-            Days since Ferrari last <br />championship: <br />
-            <div class="text-8xl text-white font-bold pt-4 pb-2">
+            Days elapsed since Ferrari's previous championship: <br>
+            <div class="text-9xl text-white font-bold pt-8 pb-2">
               {{ ferrariDate }}
             </div>
-            <div class="pt-2 pb-8">Date: 08/11/2023 - Brazilian GP</div>
+            <div class="pt-2 pb-10">08-11-2023 - Brazilian GP</div>
+            <span class="text-2xl">LAST CHAMPION:<br></span>
+            <span class="text-5xl pt-4">Kimi Raikkonen</span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedMe">
             Days since Mercedes last championship: <br />
@@ -158,46 +196,17 @@
     <div class="col-span-1">
       <div
         id="champions"
-        class="right mt-52 mr-8 pr-8 text-xl text-center grid float-right position-absolute"
+        class="right mt-52 px-2 p-2 pt-2 ml-64 text-xl text-center grid float-right position-absolute animated-border-box"
       >
-        <h5>WINNING YEARS</h5>
+        <div class="mt-2">WINNING YEARS</div>
         <div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <!--<img src="Images/test2.png" alt="testImage">-->2010
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <!--<img src="Images/test2.png" alt="testImage">-->2010
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-          <!--<div class="desc hover:border-b-2 hover:border-red-400">
+          <div class="desc hover:border-b-2 hover:border-red-400">
             2010
-            <div class="hide bg-white text-black">RedBull wins first title</div>
           </div>
         </div>
-        <div class="group/item">
+        <div>
           <div class="hover:border-b-2 hover:border-red-400 group-hover/edit">
             2011
-            <div class="invisible group-hover/item:visible">
-              RedBull dominates 2011<br />
-              and wins its second title
-            </div>
           </div>
           <span class="mx-0 hover:border-b-2 hover:border-red-400"
             >2012<br
@@ -210,7 +219,7 @@
           /></span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400"
             >2023<br
-          /></span>-->
+          /></span>
         </div>
       </div>
     </div>
@@ -754,4 +763,62 @@ export default {
 .haas {
   background-color: #b6babd;
 }
+
+
+
+.animated-border-boxfr,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+
+.animated-border-boxfr:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #e80c18,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxfr:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #a7121f;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+
 </style>
