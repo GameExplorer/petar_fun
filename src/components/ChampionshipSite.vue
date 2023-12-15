@@ -12,7 +12,7 @@
         class="left mt-40 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
       >
         <div v-if="buttonClickedRB" class="p-4 animated-border-box">
-          <div class="mt-2 mb-2 font-bold text-center">STATS</div>
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Race debut:
@@ -142,12 +142,12 @@
             </span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedFr">
-            Days elapsed since Ferrari's previous championship: <br>
+            Days elapsed since Ferrari's previous championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               {{ ferrariDate }}
             </div>
             <div class="pt-2 pb-10">08-11-2023 - Brazilian GP</div>
-            <span class="text-2xl">LAST CHAMPION:<br></span>
+            <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Kimi Raikkonen</span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedMe">
@@ -196,28 +196,62 @@
     <div class="col-span-1">
       <div
         id="champions"
-        class="right mt-52 px-2 p-2 pt-2 ml-64 text-xl text-center grid float-right position-absolute animated-border-box"
+        class="right mt-40 px-6 p-8 pt-2 ml-64 text-xl text-center grid float-right position-absolute animated-border-box"
       >
-        <div class="mt-2">WINNING YEARS</div>
-        <div>
-          <div class="desc hover:border-b-2 hover:border-red-400">
-            2010
-          </div>
-        </div>
-        <div>
-          <div class="hover:border-b-2 hover:border-red-400 group-hover/edit">
-            2011
-          </div>
-          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+        <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+        <div v-if="buttonClickedRB" class="text-3xl">
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(2010)"
+          >
+            2010<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2011)">
+            2011<br />
+          </span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2012)"
             >2012<br
           /></span>
-          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2013)"
             >2013<br
           /></span>
-          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2022)"
             >2022<br
           /></span>
-          <span class="mx-0 hover:border-b-2 hover:border-red-400"
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2023)"
+            >2023<br
+          /></span>
+        </div>
+        <div v-if="buttonClickedFr">
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(2001)"
+          >
+            2001<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2011)">
+            2011<br />
+          </span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2012)"
+            >2012<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2013)"
+            >2013<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2022)"
+            >2022<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2023)"
             >2023<br
           /></span>
         </div>
@@ -289,6 +323,21 @@
           Haas
         </button>
       </ul>
+    </div>
+  </div>
+  <!-- chequred flag border-->
+  <div>
+  </div>
+  <!-- Winning Years for each team -- WORKING -->
+  <div>
+    <div v-if="buttonClickedRB">
+      <div id="2010" class="p-10 backgroundRB">
+        <div class="text-4xl md:text-3xl text-left py-10">REDBULL WINS FIRST TITLE IN 2010</div></div>
+        <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
+        <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
+        <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
+        <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
+        <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
     </div>
   </div>
 </template>
@@ -400,6 +449,12 @@ export default {
     },
   },
   methods: {
+    scrollToYear(year) {
+      const element = document.getElementById(`${year}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    },
     toggleRedBull() {
       this.buttonClickedRB = !this.buttonClickedRB;
       this.currentTeam = "RedBull";
@@ -764,6 +819,10 @@ export default {
   background-color: #b6babd;
 }
 
+.backgroundRB {
+  background-color: #0a2aef;
+}
+
 
 
 .animated-border-boxfr,
@@ -773,7 +832,6 @@ export default {
   z-index: 0;
   border-radius: 11px;
 }
-
 
 .animated-border-boxfr:before,
 .animated-border-box-glow:before {
@@ -819,6 +877,4 @@ export default {
     transform: translate(-50%, -50%) rotate(1turn);
   }
 }
-
-
 </style>
