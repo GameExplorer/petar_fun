@@ -9,7 +9,7 @@
     <div class="col-span-1">
       <div
         id="stats"
-        class="left mt-40 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
+        class="left mt-28 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
       >
         <div v-if="buttonClickedRB" class="p-4 animated-border-box">
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div v-else-if="buttonClickedFr" class="p-4 animated-border-boxfr">
-          <div class="mt-2 mb-2 font-bold text-center">STATS</div>
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Race debut:
@@ -141,25 +141,25 @@
               <span class="inner-shiny">Max Verstappen</span>
             </span>
           </div>
-          <div class="pt-2 pb-8" v-else-if="buttonClickedFr">
-            Days elapsed since Ferrari's previous championship: <br />
+          <div class="pt-2 pb-8 uppercase font-bold" v-else-if="buttonClickedFr">
+            Days elapsed since<br> Ferrari's previous<br> championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
-              {{ ferrariDate }}
+              <span>{{ ferrariDate }}</span>
             </div>
-            <div class="pt-2 pb-10">08-11-2023 - Brazilian GP</div>
+            <div class="pt-4 pb-10">08-11-2023 - Brazilian GP</div>
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Kimi Raikkonen</span>
           </div>
           <div class="pt-2 pb-8" v-else-if="buttonClickedMe">
             Days since Mercedes last championship: <br />
-            <div class="text-8xl text-white font-bold pt-4 pb-2">
+            <div class="text-8xl font-bold pt-4 pb-2">
               {{ mercedesDate }}
             </div>
             <div class="pt-2 pb-8">Date: 12/12/2022 - Abu Dhabi GP</div>
           </div>
-          <div class="pt-2 pb-8" v-else-if="buttonClickedMc">
+          <div class="pt-2 pb-8 text-black" v-else-if="buttonClickedMc">
             Days since Mclaren last won championship:<br />
-            <div class="text-8xl text-white font-bold pt-4 pb-2">
+            <div class="text-8xl font-bold pt-4 pb-2">
               {{ mclarenDate }}
             </div>
             <div class="pt-2 pb-8">Date: 11/01/1998 - Japanese GP</div>
@@ -196,10 +196,10 @@
     <div class="col-span-1">
       <div
         id="champions"
-        class="right mt-40 px-6 p-8 pt-2 ml-64 text-xl text-center grid float-right position-absolute animated-border-box"
+        class="mx-8 mt-28 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center grid position-absolute"
       >
-        <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
-        <div v-if="buttonClickedRB" class="text-3xl">
+        <div v-if="buttonClickedRB" class="text-3xl animated-border-box p-4">
+            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="hover:border-b-2 hover:border-red-400 cursor-pointer"
             @click="scrollToYear(2010)"
@@ -227,33 +227,216 @@
             >2023<br
           /></span>
         </div>
-        <div v-if="buttonClickedFr">
+        <div v-if="buttonClickedFr" class="text-xl animated-border-boxfr p-4">
+            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="hover:border-b-2 hover:border-red-400 cursor-pointer"
-            @click="scrollToYear(2001)"
+            @click="scrollToYear(1961)"
           >
-            2001<br />
+            1961<br />
           </span>
           <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
-          @click="scrollToYear(2011)">
-            2011<br />
+          @click="scrollToYear(1964)">
+            1964<br />
           </span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
-          @click="scrollToYear(2012)"
-            >2012<br
+          @click="scrollToYear(1975)"
+            >1975<br
           /></span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
-          @click="scrollToYear(2013)"
-            >2013<br
+          @click="scrollToYear(1976)"
+            >1976<br
           /></span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
-          @click="scrollToYear(2022)"
-            >2022<br
+          @click="scrollToYear(1977)"
+            >1977<br
           /></span>
           <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
-          @click="scrollToYear(2023)"
-            >2023<br
+          @click="scrollToYear(1979)"
+            >1979<br
           /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1982)"
+            >1982<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1983)"
+            >1983<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1999)"
+            >1999<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2000)"
+            >2000<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2001)"
+            >2001<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2002)"
+            >2002<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2003)"
+            >2003<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2004)"
+            >2004<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2007)"
+            >2007<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2008)"
+            >2008<br
+          /></span>
+        </div>
+        <div v-if="buttonClickedMe" class="text-2xl animated-border-boxme p-4 text-black">
+            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(2014)"
+          >
+            2014<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2015)">
+            2015<br />
+          </span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2016)"
+            >2016<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2017)"
+            >2017<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2018)"
+            >2018<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2019)"
+            >2019<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2020)"
+            >2020<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2021)"
+            >2021<br
+          /></span>
+        </div>
+        <div v-if="buttonClickedMc" class="text-2xl animated-border-boxmc p-4 text-black">
+            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(1974)"
+          >
+            1974<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1984)">
+            1984<br />
+          </span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1985)"
+            >1985<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1988)"
+            >1988<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1989)"
+            >1989<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1990)"
+            >1990<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1991)"
+            >1991<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1998)"
+            >1998<br
+          /></span>
+        </div>
+        <div v-if="buttonClickedAl" class="text-3xl animated-border-boxal p-2">
+            <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(2005)"
+          >
+            2005<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(2006)">
+            2006<br />
+          </span>
+        </div>
+        <div v-if="buttonClickedWi" class="text-2xl animated-border-boxwi p-4">
+            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(1980)"
+          >
+            1980<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1981)">
+            1981<br />
+          </span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1986)"
+            >1986<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1987)"
+            >1987<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1992)"
+            >1992<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1993)"
+            >1993<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1994)"
+            >1994<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1996)"
+            >1996<br
+          /></span>
+          <span class="mx-0 hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1997)"
+            >1997<br
+          /></span>
+        </div>
+        <!-- non champion winning teams -->
+        <div v-if="buttonClickedAm" class="text-2xl animated-border-boxam p-4">
+            <div class="mt-2 text-3xl pb-4 font-bold">Notable Podiums</div>
+          <span
+            class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+            @click="scrollToYear(1980)"
+          >
+            1980<br />
+          </span>
+          <span class="hover:border-b-2 hover:border-red-400 cursor-pointer"
+          @click="scrollToYear(1981)">
+            1981<br />
+          </span>
         </div>
       </div>
     </div>
@@ -331,6 +514,17 @@
   <!-- Winning Years for each team -- WORKING -->
   <div>
     <div v-if="buttonClickedRB">
+      <div id="2010" class="p-10 backgroundRB">
+        <div class="text-4xl md:text-3xl text-left py-10">REDBULL WINS FIRST TITLE IN 2010</div></div>
+        <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
+        <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
+        <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
+        <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
+        <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
+    </div>
+  </div>
+  <div>
+    <div v-if="buttonClickedFr">
       <div id="2010" class="p-10 backgroundRB">
         <div class="text-4xl md:text-3xl text-left py-10">REDBULL WINS FIRST TITLE IN 2010</div></div>
         <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
@@ -824,7 +1018,7 @@ export default {
 }
 
 
-
+/* Ferrari styles*/
 .animated-border-boxfr,
 .animated-border-box-glow {
   position: absolute;
@@ -872,9 +1066,393 @@ export default {
   border-radius: 5px;
 }
 
-@keyframes rotate {
-  100% {
-    transform: translate(-50%, -50%) rotate(1turn);
-  }
+
+/* Mercedes style*/
+.animated-border-boxme,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
 }
+
+.animated-border-boxme:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #16948f,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxme:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #6cd3bf;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* Mclaren style*/
+.animated-border-boxmc,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxmc:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #000000,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxmc:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #ff8700;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* Aston Martin */
+.animated-border-boxam,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxam:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #00352F,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxam:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #006f62;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+
+/* ALpine styles */
+.animated-border-boxal,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxal:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #E12319,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxal:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #0090ff;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* Williams */
+.animated-border-boxwi,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxwi:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #00A0DE,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxwi:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #005aff;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* Alpha Tauri */
+
+.animated-border-boxat,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxat:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #00A0DE,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxat:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #005aff;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* ALfa Romeo */
+
+.animated-border-boxar,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxar:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #00A0DE,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxar:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #005aff;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+/* Haas */
+
+.animated-border-boxha,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-boxha:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #00A0DE,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-boxha:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #005aff;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
 </style>
