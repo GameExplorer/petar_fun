@@ -1,11 +1,12 @@
 <template>
-  <div class="text-4xl text-center pt-10 text-white" :class="currentTeamClass">
+  <div class="text-5xl font-bold text-center pt-10 text-white uppercase titleStroke" :class="currentTeamClass">
     How many days has passed since teams' last F1 Championship
   </div>
   <div
     class="bg-[#00192D] text-white outline-8 grid grid-cols-3 gap-8"
     :class="currentTeamClass"
   >
+    <!-- Stats -->
     <div class="col-span-1">
       <div
         id="stats"
@@ -66,43 +67,293 @@
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Race debut:
-              <span class="font-semibold">2005, Australia</span></span
+              <span class="font-semibold">1950, Monaco</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race starts: <span class="font-semibold">369</span></span
+              >Race starts: <span class="font-semibold">1074</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Poles: <span class="font-semibold">95</span></span
+              >Poles: <span class="font-semibold">249</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Podiums: <span class="font-semibold">264</span></span
+              >Podiums: <span class="font-semibold">807</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Wins: <span class="font-semibold">113</span></span
+              >Wins: <span class="font-semibold">243</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Fastest laps: <span class="font-semibold">95</span></span
+              >Fastest laps: <span class="font-semibold">259</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Points: <span class="font-semibold">7248</span></span
+              >Points: <span class="font-semibold">9672</span></span
             >
           </div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Constructor's Championship:
-              <span class="font-semibold">6</span></span
+              <span class="font-semibold">16</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">15</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedMe" class="p-4 animated-border-boxme text-black">
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1954, France</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">293</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">137</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">289</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">125</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">105</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">7222.5</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">8</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">9</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedMc" class="p-4 animated-border-boxmc text-black">
+            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1966, Monaco</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">946</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">156</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">503</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">183</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">165</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">6291.5</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">8</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">12</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedAm" class="p-4 animated-border-boxam">
+            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1959, Netherlands</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">71</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">9</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">1</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">412</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">0</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedAl" class="p-4 animated-border-boxal">
+            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1977, United Kingdom</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">466</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">51</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">197</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">36</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">33</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">2225</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">2</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">2</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedWi" class="p-4 animated-border-boxwi">
+            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1975, Argentina</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">827</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">128</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">313</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">114</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">133</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">3620</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">9</span></span
             >
           </div>
           <div class="p-2">
@@ -111,22 +362,159 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedMe">
-          <div class="mt-2 mb-2 font-bold text-center">List of Stats</div>
+        <div v-else-if="buttonClickedAt" class="p-4 animated-border-boxat">
+            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
-            Race debut: <span class="font-semibold">1950</span>
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">2006, Bahrain</span></span
+            >
           </div>
-          <div>Race starts: <span>1000</span></div>
-          <div>Poles: <span>100</span></div>
-          <div>Podiums: <span>300</span></div>
-          <div>Wins: <span>200</span></div>
-          <div>Fastest laps: <span>95</span></div>
-          <div>Points: <span>7248</span></div>
-          <div>Constructors Championship: <span>6</span></div>
-          <div>Drivers Championship: <span>7</span></div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">351</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">1</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">5</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">2</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">3</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">809</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">0</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedAr" class="p-4 animated-border-boxar">
+             <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">1950, United Kingdom</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">214</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">12</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">26</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">10</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">16</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">199</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">2</span></span
+            >
+          </div>
+        </div>
+        <div v-else-if="buttonClickedHa" class="p-4 animated-border-boxha text-black">
+               <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race debut:
+              <span class="font-semibold">2016, Australia</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Race starts: <span class="font-semibold">166</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Poles: <span class="font-semibold">1</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Podiums: <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Wins: <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Fastest laps: <span class="font-semibold">2</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Points: <span class="font-semibold">249</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Constructor's Championship:
+              <span class="font-semibold">0</span></span
+            >
+          </div>
+          <div class="p-2">
+            <span class="hover:border-b-2 hover:border-red-400 pr-2"
+              >Driver's Championship: <span class="font-semibold">0</span></span
+            >
+          </div>
         </div>
       </div>
     </div>
+    <!-- Days since and last champion-->
     <div class="col-span-1">
       <div class="text-4xl text-center pt-24">
         <div class="text-center mt-8 text-4xl">
@@ -193,6 +581,7 @@
         </div>
       </div>
     </div>
+    <!-- Winning Years-->
     <div class="col-span-1">
       <div
         id="champions"
@@ -441,8 +830,9 @@
       </div>
     </div>
 
+    <!-- buttons -->
     <div
-      class="grid object-none object-bottom place-items-center pb-32 pt-24 col-span-4"
+      class="grid object-none object-bottom place-items-center pb-32 pt-24 col-span-4 position-absolute"
     >
       <ul class="inline mx-2">
         <button
@@ -975,6 +1365,11 @@ export default {
     5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
 }
 
+.titleStroke {
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+
 .redbull {
   background-color: #00192d;
 }
@@ -1002,7 +1397,7 @@ export default {
 }
 
 .alphatauri {
-  background-color: #2b4562;
+  background-color: #00293F;
 }
 
 .alfaromeo {
@@ -1334,7 +1729,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #00A0DE,
+    #F1F3F4,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1352,7 +1747,7 @@ export default {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #005aff;
+  background: #00293F;
   /*box border radius*/
   border-radius: 5px;
 }
@@ -1383,7 +1778,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #00A0DE,
+    #004E37,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1401,7 +1796,7 @@ export default {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #005aff;
+  background: #900000;
   /*box border radius*/
   border-radius: 5px;
 }
@@ -1432,7 +1827,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #00A0DE,
+    #E6002B,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1450,7 +1845,7 @@ export default {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #005aff;
+  background: #b6babd;
   /*box border radius*/
   border-radius: 5px;
 }
