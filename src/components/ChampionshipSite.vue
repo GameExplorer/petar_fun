@@ -1,5 +1,8 @@
 <template>
-  <div class="text-5xl font-bold text-center pt-10 text-white uppercase titleStroke" :class="currentTeamClass">
+  <div
+    class="text-5xl font-bold text-center pt-10 text-white uppercase titleStroke"
+    :class="currentTeamClass"
+  >
     How many days has passed since teams' last F1 Championship
   </div>
   <div
@@ -16,8 +19,7 @@
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race debut:
-              <span class="font-bold">2005, Australia</span></span
+              >Race debut: <span class="font-bold">2005, Australia</span></span
             >
           </div>
           <div class="p-2">
@@ -62,12 +64,14 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedFr" class="p-4 uppercase animated-border-boxfr">
+        <div
+          v-else-if="buttonClickedFr"
+          class="p-4 uppercase animated-border-boxfr"
+        >
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race debut:
-              <span class="font-bold">1950, Monaco</span></span
+              >Race debut: <span class="font-bold">1950, Monaco</span></span
             >
           </div>
           <div class="p-2">
@@ -112,12 +116,14 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedMe" class="p-4 uppercase animated-border-boxme text-black">
+        <div
+          v-else-if="buttonClickedMe"
+          class="p-4 uppercase animated-border-boxme text-black"
+        >
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-black pr-2"
-              >Race debut:
-              <span class="font-bold">1954, France</span></span
+              >Race debut: <span class="font-bold">1954, France</span></span
             >
           </div>
           <div class="p-2">
@@ -162,12 +168,14 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedMc" class="p-4 uppercase animated-border-boxmc text-black">
-            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedMc"
+          class="p-4 uppercase animated-border-boxmc text-black"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-black pr-2"
-              >Race debut:
-              <span class="font-bold">1966, Monaco</span></span
+              >Race debut: <span class="font-bold">1966, Monaco</span></span
             >
           </div>
           <div class="p-2">
@@ -212,8 +220,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedAm" class="p-4 uppercase animated-border-boxam">
-            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedAm"
+          class="p-4 uppercase animated-border-boxam"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-white pr-2"
               >Race debut:
@@ -262,8 +273,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedAl" class="p-4 uppercase animated-border-boxal">
-            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedAl"
+          class="p-4 uppercase animated-border-boxal"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-white pr-2"
               >Race debut:
@@ -312,8 +326,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedWi" class="p-4 uppercase animated-border-boxwi">
-            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedWi"
+          class="p-4 uppercase animated-border-boxwi"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-red-400 pr-2"
               >Race debut:
@@ -362,8 +379,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedAt" class="p-4 uppercase animated-border-boxat">
-            <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedAt"
+          class="p-4 uppercase animated-border-boxat"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-white pr-2"
               >Race debut:
@@ -412,8 +432,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedAr" class="p-4 uppercase animated-border-boxar">
-             <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedAr"
+          class="p-4 uppercase animated-border-boxar"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-white pr-2"
               >Race debut:
@@ -462,8 +485,11 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedHa" class="p-4 uppercase animated-border-boxha text-black">
-               <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
+        <div
+          v-else-if="buttonClickedHa"
+          class="p-4 uppercase animated-border-boxha text-black"
+        >
+          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
           <div class="p-2">
             <span class="hover:border-b-2 hover:border-black pr-2"
               >Race debut:
@@ -529,8 +555,13 @@
               <span class="inner-shiny">Max Verstappen</span>
             </span>
           </div>
-          <div class="pt-2 pb-8 uppercase font-bold" v-else-if="buttonClickedFr">
-            Days elapsed since<br> Ferrari's previous<br> championship: <br />
+          <div
+            class="pt-2 pb-8 uppercase font-bold"
+            v-else-if="buttonClickedFr"
+          >
+            Days elapsed since<br />
+            Ferrari's previous<br />
+            championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               <span class="">{{ ferrariDate }}</span>
             </div>
@@ -538,8 +569,13 @@
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Kimi Raikkonen</span>
           </div>
-          <div class="pt-2 pb-8 uppercase font-bold text-black" v-else-if="buttonClickedMe">
-            Days elapsed since<br> Mercedes's previous<br> championship: <br />
+          <div
+            class="pt-2 pb-8 uppercase font-bold text-black"
+            v-else-if="buttonClickedMe"
+          >
+            Days elapsed since<br />
+            Mercedes's previous<br />
+            championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               <span class="text-black">{{ mercedesDate }}</span>
             </div>
@@ -547,8 +583,13 @@
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Lewis Hamilton</span>
           </div>
-          <div class="pt-2 pb-8 uppercase font-bold text-black" v-else-if="buttonClickedMc">
-            Days elapsed since<br> Mclaren's previous<br> championship: <br />
+          <div
+            class="pt-2 pb-8 uppercase font-bold text-black"
+            v-else-if="buttonClickedMc"
+          >
+            Days elapsed since<br />
+            Mclaren's previous<br />
+            championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               <span class="text-black">{{ mclarenDate }}</span>
             </div>
@@ -556,15 +597,27 @@
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Mika Hakkinen</span>
           </div>
-          <div class="pt-2 pb-32 uppercase font-bold" v-else-if="buttonClickedAm">
-            Aston Martin<br> has never won<br> Constructor's Championship: <br />
-            <div class="text-9xl text-white font-bold pt-8 pb-2">
-            </div>
+          <div
+            class="pt-2 pb-32 uppercase font-bold"
+            v-else-if="buttonClickedAm"
+          >
+            Aston Martin<br />
+            has never won<br />
+            Constructor's Championship: <br />
+            <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl">Fernando Alonso<br /> Lance Stroll</span>
+            <span class="text-3xl"
+              >Fernando Alonso<br />
+              Lance Stroll</span
+            >
           </div>
-          <div class="pt-2 pb-8 uppercase font-bold" v-else-if="buttonClickedAl">
-            Days elapsed since<br> Alpine's previous<br> championship: <br />
+          <div
+            class="pt-2 pb-8 uppercase font-bold"
+            v-else-if="buttonClickedAl"
+          >
+            Days elapsed since<br />
+            Alpine's previous<br />
+            championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               <span>{{ alpineDate }}</span>
             </div>
@@ -572,8 +625,13 @@
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Fernando Alonso</span>
           </div>
-          <div class="pt-2 pb-8 uppercase font-bold" v-else-if="buttonClickedWi">
-            Days elapsed since<br> Williams's previous<br> championship: <br />
+          <div
+            class="pt-2 pb-8 uppercase font-bold"
+            v-else-if="buttonClickedWi"
+          >
+            Days elapsed since<br />
+            Williams's previous<br />
+            championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
               <span>{{ williamsDate }}</span>
             </div>
@@ -581,26 +639,47 @@
             <span class="text-2xl">LAST CHAMPION:<br /></span>
             <span class="text-5xl pt-4">Jacques Villeneuve</span>
           </div>
-          <div class="pt-2 pb-32 uppercase font-bold" v-else-if="buttonClickedAt">
-            Alpha Tauri<br> has never won<br> Constructor's Championship: <br />
-            <div class="text-9xl text-white font-bold pt-8 pb-2">
-            </div>
+          <div
+            class="pt-2 pb-32 uppercase font-bold"
+            v-else-if="buttonClickedAt"
+          >
+            Alpha Tauri<br />
+            has never won<br />
+            Constructor's Championship: <br />
+            <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl">Daniel Ricciardo<br /> Yuki Tsunoda</span>
+            <span class="text-3xl"
+              >Daniel Ricciardo<br />
+              Yuki Tsunoda</span
+            >
           </div>
-          <div class="pt-2 pb-32 uppercase font-bold" v-else-if="buttonClickedAr">
-            Alfa Romeo<br> has never won<br> Constructor's Championship: <br />
-            <div class="text-9xl text-white font-bold pt-8 pb-2">
-            </div>
+          <div
+            class="pt-2 pb-32 uppercase font-bold"
+            v-else-if="buttonClickedAr"
+          >
+            Alfa Romeo<br />
+            has never won<br />
+            Constructor's Championship: <br />
+            <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl">Valtteri Bottas<br /> Zhou Guanyu</span>
+            <span class="text-3xl"
+              >Valtteri Bottas<br />
+              Zhou Guanyu</span
+            >
           </div>
-          <div class="pt-2 pb-32 uppercase font-bold text-black" v-else-if="buttonClickedHa">
-            Haas<br> has never won<br> Constructor's Championship: <br />
-            <div class="text-9xl text-white font-bold pt-8 pb-2">
-            </div>
+          <div
+            class="pt-2 pb-32 uppercase font-bold text-black"
+            v-else-if="buttonClickedHa"
+          >
+            Haas<br />
+            has never won<br />
+            Constructor's Championship: <br />
+            <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl">Kevin Magnussen<br /> Nico Hulkenberg</span>
+            <span class="text-3xl"
+              >Kevin Magnussen<br />
+              Nico Hulkenberg</span
+            >
           </div>
         </div>
       </div>
@@ -612,337 +691,449 @@
         class="mx-8 mt-28 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center grid position-absolute"
       >
         <div v-if="buttonClickedRB" class="text-3xl animated-border-box p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
             @click="scrollToYear(2010)"
           >
             2010<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2011)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2011)"
+          >
             2011<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2012)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2012)"
             >2012<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2013)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2013)"
             >2013<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2022)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2022)"
             >2022<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2023)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2023)"
             >2023<br
           /></span>
         </div>
         <div v-if="buttonClickedFr" class="text-xl animated-border-boxfr p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
             @click="scrollToYear(1961)"
           >
             1961<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1964)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1964)"
+          >
             1964<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1975)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1975)"
             >1975<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1976)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1976)"
             >1976<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1977)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1977)"
             >1977<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1979)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1979)"
             >1979<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1982)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1982)"
             >1982<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1983)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1983)"
             >1983<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(1999)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(1999)"
             >1999<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2000)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2000)"
             >2000<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2001)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2001)"
             >2001<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2002)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2002)"
             >2002<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2003)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2003)"
             >2003<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2004)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2004)"
             >2004<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2007)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2007)"
             >2007<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
-          @click="scrollToYear(2008)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            @click="scrollToYear(2008)"
             >2008<br
           /></span>
         </div>
-        <div v-if="buttonClickedMe" class="text-3xl animated-border-boxme p-4 text-black">
-            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+        <div
+          v-if="buttonClickedMe"
+          class="text-3xl animated-border-boxme p-4 text-black"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
             @click="scrollToYear(2014)"
           >
             2014<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2015)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2015)"
+          >
             2015<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2016)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2016)"
             >2016<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2017)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2017)"
             >2017<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-blac hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2018)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-blac hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2018)"
             >2018<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2019)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2019)"
             >2019<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2020)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2020)"
             >2020<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2021)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2021)"
             >2021<br
           /></span>
         </div>
-        <div v-if="buttonClickedMc" class="text-3xl animated-border-boxmc p-4 text-black">
-            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+        <div
+          v-if="buttonClickedMc"
+          class="text-3xl animated-border-boxmc p-4 text-black"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
             @click="scrollToYear(1974)"
           >
             1974<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1984)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1984)"
+          >
             1984<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1985)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1985)"
             >1985<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1988)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1988)"
             >1988<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1989)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1989)"
             >1989<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1990)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1990)"
             >1990<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1991)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1991)"
             >1991<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1998)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1998)"
             >1998<br
           /></span>
         </div>
         <div v-if="buttonClickedAl" class="text-3xl animated-border-boxal p-4">
-            <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2005)"
           >
             2005<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white hover:text-4xl cursor-pointer"
-          @click="scrollToYear(2006)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white hover:text-4xl cursor-pointer"
+            @click="scrollToYear(2006)"
+          >
             2006<br />
           </span>
         </div>
         <div v-if="buttonClickedWi" class="text-3xl animated-border-boxwi p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1980)"
           >
             1980<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1981)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1981)"
+          >
             1981<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1986)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1986)"
             >1986<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1987)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1987)"
             >1987<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1992)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1992)"
             >1992<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1993)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1993)"
             >1993<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1994)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1994)"
             >1994<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1996)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1996)"
             >1996<br
           /></span>
-          <span class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
-          @click="scrollToYear(1997)"
+          <span
+            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            @click="scrollToYear(1997)"
             >1997<br
           /></span>
         </div>
         <!-- non champion winning teams -->
-        <div v-if="buttonClickedAm" class="text-2xl uppercase animated-border-boxam p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">PODIUMS</div>
+        <div
+          v-if="buttonClickedAm"
+          class="text-2xl uppercase animated-border-boxam p-4"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">PODIUMS</div>
           <span
             class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
             @click="scrollToYear(2021)"
           >
             Azerbaijan, 2021<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Bahrain, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Saudi Arabia, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Australia, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Miami, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Monaco, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Canada, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Netherlands, 2023<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2023)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2023)"
+          >
             Brazil, 2023<br />
           </span>
         </div>
-        <div v-if="buttonClickedAt" class="text-2xl uppercase animated-border-boxat p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">NOTABLE<br> ACHIEVEMENTS</div>
+        <div
+          v-if="buttonClickedAt"
+          class="text-2xl uppercase animated-border-boxat p-4"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">
+            NOTABLE<br />
+            ACHIEVEMENTS
+          </div>
           <span
             class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
             @click="scrollToYear(2008)"
           >
             2008, First Victory<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white  cursor-pointer"
-          @click="scrollToYear(2019)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2019)"
+          >
             2019, Double podiums<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white  cursor-pointer"
-          @click="scrollToYear(2020)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2020)"
+          >
             2020, Monza win<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white  cursor-pointer"
-          @click="scrollToYear(2021)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2021)"
+          >
             2021, Podium in AZE<br />
           </span>
         </div>
-        <div v-if="buttonClickedAr" class="text-2xl uppercase animated-border-boxar p-4">
-            <div class="mt-2 text-3xl pb-4 font-bold">NOTABLE<br> ACHIEVEMENTS</div>
+        <div
+          v-if="buttonClickedAr"
+          class="text-2xl uppercase animated-border-boxar p-4"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">
+            NOTABLE<br />
+            ACHIEVEMENTS
+          </div>
           <span
             class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
             @click="scrollToYear(1950)"
           >
             1950, First Win in F1<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(1951)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(1951)"
+          >
             1951, Last Win in F1<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(1981)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(1981)"
+          >
             1981, 100th Start<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(1984)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(1984)"
+          >
             1984, Last Podium in F1<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2019)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2019)"
+          >
             2019, Return to F1<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-          @click="scrollToYear(2022)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            @click="scrollToYear(2022)"
+          >
             2022, 400th Start<br />
           </span>
         </div>
-        <div v-if="buttonClickedHa" class="text-2xl uppercase animated-border-boxha p-4 text-black">
-            <div class="mt-2 text-3xl pb-4 font-bold">NOTABLE<br> ACHIEVEMENTS</div>
+        <div
+          v-if="buttonClickedHa"
+          class="text-2xl uppercase animated-border-boxha p-4 text-black"
+        >
+          <div class="mt-2 text-3xl pb-4 font-bold">
+            NOTABLE<br />
+            ACHIEVEMENTS
+          </div>
           <span
             class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
             @click="scrollToYear(2016)"
           >
             2016, FIRST RACE<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black  cursor-pointer"
-          @click="scrollToYear(2018)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
+            @click="scrollToYear(2018)"
+          >
             2018, P5 IN WCC<br />
           </span>
-          <span class="px-2 hover:border-b-2 hover:border-black  cursor-pointer"
-          @click="scrollToYear(2022)">
+          <span
+            class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
+            @click="scrollToYear(2022)"
+          >
             2022, MAIDEN POLE<br />
           </span>
         </div>
@@ -1017,29 +1208,193 @@
     </div>
   </div>
   <!-- chequred flag border WORKING-->
-  <div>
-  </div>
+  <div></div>
   <!-- Winning Years for each team -- WORKING -->
   <div>
-    <div v-if="buttonClickedRB" class="backgroundRB text-white">
-      <div id="2010" class="p-10">
-        <div class="text-4xl md:text-3xl text-left py-10">REDBULL WINS FIRST TITLE IN 2010</div></div>
-        <div id="2011" class="p-32">RED BULL WINS SECOND TITLE</div>
-        <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
-        <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
-        <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
-        <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
+    <div v-if="buttonClickedRB" class="redbull text-white grid">
+      <div id="2010" class="p-12 mb-6 border-2">
+        <div class="text-4xl md:text-3xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2"
+            >REDBULL WINS MAIDEN TITLES IN 2010</span
+          >
+        </div>
+        <div class="uppercase text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            2010 season was one of the more memorable seasons in F1. New points
+            system was introduced and Mercedes re-entered Formula 1. This was
+            also Bridgestone's final season in the formula 1 as the company
+            decided to leave the sport after 14 years. Pirelli was then chosen
+            as the new tyre supplier for the sport. The season also was the
+            return of the seven time world champion Michael Schumacher. New
+            teams were also introduced to the sport, Hispania, Lotus and Virgin
+            Racing.
+          </div>
+          <div>
+            Red Bull secured its maiden constructor in Brazil, finishing 1-2 to
+            secure the title. The season saw Vettel, Alonso, Webber and Hamilton
+            battling until the very end for the Driver's title. Vettel's victory
+            came after a dramatic season finale at Abu Dhabi. He became the
+            youngest formula 1 champion at the age of 23 years and 134 days.
+          </div>
+        </div>
+      </div>
+      <div id="2011" class="p-12 mb-6">
+        <div class="text-4xl md:text-3xl text-right font-bold pb-16">
+          <span class="pr-8 border-red-400 border-b-2"
+            >BACK TO BACK TITLE WINS</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 mr-2 ml-10 rotate-12 hover:scale-110 hover:ease-in duration-300 float-right border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            Pirelli returned as the tyre supplier for the 2011 season and also
+            the inaugural running of the Indian Grand Prix. Vettel and Red Bull
+            defended their titles in 2011. Vettel won the title with 392 points,
+            122 points ahead of Jenson Button. While Red Bull won the
+            constructor's title with 650 points, 153 points ahead of McLaren.
+          </div>
+        </div>
+      </div>
+      <div id="2012" class="p-12 mb-6">
+        <div class="text-4xl md:text-3xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2">HAT TRICK IN 2012</span>
+        </div>
+        <div class="text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            Regarded as one of the best seasons in Formula 1. The 2012 season
+            saw 7 different winners in the first 7 races. The season also saw
+            the return of the United States Grand Prix at the Circuit of the
+            Americas. Alonso led the championship for the most part of the
+            season, his luck ran out at the end of the season allowing Vettel to
+            catch. At the last race Vettel had 13 point lead over Alonso.
+          </div>
+
+          <div>
+            Alonso had to finish on the podium to have a chance of winning a
+            title. After the first lap chaos Vettel was at the back of the grid.
+            His climb through the field at the end allowed him to finish 6th and
+            win the title by 3 points. Red Bull secured the Constructor's title
+            with 460 points, 60 points ahead of Ferrari in the United States.<br />
+            The season had the most races ever in a season with twenty and also
+            six World Driver's Champions on the grid. This was Schumacher's last
+            season in Formula.
+          </div>
+        </div>
+      </div>
+      <div id="2013" class="p-12 mb-6">
+        <div class="text-4xl md:text-3xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2">FOUR IN A ROW</span>
+        </div>
+        <div class="text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 mr-2 ml-12 float-right border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            The 2013 season was the final year the series used 2.4 litre V8
+            engine configuration which was introduced in 2006, a new 1.6 litre
+            turbocharged V6 engine came into force for 2014.
+          </div>
+          <div>
+            Vettel dominated the 2013 season. He became the third driver to win
+            the four titles in a row. It was one of the most dominated
+            championship victories in a history of the sport and it wasn't until
+            Max Verstappen in 2021 broke that record. Vettel won the title with
+            397 points, 155 points ahead of Fernando Alonso which was a new
+            record that was broken by Max Verstappen in RedBull in 2023. Red
+            Bull won the constructor's title in India with 596 points, 236
+            points ahead of Mercedes. It remains the last for a Renault powered
+            driver to win a title. The 2013 marked the end of the Vettel and Red
+            Bull run, Vettel never won a championship after that.
+          </div>
+        </div>
+      </div>
+      <div id="2022" class="p-12 mb-6">
+        <div class="text-4xl md:text-3xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2"
+            >THE START OF DOMINATION</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 mr-2 ml-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            New regulations were introduced in 2022, the new regulations were
+            introduced to make the sport more competitive and to reduce the gap
+            between the teams.
+          </div>
+          <div>
+            While at the beginning of the season Ferrari was competitive their
+            strategy and performance fell off. Meanwhile RedBull started one of
+            the most dominating winning streak in Formula 1 history. Max won 15
+            grand prix in a season surpassing the Michael Schumacher and the
+            retiring Sebastian Vettel. Despite having poor strategy Leclerc
+            finished 2nd 146 Points behind Max. RedBull won the constructor's
+            title in Mexico with 700 points, 300 points ahead of Ferrari.
+          </div>
+        </div>
+      </div>
+      <div id="2023" class="p-32">
+        <div class="text-4xl md:text-3xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2">UTTER DOMINATION</span>
+        </div>
+        <div class="text-xl">
+          <img
+            src="public/Images/Vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="h-1/5 w-1/5 mr-2 ml-12 float-right border-2 rounded-xl shadow-white shadow-lg"
+          />
+          <div class="pb-4">
+            The 2013 season was the final year the series used 2.4 litre V8
+            engine configuration which was introduced in 2006, a new 1.6 litre
+            turbocharged V6 engine came into force for 2014.
+          </div>
+          <div>
+            Vettel dominated the 2013 season. He became the third driver to win
+            the four titles in a row. It was one of the most dominated
+            championship victories in a history of the sport and it wasn't until
+            Max Verstappen in 2021 broke that record. Vettel won the title with
+            397 points, 155 points ahead of Fernando Alonso which was a new
+            record that was broken by Max Verstappen in RedBull in 2023. Red
+            Bull won the constructor's title in India with 596 points, 236
+            points ahead of Mercedes. It remains the last for a Renault powered
+            driver to win a title. The 2013 marked the end of the Vettel and Red
+            Bull run, Vettel never won a championship after that.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div>
     <div v-if="buttonClickedFr">
       <div id="2010" class="p-10 backgroundRB">
-        <div class="text-4xl md:text-3xl text-left py-10">REDBULL WINS FIRST TITLE IN 2010</div></div>
-        <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
-        <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
-        <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
-        <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
-        <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
+        <div class="text-4xl md:text-3xl text-left py-10">
+          REDBULL WINS FIRST TITLE IN 2010
+        </div>
+      </div>
+      <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
+      <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
+      <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
+      <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
+      <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
     </div>
   </div>
 </template>
@@ -1484,13 +1839,13 @@ export default {
 }
 
 .titleStroke {
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
 }
 
 .btn-shadow:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  transform: translateY(-5px);
 }
 
 .redbull {
@@ -1520,7 +1875,7 @@ export default {
 }
 
 .alphatauri {
-  background-color: #00293F;
+  background-color: #00293f;
 }
 
 .alfaromeo {
@@ -1534,7 +1889,6 @@ export default {
 .backgroundRB {
   background-color: #0a2aef;
 }
-
 
 /* Ferrari styles*/
 .animated-border-boxfr,
@@ -1583,7 +1937,6 @@ export default {
   /*box border radius*/
   border-radius: 5px;
 }
-
 
 /* Mercedes style*/
 .animated-border-boxme,
@@ -1706,7 +2059,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #00352F,
+    #00352f,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1728,7 +2081,6 @@ export default {
   /*box border radius*/
   border-radius: 5px;
 }
-
 
 /* ALpine styles */
 .animated-border-boxal,
@@ -1755,7 +2107,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #E12319,
+    #e12319,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1803,7 +2155,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #00A0DE,
+    #00a0de,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1852,7 +2204,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #F1F3F4,
+    #f1f3f4,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1870,7 +2222,7 @@ export default {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #00293F;
+  background: #00293f;
   /*box border radius*/
   border-radius: 5px;
 }
@@ -1901,7 +2253,7 @@ export default {
   /*border color, change middle color*/
   background-image: conic-gradient(
     rgba(0, 0, 0, 0),
-    #004E37,
+    #004e37,
     rgba(0, 0, 0, 0) 25%
   );
   /* change speed here */
@@ -1972,5 +2324,4 @@ export default {
   /*box border radius*/
   border-radius: 5px;
 }
-
 </style>
