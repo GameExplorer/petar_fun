@@ -1208,24 +1208,29 @@
     </div>
   </div>
   <!-- chequred flag border WORKING-->
-  <div></div>
+  <div class="silver">
+    <div class="border-b-[16px] border-black border-dashed"></div>
+    <div class="border-b-[16px] mx-6 border-black border-dashed"></div>
+    <div class="border-b-[16px] border-black border-dashed"></div>
+    <div class="border-b-[16px] mx-6 border-black border-dashed"></div>
+  </div>
   <!-- Winning Years for each team -- WORKING -->
   <div>
     <div v-if="buttonClickedRB" class="redbull text-white grid ">
       <div id="2010" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
-            >REDBULL WINS MAIDEN TITLES IN 2010</span
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            >MAIDEN TITLES WINS IN 2010</span
           >
         </div>
         <div class="text-xl">
           <img
             src="/Images/vettel2010.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/4 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg
-            hover:scale-110 hover:ease-in duration-300 "
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 ml-2 mr-12 float-left cursor-default
+            rbimg "
           />
-          <div class="pb-4">
+          <div class="pt-8 pb-4">
             2010 season was one of the more memorable seasons in F1. New points
             system was introduced and Mercedes re-entered Formula 1. This was
             also Bridgestone's final season in the formula 1 as the company
@@ -1241,13 +1246,13 @@
             battling until the very end for the Driver's title. Vettel's victory
             came after a dramatic season finale at Abu Dhabi. He became the
             youngest formula 1 champion at the age of 23 years and 134 days.<br>
-            <i>Source: es.motorsport </i>
+            <p class="text-right text-gray-500 italic">Source: es.motorsport </p>
           </div>
         </div>
       </div>
       <div id="2011" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold pb-16">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
+        <div class="text-4xl md:text-5xl text-left font-bold pb-16">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
             >BACK TO BACK TITLE WINS</span
           >
         </div>
@@ -1255,30 +1260,30 @@
           <img
             src="/Images/vettel2011.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/4 mr-2 ml-12 rotate-12 hover:scale-110 hover:ease-in duration-300 float-right border-2 rounded-xl shadow-white shadow-lg"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rbimg"
           />
-          <div class="pb-4">
+          <div class="pt-8 pb-4">
             Pirelli returned as the tyre supplier for the 2011 season and also
             the inaugural running of the Indian Grand Prix. Vettel and Red Bull
             defended their titles in 2011. Vettel won the title with 392 points,
             122 points ahead of Jenson Button. While Red Bull won the
             constructor's title with 650 points, 153 points ahead of McLaren.<br>
-            <i>Image source: The Telegraph</i>
+            <p class="text-right text-gray-500 italic">Image source: The Telegraph</p>
           </div>
         </div>
       </div>
       <div id="2012" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl">
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl">
             HAT TRICK IN 2012</span>
         </div>
         <div class="text-xl">
           <img
             src="/Images/vettel2012.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/4 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-12 ml-2 rbimg float-left"
           />
-          <div class="pb-4">
+          <div class="pt-8 pb-4">
             Regarded as one of the best seasons in Formula 1. The 2012 season
             saw 7 different winners in the first 7 races. The season also saw
             the return of the United States Grand Prix at the Circuit of the
@@ -1296,13 +1301,13 @@
             The season had the most races ever in a season with twenty and also
             six World Driver's Champions on the grid. This was Schumacher's last
             season in Formula.<br>
-            <i>Image source: Drive.com.au</i>
+            <p class="text-right text-gray-500 italic">Image source: Drive.com.au</p>
           </div>
         </div>
       </div>
       <div id="2013" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl">
+        <div class="text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl">
             FOUR IN A ROW</span>
         </div>
         <div class="text-xl">
@@ -1332,8 +1337,8 @@
         </div>
       </div>
       <div id="2022" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl cursor-default"
             >THE START OF DOMINATION</span>
         </div>
         <div class="text-xl">
@@ -1359,16 +1364,16 @@
           </div>
         </div>
       </div>
-      <div id="2023" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl cursor-default">
+      <div id="2023" class="p-12 mb-12">
+        <div class="text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl cursor-default">
             SUPER MAX!</span>
         </div>
         <div class="text-xl">
           <img
             src="/Images/verstappen2023.png"
             alt="VettelWinsFirstTitle"
-            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rounded-xl 
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right  
             rbimg"
           />
           <div class="pt-8 pb-4">
@@ -1393,17 +1398,40 @@
     </div>
   </div>
   <div>
-    <div v-if="buttonClickedFr">
-      <div id="2010" class="p-10 backgroundRB">
-        <div class="text-4xl md:text-3xl text-left py-10">
-          REDBULL WINS FIRST TITLE IN 2010
+    <div v-if="buttonClickedFr" class="ferrari text-white grid">
+      <div id="1961" class="p-12 mb-6">
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            >MAIDEN TITLES WINS IN 2010</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="/Images/vettel2010.png"
+            alt="VettelWinsFirstTitle"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 ml-2 mr-12 float-left cursor-default
+            rbimg "
+          />
+          <div class="pt-8 pb-4">
+            2010 season was one of the more memorable seasons in F1. New points
+            system was introduced and Mercedes re-entered Formula 1. This was
+            also Bridgestone's final season in the formula 1 as the company
+            decided to leave the sport after 14 years. Pirelli was then chosen
+            as the new tyre supplier for the sport. The season also was the
+            return of the seven time world champion Michael Schumacher. New
+            teams were also introduced to the sport, Hispania, Lotus and Virgin
+            Racing.
+          </div>
+          <div>
+            Red Bull secured its maiden constructor in Brazil, finishing 1-2 to
+            secure the title. The season saw Vettel, Alonso, Webber and Hamilton
+            battling until the very end for the Driver's title. Vettel's victory
+            came after a dramatic season finale at Abu Dhabi. He became the
+            youngest formula 1 champion at the age of 23 years and 134 days.<br>
+            <p class="text-right text-gray-500 italic">Source: es.motorsport </p>
+          </div>
         </div>
       </div>
-      <div id="2011" class="p-32 backgroundRB">RED BULL WINS SECOND TITLE</div>
-      <div id="2012" class="p-32">RED BULL WINS THIRD TITLE</div>
-      <div id="2013" class="p-32">RED BULL WINS FOURTH TITLE</div>
-      <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
-      <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
     </div>
   </div>
   <div>
@@ -1759,11 +1787,9 @@ export default {
 }
 
 .silver {
-  text-decoration: none;
-  text-transform: uppercase;
   mask-image: linear-gradient(
     -75deg,
-    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.6) 40%,
     #000 50%,
     rgba(0, 0, 0, 0.6) 70%
   );
