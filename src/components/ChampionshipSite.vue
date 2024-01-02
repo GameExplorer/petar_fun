@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-5xl font-bold text-center pt-10 text-white uppercase titleStroke"
+    class="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center pt-10 text-white uppercase titleStroke"
     :class="currentTeamClass"
   >
     How many days has passed since teams' last F1 Championship
@@ -1211,18 +1211,19 @@
   <div></div>
   <!-- Winning Years for each team -- WORKING -->
   <div>
-    <div v-if="buttonClickedRB" class="redbull text-white grid">
-      <div id="2010" class="p-12 mb-6 border-2">
+    <div v-if="buttonClickedRB" class="redbull text-white grid ">
+      <div id="2010" class="p-12 mb-6">
         <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2"
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
             >REDBULL WINS MAIDEN TITLES IN 2010</span
           >
         </div>
-        <div class="uppercase text-xl">
+        <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/vettel2010.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+            class="h-1/5 w-1/4 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg
+            hover:scale-110 hover:ease-in duration-300 "
           />
           <div class="pb-4">
             2010 season was one of the more memorable seasons in F1. New points
@@ -1239,40 +1240,43 @@
             secure the title. The season saw Vettel, Alonso, Webber and Hamilton
             battling until the very end for the Driver's title. Vettel's victory
             came after a dramatic season finale at Abu Dhabi. He became the
-            youngest formula 1 champion at the age of 23 years and 134 days.
+            youngest formula 1 champion at the age of 23 years and 134 days.<br>
+            <i>Source: es.motorsport </i>
           </div>
         </div>
       </div>
       <div id="2011" class="p-12 mb-6">
-        <div class="text-4xl md:text-3xl text-right font-bold pb-16">
-          <span class="pr-8 border-red-400 border-b-2"
+        <div class="text-4xl md:text-3xl text-left font-bold pb-16">
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
             >BACK TO BACK TITLE WINS</span
           >
         </div>
         <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/vettel2011.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 mr-2 ml-10 rotate-12 hover:scale-110 hover:ease-in duration-300 float-right border-2 rounded-xl shadow-white shadow-lg"
+            class="h-1/5 w-1/4 mr-2 ml-12 rotate-12 hover:scale-110 hover:ease-in duration-300 float-right border-2 rounded-xl shadow-white shadow-lg"
           />
           <div class="pb-4">
             Pirelli returned as the tyre supplier for the 2011 season and also
             the inaugural running of the Indian Grand Prix. Vettel and Red Bull
             defended their titles in 2011. Vettel won the title with 392 points,
             122 points ahead of Jenson Button. While Red Bull won the
-            constructor's title with 650 points, 153 points ahead of McLaren.
+            constructor's title with 650 points, 153 points ahead of McLaren.<br>
+            <i>Image source: The Telegraph</i>
           </div>
         </div>
       </div>
       <div id="2012" class="p-12 mb-6">
         <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2">HAT TRICK IN 2012</span>
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl">
+            HAT TRICK IN 2012</span>
         </div>
         <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/vettel2012.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+            class="h-1/5 w-1/4 ml-2 mr-12 float-left border-2 rounded-xl shadow-white shadow-lg"
           />
           <div class="pb-4">
             Regarded as one of the best seasons in Formula 1. The 2012 season
@@ -1291,21 +1295,23 @@
             with 460 points, 60 points ahead of Ferrari in the United States.<br />
             The season had the most races ever in a season with twenty and also
             six World Driver's Champions on the grid. This was Schumacher's last
-            season in Formula.
+            season in Formula.<br>
+            <i>Image source: Drive.com.au</i>
           </div>
         </div>
       </div>
       <div id="2013" class="p-12 mb-6">
         <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2">FOUR IN A ROW</span>
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl">
+            FOUR IN A ROW</span>
         </div>
         <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/vettel2013.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 mr-2 ml-12 float-right border-2 rounded-xl shadow-white shadow-lg"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rbimg "
           />
-          <div class="pb-4">
+          <div class="pt-8 pb-4">
             The 2013 season was the final year the series used 2.4 litre V8
             engine configuration which was introduced in 2006, a new 1.6 litre
             turbocharged V6 engine came into force for 2014.
@@ -1320,23 +1326,23 @@
             Bull won the constructor's title in India with 596 points, 236
             points ahead of Mercedes. It remains the last for a Renault powered
             driver to win a title. The 2013 marked the end of the Vettel and Red
-            Bull run, Vettel never won a championship after that.
+            Bull run, Vettel never won a championship after that.<br>
+            <p class="text-right text-gray-500 italic">Image source: Sportskeeda</p>
           </div>
         </div>
       </div>
       <div id="2022" class="p-12 mb-6">
         <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2"
-            >THE START OF DOMINATION</span
-          >
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl"
+            >THE START OF DOMINATION</span>
         </div>
         <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/verstappen2022.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 mr-2 ml-12 float-left border-2 rounded-xl shadow-white shadow-lg"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-12 ml-2 float-left rbimg"
           />
-          <div class="pb-4">
+          <div class="pt-8 pb-4">
             New regulations were introduced in 2022, the new regulations were
             introduced to make the sport more competitive and to reduce the gap
             between the teams.
@@ -1348,36 +1354,39 @@
             grand prix in a season surpassing the Michael Schumacher and the
             retiring Sebastian Vettel. Despite having poor strategy Leclerc
             finished 2nd 146 Points behind Max. RedBull won the constructor's
-            title in Mexico with 700 points, 300 points ahead of Ferrari.
+            title in Mexico with 700 points, 300 points ahead of Ferrari.<br>
+            <p class="text-right text-gray-500 italic">Image source: WWLP</p>
           </div>
         </div>
       </div>
-      <div id="2023" class="p-32">
+      <div id="2023" class="p-12 mb-6">
         <div class="text-4xl md:text-3xl text-left font-bold py-10">
-          <span class="pr-8 border-red-400 border-b-2">UTTER DOMINATION</span>
+          <span class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-4xl cursor-default">
+            SUPER MAX!</span>
         </div>
         <div class="text-xl">
           <img
-            src="public/Images/Vettel2010.png"
+            src="/Images/verstappen2023.png"
             alt="VettelWinsFirstTitle"
-            class="h-1/5 w-1/5 mr-2 ml-12 float-right border-2 rounded-xl shadow-white shadow-lg"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rounded-xl 
+            rbimg"
           />
-          <div class="pb-4">
-            The 2013 season was the final year the series used 2.4 litre V8
-            engine configuration which was introduced in 2006, a new 1.6 litre
-            turbocharged V6 engine came into force for 2014.
+          <div class="pt-8 pb-4">
+            The 2023 season was dominated by one single driver. MAX VERSTAPPEN. After Checo
+            beat Max in Baku, Max said to his father he will never lose to him again. He went on to
+            win 19 out of 22 Grand Prixs, failing to win in Singapore where he struggled the most and in
+            Saudia Arabia and Azerbaijan where Perez was better. Max won the title with whopping 500 points, 300 points
+            ahead of Perez. RedBull won the constructor's title in Mexico with 800 points, 400 points ahead of Ferrari.
+            Max had more points than any 2nd place Ferrari. He could have won Constructor's title all by himself.
+            RedBull won 21 out of 22 Grand Prix beating Mclaren record from 1988.
+
           </div>
           <div>
-            Vettel dominated the 2013 season. He became the third driver to win
-            the four titles in a row. It was one of the most dominated
-            championship victories in a history of the sport and it wasn't until
-            Max Verstappen in 2021 broke that record. Vettel won the title with
-            397 points, 155 points ahead of Fernando Alonso which was a new
-            record that was broken by Max Verstappen in RedBull in 2023. Red
-            Bull won the constructor's title in India with 596 points, 236
-            points ahead of Mercedes. It remains the last for a Renault powered
-            driver to win a title. The 2013 marked the end of the Vettel and Red
-            Bull run, Vettel never won a championship after that.
+            Max broke numerous records including most wins, most podiums, most consecutive wins, most wins from pole,
+            most points, most hat tricks (pole, win, fastest lap), biggest championship winning margin, most laps led,
+            highest percentage of laps led, most sprint wins and only driver to win three times in one country during 
+            a single season<br>
+            <p class="text-right text-gray-500 italic">Image source: F1.com</p>
           </div>
         </div>
       </div>
@@ -1396,6 +1405,9 @@
       <div id="2022" class="p-32">RED BULL WINS FIFTH TITLE</div>
       <div id="2023" class="p-32">RED BULL WINS SIXTH TITLE</div>
     </div>
+  </div>
+  <div>
+    Footer
   </div>
 </template>
 
@@ -1669,6 +1681,26 @@ export default {
 </script>
 
 <style>
+
+.rbimg {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .4s linear;
+  cursor: pointer;
+}
+.rbimg:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+  border: 2px solid blue;
+}
+
 .animated-border-box,
 .animated-border-box-glow {
   position: absolute;
