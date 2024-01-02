@@ -24,6 +24,18 @@ const routes = [
             title: 'Mountains',
         },
         component: () => import('@/views/Mountains.vue'),
+    },
+    {
+        path: '/champions',
+        name: 'Champions',
+        meta: {
+            title: 'F1 Champions',
+        },
+        component: () => import('@/views/Champions.vue'),
+    },
+    {   // This is a catch all route in case none of the above matches, it will redirect to the home page (instead of 404 page)
+        path: '/catchAll(.*)*',
+        redirect: { name: 'Home'}
     }
 ]
 
