@@ -730,6 +730,7 @@
           <span
             class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
             @click="scrollToYear(1961)"
+            id="1961-2"
           >
             1961<br />
           </span>
@@ -1208,8 +1209,7 @@
     </div>
   </div>
   <!-- chequred flag border TO DO-->
-  <div>
-  </div>
+  <div></div>
   <!-- Winning Years for each team -- TO DO -->
   <div>
     <div v-if="buttonClickedRB" class="redbull text-white grid">
@@ -1415,31 +1415,170 @@
   </div>
   <div>
     <div v-if="buttonClickedFr" class="ferrari text-white grid">
-      <div id="1961" class="p-12 mb-6">
-        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+      <!-- Update card shadow effect-->
+      <div
+        id="1961"
+        class="p-12 mb-6 float-left border-4 border-white transition-all duration-500 rounded-xl w-2/5 ml-16 ferrariCard-shadow">
+        <div
+          class="bg-[url('Images/ferrari1961.png')] bg-contain w-full h-full blur-sm absolute inset-0 z-0">
+        </div>
+        <div class="relative z-10 ">
+          <div class="text-4xl md:text-5xl text-left font-bold py-10">
+            <span
+              class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4"
+              >FIRST OF MANY</span>
+          </div>
+          <div class="text-xl">
+            <div class="pt-2 pb-4 text-justify">
+              1961 Season was the first year of 1.5 litre formula and it was
+              dominated by Ferrari. This year was the first year they made
+              mid-engine car going against Enzo's philosophy. The season was
+              dominated by Phil Hill and Wolfgang von Trips. Phil Hill won the
+              title with 34 points, 1 point ahead of Wolfgang von Trips who was
+              killed at the Italian Grand Prix. Hill remains to this day only
+              American to win Driver's title. Ferrari won the constructor's
+              title with 57 points, 14 points ahead of Lotus.<br />
+            </div>
+            <div class="text-justify">
+              Did you know 1961 Dutch Grand Prix was a strange. Every starter
+              finished the race and no-one went into the pits. Such reliability
+              has never been achieved since
+              <br />
+            <div class="text-right text-gray-300 italic">Source: wikipedia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="1964" class="p-12 mb-6">
+        <div class="text-4xl md:text-5xl text-right font-bold py-10">
           <span
-            class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
-            >FIRST OF MANY</span
+            class="pr-4 border-white border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-4 hover:text-6xl"
+            >FIERCE COMPETITION</span
           >
         </div>
         <div class="text-xl">
           <img
-            src="/Images/ferrari1961.png"
+            src="/Images/surtees1964.png"
             alt="VettelWinsFirstTitle"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right cursor-default"
+          />
+          <div class="pt-8 pb-4 text-justify">
+            The 1963 Driver's Championship was fierce compettion between Jim
+            Clark, John Surtees and Graham Hill going to the wire. The Driver's
+            Championship was decided at the last race, Mexican Grand Prix. Hill
+            collided with Lorenzo Bandini while Clark was forced to stop due to
+            an oil leak on the last lap. Bandini who was ahead of Surtees was
+            given team order to let Surtees pass him thus letting him win
+            Championship by one point. Hill finished second and Clark third. He
+            won the title with 40 points, 1 point ahead of Graham Hill. All
+            three drivers were from UK.<br />
+          </div>
+          <div class="text-justify">
+            Ferrari didn't start the season well. At the first race in Monaco,
+            Surtees was disqualified for reversing into the pit lane. At the
+            Belgian Grand Prix both cars retired and at the next race Surtees
+            retired again. He continued two podium streak with a 3rd place in UK
+            and 1st in Germany followed by another retirement in Italy. He
+            finished 2nd in Austria and 3rd in USA. Ferrari won the
+            constructor's title with 82 points, 10 points ahead of BRM.<br />
+            <br />
+            <p class="text-right text-gray-900 italic">Source: wikipedia</p>
+          </div>
+        </div>
+      </div>
+      <div id="1975" class="p-12 mb-6">
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span
+            class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            >UNBELIEVEABLE YEAR</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="/Images/lauda1974.png"
+            alt="Lauda Wins Title"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 ml-2 mr-12 float-left cursor-default"
           />
-          <div class="pt-8 pb-4">
-            1961 Season was the first year of 1.5 litre formula and it was dominated by Ferrari. This year was the
-            first year they made mid-engine car going against Enzo's philosophy. The season was dominated by Phil
-            Hill and Wolfgang von Trips. Phil Hill won the title with 34 points, 1 point ahead of Wolfgang von Trips who
-            was killed at the Italian Grand Prix. Hill remains to this day only American to win Driver's title. 
-            Ferrari won the constructor's title with 57 points, 14 points ahead of  Lotus.<br />
+          <div class="pt-8 pb-4 text-justify">
+            The 1975 season started well for Brabham and it looked like they
+            might snatch the title again but over the season tyre wear caused a
+            lot of trouble and slowed the car. After the season in late November
+            Graham Hill and his driver Tony Brise were killed in the airplane
+            crash <br />
           </div>
-          <div>
-            Did you know 1961 Dutch Grand Prix was a strange. Every starter finished the race and no-one went into the pits. 
-            Such reliability has never been achieved since
+          <div class="text-justify">
+            Niki Lauda received the car he deserved and won the championship
+            with five wins and a huge margin over a second place. Ferrari won
+            the Constructor's Championship with 72.5 points finishing 18.5
+            points ahead of Brabham. Half points were awarded in Austria.<br />
             <br />
-            <p class="text-right text-gray-800 italic">Source: wikipedia</p>
+            <p class="text-right text-gray-900 italic">Source: wikipedia</p>
+          </div>
+        </div>
+      </div>
+      <div id="1976" class="p-12 mb-6">
+        <div class="text-4xl md:text-5xl text-right font-bold py-10">
+          <span
+            class="pr-8 border-white border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-4 hover:text-6xl"
+            >RUSH</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="/Images/lauda1976.png"
+            alt="Lauda Wins Title"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 ml-12 mr-2 float-right cursor-default"
+          />
+          <div class="pt-8 pb-4 text-justify">
+            The 1976 season was one for the history books filled with drama and
+            politics the season saw the battle between Mcalren driver James Hunt
+            and Ferrari's driver Niki Lauda. Throughout the season Hunt and
+            Lauda competited for the title exchanging wins, podiums and fierece
+            battles on the track. During the German GP Lauda suffered a massive
+            crash and almost died. After two races he returned and finished
+            fourth in Italy<br />
+          </div>
+          <div class="text-justify">
+            Hunt won both in Canada and US but Lauda took third place to lead
+            Hunt by mere three points going into the final race. Race conditions
+            were terrible, Lauda withdrew from the race while Hunt finished
+            third, giving him enough points to take the title by one points.
+            Ferrari sealed the title over Mclaren by 9 points.<br />
+            <br />
+            <p class="text-right text-gray-900 italic">Source: wikipedia</p>
+          </div>
+        </div>
+      </div>
+      <div id="1977" class="p-12 mb-6">
+        <div class="text-4xl md:text-5xl text-left font-bold py-10">
+          <span
+            class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            >RUSH</span
+          >
+        </div>
+        <div class="text-xl">
+          <img
+            src="/Images/lauda1977.png"
+            alt="Lauda Wins Title"
+            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-12 ml-2 float-left cursor-default"
+          />
+          <div class="pt-8 pb-4 text-justify">
+            The 1976 season was one for the history books filled with drama and
+            politics the season saw the battle between Mcalren driver James Hunt
+            and Ferrari's driver Niki Lauda. Throughout the season Hunt and
+            Lauda competited for the title exchanging wins, podiums and fierece
+            battles on the track. During the German GP Lauda suffered a massive
+            crash and almost died. After two races he returned and finished
+            fourth in Italy<br />
+          </div>
+          <div class="text-justify">
+            Hunt won both in Canada and US but Lauda took third place to lead
+            Hunt by mere three points going into the final race. Race conditions
+            were terrible, Lauda withdrew from the race while Hunt finished
+            third, giving him enough points to take the title by one points.
+            Ferrari sealed the title over Mclaren by 9 points.<br />
+            <br />
+            <p class="text-right text-gray-900 italic">Source: ESPN.co.uk</p>
           </div>
         </div>
       </div>
@@ -1718,6 +1857,15 @@ export default {
 </script>
 
 <style>
+.ferrariCard-shadow {
+  box-shadow: 25px 5px 95px rgba(0, 0, 0, 0.9);
+  transform: translateY(0px);
+}
+
+.imgBlur:hover {
+  filter: blur(0);
+}
+
 .rbimg {
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
   --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
