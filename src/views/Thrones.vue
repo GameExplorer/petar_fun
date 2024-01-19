@@ -1,8 +1,13 @@
-<script setup>
-import ThronesSite from '@/components/ThronesSite.vue'
-
-</script>
-
 <template>
   <ThronesSite />
 </template>
+
+<script>
+import ThronesSite from '@/components/ThronesSite.vue'
+
+export default {
+  components: {
+    ThronesSite,
+  },
+}
+</script>

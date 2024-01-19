@@ -1,18 +1,104 @@
 <script>
 export default {
+  name: "MountainsSite",
   data() {
     return {
       number: 0,
       maxNumber: 8884,
       lastScrollTop: 0,
-      mountains1k: [
-          { name: 'Mount Everest', height: '8,848 meters', country: 'Nepal', firstAscent: 'May 29, 1953' },
-          { name: 'Triglav', height: '2,864 meters', country: 'Slovenia', firstAscent: 'Jul 1, 1884' }  
-      ]
+      mountains2k: [
+        {
+          name: "Devil's Peak",
+          height: "1000",
+          country: "South Africa",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Sgurr Dearg",
+          height: "986",
+          country: "Scotland",
+          firstAscent: "1880",
+        },
+        {
+          name: "Lantau Peak",
+          height: "934",
+          country: "Hong Kong",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Slieve Donard",
+          height: "850",
+          country: "Northern Ireland",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Pieter Both",
+          height: "820",
+          country: "Mauritius",
+          firstAscent: "Sep 7 1832",
+        },
+        {
+          name: "Dobongsan",
+          height: "740",
+          country: "South Korea",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Mount Takao",
+          height: "599",
+          country: "Japan",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Great Mell Fell",
+          height: "537",
+          country: "England",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Avala",
+          height: "511",
+          country: "Serbia",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Diamond Hill",
+          height: "445",
+          country: "Ireland",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Pic Paradis",
+          height: "424",
+          country: "France (Saint Martin)",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Mount Kinka (金華山)",
+          height: "329",
+          country: "Japan",
+          firstAscent: "unknown",
+        },
+        {
+          name: "Suur Munamägi",
+          height: "318",
+          country: "Estonia",
+          firstAscent: "unkown",
+        },
+        {
+          name: "Diamond Head",
+          height: "232",
+          country: "US (Hawaii)",
+          firstAscent: "unknown*",
+          image: "/Images/DiamondHead.png",
+        },
+      ],
     };
   },
   mounted() {
-    window.scrollTo(0, document.body.scrollHeight);
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 250);
     window.addEventListener("scroll", this.handleScroll);
   },
   methods: {
@@ -37,7 +123,9 @@ export default {
 <template>
   <div v-cloak @wheel="handleScroll">
     <!-- Sticky div in the center -->
-    <div class="heightMeter text-2xl lg:text-2xl md:text-xl ls:text-lg text-white p-6">
+    <div
+      class="heightMeter text-2xl lg:text-2xl md:text-xl ls:text-lg text-white p-6 fixed"
+    >
       <h1>{{ number }}</h1>
     </div>
     <div class="scrollContent" ref="scrollDiv">
@@ -56,122 +144,14 @@ export default {
         <div class="pb-[3000px]">gore 5 - 7.9K MOUNTAINS</div>
         <div class="pb-[3000px]">GORE 2 - 4.9K MOUNTAINS</div>
 
-        <div class="pt-8 pl-20 pb-[2000px] grid grid-cols-8 gap-16">
+        <div class="pt-8 pl-20 pr-20 pb-[2000px] grid grid-cols-8 gap-8">
           <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2 mt-24">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- alternative zoom-->
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-2">
-            <div class="group/item growImage">
-              <img src="/Images/test2.png" alt="Everest" />
-              <div class="group-hover/edit invisible group-hover/item:visible">
-                <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
-                  Name: Name<br />
-                  Height: m / ft<br />
-                  Location: <br />
-                  First Ascent: 19..<br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>09</div>
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>
-          <div>13</div>
-          <div>14</div>
-          <div>15</div>
-          <div class="col-span-2">
-            <div class="group/item growImage" v-for="mountain in mountains1k" :key="mountain.Triglav">
-              <img src="/Images/test2.png" alt="Everest" />
+            <div
+              class="group/item growImage"
+              v-for="mountain in mountains2k"
+              :key="mountain.name"
+            >
+              <img :src="mountain.image" :alt="mountain.name" />
               <div class="group-hover/edit invisible group-hover/item:visible">
                 <div class="bg-[#d6d6d6] py-4 pl-2 group-hover/opacity-100">
                   Name: {{ mountain.name }}<br />
@@ -184,11 +164,12 @@ export default {
           </div>
           GORE 0 - 1.9K MOUNTAINS/HILLS
         </div>
-        <div class="bg-[#d8c596] pb-[26rem] ">
+        <div class="bg-[#d8c596] pb-[20rem]">
           <div class="grid justify-items-center">
-            <div class="text-3xl lg:text-4xl md:text-3xl ls:text-2xl">
-                Made by Petar Petrović
+            <div class="text-3xl lg:text-4xl md:text-3xl ls:text-2xl mt-12">
+              Made by Petar Petrović
             </div>
+            <div>Enjoy climbing the mountains</div>
           </div>
         </div>
       </div>
@@ -199,7 +180,6 @@ export default {
 <style>
 /* Style for height meter */
 .heightMeter {
-  position: fixed;
   top: 50%;
   right: 10%;
   transform: translate(-50%, -50%);
@@ -208,7 +188,7 @@ export default {
 
 /* Style for the scrollable content */
 .scrollContent {
-    height: 2000px; 
+  height: 8884px;
 }
 /* Color gradient background */
 .backgroundColors {
@@ -230,6 +210,7 @@ export default {
   src: url("@/assets/Fonts/archia-regular.woff") format("truetype");
 }
 
+/* font family and weight of the font*/
 body {
   font-family: "ArchiaRegular";
   font-weight: 400;
@@ -240,7 +221,6 @@ body {
   padding-bottom: 50rem;
   padding-left: 5rem;
 }
-
 
 .growImage {
   opacity: 0.5;

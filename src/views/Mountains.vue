@@ -1,8 +1,14 @@
 <template>
     <MountainsSite />
 </template>
-<script setup>
+<script>
 import MountainsSite from '../components/MountainsSite.vue';
+
+export default {
+    components: {
+        MountainsSite,
+    }
+}
 </script>
 
 <style>

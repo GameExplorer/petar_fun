@@ -1113,7 +1113,7 @@
         </div>
         <div
           v-if="buttonClickedHa"
-          class="text-2xl uppercase animated-border-boxha p-4 text-black"
+          class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
             NOTABLE<br />
@@ -1133,9 +1133,21 @@
           </span>
           <span
             class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
+            @click="scrollToYear(2021)"
+          >
+            2021, BAD YEAR<br
+          /></span>
+          <span
+            class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
             @click="scrollToYear(2022)"
           >
             2022, MAIDEN POLE<br />
+          </span>
+          <span
+            class="px-2 hover:border-b-2 hover:border-black cursor-pointer"
+            @click="scrollToYear(2024)"
+          >
+            2023, GUNTHER DEPARTURE<br />
           </span>
         </div>
       </div>
@@ -1418,71 +1430,79 @@
       <!-- Update card shadow effect-->
       <div
         id="1961"
-        class="p-12 mb-6 float-left border-4 border-white transition-all duration-500 rounded-xl w-2/5 ml-16 ferrariCard-shadow">
+        class="p-12 mb-6 float-left border-4 border-white rounded-xl w-2/5 ml-16 ferrariCard-shadow"
+      >
         <div
-          class="bg-[url('Images/ferrari1961.png')] bg-contain w-full h-full blur-sm absolute inset-0 z-0">
-        </div>
-        <div class="relative z-10 ">
+          class="bg-[url('Images/ferrari1961.png')] bg-contain w-full h-full blur-sm absolute inset-0 z-0"
+        ></div>
+        <div class="relative z-10">
           <div class="text-4xl md:text-5xl text-left font-bold py-10">
             <span
               class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4"
-              >FIRST OF MANY</span>
+              >FIRST OF MANY</span
+            >
           </div>
           <div class="text-xl">
             <div class="pt-2 pb-4 text-justify">
-              1961 Season was the first year of 1.5 litre formula and it was
-              dominated by Ferrari. This year was the first year they made
-              mid-engine car going against Enzo's philosophy. The season was
+              1961 Season was the first year of 1.5-litre formula and it was
+              dominated by Ferrari. This year was the first year they made a
+              mid-engine car, going against Enzo's philosophy. The season was
               dominated by Phil Hill and Wolfgang von Trips. Phil Hill won the
-              title with 34 points, 1 point ahead of Wolfgang von Trips who was
-              killed at the Italian Grand Prix. Hill remains to this day only
-              American to win Driver's title. Ferrari won the constructor's
-              title with 57 points, 14 points ahead of Lotus.<br />
+              title with 34 points, 1 point ahead of Wolfgang von Trips, who was
+              killed at the Italian Grand Prix. Hill remains to this day the
+              only American to win the Driver's title. Ferrari won the
+              constructor's title with 57 points, 14 points ahead of Lotus.<br />
             </div>
             <div class="text-justify">
-              Did you know 1961 Dutch Grand Prix was a strange. Every starter
-              finished the race and no-one went into the pits. Such reliability
-              has never been achieved since
-              <br />
-            <div class="text-right text-gray-300 italic">Source: wikipedia</div>
+              Did you know the 1961 Dutch Grand Prix was strange? Every starter
+              finished the race, and no one went into the pits. Such reliability
+              has never been achieved since, and the rules don't allow it.<br />
+              <div class="text-right text-gray-300 italic">
+                Source: Wikipedia
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="1964" class="p-12 mb-6">
-        <div class="text-4xl md:text-5xl text-right font-bold py-10">
-          <span
-            class="pr-4 border-white border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-4 hover:text-6xl"
-            >FIERCE COMPETITION</span
-          >
-        </div>
-        <div class="text-xl">
-          <img
-            src="/Images/surtees1964.png"
-            alt="VettelWinsFirstTitle"
-            class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right cursor-default"
-          />
-          <div class="pt-8 pb-4 text-justify">
-            The 1963 Driver's Championship was fierce compettion between Jim
-            Clark, John Surtees and Graham Hill going to the wire. The Driver's
-            Championship was decided at the last race, Mexican Grand Prix. Hill
-            collided with Lorenzo Bandini while Clark was forced to stop due to
-            an oil leak on the last lap. Bandini who was ahead of Surtees was
-            given team order to let Surtees pass him thus letting him win
-            Championship by one point. Hill finished second and Clark third. He
-            won the title with 40 points, 1 point ahead of Graham Hill. All
-            three drivers were from UK.<br />
+
+      <div
+        id="1964"
+        class="p-12 mt-16 mb-6 float-right border-4 border-white rounded-xl w-2/5 ml-16 ferrariCard-shadow"
+      >
+        <div
+          class="bg-[url('Images/surtees1964.png')] bg-contain w-full h-full blur-sm absolute inset-0 z-0"
+        ></div>
+        <div class="relative z-10">
+          <div class="text-4xl md:text-5xl text-right font-bold py-10">
+            <span
+              class="pr-2 border-white border-b-2 transition-all duration-500 hover:pl-16 hover:border-b-4"
+              >FIERCE COMPETITION</span
+            >
           </div>
-          <div class="text-justify">
-            Ferrari didn't start the season well. At the first race in Monaco,
-            Surtees was disqualified for reversing into the pit lane. At the
-            Belgian Grand Prix both cars retired and at the next race Surtees
-            retired again. He continued two podium streak with a 3rd place in UK
-            and 1st in Germany followed by another retirement in Italy. He
-            finished 2nd in Austria and 3rd in USA. Ferrari won the
-            constructor's title with 82 points, 10 points ahead of BRM.<br />
-            <br />
-            <p class="text-right text-gray-900 italic">Source: wikipedia</p>
+          <div class="text-xl">
+            <div class="pt-2 pb-4 text-justify">
+              The 1963 Driver's Championship was fierce compettion between Jim
+              Clark, John Surtees and Graham Hill going to the wire. The
+              Driver's Championship was decided at the last race, Mexican Grand
+              Prix. Hill collided with Lorenzo Bandini while Clark was forced to
+              stop due to an oil leak on the last lap. Bandini who was ahead of
+              Surtees was given team order to let Surtees pass him thus letting
+              him win Championship by one point. Hill finished second and Clark
+              third. He won the title with 40 points, 1 point ahead of Graham
+              Hill. All three drivers were from UK.<br />
+            </div>
+            <div class="text-justify">
+              Ferrari didn't start the season well. At the first race in Monaco,
+              Surtees was disqualified for reversing into the pit lane. At the
+              Belgian Grand Prix both cars retired and at the next race Surtees
+              retired again. He continued two podium streak with a 3rd place in
+              UK and 1st in Germany followed by another retirement in Italy. He
+              finished 2nd in Austria and 3rd in USA. Ferrari won the
+              constructor's title with 82 points, 10 points ahead of BRM.<br />
+              <div class="text-right text-gray-300 italic">
+                Source: wikipedia
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1582,9 +1602,100 @@
           </div>
         </div>
       </div>
+      <div id="1979"></div>
     </div>
   </div>
-  <div>Footer</div>
+  <div>
+    <div v-if="buttonClickedHa" class="haas text-black grid relative">
+      <div class="grid grid-rows-1 grid-cols-3 gap-4">
+        <div class="col-span-1 ml-4">
+          <img src="Images/Haas/Haas2016.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+        </div>
+        <div class="col-span-1">
+          <img src="Images/Haas/haas2022.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+        </div>
+        <div class="col-span-1 mr-4">
+          <img src="Images/Haas/Haas2023.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+        </div>
+      </div>
+      <div class="timeline text-xl text-justify">
+        <p id="2016" class="road font-semibold">
+          <span class="text-center text-2xl font-extrabold">FIRST RACE</span>
+          In the team's debut at the opening race at Australia Grojean finished
+          P6. Haas became the first American constructor to win points in its
+          first F1 race and first constructor since Toyota Racing in 2002 to
+          record points in its debut. Grosjean success continued in the Bahrain
+          finishing P5 after that they fell off and only scored points on three
+          more occassions socring enough points to secure P8 in the
+          constructor's standings.
+          <br />
+        </p>
+        <p id="2018" class="road font-semibold">
+          <span class="text-center text-2xl font-extrabold"
+            >BEST RESULT IN WCC</span
+          >
+          The 2018 season started with controversy for Haas due to their car
+          looking similar to previous' year Ferrari SF70H. Guiterez was replaced
+          by Magnussen. Again Haas scored points in Australia finishing P5 and
+          P6. In Austria both went one better and finished P4 and P5 surpassing
+          2017 points tally after only nine races. At the Singapore GP,
+          Magnussen scored Haas' first ever fastest lap. They ended season in
+          fifth position. This was their best position to date.
+        </p>
+        <p id="2021" class="road font-semibold">
+          <span class="text-center text-2xl font-extrabold">BAD YEAR</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
+          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
+          saepe sit commodi?
+        </p>
+        <p id="2022" class="road font-semibold">
+          <span class="text-center text-2xl font-extrabold">MAIDEN POLE</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
+          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
+          saepe sit commodi?
+        </p>
+        <p id="2024" class="road font-semibold">
+          <span class="text-center text-2xl font-extrabold"
+            >GUNTHER DEPARTURE</span
+          >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
+          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
+          saepe sit commodi?
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="grid grid-cols-2 gap-4 border-r-[16px]">
+      <!-- Row 1, Column 1 -->
+      <div class="flex items-center justify-center bg-gray-200 p-4">
+        <!-- Content for Row 1, Column 1 -->
+        <p>This is Row 1, Column 1</p>
+      </div>
+
+      <!-- Row 1, Column 2 -->
+      <div class="flex items-center justify-center bg-gray-300 p-4">
+        <!-- Content for Row 1, Column 2 -->
+        <p>This is Row 1, Column 2</p>
+      </div>
+
+      <!-- Row 2, Column 1 -->
+      <div class="flex items-center justify-center bg-gray-400 p-4">
+        <!-- Content for Row 2, Column 1 -->
+        <p>This is Row 2, Column 1</p>
+      </div>
+
+      <!-- Row 2, Column 2 -->
+      <div class="flex items-center justify-center bg-gray-500 p-4">
+        <!-- Content for Row 2, Column 2 -->
+        <p>This is Row 2, Column 2</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -1857,13 +1968,48 @@ export default {
 </script>
 
 <style>
+.timeline {
+  width: 600px;
+  margin: auto;
+}
+
+.road {
+  border-top: 6px dashed;
+  border-color: rgb(255, 255, 255) !important;
+  margin: 0;
+  padding: 30px;
+}
+
+.road:nth-child(even) {
+  border-left: 4px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+}
+
+.road:nth-child(odd) {
+  border-right: 4px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+}
+
+.road:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.road:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .ferrariCard-shadow {
   box-shadow: 25px 5px 95px rgba(0, 0, 0, 0.9);
   transform: translateY(0px);
-}
-
-.imgBlur:hover {
-  filter: blur(0);
 }
 
 .rbimg {
