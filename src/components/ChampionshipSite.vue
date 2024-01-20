@@ -1606,16 +1606,16 @@
     </div>
   </div>
   <div>
-    <div v-if="buttonClickedHa" class="haas text-black grid relative">
+    <div v-if="buttonClickedHa" class="haas text-black grid relative    ">
       <div class="grid grid-rows-1 grid-cols-3 gap-4">
         <div class="col-span-1 ml-4">
-          <img src="Images/Haas/Haas2016.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+          <img src="Images/Haas/Haas2016.png" alt="Haas" class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"/>
         </div>
         <div class="col-span-1">
-          <img src="Images/Haas/haas2022.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+          <img src="Images/Haas/haas2022.png" alt="Haas" class="w-full rounded-xl border-white border-2 "/>
         </div>
         <div class="col-span-1 mr-4">
-          <img src="Images/Haas/Haas2023.png" alt="Haas" class="w-full rounded-xl border-white border-2" />
+          <img src="Images/Haas/Haas2023.png" alt="Haas" class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"/>
         </div>
       </div>
       <div class="timeline text-xl text-justify">
@@ -1642,28 +1642,37 @@
           Magnussen scored Haas' first ever fastest lap. They ended season in
           fifth position. This was their best position to date.
         </p>
+        <!-- TODO -->
         <p id="2021" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold">BAD YEAR</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
-          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
-          saepe sit commodi?
+          After poor 2020 both drivers Grosjean and Magnussen got replaced by Nikita Mazepin and Mick
+          Schumacher. To survive financially Haas decided to halt the progress on
+          the 2021 car and focus on the 2022 car. In their first race Nikita spun on the lap 1
+          and Mick finished P16 last of all running cars. The season was a disaster for 
+          Haas, they failed to score a single point and finished last in the constructor's
+          standings. Nikita was dropped before 2022 season started. Mick stayed in Haas for 1 more year.
         </p>
+        <!-- TODO -->
         <p id="2022" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold">MAIDEN POLE</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
-          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
-          saepe sit commodi?
+          Nikita was replaced by Magnussen. Haas decision to focus on 2022 car paid off
+          in the first two races Magnussen scored teams first points since 2020. After that
+          both drivers struggle to score points until British GP where both drivers score points,
+          Mick scored his best position P8 and Magnussen finished P10. The momentum continued in the
+          following race where Mick finished P6 his best race result so far. In Brazil team took
+          maiden pole with Magnussen out-qualifying the field in changing conditions. Haas finished
+          P7 in the constructor's standings. Mick departed Haas after the season.
         </p>
+        <!-- TODO -->
         <p id="2024" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold"
-            >GUNTHER DEPARTURE</span
-          >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          iste iusto quas eligendi corporis id eius corrupti temporibus velit?
-          Molestias harum voluptatibus veritatis explicabo ut velit deserunt,
-          saepe sit commodi?
+            >GUNTHER DEPARTURE</span>
+          After poor 2023 season Haas decided to replace Magnussen with Mick Schumacher. They signed
+          new sponsorship with MoneyGram. Haas 2023 was good in qualifying. Hulkenberg often qualified
+          high but due to high tyre wear they usually finished outside the points. Haas finished
+          the season in P10 with 12 points. Hulkenberg P7 in the American GP was their best result.
+          Few days after the new year Haas announced that Gunther Steiner contract will not be renewed.
+          He was replaced by engineer Ayao Komatsu. 
         </p>
       </div>
     </div>
