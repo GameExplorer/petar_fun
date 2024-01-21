@@ -1652,8 +1652,9 @@
 </template>
 
 <script>
-import Haas from "@/components/Haas.vue";
-import Alpine from "@/components/Alpine.vue";
+import Haas from "@/components/Haas/Haas.vue";
+import Alpine from "@/components/Alpine/Alpine.vue";
+import RedBull from "@/components/RedBull/RedBull.vue";
 
 export default {
   data() {
@@ -1672,7 +1673,8 @@ export default {
   },
   components: {
     Haas,
-    Alpine
+    Alpine,
+    RedBull,
   },
   computed: {
     redBullDate() {
