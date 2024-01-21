@@ -1553,43 +1553,19 @@
       <div id="1979"></div>
     </div>
   </div>
-  <div>
-    <div v-if="buttonClickedAl" class="alpine text-white grid">
-      <Alpine></Alpine>
-    </div>
+
+  <!-- COMPLETED -->
+  <div v-if="buttonClickedAl" class="alpine text-white grid">
+    <Alpine></Alpine>
   </div>
-  <div>
-    <div v-if="buttonClickedHa" class="haas text-black grid relative">
-      <Haas></Haas>
-    </div>
+  <div v-if="buttonClickedHa" class="haas text-black grid relative">
+    <Haas></Haas>
   </div>
+ 
+
   <!-- Footer -->
   <div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="grid grid-cols-2 gap-4 border-r-[16px]">
-      <!-- Row 1, Column 1 -->
-      <div class="flex items-center justify-center bg-gray-200 p-4">
-        <!-- Content for Row 1, Column 1 -->
-        <p>This is Row 1, Column 1</p>
-      </div>
-
-      <!-- Row 1, Column 2 -->
-      <div class="flex items-center justify-center bg-gray-300 p-4">
-        <!-- Content for Row 1, Column 2 -->
-        <p>This is Row 1, Column 2</p>
-      </div>
-
-      <!-- Row 2, Column 1 -->
-      <div class="flex items-center justify-center bg-gray-400 p-4">
-        <!-- Content for Row 2, Column 1 -->
-        <p>This is Row 2, Column 1</p>
-      </div>
-
-      <!-- Row 2, Column 2 -->
-      <div class="flex items-center justify-center bg-gray-500 p-4">
-        <!-- Content for Row 2, Column 2 -->
-        <p>This is Row 2, Column 2</p>
-      </div>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -1598,6 +1574,7 @@ import Haas from "@/components/Haas/Haas.vue";
 import HaasStats from "@/components/Haas/HaasStats.vue";
 import Alpine from "@/components/Alpine/Alpine.vue";
 import RedBull from "@/components/RedBull/RedBull.vue";
+import Footer from "@/components/Footer/Footer.vue";
 
 export default {
   data() {
@@ -1619,6 +1596,7 @@ export default {
     Alpine,
     RedBull,
     HaasStats,
+    Footer,
   },
   computed: {
     redBullDate() {
