@@ -691,36 +691,42 @@
         class="mx-8 mt-28 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center grid position-absolute"
       >
         <div v-if="buttonClickedRB" class="text-3xl animated-border-box p-4">
-          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-3xl pb-4first-letter: font-bold">WINNING YEARS</div>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+             hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2010)"
           >
             2010<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+            hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2011)"
           >
             2011<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+            hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2012)"
             >2012<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+            hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2013)"
             >2013<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+            hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2022)"
             >2022<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-red-400 hover:text-4xl cursor-pointer"
+            class="px-2 hover:text-4xl cursor-pointer
+            hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2023)"
             >2023<br
           /></span>
