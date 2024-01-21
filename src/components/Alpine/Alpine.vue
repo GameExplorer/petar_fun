@@ -70,6 +70,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "Alpine",
+};
+</script>
+
 <style>
 .animated-border-boxal,
 .animated-border-box-glow {

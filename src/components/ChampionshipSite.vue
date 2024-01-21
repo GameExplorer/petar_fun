@@ -485,58 +485,8 @@
             >
           </div>
         </div>
-        <div
-          v-else-if="buttonClickedHa"
-          class="p-4 uppercase animated-border-boxha text-black"
-        >
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Race debut:
-              <span class="font-semibold">2016, Australia</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Race starts: <span class="font-semibold">166</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Poles: <span class="font-semibold">1</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Podiums: <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Wins: <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Fastest laps: <span class="font-semibold">2</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Points: <span class="font-semibold">249</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Constructor's Championship:
-              <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-black pr-2"
-              >Driver's Championship: <span class="font-semibold">0</span></span
-            >
-          </div>
+        <div v-else-if="buttonClickedHa" class="p-4 uppercase animated-border-boxha text-black">
+          <HaasStats></HaasStats>
         </div>
       </div>
     </div>
@@ -667,19 +617,14 @@
               Zhou Guanyu</span
             >
           </div>
-          <div
-            class="pt-2 pb-32 uppercase font-bold text-black"
-            v-else-if="buttonClickedHa"
-          >
+          <div class="pt-2 pb-32 uppercase font-bold text-black" v-else-if="buttonClickedHa">
             Haas<br />
             has never won<br />
             Constructor's Championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
-            <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl"
-              >Kevin Magnussen<br />
-              Nico Hulkenberg</span
-            >
+            <div class="pt-4 pb-10 text-4xl">CURRENT DRIVERS:</div>
+            <div class="text-5xl pb-4 ">Kevin Magnussen</div>
+            <div class="text-5xl">Nico Hulkenberg</div>
           </div>
         </div>
       </div>
@@ -1117,10 +1062,7 @@
             2022, 400th Start<br />
           </span>
         </div>
-        <div
-          v-if="buttonClickedHa"
-          class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black"
-        >
+        <div v-if="buttonClickedHa" class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black">
           <div class="mt-2 text-3xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
@@ -1653,6 +1595,7 @@
 
 <script>
 import Haas from "@/components/Haas/Haas.vue";
+import HaasStats from "@/components/Haas/HaasStats.vue";
 import Alpine from "@/components/Alpine/Alpine.vue";
 import RedBull from "@/components/RedBull/RedBull.vue";
 
@@ -1675,6 +1618,7 @@ export default {
     Haas,
     Alpine,
     RedBull,
+    HaasStats,
   },
   computed: {
     redBullDate() {
