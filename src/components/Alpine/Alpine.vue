@@ -3,7 +3,7 @@
     <div id="2005" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
         <span
-          class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+          class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-8 hover:text-6xl"
           >END OF THE REIGN, START OF NEW ONE</span
         >
       </div>
@@ -36,7 +36,7 @@
     <div id="2006" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-right font-bold py-10">
         <span
-          class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+          class="pr-2 border-red-400 border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-8 hover:text-6xl"
           >FIERCE RIVALRY</span>
       </div>
       <div class="text-2xl text-justify">

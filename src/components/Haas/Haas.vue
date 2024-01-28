@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-rows-1 grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4">
         <div class="col-span-1 ml-4">
           <img
             src="Images/Haas/Haas2016.png"
@@ -46,10 +46,9 @@
           Magnussen scored Haas' first ever fastest lap. They ended season in
           fifth position. This was their best position to date.
         </p>
-        <!-- TODO -->
         <p id="2021" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold">BAD YEAR</span>
-          After poor 2020 both drivers Grosjean and Magnussen got replaced by
+          After the poor 2020 both drivers Grosjean and Magnussen got replaced by
           Nikita Mazepin and Mick Schumacher. To survive financially Haas
           decided to halt the progress on the 2021 car and focus on the 2022
           car. In their first race Nikita spun on the lap 1 and Mick finished
@@ -58,7 +57,6 @@
           standings. Nikita was dropped before 2022 season started. Mick stayed
           in Haas for 1 more year.
         </p>
-        <!-- TODO -->
         <p id="2022" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold">MAIDEN POLE</span>
           Nikita was replaced by Magnussen. Haas decision to focus on 2022 car
@@ -71,13 +69,12 @@
           in changing conditions. Haas finished P7 in the constructor's
           standings. Mick departed Haas after the season.
         </p>
-        <!-- TODO -->
         <p id="2024" class="road font-semibold">
           <span class="text-center text-2xl font-extrabold"
             >GUNTHER DEPARTURE</span
           >
-          After poor 2023 season Haas decided to replace Magnussen with Mick
-          Schumacher. They signed new sponsorship with MoneyGram. Haas 2023 was
+          After poor results in 2023 Haas decided to replace Mick with Magnussen. 
+          They signed new sponsorship with MoneyGram. Haas 2023 was
           good in qualifying. Hulkenberg often qualified high but due to high
           tyre wear they usually finished outside the points. Haas finished the
           season in P10 with 12 points. Hulkenberg P7 in the American GP was
