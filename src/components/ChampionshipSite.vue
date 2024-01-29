@@ -14,53 +14,7 @@
         id="stats"
         class="left mt-28 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute">
         <div v-if="buttonClickedRB" class="p-4 uppercase animated-border-box">
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race debut: <span class="font-bold">2005, Australia</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race starts: <span class="font-bold">369</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Poles: <span class="font-bold">95</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Podiums: <span class="font-bold">264</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Wins: <span class="font-bold">113</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Fastest laps: <span class="font-bold">95</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Points: <span class="font-bold">7248</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Constructor's Championship:
-              <span class="font-bold">6</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Driver's Championship: <span class="font-bold">7</span></span
-            >
-          </div>
+          <RedBullStats></RedBullStats>
         </div>
         <div v-else-if="buttonClickedFr"
           class="p-4 uppercase animated-border-boxfr"
@@ -1276,6 +1230,7 @@ import AlpineStats from "@/components/Alpine/AlpineStats.vue";
 import AlphaTauri from "@/components/AlphaTauri/AlphaTauri.vue";
 import AlphaTauriStats from "@/components/AlphaTauri/AlphaTauriStats.vue";
 import RedBull from "@/components/RedBull/RedBull.vue";
+import RedBullStats from "@/components/RedBull/RedBullStats.vue";
 
 import Footer from "@/components/Footer/Footer.vue";
 
@@ -1300,6 +1255,7 @@ export default {
     Alpine,
     AlpineStats,
     RedBull,
+    RedBullStats,
     AlphaTauri,
     AlphaTauriStats,
     Footer,
