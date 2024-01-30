@@ -1519,10 +1519,6 @@ export default {
   transform: translateY(0px);
 }
 
-
-
-
-
 .silver {
   mask-image: linear-gradient(
     -75deg,

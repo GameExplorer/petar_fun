@@ -4,16 +4,16 @@
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
         <span
           class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-8 hover:text-6xl"
-          >END OF THE REIGN, START OF NEW ONE</span
+          >END OF THE REIGN START OF NEW ONE</span
         >
       </div>
       <div class="text-2xl text-justify">
         <img
-          src="/Images/Alpine/Alonso2006.png"
+          src="/Images/Alpine/Alonso2005.png"
           alt="Alonso Canada"
-          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl hover:-rotate-[10deg] transition-all duration-500 hover:py-16"
+          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500"
         />
-        <div class="pt-8 pb-4">
+      <div class="pt-8 pb-4">
           Giancarlo Fisichella replaced Jarno Trulli for the 2005 season.
           Fisichella won first race of the season. Fernando Alonso won the
           following three races building the considerable lead in the Driver's
@@ -22,6 +22,7 @@
           but that was to be race in which Alonso secured his first title. He
           became the youngest Formula 1 champion at the age of 23 years and 301
           days.<br />
+          <p class="text-right text-xl text-gray-500 italic">Source: Wikipedia</p>
         </div>
         <div>
           At the following race in China, Renault secured the Constructor's
@@ -43,7 +44,7 @@
         <img
           src="/Images/Alpine/Alonso2006.png"
           alt="Alonso Canada"
-          class="xl:h-3/5 xl:w-5/12 mr-2 ml-12 float-right cursor-default rounded-2xl hover:-rotate-[10deg] transition-all duration-500 hover:py-16"
+          class="xl:h-3/5 xl:w-5/12 mr-2 ml-12 float-right cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500"
         />
         <div class="pt-8 pb-4">
           The 2006 season was highlighted by the rivalry between Alonso and Schumacher
