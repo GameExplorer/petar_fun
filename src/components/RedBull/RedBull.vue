@@ -204,3 +204,161 @@ export default {
     name: "RedBull",
 }
 </script>
+
+<style>
+.animated-border-box,
+.animated-border-box-glow {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 11px;
+}
+
+.animated-border-box-glow {
+  overflow: hidden;
+}
+
+.animated-border-box:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border color, change middle color*/
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #0a2aef,
+    rgba(0, 0, 0, 0) 25%
+  );
+  /* change speed here */
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-box:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #00192d;
+  /*box border radius*/
+  border-radius: 5px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+@keyframes shine {
+  from {
+    mask-position: 150%;
+  }
+  to {
+    mask-position: -50%;
+  }
+}
+
+.shiny {
+  color: #f5c21b;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f5c21b),
+    to(#d17000)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.inner-shiny::after,
+.inner-shiny::before {
+  animation: sparkle 3.5s infinite;
+  animation-timing-function: linear;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+  content: "";
+  display: block;
+  height: 15px;
+  opacity: 0.7;
+  position: absolute;
+  width: 15px;
+}
+
+.inner-shiny::before {
+  animation-delay: 0.2s;
+  height: 12px;
+  left: 0.12em;
+  top: 0.95em;
+  width: 0.25em;
+}
+
+.inner-shiny::after {
+  top: 0.52em;
+  right: -2px;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.gold-text {
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gold-text:after {
+  z-index: -1;
+  position: absolute;
+  text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f,
+    5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+</style>

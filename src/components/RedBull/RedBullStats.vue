@@ -49,4 +49,19 @@
 </template>
 
 <style>
+.rbimg {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
+    top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  filter: grayscale();
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.rbimg:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+  border: 2px solid blue;
+}
 </style>
