@@ -170,56 +170,8 @@
           </div>
         </div>
         <div v-else-if="buttonClickedAm"
-          class="p-4 uppercase animated-border-boxam"
-        >
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race debut:
-              <span class="font-semibold">1959, Netherlands</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race starts: <span class="font-semibold">71</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Poles: <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Podiums: <span class="font-semibold">9</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Wins: <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Fastest laps: <span class="font-semibold">1</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Points: <span class="font-semibold">412</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Constructor's Championship:
-              <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Driver's Championship: <span class="font-semibold">0</span></span
-            >
-          </div>
+          class="p-4 uppercase animated-border-boxam">
+          <AstonMartinStats></AstonMartinStats>
         </div>
         <div v-else-if="buttonClickedAl"
           class="p-4 uppercase animated-border-boxal">
@@ -277,64 +229,14 @@
             >
           </div>
         </div>
-        <!-- COMPLETED -->
         <div v-else-if="buttonClickedAt"
           class="p-4 uppercase animated-border-boxat">
           <AlphaTauriStats></AlphaTauriStats>
         </div>
         <div v-else-if="buttonClickedAr"
-          class="p-4 uppercase animated-border-boxar"
-        >
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race debut:
-              <span class="font-semibold">1950, United Kingdom</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race starts: <span class="font-semibold">214</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Poles: <span class="font-semibold">12</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Podiums: <span class="font-semibold">26</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Wins: <span class="font-semibold">10</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Fastest laps: <span class="font-semibold">16</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Points: <span class="font-semibold">199</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Constructor's Championship:
-              <span class="font-semibold">0</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Driver's Championship: <span class="font-semibold">2</span></span
-            >
-          </div>
+          class="p-4 uppercase animated-border-boxar">
+          <AlfaRomeoStats></AlfaRomeoStats>
         </div>
-        <!-- COMPLETED -->
         <div v-else-if="buttonClickedHa" class="p-4 uppercase animated-border-boxha text-black">
           <HaasStats></HaasStats>
         </div>
@@ -711,13 +613,13 @@
         <div v-if="buttonClickedAl" class="text-3xl animated-border-boxal p-4">
           <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-4xl cursor-pointer"
             @click="scrollToYear(2005)"
           >
             2005<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-4xl cursor-pointer"
             @click="scrollToYear(2006)"
           >
             2006<br />
@@ -773,69 +675,66 @@
             >1997<br
           /></span>
         </div>
-        <!-- non champion winning teams -->
-        <div
-          v-if="buttonClickedAm"
+        <div v-if="buttonClickedAm"
           class="text-2xl uppercase animated-border-boxam p-4"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">PODIUMS</div>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             Azerbaijan, 2021<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20231)"
           >
             Bahrain, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20232)"
           >
             Saudi Arabia, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20233)"
           >
             Australia, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20234)"
           >
             Miami, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20235)"
           >
             Monaco, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20236)"
           >
             Canada, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20237)"
           >
             Netherlands, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
-            @click="scrollToYear(2023)"
+            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            @click="scrollToYear(20238)"
           >
             Brazil, 2023<br />
           </span>
         </div>
-        <div
-          v-if="buttonClickedAt"
+        <div v-if="buttonClickedAt"
           class="text-2xl uppercase animated-border-boxat p-4"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
@@ -867,8 +766,7 @@
             2021, Podium in AZE<br />
           </span>
         </div>
-        <div
-          v-if="buttonClickedAr"
+        <div v-if="buttonClickedAr"
           class="text-2xl uppercase animated-border-boxar p-4"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
@@ -1018,7 +916,6 @@
     </div>
   </div>
   <div></div>
-  <!-- COMPLETED -->
    <div v-if="buttonClickedRB" class="redbull text-white grid">
      <RedBull></RedBull> 
    </div>
@@ -1203,13 +1100,17 @@
       <div id="1979"></div>
     </div>
   </div>
-
-  <!-- COMPLETED  Alpine needs to be edited-->
+  <div v-if="buttonClickedAm" class="astonmartin text-white">
+    <AstonMartin></AstonMartin>
+  </div>
   <div v-if="buttonClickedAl" class="alpine text-white grid">
     <Alpine></Alpine>
   </div>
   <div v-if="buttonClickedAt" class="alphatauri text-white grid">
     <AlphaTauri></AlphaTauri>
+  </div>
+  <div v-if="buttonClickedAr" class="alfaromeo text-white grid">
+    <AlfaRomeo></AlfaRomeo>
   </div>
   <div v-if="buttonClickedHa" class="haas text-black grid relative">
     <Haas></Haas>
@@ -1231,6 +1132,10 @@ import AlphaTauri from "@/components/AlphaTauri/AlphaTauri.vue";
 import AlphaTauriStats from "@/components/AlphaTauri/AlphaTauriStats.vue";
 import RedBull from "@/components/RedBull/RedBull.vue";
 import RedBullStats from "@/components/RedBull/RedBullStats.vue";
+import AlfaRomeoStats from "@/components/AlfaRomeo/AlfaRomeoStats.vue"
+import AlfaRomeo from "@/components/AlfaRomeo/AlfaRomeo.vue";
+import AstonMartinStats from "@/components/AstonMartin/AstonMartinStats.vue";
+import AstonMartin from "@/components/AstonMartin/AstonMartin.vue";
 
 import Footer from "@/components/Footer/Footer.vue";
 
@@ -1258,6 +1163,10 @@ export default {
     RedBullStats,
     AlphaTauri,
     AlphaTauriStats,
+    AlfaRomeo,
+    AlfaRomeoStats,
+    AstonMartin,
+    AstonMartinStats,
     Footer,
   },
   computed: {
@@ -1727,54 +1636,6 @@ export default {
   border-radius: 5px;
 }
 
-/* Aston Martin */
-.animated-border-boxam,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
-
-.animated-border-boxam:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #00352f,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxam:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #006f62;
-  /*box border radius*/
-  border-radius: 5px;
-}
-
 
 /* Williams */
 .animated-border-boxwi,
@@ -1824,54 +1685,4 @@ export default {
   border-radius: 5px;
 }
 
-
-
-/* ALfa Romeo */
-
-.animated-border-boxar,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
-
-.animated-border-boxar:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #004e37,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxar:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #900000;
-  /*box border radius*/
-  border-radius: 5px;
-}
 </style>
