@@ -180,54 +180,7 @@
         <div v-else-if="buttonClickedWi"
           class="p-4 uppercase animated-border-boxwi"
         >
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race debut:
-              <span class="font-semibold">1975, Argentina</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Race starts: <span class="font-semibold">827</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Poles: <span class="font-semibold">128</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Podiums: <span class="font-semibold">313</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Wins: <span class="font-semibold">114</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Fastest laps: <span class="font-semibold">133</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Points: <span class="font-semibold">3620</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Constructor's Championship:
-              <span class="font-semibold">9</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-red-400 pr-2"
-              >Driver's Championship: <span class="font-semibold">7</span></span
-            >
-          </div>
+          <WilliamsStats></WilliamsStats>
         </div>
         <div v-else-if="buttonClickedAt"
           class="p-4 uppercase animated-border-boxat">
@@ -1106,6 +1059,9 @@
   <div v-if="buttonClickedAl" class="alpine text-white grid">
     <Alpine></Alpine>
   </div>
+  <div v-if="buttonClickedWi" class="williams text-white grid">
+    <Williams></Williams>
+  </div>
   <div v-if="buttonClickedAt" class="alphatauri text-white grid">
     <AlphaTauri></AlphaTauri>
   </div>
@@ -1136,6 +1092,8 @@ import AlfaRomeoStats from "@/components/AlfaRomeo/AlfaRomeoStats.vue"
 import AlfaRomeo from "@/components/AlfaRomeo/AlfaRomeo.vue";
 import AstonMartinStats from "@/components/AstonMartin/AstonMartinStats.vue";
 import AstonMartin from "@/components/AstonMartin/AstonMartin.vue";
+import WilliamsStats from "@/components/Williams/WilliamsStats.vue";
+import Williams from "@/components/Williams/Williams.vue"
 
 import Footer from "@/components/Footer/Footer.vue";
 
@@ -1167,6 +1125,8 @@ export default {
     AlfaRomeoStats,
     AstonMartin,
     AstonMartinStats,
+    WilliamsStats,
+    Williams,
     Footer,
   },
   computed: {
