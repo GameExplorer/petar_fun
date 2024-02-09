@@ -1053,6 +1053,9 @@
       <div id="1979"></div>
     </div>
   </div>
+  <div v-if="buttonClickedMc" class="mclaren text-white grid">
+    <Mclaren></Mclaren>
+  </div>
   <div v-if="buttonClickedAm" class="astonmartin text-white">
     <AstonMartin></AstonMartin>
   </div>
@@ -1094,6 +1097,7 @@ import AstonMartinStats from "@/components/AstonMartin/AstonMartinStats.vue";
 import AstonMartin from "@/components/AstonMartin/AstonMartin.vue";
 import WilliamsStats from "@/components/Williams/WilliamsStats.vue";
 import Williams from "@/components/Williams/Williams.vue"
+import Mclaren from "@/components/Mclaren/Mclaren.vue";
 
 import Footer from "@/components/Footer/Footer.vue";
 
@@ -1127,6 +1131,7 @@ export default {
     AstonMartinStats,
     WilliamsStats,
     Williams,
+    Mclaren,
     Footer,
   },
   computed: {
@@ -1548,52 +1553,6 @@ export default {
   border-radius: 5px;
 }
 
-/* Mclaren style*/
-.animated-border-boxmc,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
 
-.animated-border-boxmc:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #000000,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxmc:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #ff8700;
-  /*box border radius*/
-  border-radius: 5px;
-}
 
 </style>
