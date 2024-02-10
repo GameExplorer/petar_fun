@@ -301,7 +301,7 @@ export default {
 </script>
 
 <style>
-* Williams */ .animated-border-boxwi,
+.animated-border-boxwi,
 .animated-border-box-glow {
   position: absolute;
   overflow: hidden;
