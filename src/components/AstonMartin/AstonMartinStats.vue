@@ -31,7 +31,7 @@
               >Fastest laps: <span class="font-semibold">1</span></span
             >
           </div>
-          <div class="p-2">
+          <div class="p-2 text-2xl">
             <span class="hover:bg-white hover:text-[#006f62] hover:rounded-lg px-2"
               >Points: <span class="font-semibold">412</span></span
             >

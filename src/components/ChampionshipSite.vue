@@ -7,12 +7,14 @@
   </div>
   <div
     class="bg-[#00192D] text-white outline-8 grid grid-cols-3 gap-8"
-    :class="currentTeamClass">
+    :class="currentTeamClass"
+  >
     <!-- Stats -->
     <div class="col-span-1 cursor-default">
       <div
         id="stats"
-        class="left mt-28 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute">
+        class="left mt-28 mx-8 px-6 pl-4 pt-2 pb-4 pr-8 text-xl float-left position-absolute"
+      >
         <div v-if="buttonClickedRB" class="p-4 uppercase animated-border-box">
           <RedBullStats></RedBullStats>
         </div>
@@ -119,16 +121,17 @@
           </div>
         </div>
         <div v-else-if="buttonClickedMc"
-          class="p-4 uppercase animated-border-boxmc text-black"
-        >
+          class="p-4 uppercase animated-border-boxmc text-black">
           <MclarenStats></MclarenStats>
         </div>
         <div v-else-if="buttonClickedAm"
-          class="p-4 uppercase animated-border-boxam">
+          class="p-4 uppercase animated-border-boxam"
+        >
           <AstonMartinStats></AstonMartinStats>
         </div>
         <div v-else-if="buttonClickedAl"
-          class="p-4 uppercase animated-border-boxal">
+          class="p-4 uppercase animated-border-boxal"
+        >
           <AlpineStats></AlpineStats>
         </div>
         <div v-else-if="buttonClickedWi"
@@ -137,14 +140,18 @@
           <WilliamsStats></WilliamsStats>
         </div>
         <div v-else-if="buttonClickedAt"
-          class="p-4 uppercase animated-border-boxat">
+          class="p-4 uppercase animated-border-boxat"
+        >
           <AlphaTauriStats></AlphaTauriStats>
         </div>
         <div v-else-if="buttonClickedAr"
-          class="p-4 uppercase animated-border-boxar">
+          class="p-4 uppercase animated-border-boxar"
+        >
           <AlfaRomeoStats></AlfaRomeoStats>
         </div>
-        <div v-else-if="buttonClickedHa" class="p-4 uppercase animated-border-boxha text-black">
+        <div v-else-if="buttonClickedHa"
+          class="p-4 uppercase animated-border-boxha text-black"
+        >
           <HaasStats></HaasStats>
         </div>
       </div>
@@ -276,13 +283,16 @@
               Zhou Guanyu</span
             >
           </div>
-          <div class="pt-2 pb-32 uppercase font-bold text-black" v-else-if="buttonClickedHa">
+          <div
+            class="pt-2 pb-32 uppercase font-bold text-black"
+            v-else-if="buttonClickedHa"
+          >
             Haas<br />
             has never won<br />
             Constructor's Championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10 text-4xl">CURRENT DRIVERS:</div>
-            <div class="text-5xl pb-4 ">Kevin Magnussen</div>
+            <div class="text-5xl pb-4">Kevin Magnussen</div>
             <div class="text-5xl">Nico Hulkenberg</div>
           </div>
         </div>
@@ -295,42 +305,38 @@
         class="mx-8 mt-28 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center grid position-absolute"
       >
         <div v-if="buttonClickedRB" class="text-3xl animated-border-box p-4">
-          <div class="mt-2 text-3xl pb-4first-letter: font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-3xl pb-4first-letter: font-bold">
+            WINNING YEARS
+          </div>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-             hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2010)"
           >
             2010<br />
           </span>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-            hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2011)"
           >
             2011<br />
           </span>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-            hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2012)"
             >2012<br
           /></span>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-            hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2013)"
             >2013<br
           /></span>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-            hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2022)"
             >2022<br
           /></span>
           <span
-            class="px-2 hover:text-4xl cursor-pointer
-            hover:rounded-lg hover:bg-[#f5c21b]"
+            class="px-2 hover:text-4xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2023)"
             >2023<br
           /></span>
@@ -469,50 +475,48 @@
             >2021<br
           /></span>
         </div>
-        <div
-          v-if="buttonClickedMc"
-          class="text-3xl animated-border-boxmc p-4 text-black"
-        >
+        <div v-if="buttonClickedMc"
+          class="text-3xl animated-border-boxmc p-4 text-black">
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1974)"
           >
             1974<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1984)"
           >
             1984<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1985)"
             >1985<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1988)"
             >1988<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1989)"
             >1989<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1990)"
             >1990<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1991)"
             >1991<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1998)"
             >1998<br
           /></span>
@@ -642,32 +646,32 @@
           </span>
         </div>
         <div v-if="buttonClickedAt"
-          class="text-2xl uppercase animated-border-boxat p-4"
+          class="text-2xl uppercase animated-border-boxat p-2"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
           </div>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
             @click="scrollToYear(2008)"
           >
             2008, First Victory<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
             @click="scrollToYear(2019)"
           >
             2019, Double podiums<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
             @click="scrollToYear(2020)"
           >
             2020, Monza win<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             2021, Podium in AZE<br />
@@ -681,73 +685,77 @@
             ACHIEVEMENTS
           </div>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1950)"
           >
             1950, First Win in F1<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1951)"
           >
             1951, Last Win in F1<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1981)"
           >
             1981, 100th Start<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1984)"
           >
             1984, Last Podium in F1<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2019)"
           >
             2019, Return to F1<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white cursor-pointer"
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2022)"
           >
             2022, 400th Start<br />
           </span>
+          <span class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            @click="scrollToYear(2024)">
+            2024, Kick Sauber</span>
         </div>
-        <div v-if="buttonClickedHa" class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black">
+        <div v-if="buttonClickedHa"
+          class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black">
           <div class="mt-2 text-3xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
           </div>
           <span
-            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:shadow-red-400 hover:shadow-md cursor-pointer"
+            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-3xl cursor-pointer"
             @click="scrollToYear(2016)"
           >
             2016, FIRST RACE<br />
           </span>
           <span
-            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:shadow-red-400 hover:shadow-md cursor-pointer"
+            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-3xl cursor-pointer"
             @click="scrollToYear(2018)"
           >
             2018, P5 IN WCC<br />
           </span>
           <span
-            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:shadow-red-400 hover:shadow-md cursor-pointer"
+            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-3xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             2021, BAD YEAR<br
           /></span>
           <span
-            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:shadow-red-400 hover:shadow-md cursor-pointer"
+            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-3xl cursor-pointer"
             @click="scrollToYear(2022)"
           >
             2022, MAIDEN POLE<br />
           </span>
           <span
-            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:shadow-red-400 hover:shadow-md cursor-pointer"
+            class="px-2 hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-3xl cursor-pointer"
             @click="scrollToYear(2024)"
           >
             2023, GUNTHER DEPARTURE<br />
@@ -756,7 +764,8 @@
       </div>
     </div>
     <!-- buttons -->
-    <div class="grid object-none object-bottom place-items-center pb-32 pt-24 col-span-4 position-absolute"
+    <div
+      class="grid object-none object-bottom place-items-center pb-32 pt-24 col-span-4 position-absolute"
     >
       <ul class="inline mx-2">
         <button
@@ -805,13 +814,13 @@
           class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAlphaTauri"
         >
-          Alpha Tauri
+          Visa RB
         </button>
         <button
           class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAlfaRomeo"
         >
-          Alfa Romeo
+          Sauber
         </button>
         <button
           class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
@@ -823,10 +832,10 @@
     </div>
   </div>
   <div></div>
-   <div v-if="buttonClickedRB" class="redbull text-white grid">
-     <RedBull></RedBull> 
-   </div>
-   <!-- TODO -->
+  <div v-if="buttonClickedRB" class="redbull text-white grid">
+    <RedBull></RedBull>
+  </div>
+  <!-- TODO -->
   <div>
     <div v-if="buttonClickedFr" class="ferrari text-white grid">
       <!-- Update card shadow effect-->
@@ -1028,7 +1037,6 @@
   <div v-if="buttonClickedHa" class="haas text-black grid relative">
     <Haas></Haas>
   </div>
- 
 
   <!-- Footer -->
   <div class="flex items-center justify-center min-h-screen bg-gray-100">
@@ -1045,12 +1053,12 @@ import AlphaTauri from "@/components/AlphaTauri/AlphaTauri.vue";
 import AlphaTauriStats from "@/components/AlphaTauri/AlphaTauriStats.vue";
 import RedBull from "@/components/RedBull/RedBull.vue";
 import RedBullStats from "@/components/RedBull/RedBullStats.vue";
-import AlfaRomeoStats from "@/components/AlfaRomeo/AlfaRomeoStats.vue"
+import AlfaRomeoStats from "@/components/AlfaRomeo/AlfaRomeoStats.vue";
 import AlfaRomeo from "@/components/AlfaRomeo/AlfaRomeo.vue";
 import AstonMartinStats from "@/components/AstonMartin/AstonMartinStats.vue";
 import AstonMartin from "@/components/AstonMartin/AstonMartin.vue";
 import WilliamsStats from "@/components/Williams/WilliamsStats.vue";
-import Williams from "@/components/Williams/Williams.vue"
+import Williams from "@/components/Williams/Williams.vue";
 import Mclaren from "@/components/Mclaren/Mclaren.vue";
 import MclarenStats from "@/components/Mclaren/MclarenStats.vue";
 
@@ -1360,7 +1368,6 @@ export default {
   animation: shine 2s linear infinite;
 }
 
-
 .titleStroke {
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
@@ -1398,7 +1405,7 @@ export default {
 }
 
 .alphatauri {
-  background-color: #00293f;
+  background-color: #1534cc;
 }
 
 .alfaromeo {
@@ -1508,7 +1515,4 @@ export default {
   /*box border radius*/
   border-radius: 5px;
 }
-
-
-
 </style>

@@ -202,7 +202,7 @@ export default {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #00293f;
+  background: #1534cc;
   /*box border radius*/
   border-radius: 5px;
 }
