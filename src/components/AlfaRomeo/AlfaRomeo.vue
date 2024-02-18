@@ -1,17 +1,17 @@
 <template>
   <div class="grid ">
-    <div id="1950" class="p-12 mb-6">
+    <div id="1993" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
         <span
-          class="pr-8 border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-8 hover:text-6xl"
-          >FIRST WIN</span
+          class="pr-8 border-dashed border-white border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-8 hover:text-6xl"
+          >FIRST RACE</span
         >
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/AlfaRomeo/Farina1950.png"
           alt="Farina winning first driver's title"
-          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500 alfaImages"
+          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pt-8 pb-4">
           The Alfa Romeo team dominated the British Grand Prix at the fast Silverstone circuit in England, locking 
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div id="1951" class="p-12 mb-6">
+    <div id="1995" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-right font-bold py-10">
         <span
           class="pr-2 border-white border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-8 hover:text-6xl"
@@ -98,7 +98,7 @@
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   /*bg color*/
-  background: #900000;
+  background: #00b901;
   /*box border radius*/
   border-radius: 5px;
 }

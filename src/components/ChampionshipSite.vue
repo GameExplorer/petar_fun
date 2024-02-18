@@ -18,7 +18,8 @@
         <div v-if="buttonClickedRB" class="p-4 uppercase animated-border-box">
           <RedBullStats></RedBullStats>
         </div>
-        <div v-else-if="buttonClickedFr"
+        <div
+          v-else-if="buttonClickedFr"
           class="p-4 uppercase animated-border-boxfr"
         >
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
@@ -69,7 +70,8 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedMe"
+        <div
+          v-else-if="buttonClickedMe"
           class="p-4 uppercase animated-border-boxme text-black"
         >
           <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
@@ -120,36 +122,44 @@
             >
           </div>
         </div>
-        <div v-else-if="buttonClickedMc"
-          class="p-4 uppercase animated-border-boxmc text-black">
+        <div
+          v-else-if="buttonClickedMc"
+          class="p-4 uppercase animated-border-boxmc text-black"
+        >
           <MclarenStats></MclarenStats>
         </div>
-        <div v-else-if="buttonClickedAm"
+        <div
+          v-else-if="buttonClickedAm"
           class="p-4 uppercase animated-border-boxam"
         >
           <AstonMartinStats></AstonMartinStats>
         </div>
-        <div v-else-if="buttonClickedAl"
+        <div
+          v-else-if="buttonClickedAl"
           class="p-4 uppercase animated-border-boxal"
         >
           <AlpineStats></AlpineStats>
         </div>
-        <div v-else-if="buttonClickedWi"
+        <div
+          v-else-if="buttonClickedWi"
           class="p-4 uppercase animated-border-boxwi"
         >
           <WilliamsStats></WilliamsStats>
         </div>
-        <div v-else-if="buttonClickedAt"
+        <div
+          v-else-if="buttonClickedAt"
           class="p-4 uppercase animated-border-boxat"
         >
           <AlphaTauriStats></AlphaTauriStats>
         </div>
-        <div v-else-if="buttonClickedAr"
+        <div
+          v-else-if="buttonClickedAr"
           class="p-4 uppercase animated-border-boxar"
         >
           <AlfaRomeoStats></AlfaRomeoStats>
         </div>
-        <div v-else-if="buttonClickedHa"
+        <div
+          v-else-if="buttonClickedHa"
           class="p-4 uppercase animated-border-boxha text-black"
         >
           <HaasStats></HaasStats>
@@ -427,8 +437,7 @@
             >2008<br
           /></span>
         </div>
-        <div
-          v-if="buttonClickedMe"
+        <div v-if="buttonClickedMe"
           class="text-3xl animated-border-boxme p-4 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
@@ -476,7 +485,8 @@
           /></span>
         </div>
         <div v-if="buttonClickedMc"
-          class="text-3xl animated-border-boxmc p-4 text-black">
+          class="text-3xl animated-border-boxmc p-4 text-black"
+        >
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
@@ -686,46 +696,50 @@
           </div>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(1950)"
+            @click="scrollToYear(1993)"
           >
-            1950, First Win in F1<br />
+            1993, First Race<br />
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(1951)"
+            @click="scrollToYear(1995)"
           >
-            1951, Last Win in F1<br />
+            1995, First Podium<br />
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(1981)"
+            @click="scrollToYear(2001)"
           >
-            1981, 100th Start<br />
+            2001, Best finish<br />
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(1984)"
+            @click="scrollToYear(2007)"
           >
-            1984, Last Podium in F1<br />
+            2008, FIRST WIN<br />
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(2019)"
+            @click="scrollToYear(2012)"
           >
-            2019, Return to F1<br />
+            2012, Last podium<br />
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(2022)"
+            @click="scrollToYear(2014)"
           >
-            2022, 400th Start<br />
+            2014, Worst season<br />
           </span>
-          <span class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(2024)">
-            2024, Kick Sauber</span>
+          <span
+            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            @click="scrollToYear(2024)"
+          >
+            2024, Kick Sauber</span
+          >
         </div>
         <div v-if="buttonClickedHa"
-          class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black">
+          class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black"
+        >
           <div class="mt-2 text-3xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
@@ -769,61 +783,61 @@
     >
       <ul class="inline mx-2">
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleRedBull"
         >
           RedBull
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleFerrari"
         >
           Ferrari
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleMercedes"
         >
           Mercedes
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleMclaren"
         >
           Mclaren
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAstonMartin"
         >
           Aston Martin
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAlpine"
         >
           Alpine
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleWilliams"
         >
           Williams
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAlphaTauri"
         >
           Visa RB
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleAlfaRomeo"
         >
           Sauber
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-2xl rounded-lg border-black border-2 btn-shadow"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow"
           @click="toggleHaas"
         >
           Haas
@@ -1409,7 +1423,7 @@ export default {
 }
 
 .alfaromeo {
-  background-color: #900000;
+  background-color: #00b901;
 }
 
 .haas {
