@@ -3,21 +3,21 @@
         <div class="col-span-1 ml-4">
           <img
             src="Images/Haas/Haas2016.png"
-            alt="Haas"
+            alt="Haas 2016"
             class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"
           />
         </div>
         <div class="col-span-1">
           <img
             src="Images/Haas/haas2022.png"
-            alt="Haas"
+            alt="Haas 2022"
             class="w-full rounded-xl border-white border-2"
           />
         </div>
         <div class="col-span-1 mr-4">
           <img
             src="Images/Haas/Haas2023.png"
-            alt="Haas"
+            alt="Haas 2023"
             class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"
           />
         </div>
