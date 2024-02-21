@@ -189,7 +189,7 @@
             Ferrari's previous<br />
             championship: <br />
             <div class="text-9xl text-white font-bold pt-8 pb-2">
-              <span class="">{{ ferrariDate }}</span>
+              <span class="silver">{{ ferrariDate }}</span>
             </div>
             <div class="pt-4 pb-10">08-11-2023 - Brazilian GP</div>
             <span class="text-2xl">LAST CHAMPION:<br /></span>
@@ -280,15 +280,14 @@
             >
           </div>
           <div
-            class="pt-2 pb-32 uppercase font-bold"
-            v-else-if="buttonClickedAr"
-          >
+            class="pt-2 pb-32 uppercase font-extrabold text-4xl rise"
+            v-else-if="buttonClickedAr">
             Alfa Romeo<br />
             has never won<br />
-            Constructor's Championship: <br />
+            Constructor's Championship<br />
             <div class="text-9xl text-white font-bold pt-8 pb-2"></div>
             <div class="pt-4 pb-10">CURRENT DRIVERS:</div>
-            <span class="text-3xl"
+            <span class="text-6xl"
               >Valtteri Bottas<br />
               Zhou Guanyu</span
             >
@@ -437,7 +436,8 @@
             >2008<br
           /></span>
         </div>
-        <div v-if="buttonClickedMe"
+        <div
+          v-if="buttonClickedMe"
           class="text-3xl animated-border-boxme p-4 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
@@ -484,7 +484,8 @@
             >2021<br
           /></span>
         </div>
-        <div v-if="buttonClickedMc"
+        <div
+          v-if="buttonClickedMc"
           class="text-3xl animated-border-boxmc p-4 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
@@ -596,7 +597,8 @@
             >1997<br
           /></span>
         </div>
-        <div v-if="buttonClickedAm"
+        <div
+          v-if="buttonClickedAm"
           class="text-2xl uppercase animated-border-boxam p-4"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">PODIUMS</div>
@@ -655,7 +657,8 @@
             Brazil, 2023<br />
           </span>
         </div>
-        <div v-if="buttonClickedAt"
+        <div
+          v-if="buttonClickedAt"
           class="text-2xl uppercase animated-border-boxat p-2"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
@@ -687,7 +690,8 @@
             2021, Podium in AZE<br />
           </span>
         </div>
-        <div v-if="buttonClickedAr"
+        <div
+          v-if="buttonClickedAr"
           class="text-2xl uppercase animated-border-boxar p-4"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
@@ -714,7 +718,7 @@
           </span>
           <span
             class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-            @click="scrollToYear(2007)"
+            @click="scrollToYear(2008)"
           >
             2008, FIRST WIN<br />
           </span>
@@ -737,7 +741,8 @@
             2024, Kick Sauber</span
           >
         </div>
-        <div v-if="buttonClickedHa"
+        <div
+          v-if="buttonClickedHa"
           class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">
