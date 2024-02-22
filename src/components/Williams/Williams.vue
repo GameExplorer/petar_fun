@@ -14,7 +14,7 @@
           alt="Alan Jones"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <p class="">
           The Williams was formed in 1977 and just after 3 years they won their
           first Constructor's title with Alan Jones. Jones won the opening race
@@ -24,7 +24,7 @@
           the constructor's championship Williams almost had double the points
           from the 2nd placed Ligier.
         </p>
-        <p class="pt-4">
+        <p class="pt-6">
           Originally 1980 was to be a 18 race championship season but Mexico,
           Sweden and Ceasars Palace were cancelled which cut the number to 15
           and when Spain lost championship status the number of championship
@@ -35,18 +35,18 @@
     <div id="1981">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Make it double</span
         >
       </div>
-      <div class="float-right pl-12 mr-4 pb-12">
+      <div class="float-right pl-12 mr-8 pb-12">
         <img
           src="/Images/Williams/williams1981.png"
           class="Williams-img"
           alt="Williams FW07C 1981"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <p class="">
           Williams won four races in 1981, Jones won the first race US GP and
           the last race of the season at Caesars Palace. Reutemann won the
@@ -65,7 +65,7 @@
     <div id="1986">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >The Gang of Four</span
         >
       </div>
@@ -76,7 +76,7 @@
           alt="The Gang of Four"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-12 pt-2 text-4xl text-justify">
         <div class="pt-2">
           The 1986 season was dominated by the four drivers from the "Gang of
           Four" teams – Alain Prost, Nigel Mansell, Nelson Piquet and Ayrton
@@ -88,8 +88,7 @@
           race was Mexico GP which was won by Gerhard Berger. At the last race
           in Australia, three of the four drivers had a shot at a championship.
           Senna retired from the race and Mansell suffered the puncture. Prost
-          won the race and the championship; Piquet finished second and Stefan
-          Johansson finished third. The constructor's championship was won by
+          won the race and the championship. The constructor's championship was won by
           the Williams-Honda team. This was the first time a Japanese engine won
           a constructor's championship.
         </div>
@@ -102,18 +101,18 @@
     <div id="1987">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Williams-Honda</span
         >
       </div>
-      <div class="float-right pl-12 mr-4 pb-12">
+      <div class="float-right pl-12 mr-6 pb-12">
         <img
           src="/Images/Williams/williams1987.png"
           class="Williams-img"
           alt="Williams-Honda"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-4 text-4xl text-justify">
         <p class="">
           The 1987 season brought Williams-Honda their second constructor's and
           the first and only driver's title for Nelson Piquet. Nelson won three
@@ -131,7 +130,7 @@
     <div id="1992">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Mansell domination</span
         >
       </div>
@@ -142,7 +141,7 @@
           alt="Nigel Mansell, 1992"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <div class="pt-2">
           Mansell dominated the opening race in South Africa winning with the
           margin of over 24 seconds. Mansell continued his domination winning
@@ -162,18 +161,18 @@
     <div id="1993">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >ACTIVE SUSPENSION</span
         >
       </div>
-      <div class="float-right pl-12 mr-4 pb-12">
+      <div class="float-right pl-12 mr-6 pb-12">
         <img
           src="/Images/Williams/williams1992.png"
           class="Williams-img"
           alt="Williams 1993"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <p class="">
           The Williams FW15C was an extremely dominant car, with active
           suspension and traction control systems beyond anything available to
@@ -197,7 +196,7 @@
     <div id="1994">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Senna & HILL</span
         >
       </div>
@@ -208,7 +207,7 @@
           alt="Senna 1994"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <div class="pt-2">
           Williams signed with Rothmans as their title sponsor. The team
           retained Hill and signed Senna. Prost retired completely from the
@@ -233,18 +232,18 @@
     <div id="1996">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Williams Domination</span
         >
       </div>
-      <div class="float-right pl-12 mr-4 pb-12">
+      <div class="float-right pl-12 mr-6 pb-12">
         <img
           src="/Images/Williams/williams1996.png"
           class="Williams-img"
           alt="Damon Hill in Williams 1996"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <p class="">
           Hill won four out of five races in the opening season. Williams won then three races in the row. 
           They won in Canada, France, Hungary and Germany. Villeneuve mounted a title challenge going into the 
@@ -260,10 +259,10 @@
         </p>
       </div>
     </div>
-    <div id="1997">
+    <div id="1997" class="pb-12">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >The Last title</span
         >
       </div>
@@ -274,7 +273,7 @@
           alt="Jacques Villeneuve in Williams 1997"
         />
       </div>
-      <div class="pl-12 pr-8 pt-2 text-3xl text-justify">
+      <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <div class="pt-2">
             The 1997 season was the last season of Williams-Renault and the last Williams' car designed by Adrian Newey.
             Jacques Villeneuve won seven races that season with his teammate winning only one. At the British GP 

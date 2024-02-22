@@ -1,6 +1,6 @@
 <template>
   <div
-    class="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center pt-10 text-white uppercase titleStroke"
+    class="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center pt-10 text-white uppercase "
     :class="currentTeamClass"
   >
     How many days has passed since teams' last F1 Championship
@@ -1200,7 +1200,7 @@ export default {
 <style>
 @font-face {
   font-family: "MRKMaston";
-  src: url("@/assets/Fonts/MRKMaston-Bold.woff") format("truetype");
+  src: url("@/assets/Fonts/MRKMaston-Regular.woff") format("truetype");
 }
 
 body {
