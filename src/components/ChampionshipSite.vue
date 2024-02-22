@@ -697,43 +697,43 @@
             ACHIEVEMENTS
           </div>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(1993)"
           >
             1993, First Race<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(1995)"
           >
             1995, First Podium<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2001)"
           >
             2001, Best finish<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2008)"
           >
             2008, FIRST WIN<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2012)"
           >
             2012, Last podium<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2014)"
           >
             2014, Worst season<br />
           </span>
           <span
-            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
             @click="scrollToYear(2024)"
           >
             2024, Kick Sauber</span
