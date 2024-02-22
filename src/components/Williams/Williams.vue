@@ -3,7 +3,7 @@
     <div id="1980">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
         <span
-          class="hover:border-b-2 border:white hover:border-dashed uppercase"
+          class="pr-8 border-b-4 border:white border-dashed uppercase"
           >First title</span
         >
       </div>
