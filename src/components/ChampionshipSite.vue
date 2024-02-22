@@ -1,4 +1,5 @@
 <template>
+  <!-- How many days since last championship title-->
   <div
     class="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center pt-10 text-white uppercase "
     :class="currentTeamClass"
@@ -657,34 +658,33 @@
             Brazil, 2023<br />
           </span>
         </div>
-        <div
-          v-if="buttonClickedAt"
+        <div v-if="buttonClickedAt"
           class="text-2xl uppercase animated-border-boxat p-2"
         >
-          <div class="mt-2 text-3xl pb-4 font-bold">
+          <div class="mt-2 text-4xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
           </div>
           <span
-            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
+            class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
             @click="scrollToYear(2008)"
           >
             2008, First Victory<br />
           </span>
           <span
-            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
+            class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
             @click="scrollToYear(2019)"
           >
             2019, Double podiums<br />
           </span>
           <span
-            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
+            class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
             @click="scrollToYear(2020)"
           >
             2020, Monza win<br />
           </span>
           <span
-            class="px-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 hover:text-3xl cursor-pointer"
+            class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             2021, Podium in AZE<br />
