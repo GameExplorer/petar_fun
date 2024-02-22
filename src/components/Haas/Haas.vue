@@ -4,7 +4,7 @@
       <img
         src="/Images/Haas/Haas2016.png"
         alt="Haas 2016"
-        class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"
+        class="w-full rounded-xl border-white border-2 shadow-black shadow-lg hover:scale-105"
       />
     </div>
     <div class="col-span-1">
@@ -18,13 +18,13 @@
       <img
         src="/Images/Haas/Haas2023.png"
         alt="Haas 2023"
-        class="w-full rounded-xl border-white border-2 shadow-black shadow-lg"
+        class="w-full rounded-xl border-white border-2 shadow-black shadow-lg hover:scale-105"
       />
     </div>
   </div>
   <div class="timeline text-xl text-justify">
     <p id="2016" class="road font-semibold">
-      <span class="text-center text-2xl font-extrabold">FIRST RACE</span>
+      <span class="text-center text-3xl font-extrabold">FIRST RACE</span>
       In the team's debut at the opening race at Australia Grojean finished P6.
       Haas became the first American constructor to win points in its first F1
       race and first constructor since Toyota Racing in 2002 to record points in
@@ -34,7 +34,7 @@
       <br />
     </p>
     <p id="2018" class="road font-semibold">
-      <span class="text-center text-2xl font-extrabold"
+      <span class="text-center text-3xl font-extrabold"
         >BEST RESULT IN WCC</span
       >
       The 2018 season started with controversy for Haas due to their car looking
@@ -46,7 +46,7 @@
       their best position to date.
     </p>
     <p id="2021" class="road font-semibold">
-      <span class="text-center text-2xl font-extrabold">BAD YEAR</span>
+      <span class="text-center text-3xl font-extrabold">BAD YEAR</span>
       After the poor 2020 both drivers Grosjean and Magnussen got replaced by
       Nikita Mazepin and Mick Schumacher. To survive financially Haas decided to
       halt the progress on the 2021 car and focus on the 2022 car. In their
@@ -56,7 +56,7 @@
       dropped before 2022 season started. Mick stayed in Haas for 1 more year.
     </p>
     <p id="2022" class="road font-semibold">
-      <span class="text-center text-2xl font-extrabold">MAIDEN POLE</span>
+      <span class="text-center text-3xl font-extrabold">MAIDEN POLE</span>
       Nikita was replaced by Magnussen. Haas decision to focus on 2022 car paid
       off in the first two races Magnussen scored teams first points since 2020.
       After that both drivers struggle to score points until British GP where
@@ -68,7 +68,7 @@
       season.
     </p>
     <p id="2024" class="road font-semibold">
-      <span class="text-center text-2xl font-extrabold">GUNTHER DEPARTURE</span>
+      <span class="text-center text-3xl font-extrabold">GUNTHER DEPARTURE</span>
       After poor results in 2023 Haas decided to replace Mick with Magnussen.
       They signed new sponsorship with MoneyGram. Haas 2023 was good in
       qualifying. Hulkenberg often qualified high but due to high tyre wear they
