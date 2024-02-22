@@ -485,50 +485,49 @@
             >2021<br
           /></span>
         </div>
-        <div
-          v-if="buttonClickedMc"
+        <div v-if="buttonClickedMc"
           class="text-3xl animated-border-boxmc p-4 text-black"
         >
-          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1974)"
           >
             1974<br />
           </span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1984)"
           >
             1984<br />
           </span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1985)"
             >1985<br
           /></span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1988)"
             >1988<br
           /></span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1989)"
             >1989<br
           /></span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1990)"
             >1990<br
           /></span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1991)"
             >1991<br
           /></span>
           <span
-            class="px-2 hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-4xl cursor-pointer"
+            class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1998)"
             >1998<br
           /></span>
