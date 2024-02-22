@@ -533,23 +533,23 @@
             >1998<br
           /></span>
         </div>
-        <div v-if="buttonClickedAl" class="text-3xl animated-border-boxal p-4">
+        <div v-if="buttonClickedAl" class="text-4xl animated-border-boxal p-4">
           <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
           <span
-            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-5xl cursor-pointer"
             @click="scrollToYear(2005)"
           >
             2005<br />
           </span>
           <span
-            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-4xl cursor-pointer"
+            class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-5xl cursor-pointer"
             @click="scrollToYear(2006)"
           >
             2006<br />
           </span>
         </div>
         <div v-if="buttonClickedWi" class="text-3xl animated-border-boxwi p-4">
-          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
           <span
             class="hover:bg-red-600 hover:rounded-lg px-2 hover:text-4xl cursor-pointer"
             @click="scrollToYear(1980)"
@@ -598,8 +598,7 @@
             >1997<br
           /></span>
         </div>
-        <div
-          v-if="buttonClickedAm"
+        <div v-if="buttonClickedAm"
           class="text-2xl uppercase animated-border-boxam p-4"
         >
           <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>

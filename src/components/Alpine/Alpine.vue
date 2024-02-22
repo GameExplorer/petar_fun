@@ -3,17 +3,17 @@
     <div id="2005" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
         <span
-          class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-8 hover:text-6xl"
-          >END OF THE REIGN START OF NEW ONE</span
+          class="border-red-400 border-b-8 pr-28 text-6xl"
+          >END OF THE REIGN, START OF NEW ONE</span
         >
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Alpine/Alonso2005.png"
           alt="Alonso Canada"
-          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500"
+          class="xl:h-3/5 xl:w-5/12 ml-2 mr-12 float-left cursor-default rounded-2xl"
         />
-      <div class="pt-8 pb-4">
+      <div class="pt-8 pb-4 text-3xl">
           Giancarlo Fisichella replaced Jarno Trulli for the 2005 season.
           Fisichella won first race of the season. Fernando Alonso won the
           following three races building the considerable lead in the Driver's
@@ -22,9 +22,8 @@
           but that was to be race in which Alonso secured his first title. He
           became the youngest Formula 1 champion at the age of 23 years and 301
           days.<br />
-          <p class="text-right text-xl text-gray-500 italic">Source: Wikipedia</p>
         </div>
-        <div>
+        <div class="pt-2 text-3xl">
           At the following race in China, Renault secured the Constructor's
           title. This broke the Ferrari's six year reign. It was the first time
           the Renault has won a Constructor's title. Renault only became the
@@ -37,16 +36,16 @@
     <div id="2006" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-right font-bold py-10">
         <span
-          class="pr-2 border-red-400 border-b-2 transition-all duration-500 hover:pl-28 hover:border-b-8 hover:text-6xl"
+          class="border-red-400 border-b-8 pl-28 text-6xl"
           >FIERCE RIVALRY</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Alpine/Alonso2006.png"
           alt="Alonso Canada"
-          class="xl:h-3/5 xl:w-5/12 mr-2 ml-12 float-right cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500"
+          class="xl:h-3/5 xl:w-5/12 mr-2 ml-12 float-right cursor-default rounded-2xl"
         />
-        <div class="pt-8 pb-4">
+        <div class="pt-6 pb-4 text-3xl">
           The 2006 season was highlighted by the rivalry between Alonso and Schumacher
           each won seven races. Both drivers dominated the field, they won all but one 
           race, the Hungarian GP which was won by Honda's Jenson Button. For
@@ -54,7 +53,7 @@
           factory teams won all the races (like in 1956). From this season onwards up until
           2013 Formula used 2.4L V8 engines. <br />
         </div>
-        <div>
+        <div class="text-3xl">
           In September 2006 Michael Schumacher announced his retirement. He
           was replaced by Kimi Rainkkonen. Juan Pablo Montoya left Mclaren 
           mid season to pursue his career in NASCAR. This was also last season of the
