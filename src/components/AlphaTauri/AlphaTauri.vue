@@ -7,8 +7,8 @@
       <p class="text-4xl leading-none">2008</p>
     </div>
     <div class="tl-content">
-      <h1 class="font-bold text-2xl uppercase text-blue-400">FIRST VICTORY</h1>
-      <p>The race started under the SC. Rain early in the race allowed Vettel to 
+      <h1 class="font-bold text-3xl uppercase text-blue-400">FIRST VICTORY</h1>
+      <p class="text-xl">The race started under the SC. Rain early in the race allowed Vettel to 
          establish a solid lead over Kovalainen, which he extended as the track dried.
          Vettel's victory made him the youngest driver to win a Formula One race, at 21 years 73 days in addition to giving Toro Rosso
          its maiden Formula One win despite using a 2007-spec engine</p>
@@ -20,8 +20,8 @@
       <p class="text-4xl leading-none">2019</p>
     </div>
     <div class="tl-content">
-      <h1 class="font-bold text-2xl uppercase text-blue-400">DOUBLE PODIUMS</h1>
-      <p>At the chaotic 2019 German Grand Prix, Daniil Kvyat scored a shock podium for the team, 
+      <h1 class="font-bold text-3xl uppercase text-blue-400">DOUBLE PODIUMS</h1>
+      <p class="text-xl">At the chaotic 2019 German Grand Prix, Daniil Kvyat scored a shock podium for the team, 
         in what was the team's first podium finish since 2008.
         Later in 2019, Pierre Gasly finished second at the Brazilian Grand Prix by 0.062 seconds ahead of Mercedes 
         driver Lewis Hamilton taking the team's third podium, its second of the year, and also his maiden podium finish. 
@@ -34,8 +34,8 @@
       <p class="text-4xl leading-none">2020</p>
     </div>
     <div class="tl-content">
-      <h1 class="font-bold text-2xl uppercase text-blue-400">GASLY'S FIRST WIN</h1>
-      <p>The race was won by Pierre Gasly of AlphaTauri-Honda, who took his first Formula One win and became the 
+      <h1 class="font-bold text-3xl uppercase text-blue-400">GASLY'S FIRST WIN</h1>
+      <p class="text-xl">The race was won by Pierre Gasly of AlphaTauri-Honda, who took his first Formula One win and became the 
         first French Formula One driver to win a race since Olivier Panis won the 1996 Monaco Grand Prix. 
         Gasly started the race in tenth, but gained positions due to a well-timed pit-stop prior to a safety car, 
         sent to retrieve the broken car of Kevin Magnussen. Lewis Hamilton, who led the race until this point, 
@@ -50,8 +50,8 @@
       <p class="text-4xl leading-none">2021</p>
     </div>
     <div class="tl-content">
-      <h1 class="font-bold text-2xl uppercase text-blue-400">PODIUM IN AZERBAIJAN</h1>
-      <p>Both championship contenders, Lewis Hamilton and Max Verstappen, experienced problems during the 51-lap race. 
+      <h1 class="font-bold text-3xl uppercase text-blue-400">PODIUM IN AZERBAIJAN</h1>
+      <p class="text-xl">Both championship contenders, Lewis Hamilton and Max Verstappen, experienced problems during the 51-lap race. 
         Verstappen retired due to a high-speed tyre blowout, while Hamilton made a severe error at the resultant restart. 
         Their troubles cleared the way for Sergio Pérez, Verstappen's teammate, to win his second Grand Prix, 
         following his victory at the 2020 Sakhir Grand Prix. Sebastian Vettel took second place for his only 
