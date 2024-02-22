@@ -602,57 +602,57 @@
           v-if="buttonClickedAm"
           class="text-2xl uppercase animated-border-boxam p-4"
         >
-          <div class="mt-2 text-3xl pb-4 font-bold">PODIUMS</div>
+          <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             Azerbaijan, 2021<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20231)"
           >
             Bahrain, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20232)"
           >
             Saudi Arabia, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20233)"
           >
             Australia, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20234)"
           >
             Miami, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20235)"
           >
             Monaco, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20236)"
           >
             Canada, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20237)"
           >
             Netherlands, 2023<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20238)"
           >
             Brazil, 2023<br />
