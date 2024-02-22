@@ -690,52 +690,51 @@
             2021, Podium in AZE<br />
           </span>
         </div>
-        <div
-          v-if="buttonClickedAr"
+        <div v-if="buttonClickedAr"
           class="text-2xl uppercase animated-border-boxar p-4"
         >
-          <div class="mt-2 text-3xl pb-4 font-bold">
+          <div class="mt-2 text-4xl pb-4 font-bold">
             NOTABLE<br />
             ACHIEVEMENTS
           </div>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1993)"
           >
             1993, First Race<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(1995)"
           >
             1995, First Podium<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2001)"
           >
             2001, Best finish<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2008)"
           >
             2008, FIRST WIN<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2012)"
           >
             2012, Last podium<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2014)"
           >
             2014, Worst season<br />
           </span>
           <span
-            class="px-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+            class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
             @click="scrollToYear(2024)"
           >
             2024, Kick Sauber</span
