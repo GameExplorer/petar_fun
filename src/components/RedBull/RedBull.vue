@@ -2,7 +2,7 @@
     <div id="2010" class="p-12 mb-6">
         <div class="text-4xl md:text-5xl text-left font-bold py-10">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
             >MAIDEN TITLES WINS IN 2010</span
           >
         </div>
@@ -12,7 +12,7 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 ml-2 mr-12 float-left cursor-default rbimg"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-8 pb-4 text-3xl text-justify">
             2010 season was one of the more memorable seasons in F1. New points
             system was introduced and Mercedes re-entered Formula 1. This was
             also Bridgestone's final season in the formula 1 as the company
@@ -22,7 +22,7 @@
             teams were also introduced to the sport, Hispania, Lotus and Virgin
             Racing.
           </div>
-          <div>
+          <div class="text-3xl text-justify">
             Red Bull secured its maiden constructor in Brazil, finishing 1-2 to
             secure the title. The season saw Vettel, Alonso, Webber and Hamilton
             battling until the very end for the Driver's title. Vettel's victory
@@ -35,7 +35,7 @@
       <div id="2011" class="p-12 mb-6">
         <div class="text-4xl md:text-5xl text-left font-bold pb-16">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
             >BACK TO BACK TITLE WINS</span
           >
         </div>
@@ -45,7 +45,7 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rbimg"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-8 pb-4 text-3xl text-justify">
             Pirelli returned as the tyre supplier for the 2011 season and also
             the inaugural running of the Indian Grand Prix. Vettel and Red Bull
             defended their titles in 2011. Vettel won the title with 392 points,
@@ -60,7 +60,7 @@
       <div id="2012" class="p-12 mb-6">
         <div class="text-4xl md:text-5xl text-left font-bold py-10">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
           >
             HAT TRICK IN 2012</span
           >
@@ -71,7 +71,7 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-12 ml-2 rbimg float-left"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-8 pb-4 text-3xl text-justify">
             Regarded as one of the best seasons in Formula 1. The 2012 season
             saw 7 different winners in the first 7 races. The season also saw
             the return of the United States Grand Prix at the Circuit of the
@@ -80,7 +80,7 @@
             catch. At the last race Vettel had 13 point lead over Alonso.
           </div>
 
-          <div>
+          <div class="text-3xl text-justify">
             Alonso had to finish on the podium to have a chance of winning a
             title. After the first lap chaos Vettel was at the back of the grid.
             His climb through the field at the end allowed him to finish 6th and
@@ -98,7 +98,7 @@
       <div id="2013" class="p-12 mb-6">
         <div class="text-5xl text-left font-bold py-10">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
           >
             FOUR IN A ROW</span
           >
@@ -109,12 +109,12 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rbimg"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-8 pb-4 text-3xl text-justify">
             The 2013 season was the final year the series used 2.4 litre V8
             engine configuration which was introduced in 2006, a new 1.6 litre
             turbocharged V6 engine came into force for 2014.
           </div>
-          <div>
+          <div class="pt-4 text-3xl text-justify">
             Vettel dominated the 2013 season. He became the third driver to win
             the four titles in a row. It was one of the most dominated
             championship victories in a history of the sport and it wasn't until
@@ -134,7 +134,7 @@
       <div id="2022" class="p-12 mb-6">
         <div class="text-4xl md:text-5xl text-left font-bold py-10">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl cursor-default"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
             >THE START OF THE DOMINATION</span
           >
         </div>
@@ -144,12 +144,12 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-12 ml-2 float-left rbimg"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-8 pb-4 text-3xl text-justify">
             New regulations were introduced in 2022, the new regulations were
             introduced to make the sport more competitive and to reduce the gap
             between the teams.
           </div>
-          <div>
+          <div class="pt-8 text-3xl text-justify">
             While at the beginning of the season Ferrari was competitive their
             strategy and performance fell off. Meanwhile RedBull started one of
             the most dominating winning streak in Formula 1 history. Max won 15
@@ -164,7 +164,7 @@
       <div id="2023" class="p-12 mb-12">
         <div class="text-5xl text-left font-bold py-10">
           <span
-            class="pr-8 border-red-400 border-b-2 transition-all duration-500 hover:pr-28 hover:border-b-4 hover:text-6xl cursor-default"
+            class="pr-8 border-red-400 border-b-8 text-6xl border-dashed"
           >
             SUPER MAX!</span
           >
@@ -175,19 +175,18 @@
             alt="VettelWinsFirstTitle"
             class="xl:h-2/5 xl:w-2/4 lg:h-2/5 lg:w-2/4 md:h-2/5 md:w-2/4 sm:h-1/4 sm:w-1/4 mr-2 ml-12 float-right rbimg"
           />
-          <div class="pt-8 pb-4">
+          <div class="pt-4 pb-4 text-3xl text-justify">
             The 2023 season was dominated by one single driver. MAX VERSTAPPEN.
-            After Checo beat Max in Baku, Max said to his father he will never
-            lose to him again. He went on to win 19 out of 22 Grand Prixs,
+            He went on to win 19 out of 22 Grand Prixs,
             failing to win in Singapore where he struggled the most and in
             Saudia Arabia and Azerbaijan where Perez was better. Max won the
             title with whopping 500 points, 300 points ahead of Perez. RedBull
             won the constructor's title in Mexico with 800 points, 400 points
-            ahead of Ferrari. Max had more points than any 2nd place Ferrari. He
+            ahead of Ferrari. Max had more points than 2nd place Ferrari. He
             could have won Constructor's title all by himself. RedBull won 21
             out of 22 Grand Prix beating Mclaren record from 1988.
           </div>
-          <div>
+          <div class="pt-2 text-3xl text-justify">
             Max broke numerous records including most wins, most podiums, most
             consecutive wins, most wins from pole, most points, most hat tricks
             (pole, win, fastest lap), biggest championship winning margin, most
