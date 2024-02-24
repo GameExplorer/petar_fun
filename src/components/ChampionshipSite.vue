@@ -23,53 +23,7 @@
           v-else-if="buttonClickedFr"
           class="p-4 uppercase animated-border-boxfr"
         >
-          <div class="mt-2 mb-2 font-bold text-center text-3xl">STATS</div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race debut: <span class="font-bold">1950, Monaco</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Race starts: <span class="font-bold">1074</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Poles: <span class="font-bold">249</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Podiums: <span class="font-bold">807</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Wins: <span class="font-bold">243</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Fastest laps: <span class="font-bold">259</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Points: <span class="font-bold">9672</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Constructor's Championship:
-              <span class="font-bold">16</span></span
-            >
-          </div>
-          <div class="p-2">
-            <span class="hover:border-b-2 hover:border-white pr-2"
-              >Driver's Championship: <span class="font-bold">15</span></span
-            >
-          </div>
+          <FerrariStats></FerrariStats>
         </div>
         <div
           v-else-if="buttonClickedMe"
@@ -315,9 +269,10 @@
         class="mx-8 mt-28 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center grid position-absolute"
       >
         <div v-if="buttonClickedRB" class="text-4xl animated-border-box p-4">
-          <div class="mt-2 text-4xl pb-4first-letter: font-bold">
+          <div class="mt-2 mb-2 text-4xl pb-4first-letter: font-bold">
             WINNING YEARS
           </div>
+          <div class="grid grid-cols-2 gap-2">
           <span
             class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
             @click="scrollToYear(2010)"
@@ -350,98 +305,102 @@
             @click="scrollToYear(2023)"
             >2023<br
           /></span>
+          </div>
         </div>
-        <div v-if="buttonClickedFr" class="text-xl animated-border-boxfr p-4">
-          <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+        <div v-if="buttonClickedFr" class="text-3xl animated-border-boxfr p-4">
+          <div class="mt-2 mb-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="grid grid-cols-2 gap-2">
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1961)"
             id="1961-2"
           >
             1961<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1964)"
           >
             1964<br />
           </span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1975)"
             >1975<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1976)"
             >1976<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1977)"
             >1977<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1979)"
             >1979<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1982)"
             >1982<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1983)"
             >1983<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(1999)"
             >1999<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2000)"
             >2000<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2001)"
             >2001<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2002)"
             >2002<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2003)"
             >2003<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2004)"
             >2004<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2007)"
             >2007<br
           /></span>
           <span
-            class="px-2 hover:border-b-2 hover:border-white hover:text-2xl cursor-pointer"
+            class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2008)"
             >2008<br
           /></span>
+          </div>
         </div>
         <div
           v-if="buttonClickedMe"
           class="text-3xl animated-border-boxme p-4 text-black"
         >
           <div class="mt-2 text-3xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="grid grid-cols-2 gap-2">
           <span
             class="px-2 hover:border-b-2 hover:border-black hover:text-4xl cursor-pointer"
             @click="scrollToYear(2014)"
@@ -484,11 +443,13 @@
             @click="scrollToYear(2021)"
             >2021<br
           /></span>
+          </div>
         </div>
         <div v-if="buttonClickedMc"
           class="text-3xl animated-border-boxmc p-4 text-black"
         >
           <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="grid grid-cols-2 gap-2"> 
           <span
             class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1974)"
@@ -531,6 +492,7 @@
             @click="scrollToYear(1998)"
             >1998<br
           /></span>
+          </div>
         </div>
         <div v-if="buttonClickedAl" class="text-4xl animated-border-boxal p-4">
           <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
@@ -549,6 +511,7 @@
         </div>
         <div v-if="buttonClickedWi" class="text-3xl animated-border-boxwi p-4">
           <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
+          <div class="grid grid-cols-2 gap-2"> 
           <span
             class="text-4xl hover:bg-red-600 hover:rounded-lg px-2 hover:text-5xl cursor-pointer"
             @click="scrollToYear(1980)"
@@ -596,61 +559,62 @@
             @click="scrollToYear(1997)"
             >1997<br
           /></span>
+          </div>
         </div>
         <div v-if="buttonClickedAm"
           class="text-2xl uppercase animated-border-boxam p-4"
         >
           <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(2021)"
           >
             Azerbaijan, 2021<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20231)"
           >
             Bahrain, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20232)"
           >
             Saudi Arabia, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20233)"
           >
             Australia, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20234)"
           >
             Miami, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20235)"
           >
             Monaco, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20236)"
           >
             Canada, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20237)"
           >
             Netherlands, 2023<br />
           </span>
           <span
-            class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+            class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
             @click="scrollToYear(20238)"
           >
             Brazil, 2023<br />
@@ -902,6 +866,7 @@ import Williams from "@/components/Williams/Williams.vue";
 import Mclaren from "@/components/Mclaren/Mclaren.vue";
 import MclarenStats from "@/components/Mclaren/MclarenStats.vue";
 import Ferrari from "@/components/Ferrari/Ferrari.vue";
+import FerrariStats from "@/components/Ferrari/FerrariStats.vue";
 
 import Footer from "@/components/Footer/Footer.vue";
 
@@ -938,6 +903,7 @@ export default {
     Mclaren,
     MclarenStats,
     Ferrari,
+    FerrariStats,
     Footer,
   },
   computed: {
@@ -1203,11 +1169,6 @@ body {
   font-family: "MRKMaston", sans-serif;
 }
 
-.ferrariCard-shadow {
-  box-shadow: 25px 5px 95px rgba(0, 0, 0, 0.9);
-  transform: translateY(0px);
-}
-
 .silver {
   mask-image: linear-gradient(
     -75deg,
@@ -1271,53 +1232,7 @@ body {
   background-color: #0a2aef;
 }
 
-/* Ferrari styles*/
-.animated-border-boxfr,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
 
-.animated-border-boxfr:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #e80c18,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxfr:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #a7121f;
-  /*box border radius*/
-  border-radius: 5px;
-}
 
 /* Mercedes style*/
 .animated-border-boxme,
