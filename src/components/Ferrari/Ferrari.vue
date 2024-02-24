@@ -267,14 +267,31 @@
             A major talking point of the season had been an espionage
             controversy involving Ferrari and McLaren, which led to McLaren
             being excluded from the Constructors' Championship. As a result,
-            Ferrari clinched the championship at the Belgian Grand Prix.
-            Kimi Raikkonen won the Drivers' Championship, at the Brazilian GP.
-            This was last time Ferrari won the Constructors' Championship or 
-            the Drivers' Championship.
+            Ferrari clinched the championship at the Belgian Grand Prix. Kimi
+            Raikkonen won the Drivers' Championship, at the Brazilian GP. This
+            was last time Ferrari won the Drivers' Championship.
           </p>
           <img
             src="/Images/Ferrari/ferrari2007.png"
             alt="ferrari 2007"
+            class="rounded-lg shadow-black shadow-md"
+          />
+          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
+        </div>
+      </li>
+      <li id="2008">
+        <h1 class="text-5xl font-semibold">LAST TITLE</h1>
+        <div class="content">
+          <p class="text-3xl text-justify">
+            Eight wins help power them to their 16th constructors' title,
+            beating McLaren by 21 points. Felipe Massa misses out on drivers'
+            championship by a single point to Lewis Hamilton, despite winning
+            more races (is that Glock?). The 2008 season also marks Scuderia
+            Ferrari's last World Constructors' Championship win as of the 2023.
+          </p>
+          <img
+            src="/Images/Ferrari/ferrari2008.png"
+            alt="ferrari 2008"
             class="rounded-lg shadow-black shadow-md"
           />
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
