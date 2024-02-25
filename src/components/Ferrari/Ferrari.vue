@@ -70,7 +70,7 @@
         </div>
       </li>
       <li id="1977" class="year">
-        <h1 class="text-5xl font-semibold">THREE IN A ROW</h1>
+        <h1 class="text-5xl font-semibold header">THREE IN A ROW</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Niki Lauda won his second championship, despite Mario Andretti
@@ -87,7 +87,7 @@
         </div>
       </li>
       <li id="1979" class="year">
-        <h1 class="text-5xl font-semibold">FOUR OUT OF FIVE</h1>
+        <h1 class="text-5xl font-semibold header">FOUR OUT OF FIVE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Jody Scheckter won the Drivers' Championship and, with teammate
@@ -104,7 +104,7 @@
         </div>
       </li>
       <li id="1982" class="year">
-        <h1 class="text-5xl font-semibold">UGLY YEAR</h1>
+        <h1 class="text-5xl font-semibold header">UGLY YEAR</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Eventual champion Rosberg won only one race all season (Swiss GP)
@@ -125,7 +125,7 @@
         </div>
       </li>
       <li id="1983" class="year">
-        <h1 class="text-5xl font-semibold">EIGHT TITLE</h1>
+        <h1 class="text-5xl font-semibold header">EIGHT TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Ferrari won the Constructors' Championship, despite its better
@@ -141,7 +141,7 @@
         </div>
       </li>
       <li id="1999" class="year">
-        <h1 class="text-5xl font-semibold">END OF DRAUGHT</h1>
+        <h1 class="text-5xl font-semibold header">END OF DRAUGHT</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champion Mika Häkkinen was again awarded the World
@@ -161,7 +161,7 @@
         </div>
       </li>
       <li id="2000" class="year">
-        <h1 class="text-5xl font-semibold">START OF DOMINATION</h1>
+        <h1 class="text-5xl font-semibold header">START OF DOMINATION</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             For the third year in succession, the season featured a close battle
@@ -179,7 +179,7 @@
         </div>
       </li>
       <li id="2001" class="year">
-        <h1 class="text-5xl font-semibold">SUPERB MICHAEL</h1>
+        <h1 class="text-5xl font-semibold header">SUPERB MICHAEL</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
@@ -199,7 +199,7 @@
         </div>
       </li>
       <li id="2002" class="year">
-        <h1 class="text-5xl font-semibold">DOMINATE PERFORMANCE</h1>
+        <h1 class="text-5xl font-semibold header">DOMINATE PERFORMANCE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
@@ -222,7 +222,7 @@
         </div>
       </li>
       <li id="2003" class="year">
-        <h1 class="text-5xl font-semibold">TOUGH YEAR</h1>
+        <h1 class="text-5xl font-semibold header">TOUGH YEAR</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
@@ -242,7 +242,7 @@
         </div>
       </li>
       <li id="2004" class="year">
-        <h1 class="text-5xl font-semibold">SIMPLY TH BEST</h1>
+        <h1 class="text-5xl font-semibold header">SIMPLY THE BEST</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             In this championship, several records were broken. Michael
@@ -261,7 +261,7 @@
         </div>
       </li>
       <li id="2007" class="year">
-        <h1 class="text-5xl font-semibold">CONTROVERSY</h1>
+        <h1 class="text-5xl font-semibold header">CONTROVERSY</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             A major talking point of the season had been an espionage
@@ -280,7 +280,7 @@
         </div>
       </li>
       <li id="2008" class="year">
-        <h1 class="text-5xl font-semibold">LAST TITLE</h1>
+        <h1 class="text-5xl font-semibold header">LAST TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Eight wins help power them to their 16th constructors' title,
@@ -310,7 +310,7 @@ export default {
 <style>
 /* timelineFerrari STYLES */
 .timelineFerrari {
-  width: 900px;
+  width: auto;
   background-color: #a7121f;
   color: #fff;
   padding: 30px 20px;
@@ -336,7 +336,7 @@ export default {
   margin-bottom: 0.25em;
   text-align: center;
 }
-.timelineFerrari .years .year .content h3 {
+.timelineFerrari .years .year .content {
   color: #ffffff;
 }
 .timelineFerrari .years .year .content .context {
@@ -367,7 +367,7 @@ export default {
     width: 100%;
     padding: 30px 5px 30px 10px;
   }
-  .timelineFerrari .years .year .content h3 {
+  .timelineFerrari .years .year .content {
     color: #34ace0;
     font-size: 15px;
   }
