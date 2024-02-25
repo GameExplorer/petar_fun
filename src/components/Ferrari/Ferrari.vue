@@ -314,6 +314,7 @@ export default {
   background-color: #a7121f;
   color: #fff;
   padding: 30px 20px;
+  margin: 0 auto;
 }
 .timelineFerrari .years {
   list-style-type: none;
@@ -360,7 +361,8 @@ export default {
   background-color: #0f0;
   box-shadow: 0px 0px 10px 2px #0f0;
 }
-@media (max-width: 300px) {
+
+/*@media (max-width: 300px) {
   .timelineFerrari {
     width: 100%;
     padding: 30px 5px 30px 10px;
@@ -369,7 +371,7 @@ export default {
     color: #34ace0;
     font-size: 15px;
   }
-}
+}*/
 
 /* Ferrari styles*/
 .animated-border-boxfr,
