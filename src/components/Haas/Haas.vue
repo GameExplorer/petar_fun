@@ -22,7 +22,7 @@
       />
     </div>
   </div>
-  <div class="timeline text-xl text-justify">
+  <div class="timelineHaas text-xl text-justify">
     <p id="2016" class="road font-semibold">
       <span class="text-center text-3xl font-extrabold">FIRST RACE</span>
       In the team's debut at the opening race at Australia Grojean finished P6.
@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style>
-.timeline {
+.timelineHaas {
   width: 600px;
   margin: auto;
 }

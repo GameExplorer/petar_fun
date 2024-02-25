@@ -1,6 +1,6 @@
 <template>
-  <div class="timeline">
-    <ul>
+  <div class="timelineFerrari">
+    <ul class="years">
       <li id="1961">
         <h1 class="text-5xl font-semibold">FIRST OF MANY</h1>
         <div class="content">
@@ -308,25 +308,26 @@ export default {
 </script>
 
 <style>
-/* TIMELINE STYLES */
-.timeline {
+/* timelineFerrari STYLES */
+.timelineFerrari {
   width: 900px;
   background-color: #a7121f;
   color: #fff;
   padding: 30px 20px;
+  margin: 0 auto;
 }
-.timeline ul {
+.timelineFerrari .years {
   list-style-type: none;
   border-left: 4px solid #fbfeff;
   padding: 10px 3px;
 }
-.timeline ul li {
+.timelineFerrari .years li {
   padding: 20px 20px;
   position: relative;
   cursor: pointer;
   transition: 0.5s;
 }
-.timeline ul li h1 {
+.timelineFerrari .years li h1 {
   display: inline-block;
   background-color: #f6ff00;
   color: #000;
@@ -335,13 +336,13 @@ export default {
   margin-bottom: 0.25em;
   text-align: center;
 }
-.timeline ul li .content h3 {
+.timelineFerrari .years li .content h3 {
   color: #ffffff;
 }
-.timeline ul li .content p {
+.timelineFerrari .years li .content p {
   padding: 5px 0px 15px 0px;
 }
-.timeline ul li:before {
+.timelineFerrari .years li:before {
   position: absolute;
   content: "";
   width: 20px;
@@ -352,20 +353,20 @@ export default {
   top: 28px;
   transition: 0.5s;
 }
-.timeline ul li:hover {
+.timelineFerrari .years li:hover {
   background-color: #c71818;
   border-radius: 1em;
 }
-.timeline ul li:hover:before {
+.timelineFerrari .years li:hover:before {
   background-color: #0f0;
   box-shadow: 0px 0px 10px 2px #0f0;
 }
 @media (max-width: 300px) {
-  .timeline {
+  .timelineFerrari {
     width: 100%;
     padding: 30px 5px 30px 10px;
   }
-  .timeline ul li .content h3 {
+  .timelineFerrari .years li .content h3 {
     color: #34ace0;
     font-size: 15px;
   }
