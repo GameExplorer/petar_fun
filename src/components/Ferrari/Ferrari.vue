@@ -35,7 +35,7 @@
         </div>
       </li>
       <li id="1975" class="year">
-        <h1 class="text-5xl font-semibold">LAUDA'S FIRST</h1>
+        <h1 class="text-5xl font-semibold header">LAUDA'S FIRST</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             In his second year with Ferrari, Niki Lauda was given the keys to
@@ -53,7 +53,7 @@
         </div>
       </li>
       <li id="1976" class="year">
-        <h1 class="text-5xl font-semibold">THE RUSH</h1>
+        <h1 class="text-5xl font-semibold header">THE RUSH</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             The Drivers's Championship was full of controversy between Niki
@@ -314,7 +314,6 @@ export default {
   background-color: #a7121f;
   color: #fff;
   padding: 30px 20px;
-  margin: 0 auto;
 }
 .timelineFerrari .years {
   list-style-type: none;
