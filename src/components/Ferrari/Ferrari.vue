@@ -1,6 +1,5 @@
 <template>
   <div class="timelineFerrari">
-    <div>
     <ul class="years">
       <li id="1961" class="year">
         <h1 class="text-5xl font-semibold header">FIRST OF MANY</h1>
@@ -19,6 +18,7 @@
           />
         </div>
       </li>
+      <br />
       <li id="1964" class="year">
         <h1 class="text-5xl font-semibold header">SECOND TITLE</h1>
         <div class="content">
@@ -299,7 +299,6 @@
         </div>
       </li>
     </ul>
-    </div>
   </div>
 </template>
 
@@ -319,6 +318,7 @@ export default {
   margin: 0 auto;
 }
 .timelineFerrari .years {
+  list-style-type: none;
   border-left: 4px solid #fbfeff;
   padding: 10px 3px;
 }
