@@ -1,5 +1,6 @@
 <template>
   <div class="timelineFerrari">
+    <div>
     <ul class="years">
       <li id="1961" class="year">
         <h1 class="text-5xl font-semibold header">FIRST OF MANY</h1>
@@ -298,6 +299,7 @@
         </div>
       </li>
     </ul>
+    </div>
   </div>
 </template>
 
