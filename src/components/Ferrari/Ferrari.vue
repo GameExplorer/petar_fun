@@ -1,6 +1,6 @@
 <template>
   <div class="timelineFerrari">
-    <ul class="years">
+    <ol class="years">
       <li id="1961" class="year">
         <h1 class="text-5xl font-semibold header">FIRST OF MANY</h1>
         <div class="content">
@@ -18,7 +18,6 @@
           />
         </div>
       </li>
-      <br />
       <li id="1964" class="year">
         <h1 class="text-5xl font-semibold header">SECOND TITLE</h1>
         <div class="content">
@@ -298,7 +297,7 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-    </ul>
+    </ol>
   </div>
 </template>
 
