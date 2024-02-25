@@ -1,10 +1,10 @@
 <template>
   <div class="timelineFerrari">
     <ul class="years">
-      <li id="1961">
+      <li id="1961" class="year">
         <h1 class="text-5xl font-semibold">FIRST OF MANY</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             The first Constructor's title was won 1961. Ferrari dominated the
             whole season failing to win only in Germany and Monaco. Phil Hill of
             Ferrari won his only Drivers' Championship after his teammate and
@@ -18,10 +18,10 @@
           />
         </div>
       </li>
-      <li id="1964">
+      <li id="1964" class="year">
         <h1 class="text-5xl font-semibold">SECOND TITLE</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             John Surtees won the 1964 Drivers' Championship, becoming the only
             person to win World Championships on both two and four wheels.
             Ferrari won the Constructors' Championship in a close title fight
@@ -34,10 +34,10 @@
           />
         </div>
       </li>
-      <li id="1975">
+      <li id="1975" class="year">
         <h1 class="text-5xl font-semibold">LAUDA'S FIRST</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             In his second year with Ferrari, Niki Lauda was given the keys to
             the Ferrari 312T, a car that was technically far superior to any of
             the competition. He won his first drivers' title with five wins and
@@ -52,10 +52,10 @@
           />
         </div>
       </li>
-      <li id="1976">
+      <li id="1976" class="year">
         <h1 class="text-5xl font-semibold">THE RUSH</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             The Drivers's Championship was full of controversy between Niki
             Lauda and James Hunt. Lauda suffered a near-fatal crash at the
             German Grand Prix, but returned six weeks later to finish fourth in
@@ -69,10 +69,10 @@
           />
         </div>
       </li>
-      <li id="1977">
+      <li id="1977" class="year">
         <h1 class="text-5xl font-semibold">THREE IN A ROW</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Niki Lauda won his second championship, despite Mario Andretti
             winning more races. Lauda did not complete the season, departing
             Scuderia Ferrari after securing the title at the 1977 United States
@@ -86,10 +86,10 @@
           />
         </div>
       </li>
-      <li id="1979">
+      <li id="1979" class="year">
         <h1 class="text-5xl font-semibold">FOUR OUT OF FIVE</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Jody Scheckter won the Drivers' Championship and, with teammate
             Gilles Villeneuve in second place, Scuderia Ferrari won the
             Constructors' Championship. This was the team's fourth Constructors'
@@ -103,10 +103,10 @@
           />
         </div>
       </li>
-      <li id="1982">
+      <li id="1982" class="year">
         <h1 class="text-5xl font-semibold">UGLY YEAR</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Eventual champion Rosberg won only one race all season (Swiss GP)
             but consistency gave him the Drivers' Championship, five points
             clear of Pironi and John Watson. Eleven different drivers from seven
@@ -124,10 +124,10 @@
           <p class="pt-2">Source: wikipedia.com</p>
         </div>
       </li>
-      <li id="1983">
+      <li id="1983" class="year">
         <h1 class="text-5xl font-semibold">EIGHT TITLE</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Ferrari won the Constructors' Championship, despite its better
             driver, René Arnoux, finishing only third overall a unique feat in
             Formula One history.
@@ -140,10 +140,10 @@
           <p class="pt-2">Source: wikipedia.com</p>
         </div>
       </li>
-      <li id="1999">
+      <li id="1999" class="year">
         <h1 class="text-5xl font-semibold">END OF DRAUGHT</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Defending champion Mika Häkkinen was again awarded the World
             Drivers' Championship. His team McLaren just missed out, it was
             Ferrari that clinched the World Constructors' Championship by a
@@ -160,10 +160,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2000">
+      <li id="2000" class="year">
         <h1 class="text-5xl font-semibold">START OF DOMINATION</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             For the third year in succession, the season featured a close battle
             between Ferrari and McLaren. The title was sealed in Japan on 8
             October, after a classic straight fight between Schumacher and
@@ -178,10 +178,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2001">
+      <li id="2001" class="year">
         <h1 class="text-5xl font-semibold">SUPERB MICHAEL</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
             again awarded the World Drivers' Championship and World
             Constructors' Championship, respectively. Schumacher won the title
@@ -198,10 +198,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2002">
+      <li id="2002" class="year">
         <h1 class="text-5xl font-semibold">DOMINATE PERFORMANCE</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
             again awarded the World Drivers' Championship and World
             Constructors' Championship, respectively. Schumacher finished first
@@ -221,10 +221,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2003">
+      <li id="2003" class="year">
         <h1 class="text-5xl font-semibold">TOUGH YEAR</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
             again awarded the World Drivers' Championship and World
             Constructors' Championship, respectively. Schumacher's closest
@@ -241,10 +241,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2004">
+      <li id="2004" class="year">
         <h1 class="text-5xl font-semibold">SIMPLY TH BEST</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             In this championship, several records were broken. Michael
             Schumacher won 13 races, breaking his record of 11 race wins in one
             season from 2002. He also broke the record for most consecutive
@@ -260,10 +260,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2007">
+      <li id="2007" class="year">
         <h1 class="text-5xl font-semibold">CONTROVERSY</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             A major talking point of the season had been an espionage
             controversy involving Ferrari and McLaren, which led to McLaren
             being excluded from the Constructors' Championship. As a result,
@@ -279,10 +279,10 @@
           <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
-      <li id="2008">
+      <li id="2008" class="year">
         <h1 class="text-5xl font-semibold">LAST TITLE</h1>
         <div class="content">
-          <p class="text-3xl text-justify">
+          <p class="text-3xl text-justify context">
             Eight wins help power them to their 16th constructors' title,
             beating McLaren by 21 points. Felipe Massa misses out on drivers'
             championship by a single point to Lewis Hamilton, despite winning
@@ -321,13 +321,13 @@ export default {
   border-left: 4px solid #fbfeff;
   padding: 10px 3px;
 }
-.timelineFerrari .years li {
+.timelineFerrari .years .year {
   padding: 20px 20px;
   position: relative;
   cursor: pointer;
   transition: 0.5s;
 }
-.timelineFerrari .years li h1 {
+.timelineFerrari .years .year h1 {
   display: inline-block;
   background-color: #f6ff00;
   color: #000;
@@ -336,13 +336,13 @@ export default {
   margin-bottom: 0.25em;
   text-align: center;
 }
-.timelineFerrari .years li .content h3 {
+.timelineFerrari .years .year .content h3 {
   color: #ffffff;
 }
-.timelineFerrari .years li .content p {
+.timelineFerrari .years .year .content .context {
   padding: 5px 0px 15px 0px;
 }
-.timelineFerrari .years li:before {
+.timelineFerrari .years .year:before {
   position: absolute;
   content: "";
   width: 20px;
@@ -353,11 +353,11 @@ export default {
   top: 28px;
   transition: 0.5s;
 }
-.timelineFerrari .years li:hover {
+.timelineFerrari .years .year:hover {
   background-color: #c71818;
   border-radius: 1em;
 }
-.timelineFerrari .years li:hover:before {
+.timelineFerrari .years .year:hover:before {
   background-color: #0f0;
   box-shadow: 0px 0px 10px 2px #0f0;
 }
@@ -366,7 +366,7 @@ export default {
     width: 100%;
     padding: 30px 5px 30px 10px;
   }
-  .timelineFerrari .years li .content h3 {
+  .timelineFerrari .years .year .content h3 {
     color: #34ace0;
     font-size: 15px;
   }
