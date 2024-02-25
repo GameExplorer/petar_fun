@@ -310,14 +310,13 @@ export default {
 <style>
 /* timelineFerrari STYLES */
 .timelineFerrari {
-  width: auto;
+  width: 900px;
   background-color: #a7121f;
   color: #fff;
-  padding: 30px 20px;
+  padding: 30px 40px;
   margin: 0 auto;
 }
 .timelineFerrari .years {
-  list-style-type: none;
   border-left: 4px solid #fbfeff;
   padding: 10px 3px;
 }
