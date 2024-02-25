@@ -2,7 +2,7 @@
   <div class="timelineFerrari">
     <ul class="years">
       <li id="1961" class="year">
-        <h1 class="text-5xl font-semibold">FIRST OF MANY</h1>
+        <h1 class="text-5xl font-semibold header">FIRST OF MANY</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             The first Constructor's title was won 1961. Ferrari dominated the
@@ -19,7 +19,7 @@
         </div>
       </li>
       <li id="1964" class="year">
-        <h1 class="text-5xl font-semibold">SECOND TITLE</h1>
+        <h1 class="text-5xl font-semibold header">SECOND TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             John Surtees won the 1964 Drivers' Championship, becoming the only
@@ -327,7 +327,7 @@ export default {
   cursor: pointer;
   transition: 0.5s;
 }
-.timelineFerrari .years .year h1 {
+.timelineFerrari .years .year .header {
   display: inline-block;
   background-color: #f6ff00;
   color: #000;
