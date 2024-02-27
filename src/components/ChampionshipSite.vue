@@ -1,10 +1,10 @@
 <template>
   <div class="fontsF1">
-    <div class="2xl:text-[4.5rem] xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center pt-10 text-white uppercase"
+    <div class="2xl:text-[4.5rem] xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl font-bold text-center pt-4 text-white uppercase"
       :class="currentTeamClass">
       Days since last championship title
     </div>
-    <div id="main" class="bg-[#00192D] text-white outline-8 grid grid-cols-3 gap-8"
+    <div id="teams" class="bg-[#00192D] text-white outline-8 grid grid-cols-3 gap-8"
       :class="currentTeamClass">
         <div id="stats" class="col-span-1 cursor-default">
           <div
@@ -714,9 +714,8 @@
             </div>
           </div>
         </div>
-        <div id="buttons"
-          class="grid object-none object-bottom place-items-center pb-32 pt-20 col-span-4 position-absolute">
-          <ul class="inline mx-2">
+        <div id="buttons" class="grid object-none object-bottom place-items-center pb-32 pt-20 col-span-4 position-absolute">
+          <ul class="mx-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2">
             <button
               class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#00192d] hover:font-bold hover:text-white"
               @click="toggleRedBull"
@@ -1136,6 +1135,37 @@ export default {
 </script>
 
 <style>
+.font-bold.text-center.pt-10.text-white.uppercase {
+  font-size: 4.5rem; /* Equivalent to 4.5 times the font size of the root element */
+}
+
+@media (max-width: 1535px) and (min-width: 1280px) {
+  .font-bold.text-center.pt-10.text-white.uppercase {
+    font-size: 6em; /* Equivalent to 6 times the font size of the parent element */
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .font-bold.text-center.pt-10.text-white.uppercase {
+    font-size: 5em; /* Equivalent to 5 times the font size of the parent element */
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .font-bold.text-center.pt-10.text-white.uppercase {
+    font-size: 5em; /* Equivalent to 5 times the font size of the parent element */
+  }
+}
+
+@media (max-width: 767px) and (min-width: 640px) {
+  .font-bold.text-center.pt-10.text-white.uppercase {
+    font-size: 4em; /* Equivalent to 4 times the font size of the parent element */
+  }
+}
+
+
+
+
 @font-face {
   font-family: "MRKMaston";
   src: url("@/assets/Fonts/MRKMaston-Regular.woff") format("truetype");
