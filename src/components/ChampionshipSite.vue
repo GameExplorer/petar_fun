@@ -1135,37 +1135,6 @@ export default {
 </script>
 
 <style>
-.font-bold.text-center.pt-10.text-white.uppercase {
-  font-size: 4.5rem; /* Equivalent to 4.5 times the font size of the root element */
-}
-
-@media (max-width: 1535px) and (min-width: 1280px) {
-  .font-bold.text-center.pt-10.text-white.uppercase {
-    font-size: 6em; /* Equivalent to 6 times the font size of the parent element */
-  }
-}
-
-@media (max-width: 1279px) and (min-width: 1024px) {
-  .font-bold.text-center.pt-10.text-white.uppercase {
-    font-size: 5em; /* Equivalent to 5 times the font size of the parent element */
-  }
-}
-
-@media (max-width: 1023px) and (min-width: 768px) {
-  .font-bold.text-center.pt-10.text-white.uppercase {
-    font-size: 5em; /* Equivalent to 5 times the font size of the parent element */
-  }
-}
-
-@media (max-width: 767px) and (min-width: 640px) {
-  .font-bold.text-center.pt-10.text-white.uppercase {
-    font-size: 4em; /* Equivalent to 4 times the font size of the parent element */
-  }
-}
-
-
-
-
 @font-face {
   font-family: "MRKMaston";
   src: url("@/assets/Fonts/MRKMaston-Regular.woff") format("truetype");
