@@ -35,7 +35,7 @@
         <img
           src="/Images/Sauber/sauber1995.png"
           alt="Frentzen on the podium in Monza"
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500 alfaImages"
+          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           The car was launched and raced in the season's early races with a
@@ -86,7 +86,7 @@
         <img
           src="/Images/Sauber/sauber2008.avif"
           alt="Kubica and Heidfeld 1-2 in Canada" 
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500 alfaImages"
+          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           Radical F1.08 proves highly effective, powering Robert Kubica to the
@@ -137,7 +137,7 @@
         <img
           src="/Images/Sauber/sauber2014.avif"
           alt="Maldonado flips Guiterez in Bahrain"
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl opacity-50 hover:opacity-100 transition-all duration-500 alfaImages"
+          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           The car was plagued by weight issues early in the season, to the point
