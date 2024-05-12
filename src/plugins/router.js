@@ -33,6 +33,14 @@ const routes = [
         },
         component: () => import('@/views/Champions.vue'),
     },
+    {
+        path: '/space',
+        name: 'Space',
+        meta: {
+            title: 'Space and Beyond',
+        },
+        component: () => import('@/views/Space.vue'),
+    },
     {   // This is a catch all route in case none of the above matches, it will redirect to the home page (instead of 404 page)
         path: '/catchAll(.*)*',
         redirect: { name: 'Home'}
