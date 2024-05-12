@@ -13,26 +13,61 @@
     <div class="flex items-center justify-center pt-16">
       <h1 class="text-4xl font-bold uppercase">PETAR.FUN</h1>
     </div>
-    <!-- add Images to the router links and make it like a grid 3x3 or 2x2-->
-    <ul class="grid grid-rows grid-cols-3 pt-12 gap-1 px-64 mx-12">
-      <li class="flex items-center justify-center rounded-lg border-2">
-        <RouterLink :to="{ name: 'Thrones' }"> Thrones </RouterLink>
+    <ul class="grid grid-rows grid-cols-3 pt-12 gap-2 px-64 mx-12">
+      <li class="flex items-center justify-center">
+        <RouterLink :to="{ name: 'Thrones' }">
+          <img
+            src="/Images/PageIcons/thrones_button.png"
+            alt="Thrones page"
+            class="hover:scale-105 transition-all duration-500"
+          />
+        </RouterLink>
       </li>
       <li class="flex items-center justify-center">
         <RouterLink :to="{ name: 'Mountains' }">
           <div class="flex items-center justify-center">
-            Mountains
+            <img
+              src="/Images/mountains_button.png"
+              alt="Mountains page"
+              class="hover:scale-105 transition-all duration-500"
+            />
           </div>
         </RouterLink>
       </li>
       <li class="flex items-center justify-center">
         <RouterLink :to="{ name: 'Champions' }">
-          <div class="flex items-center justify-center">F1 Champions</div>
+          <div class="flex items-center justify-center">
+            <img
+              src="/Images/F1Champions.png"
+              alt="Champions page"
+              class="hover:scale-105 transition-all duration-500"
+            />
+          </div>
         </RouterLink>
       </li>
-      <li class="flex items-center justify-center p-4 border-2">
-        Solar System
+      <div class="hidden">
+      <li class="flex items-center justify-center p-4">
+        <img
+          src="/Images/space.png"
+          alt="Champions page"
+          class="hover:scale-105 transition-all duration-500"
+        />
       </li>
+      <li class="flex items-center justify-center p-4">
+        <img
+          src="/Images/PageIcons/history.png"
+          alt="Champions page"
+          class="hover:scale-105 transition-all duration-500"
+        />
+      </li>
+      <li class="flex items-center justify-center p-4">
+        <img
+          src="/Images/PageIcons/life.png"
+          alt="Champions page"
+          class="hover:scale-105 transition-all duration-500"
+        />
+      </li>
+      </div>
     </ul>
   </div>
 </template>
