@@ -1,19 +1,17 @@
 <template>
-  <div class="fontsF1 w-full m-0" style="">
+  <div class="fontsF1">
     <div
       class="2xl:text-[4.5rem] xl:text-8xl lg:text-7xl md:text-6xl text-5xl text-center p-0 m-auto font-bold pt-4 text-white uppercase"
       :class="currentTeamClass"
     >
       Days since last championship title
     </div>
-    <div
-      id="teams"
-      class="bg-[#00192D] text-white outline-8 mx-auto grid lg:grid-cols-3 grid-cols-1 gap-4"
-      :class="currentTeamClass"
-    >
-      <div id="stats" class="order-2 lg:order-1 cursor-default">
-        <div class="left mt-24 mx-8 px-6 pl-4 md:pl-0 pt-2 pb-4 pr-8 text-xl">
-          <div v-if="buttonClickedRB" class="p-4 uppercase animated-border-box">
+    <div id="teams"
+      class="bg-[#00192D] text-white outline-8 mx-auto grid xl:grid-cols-3 grid-cols-1 gap-4"
+      :class="currentTeamClass">
+      <div id="stats" class="order-2 xl:order-1 cursor-default">
+        <div class="left mt-24 lg:mx-8 lg:px-6 lg:pl-12 md:pl-0 pt-2 pb-4 pr-8 text-xl">
+          <div v-if="buttonClickedRB" class="p-4 uppercase">
             <RedBullStats></RedBullStats>
           </div>
           <div
@@ -72,18 +70,18 @@
           </div>
         </div>
       </div>
-      <div id="days" class="order-1 lg:order-2">
+      <div id="days" class="order-1 xl:order-2">
         <div class="text-4xl text-center pt-20">
-          <div class="text-center mt-8 text-3xl lg:text-4xl">
+          <div class="text-center mt-8 text-3xl lg:text-5xl">
             <div class="pt-2 shiny" v-if="buttonClickedRB">
               Days elapsed since RedBull's previous championship: <br />
-              <div class="text-9xl gold-text font-bold pt-8 pb-2 silver">
-                <span class="shine">{{ redBullDate }}</span>
+              <div class="text-9xl font-bold pt-8 pb-2 ">
+                <span class="silver">{{ redBullDate }}</span>
               </div>
               <div class="pt-4 pb-10">24-10-2023 - Japanese GP</div>
-              <span class="text-3xl">Last champion:<br /></span>
-              <span class="shiny gold-text text-5xl lg:text-6xl pt-4">
-                <span class="inner-shiny">Max Verstappen</span>
+              <span class="text-4xl">Last champion:<br /></span>
+              <span class="text-6xl lg:text-7xl pt-4">
+                <span class="">Max Verstappen</span>
               </span>
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedFr">
@@ -224,44 +222,42 @@
           </div>
         </div>
       </div>
-      <div id="champions" class="order-3 items-center justify-center text-center">
-        <div
-          class="mx-8 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 ml-64 text-xl text-center"
-        >
+      <div id="champions" class="order-3 items-center justify-center text-center ">
+        <div class="xl:mx-8 xl:ml-64 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 text-2xl text-center">
           <div v-if="buttonClickedRB" class="text-4xl animated-border-box p-4">
-            <div class="mt-2 mb-2 text-4xl pb-4 font-bold ">
+            <div class="mt-2 mb-2 text-4xl lg:text-5xl xl:text-4xl pb-4  font-bold ">
               WINNING YEARS
             </div>
-            <div class="grid lg:grid-cols-2 sm:md:grid-cols-1 sm:md:items-center sm:mdjustify-center gap-2">
+            <div class="grid grid-cols-1 gap-1">
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2010)"
               >
                 2010<br />
               </span>
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2011)"
               >
                 2011<br />
               </span>
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2012)"
                 >2012<br
               /></span>
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2013)"
                 >2013<br
               /></span>
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2022)"
                 >2022<br
               /></span>
               <span
-                class="px-2 hover:text-5xl cursor-pointer hover:rounded-lg hover:bg-[#f5c21b]"
+                class="px-2 hover:text-5xl cursor-pointer sm:max-xl:py-4 hover:rounded-lg hover:bg-[#f5c21b]"
                 @click="scrollToYear(2023)"
                 >2023<br
               /></span>
@@ -719,11 +715,8 @@
     </div>
     <div id="buttons"
       class="bg-[#00192D] grid place-items-center pb-32 pt-32 col-span-4 position-absolute"
-      :class="currentTeamClass"
-    >
-      <ul
-        class="mx-2 grid lg:grid-cols-5 grid-cols-2 justify-content-center gap-2"
-      >
+      :class="currentTeamClass">
+      <ul class="mx-2 grid lg:grid-cols-5 grid-cols-2 justify-content-center gap-2">
         <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#00192d] hover:font-bold hover:text-white hover:rounded-bl-3xl hover:rounded-tr-3xl"
           @click="toggleRedBull"
@@ -1160,11 +1153,11 @@ body {
   mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.6) 40%,
-    #000 50%,
+    #ff0101 50%,
     rgba(0, 0, 0, 0.6) 70%
   );
   mask-size: 200%;
-  animation: shine 2s linear infinite;
+  animation: shine 1.5s linear infinite;
 }
 
 .titleStroke {

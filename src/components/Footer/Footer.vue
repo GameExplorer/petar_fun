@@ -1,7 +1,7 @@
 <template>
   <div class="grid-container">
     <div class="grid grid-cols-2">
-      <li v-for="link in randomLinks" :key="link.name" class="flex items-center justify-center rounded-lg text-white px-4 py-4">
+      <li v-for="link in randomLinks" :key="link.name" class="flex items-center justify-center rounded-lg text-white px-2 py-4">
         <RouterLink :to="link.to">
           <img :src="link.image" alt="{{ link.name }} page" class="hover:scale-105 transition-all duration-500" />
         </RouterLink>
