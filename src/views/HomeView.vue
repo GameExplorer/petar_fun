@@ -13,7 +13,7 @@
     <div class="flex items-center justify-center pt-16">
       <h1 class="text-4xl font-bold uppercase">PETAR.FUN</h1>
     </div>
-    <ul class="grid grid-rows grid-cols-3 pt-12 gap-2 px-64 mx-12">
+    <ul class="grid grid-rows grid-cols-1 xl:grid-cols-3 gap-2 justify-content-center px-4 pt-4 xl:px-32">
       <li class="flex items-center justify-center">
         <RouterLink :to="{ name: 'Thrones' }">
           <img
