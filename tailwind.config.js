@@ -10,6 +10,9 @@ export default {
         'thrones-silver': '#4f5152',
         'sterling': '#e2e5e6'
       },
+      backgroundColor: {
+        'redbull': '#00192d',
+      }
     },
   },
   darkMode: "class",
