@@ -1,7 +1,10 @@
 <template>
-  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl xl:text-4xl">STATS</div>
+  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl xl:text-4xl">
+    STATS
+  </div>
   <div class="p-2 lg:text-3xl text-2xl">
-    <span class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
+    <span
+      class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
       >Race debut: <span class="font-bold">2005, Australia</span></span
     >
   </div>
