@@ -10,13 +10,13 @@
       class="bg-[#00192D] text-white outline-8 mx-auto grid xl:grid-cols-3 grid-cols-1 gap-4"
       :class="currentTeamClass">
       <div id="stats" class="order-2 xl:order-1 cursor-default">
-        <div class="left mt-24 lg:mx-8 lg:px-6 lg:pl-12 md:pl-0 pt-2 pb-4 pr-8 text-xl">
-          <div v-if="buttonClickedRB" class="p-4 uppercase">
+        <div class="left mt-24 lg:mx-8 lg:px-6 lg:pl-12 md:pl-0 pt-2 pb-4 pr-8 text-xl ">
+          <div v-if="buttonClickedRB" class="mx-4 lg:mx-2 xp-4 uppercase box">
             <RedBullStats></RedBullStats>
           </div>
           <div
             v-else-if="buttonClickedFr"
-            class="p-4 uppercase animated-border-boxfr"
+            class="p-4 uppercase box"
           >
             <FerrariStats></FerrariStats>
           </div>
@@ -224,8 +224,8 @@
       </div>
       <div id="champions" class="order-3 items-center justify-center text-center ">
         <div class="xl:mx-8 xl:ml-64 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 text-2xl text-center">
-          <div v-if="buttonClickedRB" class="text-4xl animated-border-box p-4">
-            <div class="mt-2 mb-2 text-4xl lg:text-5xl xl:text-4xl pb-4  font-bold ">
+          <div v-if="buttonClickedRB" class="text-4xl box p-4">
+            <div class="mt-2 mb-2 text-4xl lg:text-5xl xl:text-4xl pb-4 font-bold ">
               WINNING YEARS
             </div>
             <div class="grid grid-cols-1 gap-1">
@@ -1133,6 +1133,8 @@ export default {
 </script>
 
 <style>
+@import "@/assets/Formula_Styles/border_animations.css";
+
 body {
   margin: 0;
   padding: 0;
@@ -1211,4 +1213,6 @@ body {
 .backgroundRB {
   background-color: #0a2aef;
 }
+
+
 </style>

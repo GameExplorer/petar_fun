@@ -194,7 +194,6 @@ export default {
 </script>
 
 <style>
-  
 @keyframes rotate {
   100% {
     transform: translate(-50%, -50%) rotate(1turn);
