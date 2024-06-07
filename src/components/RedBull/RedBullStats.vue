@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl xl:text-4xl">
+  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl">
     STATS
   </div>
   <div class="p-2 lg:text-3xl text-2xl">

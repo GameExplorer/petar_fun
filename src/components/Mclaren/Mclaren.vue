@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-2 gap-3 pb-32">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-32">
     <div id="1974" class="card mb-24">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1974.png" />
+        <img src="/Images/Mclaren/mclaren1974.png" class="mb-6" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >Mclaren's first</span
+          >1974 - Mclaren's first</span
         >
       </div>
       <div class="details">
@@ -20,17 +20,16 @@
           Austria put Fittipaldi in a difficult position his rival Ragazzoni was
           leading the championship. Fittipaldi finished second in the Italian GP
           and won the Canadian GP. In the end Fittipaldi won the championship by
-          3 points. Sadly at the last race young Austrian driver Helmuth Koinigg
-          died in a crash.
+          3 points.
         </p>
       </div>
     </div>
     <div id="1984" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1984.png" />
+        <img src="/Images/Mclaren/mclaren1984.png" class="mb-4" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >Close call</span
+          >1984 - Close call</span
         >
       </div>
       <div class="details">
@@ -50,10 +49,10 @@
     </div>
     <div id="1985" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1985.png" />
+        <img src="/Images/Mclaren/mclaren1985.png" class="mb-8" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >two in a row</span
+          >1985 - two in a row</span
         >
       </div>
       <div class="details">
@@ -71,10 +70,10 @@
     </div>
     <div id="1988" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1988.png" />
+        <img src="/Images/Mclaren/mclaren1988.png" class="mb-4" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >FIERCE RIVALRY</span
+          >1988 - FIERCE RIVALRY</span
         >
       </div>
       <div class="details">
@@ -92,10 +91,10 @@
     </div>
     <div id="1989" class="card mb-24">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1989.png" />
+        <img src="/Images/Mclaren/mclaren1989.png" class="mb-12" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >BREAKING POINT</span
+          >1989 - BREAKING POINT</span
         >
       </div>
       <div class="details">
@@ -114,34 +113,33 @@
     </div>
     <div id="1990" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1990.png" />
+        <img src="/Images/Mclaren/mclaren1990.png" class="mb-4" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >CONTROVERSY</span
+          >1990 - CONTROVERSY</span
         >
       </div>
       <div class="details">
         <h2 class="header text-3xl uppercase">Senna v Prost (in red)</h2>
         <p class="textMclaren text-2xl">
           The championship featured a dramatic battle between Senna and former
-          teammate Alain Prost, who had made the switch to Ferrari. Prost and
-          led the championship after three consecutive mid-season wins. Senna
-          fought back strongly and went into the penultimate round at the Suzuka
+          teammate Alain Prost, who had made the switch to Ferrari. Prost led
+          the championship after three consecutive mid-season wins. Senna fought
+          back strongly and went into the penultimate round at the Suzuka
           circuit in Japan with a nine-point lead over Prost. There, Senna took
-          pole position only for Prost to beat him off the line; the Brazilian
-          driver then drove into the Frenchman at the first corner, putting both
-          out and thus settling the championship in Senna's favour. This was the
-          second year in succession that the two drivers had collided at Suzuka.
-          Senna admitted the following year that the collision was deliberate.
+          pole position only for Prost to beat him off the line. Senna then
+          drove into the Frenchman at the first corner, putting both out and
+          thus settling the championship in Senna's favour. This was the second
+          year in succession that the two drivers had collided at Suzuka. 
         </p>
       </div>
     </div>
     <div id="1991" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1991.png" />
+        <img src="/Images/Mclaren/mclaren1991.png" class="mb-6" />
         <span
           class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >FOUR IN A ROW</span
+          >1991 - FOUR IN A ROW</span
         >
       </div>
       <div class="details">
@@ -161,10 +159,9 @@
     </div>
     <div id="1998" class="card">
       <div class="imgBx">
-        <img src="/Images/Mclaren/mclaren1998.png" />
-        <span
-          class="text-5xl uppercase font-extrabold border-b-2 border-white p-2"
-          >MCLAREN'S LAST</span
+        <img src="/Images/Mclaren/mclaren1998.png" class="mb-12" />
+        <span class="text-5xl uppercase font-extrabold border-b-2 border-white"
+          >1998 - MCLAREN'S LAST</span
         >
       </div>
       <div class="details">
@@ -196,8 +193,8 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 720px;
-  height: 580px;
+  width: auto;
+  height: 720px;
   background: #262626;
   overflow: hidden;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
@@ -242,53 +239,5 @@ export default {
 .card .details .textMclaren {
   margin: 20px 0 0;
   color: #fff;
-}
-
-/* Mclaren style*/
-.animated-border-boxmc,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
-
-.animated-border-boxmc:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #000000,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxmc:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #ff8700;
-  /*box border radius*/
-  border-radius: 5px;
 }
 </style>

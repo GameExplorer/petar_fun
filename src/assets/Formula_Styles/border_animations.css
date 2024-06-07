@@ -22,21 +22,42 @@
   --gradY: 50%;
 }
 
-.box {
+.boxRb, .boxFr, .boxMc, .boxMe, .boxAl, .boxAr, .boxHa, .boxAm, .boxWi, .boxAt {
   min-width: min(25rem, 100%);
   border: 0.35rem solid;
   padding: 1.5vw;
   border-image: conic-gradient(
       from var(--angle),
-      rgba(236, 24, 69, 1),
-      rgba(254, 213, 2, 0.1) 0.25turn,
-      rgba(236, 24, 69, 1) 0.15turn,
+      rgba(255, 255, 255, 1),
+      rgba(236, 24, 69, 0.1) 0.25turn,
+      rgba(254, 213, 2, 1) 0.15turn,
       rgba(168,239,255, 0.0) 0.25turn
     )
     30;
-  animation: borderRotate 3000ms linear infinite forwards;
+  animation: borderRotate 4000ms linear infinite forwards;
 }
 
+.boxFr {
+  border-image: conic-gradient(
+      from var(--angle),
+      rgba(255, 255, 0,1),
+      rgba(255, 255, 255, 1) 0.25turn,
+      rgba(255, 242, 0, 1) 0.15turn,
+      rgba(168,239,255, 0.0) 0.25turn
+    )
+    30;
+}
+
+.boxMc {
+  border-image: conic-gradient(
+      from var(--angle),
+      rgba(0, 0, 0,1),
+      rgba(0, 0, 0, 1) 0.25turn,
+      rgba(0, 0, 0, 1) 0.15turn,
+      rgba(168,239,255, 0.0) 0.25turn
+    )
+    30;
+}
 @keyframes borderRotate {
   100% {
     --angle: 420deg;
