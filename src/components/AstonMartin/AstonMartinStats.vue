@@ -1,6 +1,6 @@
 <template>
     <div class="mt-2 mb-2 font-bold text-center text-4xl">STATS</div>
-          <div class="p-2 text-3xl">
+          <div class="p-2 text-[1.475em]">
             <span class="px-2 py-1 hover:bg-white hover:text-[#006f62] hover:rounded-lg"
               >Race debut:
               <span class="font-semibold">1959, Netherlands</span></span
@@ -36,7 +36,7 @@
               >Points: <span class="font-semibold">412</span></span
             >
           </div>
-          <div class="p-2 text-3xl">
+          <div class="p-2 text-[1.435em]">
             <span class="px-2 py-1 hover:bg-white hover:text-[#006f62] hover:rounded-lg"
               >Constructor's Championship:
               <span class="font-semibold">0</span></span
