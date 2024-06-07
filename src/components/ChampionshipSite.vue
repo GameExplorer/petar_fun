@@ -32,14 +32,11 @@
           </div>
           <div
             v-else-if="buttonClickedMc"
-            class="mx-4 uppercase boxMc text-black"
+            class="mx-4 lg:mx-2 p-4 uppercase boxMc text-black"
           >
             <MclarenStats></MclarenStats>
           </div>
-          <div
-            v-else-if="buttonClickedAm"
-            class="p-4 uppercase animated-border-boxam"
-          >
+          <div v-else-if="buttonClickedAm" class="mx-4 lg:mx-2 p-2 uppercase boxAm">
             <AstonMartinStats></AstonMartinStats>
           </div>
           <div
@@ -130,18 +127,15 @@
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Mika Hakkinen</span>
             </div>
-            <div
-              class="pt-2 pb-24 uppercase font-bold"
-              v-else-if="buttonClickedAm"
-            >
+            <div class="pt-2 pb-24 uppercase font-bold" v-else-if="buttonClickedAm">
               <span class="text-5xl tracking-wider"
                 >Aston Martin<br />
                 has never won<br />
                 Constructor's Championship</span
               >
               <br />
-              <div class="pt-6 pb-10">CURRENT DRIVERS:</div>
-              <span class="text-7xl"
+              <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
+              <span class="text-6xl"
                 >Fernando Alonso<br />
                 Lance Stroll</span
               >
@@ -403,10 +397,7 @@
               /></span>
             </div>
           </div>
-          <div
-            v-if="buttonClickedMc"
-            class="text-3xl boxMc p-4 text-black"
-          >
+          <div v-if="buttonClickedMc" class="text-3xl boxMc p-4 text-black">
             <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
             <div class="grid grid-cols-2 gap-2">
               <span
@@ -525,7 +516,7 @@
           </div>
           <div
             v-if="buttonClickedAm"
-            class="text-2xl uppercase animated-border-boxam p-4"
+            class="text-2xl uppercase boxAm p-4"
           >
             <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
             <span
@@ -535,7 +526,7 @@
               Azerbaijan, 2021<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 my-4 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20231)"
             >
               Bahrain, 2023<br />
