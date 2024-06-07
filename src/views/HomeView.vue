@@ -48,7 +48,7 @@
       <div class="hidden">
       <li class="flex items-center justify-center p-4">
         <img
-          src="/Images/space.png"
+          src="/Images/PageIcons/space.png"
           alt="Champions page"
           class="hover:scale-105 transition-all duration-500"
         />
