@@ -27,7 +27,7 @@
         <RouterLink :to="{ name: 'Mountains' }">
           <div class="flex items-center justify-center">
             <img
-              src="/Images/mountains_button.png"
+              src="/Images/PageIcons/mountains_button.png"
               alt="Mountains page"
               class="hover:scale-105 transition-all duration-500"
             />

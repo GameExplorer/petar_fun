@@ -6,29 +6,33 @@
     >
       Days since last championship title
     </div>
-    <div id="teams"
+    <div
+      id="teams"
       class="bg-[#00192D] text-white outline-8 mx-auto grid xl:grid-cols-3 grid-cols-1 gap-4"
-      :class="currentTeamClass">
+      :class="currentTeamClass"
+    >
       <div id="stats" class="order-2 xl:order-1 cursor-default">
-        <div class="left mt-24 lg:mx-8 lg:px-6 lg:pl-12 md:pl-0 pt-2 pb-4 pr-8 text-xl ">
-          <div v-if="buttonClickedRB" class="mx-4 lg:mx-2 xp-4 uppercase box">
+        <div
+          class="left mt-24 lg:mx-8 lg:px-6 lg:pl-12 md:pl-0 pt-2 pb-4 pr-8 text-xl"
+        >
+          <div v-if="buttonClickedRB" class="mx-4 lg:mx-2 p-4 uppercase boxRb">
             <RedBullStats></RedBullStats>
           </div>
           <div
             v-else-if="buttonClickedFr"
-            class="p-4 uppercase box"
+            class="mx-4 lg:mx-2 p-4 uppercase boxFr"
           >
             <FerrariStats></FerrariStats>
           </div>
           <div
             v-else-if="buttonClickedMe"
-            class="p-4 uppercase animated-border-boxme text-black"
+            class="mx-4 lg:mx-2 p-4 uppercase text-black boxMe"
           >
             <MercedesStats></MercedesStats>
           </div>
           <div
             v-else-if="buttonClickedMc"
-            class="p-4 uppercase animated-border-boxmc text-black"
+            class="mx-4 uppercase boxMc text-black"
           >
             <MclarenStats></MclarenStats>
           </div>
@@ -44,10 +48,7 @@
           >
             <AlpineStats></AlpineStats>
           </div>
-          <div
-            v-else-if="buttonClickedWi"
-            class="p-4 uppercase animated-border-boxwi"
-          >
+          <div v-else-if="buttonClickedWi" class="p-4 uppercase">
             <WilliamsStats></WilliamsStats>
           </div>
           <div
@@ -75,13 +76,13 @@
           <div class="text-center mt-8 text-3xl lg:text-5xl">
             <div class="pt-2 shiny" v-if="buttonClickedRB">
               Days elapsed since RedBull's previous championship: <br />
-              <div class="text-9xl font-bold pt-8 pb-2 ">
+              <div class="text-9xl font-bold pt-8 pb-2">
                 <span class="silver">{{ redBullDate }}</span>
               </div>
               <div class="pt-4 pb-10">24-10-2023 - Japanese GP</div>
               <span class="text-4xl">Last champion:<br /></span>
               <span class="text-6xl lg:text-7xl pt-4">
-                <span class="">Max Verstappen</span>
+                <span class="silver">Max Verstappen</span>
               </span>
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedFr">
@@ -94,29 +95,27 @@
                 <span class="silver">{{ ferrariDate }}</span>
               </div>
               <div class="pt-4 pb-10 text-4xl">08-11-2023 - Brazilian GP</div>
-              <span class="text-3xl">LAST CHAMPION:<br /></span>
-              <span class="text-7xl pt-4 silver">Kimi Raikkonen</span>
+              <span class="text-4xl">LAST CHAMPION:<br /></span>
+              <span class="text-6xl lg:text-7xl pt-4 silver"
+                >Kimi Raikkonen</span
+              >
             </div>
-            <div
-              class="pt-2 uppercase font-bold text-black"
-              v-else-if="buttonClickedMe"
-            >
+            <div class="pt-2 uppercase font-bold text-black" v-else-if="buttonClickedMe">
               <span class="text-5xl tracking-wider"
                 >Days elapsed since<br />
                 Mercedes's previous<br />
-                championship:</span
-              >
-              <br />
+                championship: </span
+              ><br />
               <div class="text-9xl text-white font-bold pt-8 pb-2">
-                <span class="text-black">{{ mercedesDate }}</span>
+                <span class="silver">{{ mercedesDate }}</span>
               </div>
-              <div class="pt-4 pb-10 text-5xl">12-12-2021 - Abu Dhabi GP</div>
-              <span class="text-3xl">LAST CHAMPION:<br /></span>
-              <span class="text-7xl pt-4">Lewis Hamilton</span>
+              <div class="pt-4 pb-10 text-4xl">12-12-2021 - Abu Dhabi GP</div>
+              <span class="text-4xl">LAST CHAMPION:<br /></span>
+              <span class="text-6xl lg:text-7xl pt-4"
+                >Lewis Hamilton</span
+              >
             </div>
-            <div
-              class="pt-2 uppercase font-bold text-black"
-              v-else-if="buttonClickedMc"
+            <div class="pt-2 uppercase font-bold text-black" v-else-if="buttonClickedMc"
             >
               <span class="text-5xl tracking-wider"
                 >Days elapsed since<br />
@@ -222,10 +221,12 @@
           </div>
         </div>
       </div>
-      <div id="champions" class="order-3 items-center justify-center text-center ">
-        <div class="xl:mx-8 xl:ml-64 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 text-2xl text-center">
-          <div v-if="buttonClickedRB" class="text-4xl box p-4">
-            <div class="mt-2 mb-2 text-4xl lg:text-5xl xl:text-4xl pb-4 font-bold ">
+      <div id="champions" class="order-3 items-center justify-center text-center">
+        <div
+          class="xl:mx-8 xl:ml-64 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 text-2xl text-center"
+        >
+          <div v-if="buttonClickedRB" class="text-4xl boxRb p-4">
+            <div class="mt-2 mb-2 text-4xl lg:text-5xl pb-4 font-bold">
               WINNING YEARS
             </div>
             <div class="grid grid-cols-1 gap-1">
@@ -263,142 +264,140 @@
               /></span>
             </div>
           </div>
-          <div
-            v-if="buttonClickedFr"
-            class="text-3xl animated-border-boxfr p-4"
-          >
-            <div class="mt-2 mb-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
-            <div class="grid grid-cols-2 gap-2">
+          <div v-if="buttonClickedFr" class="text-4xl boxFr p-4">
+            <div class="mt-2 mb-2 text-4xl lg:text-5xl pb-4 font-bold">
+              WINNING YEARS
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1961)"
                 id="1961-2"
               >
                 1961<br />
               </span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1964)"
               >
                 1964<br />
               </span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1975)"
                 >1975<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1976)"
                 >1976<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1977)"
                 >1977<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1979)"
                 >1979<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1982)"
                 >1982<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1983)"
                 >1983<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(1999)"
                 >1999<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2000)"
                 >2000<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2001)"
                 >2001<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2002)"
                 >2002<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2003)"
                 >2003<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2004)"
                 >2004<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2007)"
                 >2007<br
               /></span>
               <span
-                class="px-2 py-1 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
+                class="px-2 py-1 sm:max-xl:py-4 hover:bg-white hover:text-red-700 hover:text-4xl hover:rounded-xl cursor-pointer"
                 @click="scrollToYear(2008)"
                 >2008<br
               /></span>
             </div>
           </div>
-          <div
-            v-if="buttonClickedMe"
-            class="text-3xl animated-border-boxme p-4 text-black"
-          >
-            <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
-            <div class="grid grid-cols-2 gap-2">
+          <div v-if="buttonClickedMe" class="text-3xl boxMe p-4 text-black">
+            <div class="mt-2 text-4xl lg:text-5xl pb-4 font-bold">
+              WINNING YEARS
+            </div>
+            <div class="grid grid-cols-1 gap-1">
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="lg:px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2014)"
               >
                 2014<br />
               </span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2015)"
               >
                 2015<br />
               </span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2016)"
                 >2016<br
               /></span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2017)"
                 >2017<br
               /></span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2018)"
                 >2018<br
               /></span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2019)"
                 >2019<br
               /></span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2020)"
                 >2020<br
               /></span>
               <span
-                class="px-2 py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
+                class="py-1 text-4xl hover:text-5xl hover:bg-black hover:text-[#6cd3bf] hover:rounded-lg cursor-pointer"
                 @click="scrollToYear(2021)"
                 >2021<br
               /></span>
@@ -406,7 +405,7 @@
           </div>
           <div
             v-if="buttonClickedMc"
-            class="text-3xl animated-border-boxmc p-4 text-black"
+            class="text-3xl boxMc p-4 text-black"
           >
             <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
             <div class="grid grid-cols-2 gap-2">
@@ -472,10 +471,7 @@
               2006<br />
             </span>
           </div>
-          <div
-            v-if="buttonClickedWi"
-            class="text-3xl animated-border-boxwi p-4"
-          >
+          <div v-if="buttonClickedWi" class="text-3xl p-4">
             <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
             <div class="grid grid-cols-2 gap-2">
               <span
@@ -715,8 +711,11 @@
     </div>
     <div id="buttons"
       class="bg-[#00192D] grid place-items-center pb-32 pt-32 col-span-4 position-absolute"
-      :class="currentTeamClass">
-      <ul class="mx-2 grid lg:grid-cols-5 grid-cols-2 justify-content-center gap-2">
+      :class="currentTeamClass"
+    >
+      <ul
+        class="mx-2 grid lg:grid-cols-5 grid-cols-2 justify-content-center gap-2"
+      >
         <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#00192d] hover:font-bold hover:text-white hover:rounded-bl-3xl hover:rounded-tr-3xl"
           @click="toggleRedBull"
@@ -1213,6 +1212,4 @@ body {
 .backgroundRB {
   background-color: #0a2aef;
 }
-
-
 </style>

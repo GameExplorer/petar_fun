@@ -1,8 +1,9 @@
 <template>
+  <div>
   <div class="timelineFerrari">
     <ol class="years">
       <li id="1961" class="year">
-        <h1 class="text-5xl font-semibold header">FIRST OF MANY</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">FIRST OF MANY</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             The first Constructor's title was won 1961. Ferrari dominated the
@@ -14,12 +15,12 @@
           <img
             src="/Images/Ferrari/ferrari1961.png"
             alt="ferrari 1961"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1964" class="year">
-        <h1 class="text-5xl font-semibold header">SECOND TITLE</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">SECOND TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             John Surtees won the 1964 Drivers' Championship, becoming the only
@@ -30,12 +31,12 @@
           <img
             src="/Images/Ferrari/ferrari1964.png"
             alt="ferrari 1964"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1975" class="year">
-        <h1 class="text-5xl font-semibold header">LAUDA'S FIRST</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">LAUDA'S FIRST</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             In his second year with Ferrari, Niki Lauda was given the keys to
@@ -48,12 +49,12 @@
           <img
             src="/Images/Ferrari/ferrari1975.png"
             alt="ferrari 1975"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1976" class="year">
-        <h1 class="text-5xl font-semibold header">THE RUSH</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">THE RUSH</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             The Drivers's Championship was full of controversy between Niki
@@ -65,12 +66,14 @@
           <img
             src="/Images/Ferrari/lauda1976.png"
             alt="ferrari 1976"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1977" class="year">
-        <h1 class="text-5xl font-semibold header">THREE IN A ROW</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          THREE IN A ROW
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Niki Lauda won his second championship, despite Mario Andretti
@@ -82,12 +85,14 @@
           <img
             src="/Images/Ferrari/lauda1977.png"
             alt="ferrari 1977"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1979" class="year">
-        <h1 class="text-5xl font-semibold header">FOUR OUT OF FIVE</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          FOUR OUT OF FIVE
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Jody Scheckter won the Drivers' Championship and, with teammate
@@ -99,12 +104,12 @@
           <img
             src="/Images/Ferrari/ferrari1979.png"
             alt="ferrari 1977"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
         </div>
       </li>
       <li id="1982" class="year">
-        <h1 class="text-5xl font-semibold header">UGLY YEAR</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">UGLY YEAR</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Eventual champion Rosberg won only one race all season (Swiss GP)
@@ -119,13 +124,12 @@
           <img
             src="/Images/Ferrari/ferrari1982.png"
             alt="ferrari 1982"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2">Source: wikipedia.com</p>
         </div>
       </li>
       <li id="1983" class="year">
-        <h1 class="text-5xl font-semibold header">EIGHT TITLE</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">EIGHT TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Ferrari won the Constructors' Championship, despite its better
@@ -135,18 +139,19 @@
           <img
             src="/Images/Ferrari/ferrari1983.png"
             alt="ferrari 1983"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2">Source: wikipedia.com</p>
         </div>
       </li>
       <li id="1999" class="year">
-        <h1 class="text-5xl font-semibold header">END OF DRAUGHT</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          END OF DRAUGHT
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champion Mika Häkkinen was again awarded the World
-            Drivers' Championship. His team McLaren just missed out, it was
-            Ferrari that clinched the World Constructors' Championship by a
+            Drivers' Championship. His team McLaren just missed out on championship, it was
+            Ferrari that clinched the Championship by a
             margin of four points. It would be the last Drivers' title for a
             McLaren driver until 2008. It was Ferrari's first Constructors'
             title since 1983, but would also mark the first of six successive
@@ -155,13 +160,14 @@
           <img
             src="/Images/Ferrari/ferrari1999.png"
             alt="ferrari 1999"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2000" class="year">
-        <h1 class="text-5xl font-semibold header">START OF DOMINATION</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          MICHAEL ERA
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             For the third year in succession, the season featured a close battle
@@ -173,39 +179,43 @@
           <img
             src="/Images/Ferrari/ferrari2000.png"
             alt="ferrari 2000"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2001" class="year">
-        <h1 class="text-5xl font-semibold header">SUPERB MICHAEL</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          SUPERB MICHAEL
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
-            again awarded the World Drivers' Championship and World
-            Constructors' Championship, respectively. Schumacher won the title
+            again awarded the Drivers' Championship and
+            Constructors' Championship. 
+            <p class="sm:max-lg:pt-4 text-3xl text-justify context">Schumacher won the title
             with a record margin of 58 points over David Coulthard (McLaren),
             after achieving nine victories and five-second places. He also
             became the driver the most wins thus far, his victory at the Belgian
-            Grand Prix marking his 52nd career win.
+            Grand Prix marking his 52nd career win.</p>
           </p>
           <img
             src="/Images/Ferrari/ferrari2001.png"
             alt="ferrari 2001"
             class="rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2002" class="year">
-        <h1 class="text-5xl font-semibold header">DOMINATE PERFORMANCE</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          DOMINANCE
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
-            again awarded the World Drivers' Championship and World
-            Constructors' Championship, respectively. Schumacher finished first
-            or second in every race except for the Malaysian Grand Prix, where
+            again awarded the Drivers' Championship and
+            Constructors' Championship. 
+            Schumacher finished first or second in every race except
+            for the Malaysian Grand Prix, where
             he finished third, thus achieving a podium position in every race.
             He won a then-record eleven Grands Prix, surpassing the previous
             record of nine wins, jointly held by himself. He also set the record
@@ -216,33 +226,34 @@
           <img
             src="/Images/Ferrari/michael2002.png"
             alt="ferrari 2002"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2003" class="year">
-        <h1 class="text-5xl font-semibold header">TOUGH YEAR</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">TOUGH YEAR</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Defending champions Michael Schumacher and Scuderia Ferrari were
-            again awarded the World Drivers' Championship and World
-            Constructors' Championship, respectively. Schumacher's closest
-            competitors were Kimi Räikkönen, driving for McLaren, and Juan Pablo
-            Montoya, driving for Williams. It was Schumacher's sixth World
-            Drivers' title overall, breaking Juan Manuel Fangio's 46-year-old
-            record.
+            again awarded the Drivers' Championship and
+            Constructors' Championship.</p>
+            <p class="text-3xl text-justify context">
+            Schumacher's closest competitors were Kimi Räikkönen, 
+            driving for McLaren, and Juan Pablo Montoya, driving for Williams. 
+            It was Schumacher's sixth World Drivers' title overall, 
+            breaking Juan Manuel Fangio's 46-year-old record.
           </p>
           <img
             src="/Images/Ferrari/ferrari2003.png"
             alt="ferrari 2003"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2004" class="year">
-        <h1 class="text-5xl font-semibold header">SIMPLY THE BEST</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">
+          SIMPLY THE BEST
+        </h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             In this championship, several records were broken. Michael
@@ -255,13 +266,12 @@
           <img
             src="/Images/Ferrari/ferrari2004.png"
             alt="ferrari 2004"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2007" class="year">
-        <h1 class="text-5xl font-semibold header">CONTROVERSY</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">CONTROVERSY</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             A major talking point of the season had been an espionage
@@ -274,13 +284,12 @@
           <img
             src="/Images/Ferrari/ferrari2007.png"
             alt="ferrari 2007"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
         </div>
       </li>
       <li id="2008" class="year">
-        <h1 class="text-5xl font-semibold header">LAST TITLE</h1>
+        <h1 class="text-4xl lg:text-5xl font-semibold header">LAST TITLE</h1>
         <div class="content">
           <p class="text-3xl text-justify context">
             Eight wins help power them to their 16th constructors' title,
@@ -292,13 +301,13 @@
           <img
             src="/Images/Ferrari/ferrari2008.png"
             alt="ferrari 2008"
-            class="rounded-lg shadow-black shadow-md"
+            class="m-auto rounded-lg shadow-black shadow-md"
           />
-          <p class="pt-2 text-gray-500">Source: Ferrari.com</p>
-        </div>
+          </div>
       </li>
     </ol>
   </div>
+</div>
 </template>
 
 <script>
@@ -307,15 +316,16 @@ export default {
 };
 </script>
 
-<style>
-/* timelineFerrari STYLES */
+<style scoped>
+
 .timelineFerrari {
-  width: 900px;
-  background-color: #a7121f;
-  color: #fff;
-  padding: 30px 40px;
+  position: relative;
+  width: auto;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
+
 .timelineFerrari .years {
   list-style-type: none;
   border-left: 4px solid #fbfeff;
@@ -353,71 +363,9 @@ export default {
   top: 28px;
   transition: 0.5s;
 }
-.timelineFerrari .years .year:hover {
-  background-color: #c71818;
-  border-radius: 1em;
-}
+
 .timelineFerrari .years .year:hover:before {
   background-color: #0f0;
   box-shadow: 0px 0px 10px 2px #0f0;
-}
-
-/*@media (max-width: 300px) {
-  .timelineFerrari {
-    width: 100%;
-    padding: 30px 5px 30px 10px;
-  }
-  .timelineFerrari .years .year .content {
-    color: #34ace0;
-    font-size: 15px;
-  }
-}*/
-
-/* Ferrari styles*/
-.animated-border-boxfr,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
-
-.animated-border-boxfr:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #e80c18,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxfr:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #a7121f;
-  /*box border radius*/
-  border-radius: 5px;
 }
 </style>
