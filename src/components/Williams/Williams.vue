@@ -2,8 +2,7 @@
   <div class="grid grid-flow-row">
     <div id="1980">
       <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >First title</span
         >
       </div>
@@ -33,9 +32,8 @@
       </div>
     </div>
     <div id="1981">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Make it double</span
         >
       </div>
@@ -63,9 +61,8 @@
       </div>
     </div>
     <div id="1986">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >The Gang of Four</span
         >
       </div>
@@ -88,9 +85,9 @@
           race was Mexico GP which was won by Gerhard Berger. At the last race
           in Australia, three of the four drivers had a shot at a championship.
           Senna retired from the race and Mansell suffered the puncture. Prost
-          won the race and the championship. The constructor's championship was won by
-          the Williams-Honda team. This was the first time a Japanese engine won
-          a constructor's championship.
+          won the race and the championship. The constructor's championship was
+          won by the Williams-Honda team. This was the first time a Japanese
+          engine won a constructor's championship.
         </div>
         <div class="pt-4">
           Before the season started Frank Williams was involed in road accident
@@ -99,9 +96,8 @@
       </div>
     </div>
     <div id="1987">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Williams-Honda</span
         >
       </div>
@@ -128,9 +124,8 @@
       </div>
     </div>
     <div id="1992">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Mansell domination</span
         >
       </div>
@@ -159,9 +154,8 @@
       </div>
     </div>
     <div id="1993">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >ACTIVE SUSPENSION</span
         >
       </div>
@@ -194,9 +188,8 @@
       </div>
     </div>
     <div id="1994">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Senna & HILL</span
         >
       </div>
@@ -230,9 +223,8 @@
       </div>
     </div>
     <div id="1996">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >Williams Domination</span
         >
       </div>
@@ -245,24 +237,27 @@
       </div>
       <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <p class="">
-          Hill won four out of five races in the opening season. Williams won then three races in the row. 
-          They won in Canada, France, Hungary and Germany. Villeneuve mounted a title challenge going into the 
-          final race of the season at Japan, but Hill reasserted his dominance to take the race and the 1996 
-          title, while Villeneuve lost a wheel and retired.
-          Damon Hill won the Drivers' Championship, making him the first son of a World Champion 
-          (his father Graham having won the title in 1962 and 1968) to have won the title himself. 
+          Hill won four out of five races in the opening season. Williams won
+          then three races in the row. They won in Canada, France, Hungary and
+          Germany. Villeneuve mounted a title challenge going into the final
+          race of the season at Japan, but Hill reasserted his dominance to take
+          the race and the 1996 title, while Villeneuve lost a wheel and
+          retired. Damon Hill won the Drivers' Championship, making him the
+          first son of a World Champion (his father Graham having won the title
+          in 1962 and 1968) to have won the title himself.
         </p>
         <p class="pt-4">
-          Williams's dominance was such that they had clinched the Constructors' Championship and only their 
-          drivers had a mathematical chance of taking the title, several races before the season concluded
-          This was the last championship for a British driver until Lewis Hamilton in 2008.
+          Williams's dominance was such that they had clinched the Constructors'
+          Championship and only their drivers had a mathematical chance of
+          taking the title, several races before the season concluded This was
+          the last championship for a British driver until Lewis Hamilton in
+          2008.
         </p>
       </div>
     </div>
     <div id="1997" class="pb-12">
-      <div class="pl-12 pb-8 text-6xl text-left font-extrabold">
-        <span
-          class="pr-8 border-b-4 border:white border-dashed uppercase"
+      <div class="pl-12 pb-8 pt-8 text-6xl text-left font-extrabold">
+        <span class="pr-8 border-b-4 border:white border-dashed uppercase"
           >The Last title</span
         >
       </div>
@@ -275,18 +270,22 @@
       </div>
       <div class="pl-12 pr-8 pt-2 text-4xl text-justify">
         <div class="pt-2">
-            The 1997 season was the last season of Williams-Renault and the last Williams' car designed by Adrian Newey.
-            Jacques Villeneuve won seven races that season with his teammate winning only one. At the British GP 
-            Williams achieved their 100th GP wins. 
-            Coming to the final round of the season at Jerez, Schumacher led Villeneuve by 1 point; however, on lap 48, 
-            Schumacher and Villeneuve collided. Schumacher was disqualified from second place in the championship 
-            as the accident was deemed by the FIA as "avoidable". Williams won the Constructors' title for 
-            the second time in a row, scoring 123 points. Jacques Villeneuve won the Drivers' Championship 
-            by three points to Michael Schumacher, who kept his points total despite being removed from second place.
+          The 1997 season was the last season of Williams-Renault and the last
+          Williams' car designed by Adrian Newey. Jacques Villeneuve won seven
+          races that season with his teammate winning only one. At the British
+          GP Williams achieved their 100th GP wins. Coming to the final round of
+          the season at Jerez, Schumacher led Villeneuve by 1 point; however, on
+          lap 48, Schumacher and Villeneuve collided. Schumacher was
+          disqualified from second place in the championship as the accident was
+          deemed by the FIA as "avoidable". Williams won the Constructors' title
+          for the second time in a row, scoring 123 points. Jacques Villeneuve
+          won the Drivers' Championship by three points to Michael Schumacher,
+          who kept his points total despite being removed from second place.
         </div>
         <div class="pt-4">
-          As of 2023, this is the last championship for a non-European driver, the last Constructors' 
-          and Drivers' championships for Williams, and the last championship won on Goodyear tyres.
+          As of 2023, this is the last championship for a non-European driver,
+          the last Constructors' and Drivers' championships for Williams, and
+          the last championship won on Goodyear tyres.
         </div>
       </div>
     </div>
@@ -299,54 +298,7 @@ export default {
 };
 </script>
 
-<style>
-.animated-border-boxwi,
-.animated-border-box-glow {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  border-radius: 11px;
-}
-
-.animated-border-boxwi:before,
-.animated-border-box-glow:before {
-  content: "";
-  z-index: -2;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-  width: 99999px;
-  height: 99999px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*border color, change middle color*/
-  background-image: conic-gradient(
-    rgba(0, 0, 0, 0),
-    #00a0de,
-    rgba(0, 0, 0, 0) 25%
-  );
-  /* change speed here */
-  animation: rotate 4s linear infinite;
-}
-
-.animated-border-boxwi:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  /* border width */
-  left: 5px;
-  top: 5px;
-  /* double the px from the border width left */
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  /*bg color*/
-  background: #005aff;
-  /*box border radius*/
-  border-radius: 5px;
-}
-
+<style scoped>
 .Williams-img {
   --s: 10px; /* size of the frame */
   --b: 2px; /* border thickness */
@@ -368,7 +320,19 @@ export default {
 }
 .Williams-img:hover {
   outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--s) / -2);
+  outline-offset: calc(
+    var(--w) * 0.025 - var(--s) / 2
+  ); /* Adjust this value for responsiveness */
   --_i: calc(100% - 2 * var(--s));
+}
+
+@media only screen and (max-width: 768px) {
+  .Williams-img {
+    outline: none;
+  }
+
+  .Williams-img:hover {
+    --_i: calc(100% - 2 * var(--s));
+  }
 }
 </style>

@@ -45,7 +45,7 @@
           >
             <AlpineStats></AlpineStats>
           </div>
-          <div v-else-if="buttonClickedWi" class="p-4 uppercase">
+          <div v-else-if="buttonClickedWi" class="mx-4 lg:mx-2 p-2 uppercase boxWi">
             <WilliamsStats></WilliamsStats>
           </div>
           <div
@@ -458,7 +458,7 @@
               2006<br />
             </span>
           </div>
-          <div v-if="buttonClickedWi" class="text-3xl p-4">
+          <div v-if="buttonClickedWi" class="text-3xl boxWi p-4">
             <div class="mt-2 text-4xl pb-4 font-bold">WINNING YEARS</div>
             <div class="grid grid-cols-2 gap-2">
               <span
