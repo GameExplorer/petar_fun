@@ -41,7 +41,7 @@
           </div>
           <div
             v-else-if="buttonClickedAl"
-            class="p-4 uppercase animated-border-boxal"
+            class="mx-4 lg:mx-2 p-2 uppercase boxAl"
           >
             <AlpineStats></AlpineStats>
           </div>
@@ -56,8 +56,7 @@
           </div>
           <div
             v-else-if="buttonClickedAr"
-            class="p-4 uppercase animated-border-boxar"
-          >
+            class="mx-4 lg:mx-2 p-4  uppercase boxAr">
             <AlfaRomeoStats></AlfaRomeoStats>
           </div>
           <div
@@ -444,10 +443,7 @@
               /></span>
             </div>
           </div>
-          <div
-            v-if="buttonClickedAl"
-            class="text-4xl animated-border-boxal p-4"
-          >
+          <div v-if="buttonClickedAl" class="text-4xl boxAl p-4">
             <div class="mt-2 pb-4 font-bold">WINNING YEARS</div>
             <span
               class="px-2 hover:bg-red-600 hover:rounded-lg hover:text-5xl cursor-pointer"
@@ -514,10 +510,7 @@
               /></span>
             </div>
           </div>
-          <div
-            v-if="buttonClickedAm"
-            class="text-2xl uppercase boxAm p-4"
-          >
+          <div v-if="buttonClickedAm" class="text-2xl uppercase boxAm p-4">
             <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
             <span
               class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
@@ -607,11 +600,8 @@
               2021, Podium in AZE<br />
             </span>
           </div>
-          <div
-            v-if="buttonClickedAr"
-            class="text-2xl uppercase animated-border-boxar p-4"
-          >
-            <div class="mt-2 text-4xl pb-4 font-bold">
+          <div v-if="buttonClickedAr" class="text-3xl uppercase boxAr">
+            <div class="mt-2 text-5xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
             </div>
