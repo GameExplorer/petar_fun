@@ -1,14 +1,14 @@
 <template>
   <div class="grid">
     <div id="1993" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-left font-bold py-10">
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
         <span class="pr-12 border-b-8">FIRST RACE</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber1993.avif"
           alt="First Sauber car"
-          class="xl:h-3/5 xl:w-5/12 mr-12 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           <p>
@@ -28,14 +28,14 @@
       </div>
     </div>
     <div id="1995" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-right font-bold py-10">
-        <span class="pl-12 border-white border-b-8">FIRST PODIUM</span>
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
+        <span class="pr-12 border-white border-b-8">FIRST PODIUM</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber1995.png"
           alt="Frentzen on the podium in Monza"
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           The car was launched and raced in the season's early races with a
@@ -53,14 +53,14 @@
       </div>
     </div>
     <div id="2001" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-left font-bold py-10">
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
         <span class="pr-12 border-b-8">BEST FINISH</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber2001.avif"
           alt="Sauber C20"
-          class="xl:h-3/5 xl:w-5/12 mr-12 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pb-4 text-4xl">
           <p>
@@ -79,14 +79,14 @@
       </div>
     </div>
     <div id="2008" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-right font-bold py-10">
-        <span class="pl-12 border-white border-b-8">FIRST WIN</span>
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
+        <span class="pr-12 border-white border-b-8">FIRST WIN</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber2008.avif"
           alt="Kubica and Heidfeld 1-2 in Canada" 
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           Radical F1.08 proves highly effective, powering Robert Kubica to the
@@ -104,14 +104,14 @@
       </div>
     </div>
     <div id="2012" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-left font-bold py-10">
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
         <span class="pr-12 border-b-8">LAST PODIUM</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber2012.avif"
           alt="Sauber C31 in Spa"
-          class="xl:h-3/5 xl:w-5/12 mr-12 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pb-4 text-4xl">
           <p>
@@ -130,14 +130,14 @@
       </div>
     </div>
     <div id="2014" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-right font-bold py-10">
-        <span class="pl-12 border-white border-b-8">WORST SEASON</span>
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
+        <span class="pr-12 border-white border-b-8">WORST SEASON</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber2014.avif"
           alt="Maldonado flips Guiterez in Bahrain"
-          class="xl:h-3/5 xl:w-5/12 ml-12 float-right cursor-default rounded-2xl alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pt-8 pb-4 text-4xl">
           The car was plagued by weight issues early in the season, to the point
@@ -157,14 +157,14 @@
       </div>
     </div>
     <div id="2024" class="p-12 mb-6">
-      <div class="text-4xl md:text-6xl text-left font-bold py-10">
+      <div class="text-6xl md:text-7xl text-left font-bold py-10">
         <span class="pr-12 border-b-8">END OF ALFA ROMEO</span>
       </div>
       <div class="text-2xl text-justify">
         <img
           src="/Images/Sauber/sauber2023.png"
           alt="Alfa Romeo C43"
-          class="xl:h-3/5 xl:w-5/12 mr-12 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
+          class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pb-4 text-4xl">
           <p>
