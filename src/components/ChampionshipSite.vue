@@ -50,7 +50,7 @@
           </div>
           <div
             v-else-if="buttonClickedAt"
-            class="p-4 uppercase animated-border-boxat"
+            class="mx-4 lg:mx-2 p-2 uppercase boxAt"
           >
             <AlphaTauriStats></AlphaTauriStats>
           </div>
@@ -61,7 +61,7 @@
           </div>
           <div
             v-else-if="buttonClickedHa"
-            class="p-4 uppercase animated-border-boxha text-black"
+            class="mx-4 lg:mx-2 p-4 uppercase boxHa text-black"
           >
             <HaasStats></HaasStats>
           </div>
@@ -513,88 +513,85 @@
           <div v-if="buttonClickedAm" class="text-2xl uppercase boxAm p-4">
             <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(2021)"
             >
               Azerbaijan, 2021<br />
             </span>
             <span
-              class="px-2 my-4 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 my-4 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20231)"
             >
               Bahrain, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20232)"
             >
               Saudi Arabia, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20233)"
             >
               Australia, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20234)"
             >
               Miami, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20235)"
             >
               Monaco, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20236)"
             >
               Canada, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20237)"
             >
               Netherlands, 2023<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:text-4xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(20238)"
             >
               Brazil, 2023<br />
             </span>
           </div>
-          <div
-            v-if="buttonClickedAt"
-            class="text-2xl uppercase animated-border-boxat p-2"
-          >
+          <div v-if="buttonClickedAt" class="text-2xl uppercase boxAt p-2">
             <div class="mt-2 text-4xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
             </div>
             <span
-              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
+              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-3xl cursor-pointer"
               @click="scrollToYear(2008)"
             >
               2008, First Victory<br />
             </span>
             <span
-              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
+              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-3xl cursor-pointer"
               @click="scrollToYear(2019)"
             >
               2019, Double podiums<br />
             </span>
             <span
-              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
+              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-3xl cursor-pointer"
               @click="scrollToYear(2020)"
             >
               2020, Monza win<br />
             </span>
             <span
-              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-4xl cursor-pointer"
+              class="hover:bg-[#00293F] hover:rounded-lg p-2 text-3xl hover:text-3xl cursor-pointer"
               @click="scrollToYear(2021)"
             >
               2021, Podium in AZE<br />
@@ -606,82 +603,79 @@
               ACHIEVEMENTS
             </div>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(1993)"
             >
               1993, First Race<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(1995)"
             >
               1995, First Podium<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(2001)"
             >
               2001, Best finish<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(2008)"
             >
               2008, FIRST WIN<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(2012)"
             >
               2012, Last podium<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(2014)"
             >
               2014, Worst season<br />
             </span>
             <span
-              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white hover:text-4xl cursor-pointer"
+              class="px-4 py-1 text-3xl hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
               @click="scrollToYear(2024)"
             >
               2024, Kick Sauber</span
             >
           </div>
-          <div
-            v-if="buttonClickedHa"
-            class="text-2xl uppercase animated-border-boxha p-2 pb-4 mr-2 text-black"
-          >
+          <div v-if="buttonClickedHa" class="text-2xl uppercase boxHa p-2 pb-4 mr-2 text-black">
             <div class="mt-2 text-4xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
             </div>
             <span
-              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-4xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
               @click="scrollToYear(2016)"
             >
               2016, FIRST RACE<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-4xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
               @click="scrollToYear(2018)"
             >
               2018, P5 IN WCC<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-4xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
               @click="scrollToYear(2021)"
             >
               2021, BAD YEAR<br
             /></span>
             <span
-              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-4xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
               @click="scrollToYear(2022)"
             >
               2022, MAIDEN POLE<br />
             </span>
             <span
-              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg hover:text-4xl cursor-pointer"
+              class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
               @click="scrollToYear(2024)"
             >
               2023, GUNTHER LEAVES<br />

@@ -36,7 +36,7 @@
               >Points: <span class="font-semibold">809</span></span
             >
           </div>
-          <div class="p-2 text-3xl">
+          <div class="p-2 text-[1.79rem]">
             <span class="p-2 hover:bg-[#00293F] hover:rounded-lg hover:text-white pr-2 cursor-pointer"
               >Constructor's Championship:
               <span class="font-semibold">0</span></span
