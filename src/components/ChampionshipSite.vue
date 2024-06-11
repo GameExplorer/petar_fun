@@ -792,26 +792,26 @@
 </template>
 
 <script>
-import Haas from "@/components/Haas/Haas.vue";
-import HaasStats from "@/components/Haas/HaasStats.vue";
-import Alpine from "@/components/Alpine/Alpine.vue";
-import AlpineStats from "@/components/Alpine/AlpineStats.vue";
-import AlphaTauri from "@/components/AlphaTauri/AlphaTauri.vue";
-import AlphaTauriStats from "@/components/AlphaTauri/AlphaTauriStats.vue";
-import RedBull from "@/components/RedBull/RedBull.vue";
-import RedBullStats from "@/components/RedBull/RedBullStats.vue";
-import AlfaRomeoStats from "@/components/AlfaRomeo/AlfaRomeoStats.vue";
-import AlfaRomeo from "@/components/AlfaRomeo/AlfaRomeo.vue";
-import AstonMartinStats from "@/components/AstonMartin/AstonMartinStats.vue";
-import AstonMartin from "@/components/AstonMartin/AstonMartin.vue";
-import WilliamsStats from "@/components/Williams/WilliamsStats.vue";
-import Williams from "@/components/Williams/Williams.vue";
-import Mclaren from "@/components/Mclaren/Mclaren.vue";
-import MclarenStats from "@/components/Mclaren/MclarenStats.vue";
-import Ferrari from "@/components/Ferrari/Ferrari.vue";
-import FerrariStats from "@/components/Ferrari/FerrariStats.vue";
-import Mercedes from "@/components/Mercedes/Mercedes.vue";
-import MercedesStats from "@/components/Mercedes/MercedesStats.vue";
+import Haas from "@/components/Formula1/Haas/Haas.vue";
+import HaasStats from "@/components/Formula1/Haas/HaasStats.vue";
+import Alpine from "@/components/Formula1/Alpine/Alpine.vue";
+import AlpineStats from "@/components/Formula1/Alpine/AlpineStats.vue";
+import AlphaTauri from "@/components/Formula1/AlphaTauri/AlphaTauri.vue";
+import AlphaTauriStats from "@/components/Formula1/AlphaTauri/AlphaTauriStats.vue";
+import RedBull from "@/components/Formula1/RedBull/RedBull.vue";
+import RedBullStats from "@/components/Formula1/RedBull/RedBullStats.vue";
+import AlfaRomeoStats from "@/components/Formula1/AlfaRomeo/AlfaRomeoStats.vue";
+import AlfaRomeo from "@/components/Formula1/AlfaRomeo/AlfaRomeo.vue";
+import AstonMartinStats from "@/components/Formula1/AstonMartin/AstonMartinStats.vue";
+import AstonMartin from "@/components/Formula1/AstonMartin/AstonMartin.vue";
+import WilliamsStats from "@/components/Formula1/Williams/WilliamsStats.vue";
+import Williams from "@/components/Formula1/Williams/Williams.vue";
+import Mclaren from "@/components/Formula1/Mclaren/Mclaren.vue";
+import MclarenStats from "@/components/Formula1/Mclaren/MclarenStats.vue";
+import Ferrari from "@/components/Formula1/Ferrari/Ferrari.vue";
+import FerrariStats from "@/components/Formula1/Ferrari/FerrariStats.vue";
+import Mercedes from "@/components/Formula1/Mercedes/Mercedes.vue";
+import MercedesStats from "@/components/Formula1/Mercedes/MercedesStats.vue";
 
 import Footer from "@/components/Footer/Footer.vue";
 
