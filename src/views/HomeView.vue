@@ -38,7 +38,7 @@
         <RouterLink :to="{ name: 'Champions' }">
           <div class="flex items-center justify-center">
             <img
-              src="/Images/F1Champions.png"
+              src="/Images/PageIcons/F1Champions.png"
               alt="Champions page"
               class="hover:scale-105 transition-all duration-500"
             />
