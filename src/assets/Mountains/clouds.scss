@@ -1,0 +1,73 @@
+.cloud-container {
+    overflow: hidden;
+}
+
+@function random_range($min, $max) {
+    @return $min +random($max - $min + 1);
+}
+
+@for $i from 1 through 45 {
+    .cloud#{$i} {
+        $width: random_range(80, 130) * 0.1em;
+        $height: random_range(50, 100) * 0.1em;
+        $top: random_range(5, 95) * 1%;
+        $left: random_range(-10, 110);
+
+        background-color: rgba(255, 255, 255, random_range(70, 95) * 0.01);
+        border-radius: $height;
+        box-shadow:
+            inset 0 0 0 2px hsla(0, 0%, 100%, 0.5),
+            0 4px 6px hsla(0, 0%, 0%, 0.1);
+        height: $height;
+        left: calc(#{$left} - #{$width / 2}); // Adjust position to keep within viewport
+        position: absolute;
+        top: $top;
+        width: $width;
+        animation: move #{random_range(20, 90)}s infinite linear,
+        fade #{random_range(4, 8)}s infinite ease-in-out alternate;
+
+        &:before,
+        &:after {
+            content: '';
+            background: inherit;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        &:before {
+            $size: random_range(60, 85) * 0.01;
+            width: $width * $size;
+            height: $height * $size;
+            top: $height * -0.4;
+            left: $width * 0.2;
+        }
+
+        &:after {
+            $size: random_range(25, 75) * 0.01;
+            width: $width * $size;
+            height: $height * $size;
+            top: $height * -0.2;
+            right: $width * 0.2;
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(82vw);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
