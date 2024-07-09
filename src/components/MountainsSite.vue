@@ -12,6 +12,7 @@
             v-for="height in heightMarks"
             :key="height"
             class="height-mark"
+            :class="heightMarkColor"
             :style="{ bottom: height + 'px' }"
           >
             {{ height }}m
@@ -20,6 +21,9 @@
               class="border-b-8 border-dashed border-red-600 text-red-600 text-3xl"
             >
               💀 Death Zone
+            </div>
+            <div v-if="height == 800" class="text-white text-left">
+              <span class="m-12 text-2xl">Tallest building in the world - Burj Khalifa (828m)</span>
             </div>
             <div v-if="height == 9600" class="cloud-container">
               <div
@@ -33,13 +37,12 @@
               class="border-b-2 border-dashed text-black"
             >
               Snow covers are persistent
-              <div class="snowflake"></div>
               <div class="ice-sheet" :style="sheetStyles"></div>
             </div>
 
             <div
               v-if="height == 5500"
-              class="border-b-2 border-dashed text-white"
+              class="text-white"
             >
               Mountaineering Base Camps
             </div>
@@ -139,7 +142,7 @@
 
     <div class="scroll-indicator" :class="scrollIndicatorColor">
       <!--Current height:-->
-      {{ currentHeight }} ->
+      {{ currentHeight }}
       <!-- climbing animation?-->
       <div v-if="height < 2000"></div>
     </div>
@@ -221,11 +224,19 @@ export default {
         return "dif5-background";
       }
     },
+
+    heightMarkColor() {
+      if (this.currentHeight > 8000) {
+        return "height-mark-8k";
+      }
+    },
     scrollIndicatorColor() {
       if (this.currentHeight < 1800) {
-        return "scroll-indicatorW";
-      } else if (this.currentHeight > 5000) {
-        return "scroll-indicatorW";
+        return "scroll-indicatorG";
+      } else if (this.currentHeight > 1800 && this.currentHeight < 7900) {
+        return "scroll-indicatorB";
+      } else if (this.currentHeight > 8000) {
+        return "scroll-indicatorR";
       } else {
         return "scroll-indicator";
       }
