@@ -304,7 +304,7 @@ export default {
     },
     setInitialScrollPosition() {
       const heightIndicator = this.$refs.heightIndicator;
-      heightIndicator.scrollTop = heightIndicator.scrollHeight;
+      heightIndicator.scrollTop = Math.round(heightIndicator.scrollHeight);
       this.currentHeight = this.totalHeight - heightIndicator.scrollTop;
     },
     handleScroll() {
