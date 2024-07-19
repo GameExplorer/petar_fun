@@ -32,15 +32,18 @@ export default {
         {
           number: Math.floor(this.daysPassed / 225),
           text: " Times you could have beaten the Witcher trilogy",
+          image: "/Images/Thrones/got.avif",
         },
 
         {
           number: Math.floor(this.daysPassed / 554),
           text: " Times you could have travelled around the world",
+          image: "/Images/Thrones/got.avif",
         },
         {
           number: Math.floor(this.daysPassed * 42.2),
-          text: " Times you could have run"
+          text: " Times you could have run",
+          image: "/Images/Thrones/got.avif",
         },
       ],
     };
