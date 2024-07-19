@@ -309,7 +309,11 @@ export default {
     },
     handleScroll() {
       const heightIndicator = this.$refs.heightIndicator;
-      this.currentHeight = Math.floor(this.totalHeight - heightIndicator.scrollTop - 50);
+      this.currentHeight = (Math.floor(this.totalHeight - heightIndicator.scrollTop - 50));
+
+      if (this.currentHeight <= 0) {
+        this.currentHeight = this.totalHeight - heightIndicator.scrollTop - this.currentHeight - 50;
+      }
     },
   },
   watch: {
