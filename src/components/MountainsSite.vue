@@ -197,7 +197,7 @@ export default {
       ],
       cards: [],
       positions: [0, 15, 30, 45, 65, 70], // Possible positions for cards
-      positionsMobile: [30], // Centered position for mobile screens
+      positionsMobile: [5], // Centered position for mobile screens
     };
   },
   created() {
