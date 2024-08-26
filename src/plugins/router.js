@@ -14,6 +14,7 @@ const routes = [
         name: 'Thrones',
         meta: {
             title: 'Thrones',
+            pageIcon: '/Icons/throne.png',
         },
         component: () => import('@/views/Thrones.vue'),
     },
@@ -54,6 +55,11 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     document.title = `${to.meta.title}` ?? `Default Title`
+
+    const pageIcon = document.getElementById('pageIcon');
+    if (pageIcon && to.meta.pageIcon) {
+        pageIcon.href = to.meta.pageIcon;
+    }
     next()
 })
 

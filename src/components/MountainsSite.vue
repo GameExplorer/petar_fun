@@ -23,7 +23,9 @@
               💀 Death Zone
             </div>
             <div v-if="height == 800" class="text-white text-left">
-              <span class="m-12 text-2xl">Tallest building in the world - Burj Khalifa (828m)</span>
+              <span class="m-12 text-2xl"
+                >Tallest building in the world - Burj Khalifa (828m)</span
+              >
             </div>
             <div v-if="height == 9600" class="cloud-container">
               <div
@@ -40,10 +42,7 @@
               <div class="ice-sheet" :style="sheetStyles"></div>
             </div>
 
-            <div
-              v-if="height == 5500"
-              class="text-white"
-            >
+            <div v-if="height == 5500" class="text-white">
               Mountaineering Base Camps
             </div>
           </div>
@@ -305,14 +304,20 @@ export default {
     setInitialScrollPosition() {
       const heightIndicator = this.$refs.heightIndicator;
       heightIndicator.scrollTop = heightIndicator.scrollHeight;
-      this.currentHeight = Math.floor(this.totalHeight - heightIndicator.scrollTop);
+      this.currentHeight = Math.floor(
+        this.totalHeight - heightIndicator.scrollTop
+      );
     },
     handleScroll() {
       const heightIndicator = this.$refs.heightIndicator;
-      this.currentHeight = (Math.floor(this.totalHeight - heightIndicator.scrollTop - 50));
+      this.currentHeight = Math.floor(
+        this.totalHeight - heightIndicator.scrollTop - 50
+      );
 
       if (this.currentHeight <= 0) {
-        this.currentHeight = Math.floor(this.totalHeight - heightIndicator.scrollTop - this.currentHeight - 50);
+        this.currentHeight = Math.floor(
+          this.totalHeight - heightIndicator.scrollTop - this.currentHeight - 50
+        );
       }
     },
   },
@@ -324,3 +329,27 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122, 153, 217)),
+    color-stop(0.72, rgb(73, 125, 189)),
+    color-stop(0.86, rgb(28, 58, 148))
+  );
+}
+</style>
