@@ -79,4 +79,6 @@ export default {
   name: "HomeView",
   components: { RouterLink },
 };
+
+
 </script>
