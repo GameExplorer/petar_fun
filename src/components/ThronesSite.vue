@@ -10,17 +10,19 @@
             DAYS SINCE LAST
           </h1>
           <h1 class="py-2">ASOIAF BOOK</h1>
-          <h2 class="py-2 text-2xl">in the mean time you could have...</h2>
+          <h2 class="py-2 text-2xl">in the mean time...</h2>
         </div>
       </div>
     </div>
     <div class="background2 py-2 items-center border-t-8 border-[#010101]">
-      <div class="m-auto p-0 text-center text-2xl">
+      <div class="m-auto p-0 text-center text-3xl">
         <button
-          class="text-black bg-[#eaeaea] m-6 px-4 py-2 lg:px-12 lg:py-4 rounded-2xl uppercase border-4 border-gray-400 hover:scale-105 hover:font-bold transform transition duration-500 ease-in-out hover:shadow-lg hover:shadow-gray-400"
+          class="text-black bg-[#eaeaea] m-6 px-4 py-2 lg:px-12 lg:py-4 rounded-3xl 
+          uppercase border-4 border-gray-400 hover:scale-105 hover:font-bold 
+          transform transition duration-500 ease-in-out hover:shadow-[0_10px_40px_3px_rgba(234,234,234,0.6)] "
           @click="handleClick"
         >
-        Discover Now
+          FIND OUT
         </button>
       </div>
     </div>
@@ -37,19 +39,24 @@
                 :src="textData.image"
                 :alt="textData.text"
                 :class="['box', currentClass]"
-                class="w-full h-auto"
+                class="z-[1] w-full h-auto"
               />
             </div>
-            <div class="md:col-span-2 text-center">
-              <p class="text-5xl lg:text-6xl font-bold mb-4">
-                <span class="text-purple-600 animate-pulse">{{
-                  textData.number
-                }}</span>
+            <div class="md:col-span-2 text-center z-10">
+              <p class="text-5xl lg:text-6xl font-semibold mb-4">
+                <span
+                  class="text-blue-400 animate-pulse"
+                  :class="['box', currentTextColor]"
+                  >{{ textData.number }}</span
+                >
                 <span class="text-gray-300"></span>
-                <span class="text-4xl lg:text-5xl uppercase font-semibold mb-4">
+                <span class="text-3xl lg:text-4xl text-thrones uppercase font-semibold mb-4">
                   {{ textData.text }} </span
                 ><br />
-                <span class="text-xl md:text-2xl italic text-gray-400">
+                <span
+                  class="text-xl md:text-2xl italic text-gray-400"
+                  :class="['box', currentTextColor]"
+                >
                   {{ textData.info }}
                 </span>
               </p>
@@ -82,15 +89,15 @@ export default {
     return {
       targetDate: new Date("2011-06-12"),
       textData: null,
-      colorClasses: [
-        "targaryen",
-        "stark",
-        "lannister",
-        "baratheon",
-        "tyrell",
-        "tully",
-        "martell",
-        "greyjoy",
+      classes: [
+        { background: "targaryen", text: "text-targaryen" },
+        { background: "stark", text: "text-stark" },
+        { background: "lannister", text: "text-lannister" },
+        { background: "baratheon", text: "text-baratheon" },
+        { background: "tyrell", text: "text-tyrell" },
+        { background: "tully", text: "text-tully" },
+        { background: "martell", text: "text-martell" },
+        { background: "greyjoy", text: "text-greyjoy" },
       ],
       currentClassIndex: 0,
     };
@@ -105,7 +112,10 @@ export default {
       return daysPassed;
     },
     currentClass() {
-      return this.colorClasses[this.currentClassIndex];
+      return this.classes[this.currentClassIndex].background;
+    },
+    currentTextColor() {
+      return this.classes[this.currentClassIndex].text;
     },
   },
 
@@ -119,16 +129,17 @@ export default {
         console.error("ThronesTextData component or its textData is undefined");
       }
     },
-    changeColor() {
+    changeClasses() {
       let newIndex;
       do {
-        newIndex = Math.floor(Math.random() * this.colorClasses.length);
+        newIndex = Math.floor(Math.random() * this.classes.length);
       } while (newIndex === this.currentClassIndex);
       this.currentClassIndex = newIndex;
     },
+
     handleClick() {
       this.generateText();
-      this.changeColor();
+      this.changeClasses();
     },
   },
   mounted() {
@@ -184,7 +195,38 @@ export default {
 }
 .text-thrones {
   font-family: Thrones;
-  color: #fffffe;
+}
+
+.text-targaryen {
+  color: #da1b60;
+}
+
+.text-stark {
+  color: #256caf;
+}
+
+.text-lannister {
+  color: #f3b72e;
+}
+
+.text-baratheon {
+  color: #382929;
+}
+
+.text-tyrell {
+  color: #fed800;
+}
+
+.text-tully {
+  color: #ab3821;
+}
+
+.text-martell {
+  color: #78300f;
+}
+
+.text-greyjoy {
+  color: #f4c91c;
 }
 
 .targaryen {
