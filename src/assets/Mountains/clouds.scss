@@ -19,7 +19,7 @@
             inset 0 0 0 2px hsla(0, 0%, 100%, 0.5),
             0 4px 6px hsla(0, 0%, 0%, 0.1);
         height: $height;
-        left: calc(#{$left} - #{$width / 2}); // Adjust position to keep within viewport
+        left: calc(#{$left} - calc($width / 2));
         position: absolute;
         top: $top;
         width: $width;
@@ -58,7 +58,7 @@
     }
 
     100% {
-        transform: translateX(82vw);
+        transform: translateX(80%);
     }
 }
 

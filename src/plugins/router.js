@@ -23,6 +23,7 @@ const routes = [
         name: 'Mountains',
         meta: {
             title: 'Mountains',
+            pageIcon: '/Icons/mountain.svg',
         },
         component: () => import('@/views/Mountains.vue'),
     },
@@ -31,6 +32,7 @@ const routes = [
         name: 'Champions',
         meta: {
             title: 'F1 Champions',
+            pageIcon: '/Icons/formula.svg',
         },
         component: () => import('@/views/Champions.vue'),
     },
@@ -41,6 +43,14 @@ const routes = [
             title: 'Space and Beyond',
         },
         component: () => import('@/views/Space.vue'),
+    },
+    {
+        path: '/life',
+        name: 'Life',
+        meta: {
+            title: 'Life in Weeks',
+        },
+        component: () => import('@/views/Life.vue'),
     },
     {   // This is a catch all route in case none of the above matches, it will redirect to the home page (instead of 404 page)
         path: '/catchAll(.*)*',
