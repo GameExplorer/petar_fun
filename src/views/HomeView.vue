@@ -56,29 +56,6 @@
           </div>
         </RouterLink>
       </li>
-      <div class="hidden">
-      <li class="flex items-center justify-center p-4">
-        <img
-          src="/Images/PageIcons/space.png"
-          alt="Champions page"
-          class="hover:scale-105 transition-all duration-500"
-        />
-      </li>
-      <li class="flex items-center justify-center p-4">
-        <img
-          src="/Images/PageIcons/history.png"
-          alt="Champions page"
-          class="hover:scale-105 transition-all duration-500"
-        />
-      </li>
-      <li class="flex items-center justify-center p-4">
-        <img
-          src="/Images/PageIcons/life.png"
-          alt="Champions page"
-          class="hover:scale-105 transition-all duration-500"
-        />
-      </li>
-      </div>
     </ul>
   </div>
 </template>
