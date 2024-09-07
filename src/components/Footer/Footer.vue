@@ -21,7 +21,7 @@ export default {
         { name: 'Space', to: { name: 'Thrones' }, image: '/Images/PageIcons/space.png' },
         { name: 'Champions', to: { name: 'Champions'}, image: "/Images/PageIcons/F1Champions.png"},
         //{ name: 'History', to: { name: 'History' }, image: '/Images/PageIcons/history.png' },
-        //{ name: 'Life', to: { name: 'Life' }, image: '/Images/PageIcons/life.png' },
+        { name: 'Life', to: { name: 'life' }, image: '/Images/PageIcons/LifeInWeeks.png' },
       ],
     };
   },

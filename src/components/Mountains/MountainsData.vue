@@ -58,19 +58,7 @@ export default {
           imageAlt: "Qalorujoorneq",
           imageSrcIcon: "",
         },
-        {
-          title: "The Cheviot",
-          height: 815,
-          feet: 2674,
-          range: "Cheviot Hills",
-          country: "England",
-          ascent: "Unknown",
-          content:
-            "The Cheviot is an extinct volcano and highest summit in Cheviot Hills. Name is of a Britannic origin.",
-          imageSrc: "/Images/Mountains/Cheviot.jpg",
-          imageAlt: "The Cheviot",
-          imageSrcIcon: "",
-        },
+
         {
           title: "Table Mountain",
           height: 1085,
@@ -83,7 +71,6 @@ export default {
           imageSrc: "/Images/Mountains/tableMountain.webp",
           imageAlt: "Table Mountain",
           imageSrcIcon: "",
-          borderColor: "#0000ff", // Blue
         },
         {
           title: "Mount Hombori",
