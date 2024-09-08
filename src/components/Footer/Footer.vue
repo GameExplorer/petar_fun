@@ -18,10 +18,8 @@ export default {
       links: [
         { name: 'Thrones', to: { name: 'Thrones' }, image: '/Images/PageIcons/thrones_button.png' },
         { name: 'Mountains', to: { name: 'Mountains' }, image: '/Images/PageIcons/mountains_button.png' },
-        { name: 'Space', to: { name: 'Thrones' }, image: '/Images/PageIcons/space.png' },
         { name: 'Champions', to: { name: 'Champions'}, image: "/Images/PageIcons/F1Champions.png"},
-        //{ name: 'History', to: { name: 'History' }, image: '/Images/PageIcons/history.png' },
-        { name: 'Life', to: { name: 'life' }, image: '/Images/PageIcons/LifeInWeeks.png' },
+        { name: 'Life', to: { name: 'Life' }, image: '/Images/PageIcons/LifeInWeeks.png' },
       ],
     };
   },
