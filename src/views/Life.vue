@@ -4,7 +4,7 @@
 
 
 <script>
-import LifeSite from '@/components/LifeSite.vue';
+import LifeSite from '@/components/LifeInWeeks/LifeSite.vue';
 export default {
     components: { LifeSite, },
 }
