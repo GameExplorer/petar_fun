@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Inter";
+  src: url("@/assets/Fonts/Inter-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.circle-base {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.babyCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(163, 223, 242, 1),
+    rgba(143, 203, 222, 1)
+  );
+  border: 2px solid rgba(115, 166, 190, 0.8);
+}
+
+.toddlerCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(188, 219, 129, 1),
+    rgba(158, 209, 139, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(148, 209, 129, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.kidCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 217, 102, 1),
+    rgba(235, 207, 92, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(225, 187, 82, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.teenCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 127, 80, 1),
+    rgba(235, 107, 70, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(225, 87, 60, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.youngAdultCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(245, 20, 137, 0.5),
+    rgba(225, 0, 117, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(215, 0, 117, 0.5);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.adultCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(106, 13, 173, 1),
+    rgba(86, 3, 153, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid rgba(76, 13, 143, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.seniorCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(64, 224, 208, 1),
+    rgba(54, 214, 198, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(24, 164, 158, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.elderlyCircle {
+  background: linear-gradient(
+    145deg,
+    rgba(211, 211, 211, 1),
+    rgba(181, 181, 181, 1)
+  );
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid rgba(161, 161, 161, 1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.babyCircle::after,
+.toddlerCircle::after,
+.kidCircle::after,
+.teenCircle::after,
+.youngAdultCircle::after,
+.adultCircle::after,
+.seniorCircle::after,
+.elderlyCircle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+  border-radius: inherit;
+}
+
+.babyCircle:hover,
+.toddlerCircle:hover,
+.kidCircle:hover,
+.teenCircle:hover,
+.youngAdultCircle:hover,
+.adultCircle:hover,
+.seniorCircle:hover,
+.elderlyCircle:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.currentWeekCircle {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
