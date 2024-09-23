@@ -49,6 +49,7 @@ const routes = [
         name: 'Life',
         meta: {
             title: 'Life in Weeks',
+            pageIcon: '/Icons/leaf.svg',
         },
         component: () => import('@/views/Life.vue'),
     },

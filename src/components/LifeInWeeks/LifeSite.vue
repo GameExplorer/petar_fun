@@ -67,10 +67,10 @@ export default {
       years: 0,
       year: [],
       showResults: false,
-      tooltipVisible: false, // to track tooltip visibility
-      tooltipX: 0, // X coordinate of the tooltip
-      tooltipY: 0, // Y coordinate of the tooltip
-      hoveredCircle: { year: 0, week: 0 }, // store hovered circle's data
+      tooltipVisible: false, 
+      tooltipX: 0, 
+      tooltipY: 0, 
+      hoveredCircle: { year: 0, week: 0 }, 
     };
   },
   created() {
@@ -98,19 +98,15 @@ export default {
       return this.weeks;
     },
     handleShowTooltip(circle, event) {
-      // Store the hovered circle's year and week
       this.hoveredCircle = {
-        year: circle.year, // Set the year from the circle
-        week: circle.week, // Set the week from the circle
+        year: circle.year, 
+        week: circle.week, 
       };
-      // Update tooltip position based on mouse event
       this.tooltipX = event.clientX;
       this.tooltipY = event.clientY;
-      // Show the tooltip
       this.tooltipVisible = true;
     },
     handleHideTooltip() {
-      // Hide the tooltip when the mouse leaves the circle
       this.tooltipVisible = false;
     },
   },
@@ -120,12 +116,11 @@ export default {
       let circles = [];
       for (let i = 0; i < this.weeks; i++) {
         let category = {
-          year: Math.floor(i / 52), // Calculate the year based on the index
-          week: (i % 52) + 1, // Calculate the week within the year
-          class: "", // Default empty class to be filled
+          year: Math.floor(i / 52), 
+          week: (i % 52) + 1, 
+          class: "", 
         };
 
-        // Assign class based on the year range (e.g., baby, toddler, etc.)
         if (i < 52) {
           category.class = "babyCircle";
         } else if (i < 260) {
@@ -144,7 +139,6 @@ export default {
           category.class = "elderlyCircle";
         }
 
-        // Highlight the current week
         if (i === this.weeks - 1) {
           category.class += " currentWeekCircle";
         }
