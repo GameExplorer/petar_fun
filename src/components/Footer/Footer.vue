@@ -19,7 +19,7 @@ export default {
         { name: 'Thrones', to: { name: 'Thrones' }, image: '/Images/PageIcons/thrones_button.png' },
         { name: 'Mountains', to: { name: 'Mountains' }, image: '/Images/PageIcons/mountains_button.png' },
         { name: 'Champions', to: { name: 'Champions'}, image: "/Images/PageIcons/F1Champions.png"},
-        { name: 'Life', to: { name: 'Life' }, image: '/Images/PageIcons/LifeInWeeks.png' },
+        { name: 'Life', to: { name: 'Life' }, image: '/Images/PageIcons/LifeInWeeks.webp' },
       ],
     };
   },

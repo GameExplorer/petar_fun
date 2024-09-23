@@ -36,8 +36,6 @@
           @mouseleave="handleHideTooltip"
         ></div>
       </div>
-
-      <!-- Tooltip that displays the hovered circle's year and week -->
       <div
         v-if="tooltipVisible"
         class="tooltip"
@@ -47,21 +45,27 @@
       </div>
     </div>
   </div>
-  <div>What happened in the weeks you have lived?</div>
-  <Footer class="hidden"></Footer>
+  <div v-if="showResults" class="mb-8 text-center">
+    <div class="container"></div>
+    <LifeData :birthdate="birthdate" />
+  </div>
+  <Footer class="pt-16"></Footer>
 </template>
 
 <script>
 import LifeInWeeksHeader from "./LifeInWeeksHeader.vue";
+import LifeData from "./LifeData.vue";
 import Footer from "../Footer/Footer.vue";
 import "@/assets/LifeInWeeks/lifeInWeeks.css";
 export default {
   name: "LifeSite",
   data() {
     return {
+      birthdate: "",
       days: 0,
       weeks: 0,
       years: 0,
+      year: [],
       showResults: false,
       tooltipVisible: false, // to track tooltip visibility
       tooltipX: 0, // X coordinate of the tooltip
@@ -69,9 +73,13 @@ export default {
       hoveredCircle: { year: 0, week: 0 }, // store hovered circle's data
     };
   },
+  created() {
+    this.year = LifeData.data().yearsData;
+  },
   components: {
     Footer,
     LifeInWeeksHeader,
+    LifeData,
   },
 
   methods: {
@@ -112,9 +120,9 @@ export default {
       let circles = [];
       for (let i = 0; i < this.weeks; i++) {
         let category = {
-          year: Math.floor(i / 52),  // Calculate the year based on the index
-          week: (i % 52) + 1,        // Calculate the week within the year
-          class: "",                 // Default empty class to be filled
+          year: Math.floor(i / 52), // Calculate the year based on the index
+          week: (i % 52) + 1, // Calculate the week within the year
+          class: "", // Default empty class to be filled
         };
 
         // Assign class based on the year range (e.g., baby, toddler, etc.)
