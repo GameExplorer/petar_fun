@@ -7,7 +7,7 @@
         </RouterLink>
       </li>
     </div>
-    <div class="text-center text-2xl pt-16 text-gray-700">Petar.FUN</div>
+    <div class="text-center text-2xl pt-16 text-gray-700">PETAR.FUN</div>
   </div>
 </template>
 
