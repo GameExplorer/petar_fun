@@ -15,11 +15,13 @@
     <div class="flex justify-center">
       <button
         @click="calculateWeeks"
-        class="bg-green-600 hover:bg-green-800 border-2 border-green-600 hover:border-green-800 text-white text-2xl font-semibold py-3 px-8 m-2 rounded-xl hover:shadow-lg hover:shadow-black transition-all duration-300 transform uppercase"
+        class="bg-green-600 hover:bg-green-800 border-2 border-green-600 hover:border-green-800 text-white text-2xl font-semibold py-3 px-8 m-2 rounded-xl hover:shadow-lg hover:shadow-black transition-all duration-300 transform uppercase ring-2 ring-green-300"
       >
         Calculate
       </button>
     </div>
+    <div class="text-center text-sm italic text-black">Hover over circles</div>
+
     <div v-if="showResults" class="text-center text-2xl px-4 pt-2">
       You have lived for <b>{{ years }}</b> years, which is equivalent to
       <b>{{ weeks }}</b> weeks or <b>{{ days }}</b> days. Here is a visual
@@ -46,7 +48,7 @@
     </div>
   </div>
   <div v-if="showResults" class="mb-8 text-center">
-    <div class="container"></div>
+    <div></div>
     <LifeData :birthdate="birthdate" />
   </div>
   <Footer class="pt-16"></Footer>
@@ -67,10 +69,10 @@ export default {
       years: 0,
       year: [],
       showResults: false,
-      tooltipVisible: false, 
-      tooltipX: 0, 
-      tooltipY: 0, 
-      hoveredCircle: { year: 0, week: 0 }, 
+      tooltipVisible: false,
+      tooltipX: 0,
+      tooltipY: 0,
+      hoveredCircle: { year: 0, week: 0 },
     };
   },
   created() {
@@ -99,8 +101,8 @@ export default {
     },
     handleShowTooltip(circle, event) {
       this.hoveredCircle = {
-        year: circle.year, 
-        week: circle.week, 
+        year: circle.year,
+        week: circle.week,
       };
       this.tooltipX = event.clientX;
       this.tooltipY = event.clientY;
@@ -116,9 +118,9 @@ export default {
       let circles = [];
       for (let i = 0; i < this.weeks; i++) {
         let category = {
-          year: Math.floor(i / 52), 
-          week: (i % 52) + 1, 
-          class: "", 
+          year: Math.floor(i / 52),
+          week: (i % 52) + 1,
+          class: "",
         };
 
         if (i < 52) {

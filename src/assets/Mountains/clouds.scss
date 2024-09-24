@@ -3,7 +3,7 @@
 }
 
 @function random_range($min, $max) {
-    @return $min +random($max - $min + 1);
+    @return $min + random($max - $min + 1);
 }
 
 @for $i from 1 through 45 {
