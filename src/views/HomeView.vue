@@ -26,10 +26,10 @@ export default {
   data() {
     return {
       links: [
-        { name: "Thrones", to: { name: "Thrones" }, image: "/Images/PageIcons/thrones_button.png" },
+        { name: "Game of Thrones", to: { name: "Game of Thrones" }, image: "/Images/PageIcons/thrones_button.png" },
         { name: "Mountains", to: { name: "Mountains" }, image: "/Images/PageIcons/mountains_button.png" },
-        { name: "Champions", to: { name: "Champions" }, image: "/Images/PageIcons/F1Champions.png" },
-        { name: "Life", to: { name: "Life" }, image: "/Images/PageIcons/LifeInWeeks.webp" },
+        { name: "F1 Champions", to: { name: "F1 Champions" }, image: "/Images/PageIcons/F1Champions.png" },
+        { name: "Life in Weeks", to: { name: "Life in Weeks" }, image: "/Images/PageIcons/LifeInWeeks.webp" },
       ],
     }
   }
