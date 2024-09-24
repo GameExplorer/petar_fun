@@ -10,7 +10,7 @@ const routes = [
         component: () => import('@/views/HomeView.vue'),
     },
     {
-        path: '/thrones',
+        path: '/game_of_thrones',
         name: 'Thrones',
         meta: {
             title: 'Thrones',
@@ -28,7 +28,7 @@ const routes = [
         component: () => import('@/views/Mountains.vue'),
     },
     {
-        path: '/champions',
+        path: '/f1_construstor_champions',
         name: 'Champions',
         meta: {
             title: 'F1 Champions',
@@ -45,7 +45,7 @@ const routes = [
         component: () => import('@/views/Space.vue'),
     },
     {
-        path: '/life',
+        path: '/life_in_weeks',
         name: 'Life',
         meta: {
             title: 'Life in Weeks',
