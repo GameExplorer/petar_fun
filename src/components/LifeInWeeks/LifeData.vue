@@ -199,7 +199,7 @@ export default {
         },
         {
           date: "2004-02-04",
-          text: "Facebook is founded by Mark Zuckerberg.",
+          text: "Facebook is founded by Mark Zuckerberg which would eventually become one of the biggest social media platform.",
         },
         {
           date: "2004-12-26",
@@ -310,9 +310,7 @@ export default {
         .filter((event) => event.happened);
     },
   },
-  methods: {
-    //randomly select only 10 events
-  },
+
 };
 </script>
 
