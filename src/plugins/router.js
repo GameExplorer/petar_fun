@@ -11,9 +11,9 @@ const routes = [
     },
     {
         path: '/game_of_thrones',
-        name: 'Thrones',
+        name: 'Game of Thrones',
         meta: {
-            title: 'Thrones',
+            title: 'Game of Thrones',
             pageIcon: '/Icons/throne.png',
         },
         component: () => import('@/views/Thrones.vue'),
@@ -29,7 +29,7 @@ const routes = [
     },
     {
         path: '/f1_construstor_champions',
-        name: 'Champions',
+        name: 'F1 Champions',
         meta: {
             title: 'F1 Champions',
             pageIcon: '/Icons/formula.svg',
@@ -46,7 +46,7 @@ const routes = [
     },
     {
         path: '/life_in_weeks',
-        name: 'Life',
+        name: 'Life in Weeks',
         meta: {
             title: 'Life in Weeks',
             pageIcon: '/Icons/leaf.svg',
