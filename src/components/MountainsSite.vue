@@ -128,7 +128,7 @@
 </template>
 
 <script>
-import MountainData from "./Mountains/MountainsData.vue";
+import MountainData from "@/components/Mountains/MountainsData.vue";
 import "@/assets/Mountains/mountains.css";
 import "@/assets/Mountains/clouds.scss";
 import Footer from "./Footer/Footer.vue";
