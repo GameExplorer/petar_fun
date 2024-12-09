@@ -122,7 +122,7 @@
               <div class="text-9xl text-white font-bold pt-8 pb-2">
                 <span class="text-black">{{ mclarenDate }}</span>
               </div>
-              <div class="pt-4 pb-10 text-5xl">12-09-2024 - Japanese GP</div>
+              <div class="pt-4 pb-10 text-5xl">12-09-2024 - Abu Dhabi GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Mika Hakkinen</span>
             </div>
@@ -876,7 +876,7 @@ export default {
       return `${diffDays}`;
     },
     mclarenDate() {
-      const days = new Date("11/01/1998");
+      const days = new Date("12/09/2024");
       const today = new Date();
       const diffTime = Math.abs(today - days);
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
