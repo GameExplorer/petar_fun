@@ -36,7 +36,10 @@
           >
             <MclarenStats></MclarenStats>
           </div>
-          <div v-else-if="buttonClickedAm" class="mx-4 lg:mx-2 p-2 uppercase boxAm">
+          <div
+            v-else-if="buttonClickedAm"
+            class="mx-4 lg:mx-2 p-2 uppercase boxAm"
+          >
             <AstonMartinStats></AstonMartinStats>
           </div>
           <div
@@ -45,7 +48,10 @@
           >
             <AlpineStats></AlpineStats>
           </div>
-          <div v-else-if="buttonClickedWi" class="mx-4 lg:mx-2 p-2 uppercase boxWi">
+          <div
+            v-else-if="buttonClickedWi"
+            class="mx-4 lg:mx-2 p-2 uppercase boxWi"
+          >
             <WilliamsStats></WilliamsStats>
           </div>
           <div
@@ -55,9 +61,10 @@
             <AlphaTauriStats></AlphaTauriStats>
           </div>
           <div
-            v-else-if="buttonClickedAr"
-            class="mx-4 lg:mx-2 p-4  uppercase boxAr">
-            <AlfaRomeoStats></AlfaRomeoStats>
+            v-else-if="buttonClickedSa"
+            class="mx-4 lg:mx-2 p-4 uppercase boxAr"
+          >
+            <SauberStats></SauberStats>
           </div>
           <div
             v-else-if="buttonClickedHa"
@@ -73,9 +80,9 @@
             <div class="pt-2 shiny" v-if="buttonClickedRB">
               Days elapsed since RedBull's previous championship: <br />
               <div class="text-9xl font-bold pt-8 pb-2">
-                <span class="silver">{{ redBullDate }}</span>
+                <span class="text-white">{{ redBullDate }}</span>
               </div>
-              <div class="pt-4 pb-10">24-10-2023 - Japanese GP</div>
+              <div class="pt-4 pb-10 text-5xl">24-10-2023 - Japanese GP</div>
               <span class="text-4xl">Last champion:<br /></span>
               <span class="text-6xl lg:text-7xl pt-4">
                 <span class="silver">Max Verstappen</span>
@@ -88,30 +95,33 @@
                 championship: </span
               ><br />
               <div class="text-9xl text-white font-bold pt-8 pb-2">
-                <span class="silver">{{ ferrariDate }}</span>
+                <span class="text-white">{{ ferrariDate }}</span>
               </div>
-              <div class="pt-4 pb-10 text-4xl">08-11-2008 - Brazilian GP</div>
+              <div class="pt-4 pb-10 text-5xl">11-02-2008 - Brazilian GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
-              <span class="text-6xl lg:text-7xl pt-4 silver"
+              <span class="text-6xl lg:text-7xl pt-4 text-white"
                 >Kimi Raikkonen</span
               >
             </div>
-            <div class="pt-2 uppercase font-bold text-black" v-else-if="buttonClickedMe">
+            <div
+              class="pt-2 uppercase font-bold text-black"
+              v-else-if="buttonClickedMe"
+            >
               <span class="text-5xl tracking-wider"
                 >Days elapsed since<br />
                 Mercedes's previous<br />
                 championship: </span
               ><br />
               <div class="text-9xl text-white font-bold pt-8 pb-2">
-                <span class="silver">{{ mercedesDate }}</span>
+                <span class="text-white">{{ mercedesDate }}</span>
               </div>
-              <div class="pt-4 pb-10 text-4xl">12-12-2021 - Abu Dhabi GP</div>
+              <div class="pt-4 pb-10 text-5xl">12-12-2021 - Abu Dhabi GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
-              <span class="text-6xl lg:text-7xl pt-4"
-                >Lewis Hamilton</span
-              >
+              <span class="text-6xl lg:text-7xl pt-4">Lewis Hamilton</span>
             </div>
-            <div class="pt-2 uppercase font-bold text-black" v-else-if="buttonClickedMc"
+            <div
+              class="pt-2 uppercase font-bold text-black"
+              v-else-if="buttonClickedMc"
             >
               <span class="text-5xl tracking-wider"
                 >Days elapsed since<br />
@@ -120,13 +130,16 @@
               >
               <br />
               <div class="text-9xl text-white font-bold pt-8 pb-2">
-                <span class="text-black">{{ mclarenDate }}</span>
+                <span class="silver">{{ mclarenDate }}</span>
               </div>
-              <div class="pt-4 pb-10 text-5xl">12-09-2024 - Abu Dhabi GP</div>
+              <div class="pt-4 pb-10 text-5xl">08-12-2024 - Abu Dhabi GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Mika Hakkinen</span>
             </div>
-            <div class="pt-2 pb-24 uppercase font-bold" v-else-if="buttonClickedAm">
+            <div
+              class="pt-2 pb-24 uppercase font-bold"
+              v-else-if="buttonClickedAm"
+            >
               <span class="text-5xl tracking-wider"
                 >Aston Martin<br />
                 has never won<br />
@@ -184,7 +197,7 @@
             </div>
             <div
               class="pt-2 pb-24 uppercase font-extrabold text-4xl"
-              v-else-if="buttonClickedAr"
+              v-else-if="buttonClickedSa"
             >
               <span class="text-5xl tracking-wider"
                 >Alfa Romeo<br />
@@ -214,7 +227,10 @@
           </div>
         </div>
       </div>
-      <div id="champions" class="order-3 items-center justify-center text-center">
+      <div
+        id="champions"
+        class="order-3 items-center justify-center text-center"
+      >
         <div
           class="xl:mx-8 xl:ml-64 mt-24 px-6 pl-4 pt-2 pb-4 pr-8 text-2xl text-center"
         >
@@ -441,6 +457,11 @@
                 @click="scrollToYear(1998)"
                 >1998<br
               /></span>
+              <span
+                class="px-2 text-4xl hover:bg-black hover:rounded-lg hover:text-orange-400 pr-2 hover:text-5xl cursor-pointer"
+                @click="scrollToYear(2024)"
+                >2024<br
+              /></span>
             </div>
           </div>
           <div v-if="buttonClickedAl" class="text-4xl boxAl p-4">
@@ -597,7 +618,7 @@
               2021, Podium in AZE<br />
             </span>
           </div>
-          <div v-if="buttonClickedAr" class="text-3xl uppercase boxAr">
+          <div v-if="buttonClickedSa" class="text-3xl uppercase boxAr">
             <div class="mt-2 text-5xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
@@ -645,7 +666,10 @@
               2024, Kick Sauber</span
             >
           </div>
-          <div v-if="buttonClickedHa" class="text-2xl uppercase boxHa p-2 pb-4 mr-2 text-black">
+          <div
+            v-if="buttonClickedHa"
+            class="text-2xl uppercase boxHa p-2 pb-4 mr-2 text-black"
+          >
             <div class="mt-2 text-4xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
@@ -684,7 +708,8 @@
         </div>
       </div>
     </div>
-    <div id="buttons"
+    <div
+      id="buttons"
       class="bg-[#00192D] grid place-items-center pb-32 pt-32 col-span-4 position-absolute"
       :class="currentTeamClass"
     >
@@ -692,17 +717,18 @@
         class="mx-2 grid lg:grid-cols-5 grid-cols-2 justify-content-center gap-2"
       >
         <button
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#ff8700] hover:font-bold hover:rounded-br-3xl hover:rounded-tl-3xl"
+          @click="toggleMclaren"
+        >
+          Mclaren
+        </button>
+        <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#00192d] hover:font-bold hover:text-white hover:rounded-bl-3xl hover:rounded-tr-3xl"
           @click="toggleRedBull"
         >
           RedBull
         </button>
-        <button
-          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#a7121f] hover:text-white hover:font-bold hover:rounded-br-3xl hover:rounded-tl-3xl"
-          @click="toggleFerrari"
-        >
-          Ferrari
-        </button>
+
         <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#6cd3bf] hover:font-bold hover:rounded-bl-3xl hover:rounded-tr-3xl"
           @click="toggleMercedes"
@@ -710,16 +736,10 @@
           Mercedes
         </button>
         <button
-          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#ff8700] hover:font-bold hover:rounded-br-3xl hover:rounded-tl-3xl"
-          @click="toggleMclaren"
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#a7121f] hover:text-white hover:font-bold hover:rounded-br-3xl hover:rounded-tl-3xl"
+          @click="toggleFerrari"
         >
-          Mclaren
-        </button>
-        <button
-          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#006f62] hover:font-bold hover:text-white hover:rounded-bl-3xl hover:rounded-tr-3xl"
-          @click="toggleAstonMartin"
-        >
-          Aston Martin
+          Ferrari
         </button>
         <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#0090ff] hover:font-bold hover:text-white hover:rounded-br-3xl hover:rounded-tl-3xl"
@@ -733,6 +753,13 @@
         >
           Williams
         </button>
+        <button
+          class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#006f62] hover:font-bold hover:text-white hover:rounded-bl-3xl hover:rounded-tr-3xl"
+          @click="toggleAstonMartin"
+        >
+          Aston Martin
+        </button>
+
         <button
           class="mx-4 px-4 bg-white text-black text-3xl rounded-lg border-black border-2 btn-shadow transition-all duration-500 hover:bg-[#1534cc] hover:font-bold hover:text-white hover:rounded-br-3xl hover:rounded-tl-3xl"
           @click="toggleAlphaTauri"
@@ -778,8 +805,8 @@
       <div v-if="buttonClickedAt" class="alphatauri text-white grid">
         <AlphaTauri></AlphaTauri>
       </div>
-      <div v-if="buttonClickedAr" class="alfaromeo text-white grid">
-        <AlfaRomeo></AlfaRomeo>
+      <div v-if="buttonClickedSa" class="alfaromeo text-white grid">
+        <Sauber></Sauber>
       </div>
       <div v-if="buttonClickedHa" class="haas text-black grid relative">
         <Haas></Haas>
@@ -800,8 +827,8 @@ import AlphaTauri from "@/components/Formula1/AlphaTauri/AlphaTauri.vue";
 import AlphaTauriStats from "@/components/Formula1/AlphaTauri/AlphaTauriStats.vue";
 import RedBull from "@/components/Formula1/RedBull/RedBull.vue";
 import RedBullStats from "@/components/Formula1/RedBull/RedBullStats.vue";
-import AlfaRomeoStats from "@/components/Formula1/AlfaRomeo/AlfaRomeoStats.vue";
-import AlfaRomeo from "@/components/Formula1/AlfaRomeo/AlfaRomeo.vue";
+import SauberStats from "@/components/Formula1/Sauber/SauberStats.vue";
+import Sauber from "@/components/Formula1/Sauber/Sauber.vue";
 import AstonMartinStats from "@/components/Formula1/AstonMartin/AstonMartinStats.vue";
 import AstonMartin from "@/components/Formula1/AstonMartin/AstonMartin.vue";
 import WilliamsStats from "@/components/Formula1/Williams/WilliamsStats.vue";
@@ -818,15 +845,15 @@ import Footer from "@/components/Footer/Footer.vue";
 export default {
   data() {
     return {
-      buttonClickedRB: true,
+      buttonClickedRB: false,
       buttonClickedFr: false,
       buttonClickedMe: false,
-      buttonClickedMc: false,
+      buttonClickedMc: true,
       buttonClickedAm: false,
       buttonClickedAl: false,
       buttonClickedWi: false,
       buttonClickedAt: false,
-      buttonClickedAr: false,
+      buttonClickedSa: false,
       buttonClickedHa: false,
     };
   },
@@ -839,8 +866,8 @@ export default {
     RedBullStats,
     AlphaTauri,
     AlphaTauriStats,
-    AlfaRomeo,
-    AlfaRomeoStats,
+    Sauber,
+    SauberStats,
     AstonMartin,
     AstonMartinStats,
     WilliamsStats,
@@ -876,7 +903,7 @@ export default {
       return `${diffDays}`;
     },
     mclarenDate() {
-      const days = new Date("12/09/2024");
+      const days = new Date("12/08/2024");
       const today = new Date();
       const diffTime = Math.abs(today - days);
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) - 1);
@@ -933,7 +960,7 @@ export default {
       } else if (this.buttonClickedAt) {
         this.currentTeam = "Alpha Tauri";
         return "alphatauri";
-      } else if (this.buttonClickedAr) {
+      } else if (this.buttonClickedSa) {
         this.currentTeam = "Alfa Romeo";
         return "alfaromeo";
       } else if (this.buttonClickedHa) {
@@ -954,152 +981,152 @@ export default {
       this.buttonClickedRB = !this.buttonClickedRB;
       this.currentTeam = "RedBull";
       if (this.buttonClickedRB) {
-        this.buttonClickedFr = false; // Close Ferrari information if Red Bull is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Mclaren information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleFerrari() {
       this.buttonClickedFr = !this.buttonClickedFr;
       this.currentTeam = "Ferrari";
       if (this.buttonClickedFr) {
-        this.buttonClickedRB = false; // Close Red Bull information if Ferrari is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Mclaren information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleMercedes() {
       this.buttonClickedMe = !this.buttonClickedMe;
       this.currentTeam = "Mercedes";
       if (this.buttonClickedMe) {
-        this.buttonClickedRB = false; // Close Red Bull information if Mercedes is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Mercedes is clicked
-        this.buttonClickedMc = false; // Close Mclaren information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleMclaren() {
       this.buttonClickedMc = !this.buttonClickedMc;
       this.currentTeam = "Mclaren";
       if (this.buttonClickedMc) {
-        this.buttonClickedRB = false; // Close Red Bull information if Mclaren is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Mclaren is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleAstonMartin() {
       this.buttonClickedAm = !this.buttonClickedAm;
       this.currentTeam = "Aston Martin";
       if (this.buttonClickedAm) {
-        this.buttonClickedRB = false; // Close Red Bull information if Aston Martin is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Aston Martin is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleAlpine() {
       this.buttonClickedAl = !this.buttonClickedAl;
       this.currentTeam = "Alpine";
       if (this.buttonClickedAl) {
-        this.buttonClickedRB = false; // Close Red Bull information if Alpine is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Alpine is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleWilliams() {
       this.buttonClickedWi = !this.buttonClickedWi;
       this.currentTeam = "Williams";
       if (this.buttonClickedWi) {
-        this.buttonClickedRB = false; // Close Red Bull information if Williams is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Williams is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleAlphaTauri() {
       this.buttonClickedAt = !this.buttonClickedAt;
       this.currentTeam = "Alpha Tauri";
       if (this.buttonClickedAt) {
-        this.buttonClickedRB = false; // Close Red Bull information if Williams is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Williams is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleAlfaRomeo() {
-      this.buttonClickedAr = !this.buttonClickedAr;
+      this.buttonClickedSa = !this.buttonClickedSa;
       this.currentTeam = "Alfa Romeo";
-      if (this.buttonClickedAr) {
-        this.buttonClickedRB = false; // Close Red Bull information if Williams is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Williams is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedHa = false; // Close Haas information if Red Bull is clicked
+      if (this.buttonClickedSa) {
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedAt = false;
+        this.buttonClickedHa = false;
       }
     },
     toggleHaas() {
       this.buttonClickedHa = !this.buttonClickedHa;
       this.currentTeam = "Haas";
       if (this.buttonClickedHa) {
-        this.buttonClickedRB = false; // Close Red Bull information if Haas is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Haas is clicked
-        this.buttonClickedRB = false; // Close Red Bull information if Williams is clicked
-        this.buttonClickedFr = false; // Close Ferrari information if Williams is clicked
-        this.buttonClickedMe = false; // Close Mercedes information if Red Bull is clicked
-        this.buttonClickedMc = false; // Close Aston Martin information if Red Bull is clicked
-        this.buttonClickedAm = false; // Close Alpine information if Red Bull is clicked
-        this.buttonClickedAl = false; // Close Williams information if Red Bull is clicked
-        this.buttonClickedWi = false; // Close Alpha Tauri information if Red Bull is clicked
-        this.buttonClickedAr = false; // Close Alfa Romeo information if Red Bull is clicked
-        this.buttonClickedAt = false; // Close Haas information if Red Bull is clicked
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedRB = false;
+        this.buttonClickedFr = false;
+        this.buttonClickedMe = false;
+        this.buttonClickedMc = false;
+        this.buttonClickedAm = false;
+        this.buttonClickedAl = false;
+        this.buttonClickedWi = false;
+        this.buttonClickedSa = false;
+        this.buttonClickedAt = false;
       }
     },
   },

@@ -158,25 +158,20 @@
     </div>
     <div id="2024" class="p-12 mb-6">
       <div class="text-6xl md:text-7xl text-left font-bold py-10">
-        <span class="pr-12 border-b-8">END OF ALFA ROMEO</span>
+        <span class="pr-12 border-b-8">Kick Sauber</span>
       </div>
       <div class="text-2xl text-justify">
         <img
-          src="/Images/Sauber/sauber2023.png"
+          src="/Images/Sauber/sauber2024.jpg"
           alt="Alfa Romeo C43"
           class="xl:w-6/12 mr-12 mb-4 float-left cursor-default rounded-2xl transition-all duration-500 alfaImages"
         />
         <div class="pb-4 text-4xl">
           <p>
-            Final season competing under the Alfa Romeo moniker is a
-            disappointing one, as team drop to ninth overall in the
-            constructors’ table. Best results are P8s for Valtteri Bottas in
-            Bahrain and Qatar.
+            Another dissapointing season for Kick Sauber. They managed to score only 4 points at the Qatar GP, with Zhou finishing finishing 8th in the race.
+            Other than that they were always at the back of the grid both in qualifying and race. Next year they will go with completely new lineup of Gabrel Bortoleto and Nico Hulkenberg.
           </p>
           <br />
-          <p class="pt-4">
-            Next year Sauber will compete under the name Kick Sauber.
-          </p>
           <p class="text-right text-xl text-gray-500 italic">Source: F1.com</p>
         </div>
       </div>
