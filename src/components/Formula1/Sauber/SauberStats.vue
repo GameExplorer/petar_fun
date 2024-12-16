@@ -9,7 +9,13 @@
   <div class="p-2 text-3xl">
     <span
       class="p-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-      >Race starts: <span class="font-semibold">462</span></span
+      >Race starts: <span class="font-semibold">486</span></span
+    >
+  </div>
+  <div class="p-2 text-3xl">
+    <span
+      class="p-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
+      >Wins: <span class="font-semibold">1</span></span
     >
   </div>
   <div class="p-2 text-3xl">
@@ -27,19 +33,13 @@
   <div class="p-2 text-3xl">
     <span
       class="p-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-      >Wins: <span class="font-semibold">1</span></span
-    >
-  </div>
-  <div class="p-2 text-3xl">
-    <span
-      class="p-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
       >Fastest laps: <span class="font-semibold">7</span></span
     >
   </div>
   <div class="p-2 text-3xl">
     <span
       class="p-2 hover:bg-[#DE3126] hover:rounded-lg hover:text-white cursor-pointer"
-      >Points: <span class="font-semibold">865</span></span
+      >Points: <span class="font-semibold">869</span></span
     >
   </div>
   <div class="p-2 text-[1.798rem]">

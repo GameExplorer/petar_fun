@@ -1,7 +1,5 @@
 <template>
-  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl">
-    STATS
-  </div>
+  <div class="mt-2 mb-2 font-bold text-center text-4xl lg:text-5xl">STATS</div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
@@ -11,37 +9,37 @@
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Race starts: <span class="font-bold">369</span></span
+      >Race starts: <span class="font-bold">393</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Poles: <span class="font-bold">95</span></span
+      >Wins: <span class="font-bold">122</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Podiums: <span class="font-bold">264</span></span
+      >Poles: <span class="font-bold">103</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Wins: <span class="font-bold">113</span></span
+      >Podiums: <span class="font-bold">282</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Fastest laps: <span class="font-bold">95</span></span
+      >Fastest laps: <span class="font-bold">99</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Points: <span class="font-bold">7248</span></span
+      >Points: <span class="font-bold">7837</span></span
     >
   </div>
   <div class="p-2 lg:text-3xl text-2xl">
@@ -53,7 +51,7 @@
   <div class="p-2 lg:text-3xl text-2xl">
     <span
       class="lg:px-2 py-1 hover:rounded-lg hover:bg-[#f5c21b] hover:text-black"
-      >Driver's Championship: <span class="font-bold">7</span></span
+      >Driver's Championship: <span class="font-bold">8</span></span
     >
   </div>
 </template>
