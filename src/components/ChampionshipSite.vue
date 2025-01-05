@@ -87,6 +87,10 @@
               <span class="text-6xl lg:text-7xl pt-4">
                 <span class="silver">Max Verstappen</span>
               </span>
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >Max Verstappen<br />
+                Liam Lawson</span>
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedFr">
               <span class="text-5xl tracking-wider"
@@ -101,6 +105,11 @@
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-6xl lg:text-7xl pt-4 text-white"
                 >Kimi Raikkonen</span
+              >
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >Charles Leclerc<br />
+                Lewis Hamilton</span
               >
             </div>
             <div
@@ -118,6 +127,11 @@
               <div class="pt-4 pb-10 text-5xl">12-12-2021 - Abu Dhabi GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-6xl lg:text-7xl pt-4">Lewis Hamilton</span>
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >George Russell<br />
+                Kimi Andrea Antonelli</span
+              >
             </div>
             <div
               class="pt-2 uppercase font-bold text-black"
@@ -135,6 +149,11 @@
               <div class="pt-4 pb-10 text-5xl">08-12-2024 - Abu Dhabi GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Mika Hakkinen</span>
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >Lando Norris<br />
+                Oscar Piastri</span
+              >
             </div>
             <div
               class="pt-2 pb-24 uppercase font-bold"
@@ -165,6 +184,11 @@
               <div class="pt-4 pb-10 text-5xl">22-10-2005 - Brazilian GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Fernando Alonso</span>
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >Piere Gasly<br />
+                Jack Doohan</span
+              >
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedWi">
               <span class="text-5xl tracking-wider"
@@ -179,6 +203,11 @@
               <div class="pt-4 pb-10 text-5xl">12-10-1997 - Japanese GP</div>
               <span class="text-4xl">LAST CHAMPION:<br /></span>
               <span class="text-7xl pt-4">Jacques Villeneuve</span>
+              <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
+              <span class="text-4xl underline"
+                >Carlos Sainz<br />
+                Alexander Albon</span
+              >
             </div>
             <div
               class="pt-2 pb-24 uppercase font-bold"
@@ -191,7 +220,7 @@
               ><br />
               <div class="pt-8 pb-10 text-5xl">CURRENT DRIVERS:</div>
               <span class="text-7xl"
-                >Daniel Ricciardo<br />
+                >Isaack Hadjar<br />
                 Yuki Tsunoda</span
               >
             </div>
@@ -200,14 +229,14 @@
               v-else-if="buttonClickedSa"
             >
               <span class="text-5xl tracking-wider"
-                >Alfa Romeo<br />
+                >Sauber<br />
                 has never won<br />
                 Constructor's Championship</span
               ><br />
               <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
               <span class="text-7xl"
-                >Valtteri Bottas<br />
-                Zhou Guanyu</span
+                >Nico Hulkenberg<br />
+                Gabriel Bortoleto</span
               >
             </div>
             <div
@@ -221,8 +250,8 @@
               >
               <br />
               <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
-              <div class="text-7xl pb-4">Kevin Magnussen</div>
-              <div class="text-7xl">Nico Hulkenberg</div>
+              <div class="text-7xl pb-4">Oliver Bearman</div>
+              <div class="text-7xl">Esteban Ocon</div>
             </div>
           </div>
         </div>
@@ -532,7 +561,7 @@
             </div>
           </div>
           <div v-if="buttonClickedAm" class="text-2xl uppercase boxAm p-4">
-            <div class="mt-2 text-4xl pb-4 font-bold">PODIUMS</div>
+            <div class="mt-2 text-4xl pb-4 font-bold">Notable achievements</div>
             <span
               class="px-2 py-1 text-3xl hover:bg-white hover:text-[#006f62] hover:rounded-xl cursor-pointer"
               @click="scrollToYear(2021)"
@@ -619,7 +648,7 @@
             </span>
           </div>
           <div v-if="buttonClickedSa" class="text-3xl uppercase boxAr">
-            <div class="mt-2 text-5xl pb-4 font-bold">
+            <div class="mt-2 text-4xl pb-4 font-bold">
               NOTABLE<br />
               ACHIEVEMENTS
             </div>
@@ -700,9 +729,9 @@
             </span>
             <span
               class="px-2 py-1 text-3xl hover:bg-white hover:border-[1px] hover:border-black hover:rounded-lg cursor-pointer"
-              @click="scrollToYear(2024)"
+              @click="scrollToYear(2023)"
             >
-              2023, GUNTHER LEAVES<br />
+              2023, GUNTHER<br />
             </span>
           </div>
         </div>
@@ -710,7 +739,7 @@
     </div>
     <div
       id="buttons"
-      class="bg-[#00192D] grid place-items-center pb-32 pt-32 col-span-4 position-absolute"
+      class="bg-[#00192D] grid place-items-center pb-32 pt-8 col-span-4 position-absolute"
       :class="currentTeamClass"
     >
       <ul
