@@ -161,6 +161,7 @@ export default {
   transition: 0.4s;
   border-radius: 0.5em;
   cursor: pointer;
+  margin: 0 2rem;
 }
 .Williams-img:hover {
   outline: var(--b) solid var(--c);

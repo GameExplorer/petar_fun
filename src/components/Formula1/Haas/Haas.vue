@@ -59,8 +59,8 @@ export default {
           description: "Nikita was replaced by Magnussen. Haas decision to focus on 2022 car paid off in the first two races Magnussen scored teams first points since 2020. After that both drivers struggle to score points until British GP where both drivers score points, Mick scored his best position P8 and Magnussen finished P10. The momentum continued in the following race where Mick finished P6 his best race result so far. In Brazil team took maiden pole with Magnussen out-qualifying the field in changing conditions. Haas finished P7 in the constructor's standings. Mick departed Haas after the season.",
         },
         {
-          id: "2024",
-          title: "GUNTHER DEPARTURE",
+          id: "2023",
+          title: "GUNTHER LEAVES",
           description: "After poor results in 2023 Haas decided to replace Mick with Magnussen. They signed new sponsorship with MoneyGram. Haas 2023 was good in qualifying. Hulkenberg often qualified high but due to high tyre wear they usually finished outside the points. Haas finished the season in P10 with 12 points. Hulkenberg P7 in the American GP was their best result. Few days after the new year Haas announced that Gunther Steiner contract will not be renewed. He was replaced by engineer Ayao Komatsu.",
         },
       ],
