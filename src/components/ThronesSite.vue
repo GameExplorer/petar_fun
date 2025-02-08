@@ -1,4 +1,92 @@
-<template v-cloak>
+<script>
+import "/src/assets/Thrones/thrones.css";
+import Footer from "@/components/Footer/Footer.vue";
+import thronesTextData from "@/components/Thrones/ThronesTextData.vue";
+
+export default {
+  name: "ThronesSite",
+  components: {
+    Footer,
+    thronesTextData,
+  },
+  data() {
+    return {
+      targetDate: new Date("2011-06-12"),
+      textData: null,
+      classes: [
+        { background: "targaryen", text: "text-targaryen" },
+        { background: "stark", text: "text-stark" },
+        { background: "lannister", text: "text-lannister" },
+        { background: "baratheon", text: "text-baratheon" },
+        { background: "tyrell", text: "text-tyrell" },
+        { background: "tully", text: "text-tully" },
+        { background: "martell", text: "text-martell" },
+        { background: "greyjoy", text: "text-greyjoy" },
+      ],
+      currentClassIndex: 0,
+      isModalOpen: false,
+    };
+  },
+
+  computed: {
+    daysPassed() {
+      const currentDate = new Date();
+      const timeDifference = currentDate - this.targetDate;
+      const daysPassed =
+        Math.floor(timeDifference / (1000 * 60 * 60 * 24)) - 30; // Milliseconds to days
+      return daysPassed;
+    },
+    currentClass() {
+      return this.classes[this.currentClassIndex].background;
+    },
+    currentTextColor() {
+      return this.classes[this.currentClassIndex].text;
+    },
+  },
+
+  methods: {
+    openModal() {
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
+    },
+    generateText() {
+      if (this.$refs.thronesTextData && this.$refs.thronesTextData.textData) {
+        const textDataArray = this.$refs.thronesTextData.textData;
+        const randomIndex = Math.floor(Math.random() * textDataArray.length);
+        this.textData = textDataArray[randomIndex];
+      } else {
+        console.error("ThronesTextData component or its textData is undefined");
+      }
+    },
+    changeClasses() {
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * this.classes.length);
+      } while (newIndex === this.currentClassIndex);
+      this.currentClassIndex = newIndex;
+    },
+
+    handleClick() {
+      this.generateText();
+      this.changeClasses();
+    },
+  },
+  mounted() {
+    // Initialize textData with the first element of thronesTextData
+    this.$nextTick(() => {
+      if (this.$refs.thronesTextData && this.$refs.thronesTextData.textData) {
+        this.textData = this.$refs.thronesTextData.textData[0];
+      } else {
+        console.error("ThronesTextData component or its textData is undefined");
+      }
+    });
+  },
+};
+</script>
+
+<template>
   <div class="text-Font">
     <header>
       <div class="background">
@@ -195,90 +283,3 @@
   </div>
 </template>
 
-<script>
-import "/src/assets/Thrones/thrones.css";
-import Footer from "@/components/Footer/Footer.vue";
-import thronesTextData from "@/components/Thrones/ThronesTextData.vue";
-
-export default {
-  name: "ThronesSite",
-  components: {
-    Footer,
-    thronesTextData,
-  },
-  data() {
-    return {
-      targetDate: new Date("2011-06-12"),
-      textData: null,
-      classes: [
-        { background: "targaryen", text: "text-targaryen" },
-        { background: "stark", text: "text-stark" },
-        { background: "lannister", text: "text-lannister" },
-        { background: "baratheon", text: "text-baratheon" },
-        { background: "tyrell", text: "text-tyrell" },
-        { background: "tully", text: "text-tully" },
-        { background: "martell", text: "text-martell" },
-        { background: "greyjoy", text: "text-greyjoy" },
-      ],
-      currentClassIndex: 0,
-      isModalOpen: false,
-    };
-  },
-
-  computed: {
-    daysPassed() {
-      const currentDate = new Date();
-      const timeDifference = currentDate - this.targetDate;
-      const daysPassed =
-        Math.floor(timeDifference / (1000 * 60 * 60 * 24)) - 30; // Milliseconds to days
-      return daysPassed;
-    },
-    currentClass() {
-      return this.classes[this.currentClassIndex].background;
-    },
-    currentTextColor() {
-      return this.classes[this.currentClassIndex].text;
-    },
-  },
-
-  methods: {
-    openModal() {
-      this.isModalOpen = true;
-    },
-    closeModal() {
-      this.isModalOpen = false;
-    },
-    generateText() {
-      if (this.$refs.thronesTextData && this.$refs.thronesTextData.textData) {
-        const textDataArray = this.$refs.thronesTextData.textData;
-        const randomIndex = Math.floor(Math.random() * textDataArray.length);
-        this.textData = textDataArray[randomIndex];
-      } else {
-        console.error("ThronesTextData component or its textData is undefined");
-      }
-    },
-    changeClasses() {
-      let newIndex;
-      do {
-        newIndex = Math.floor(Math.random() * this.classes.length);
-      } while (newIndex === this.currentClassIndex);
-      this.currentClassIndex = newIndex;
-    },
-
-    handleClick() {
-      this.generateText();
-      this.changeClasses();
-    },
-  },
-  mounted() {
-    // Initialize textData with the first element of thronesTextData
-    this.$nextTick(() => {
-      if (this.$refs.thronesTextData && this.$refs.thronesTextData.textData) {
-        this.textData = this.$refs.thronesTextData.textData[0];
-      } else {
-        console.error("ThronesTextData component or its textData is undefined");
-      }
-    });
-  },
-};
-</script>
