@@ -80,7 +80,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow-x:hidden;
+  overflow:hidden;
   background-color: black;
   z-index: -1;
 }
@@ -112,5 +112,12 @@ export default {
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
+}
+
+@media screen and (max-width: 1200px) {
+   .space-cursor {
+    display: none;
+   }
+  
 }
 </style>

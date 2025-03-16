@@ -264,7 +264,7 @@ export default {
           ]
         }
       },
-      isMuted: false,
+      isMuted: true,
     }
   },
   components: {
@@ -276,11 +276,15 @@ export default {
   mounted() {
     if (this.$refs.audioElement) {
       this.$refs.audioElement.volume = 0.4;
+      this.$refs.audioElement.muted = true; // Ensure it starts muted
+      this.isMuted = true;
+
       this.$refs.audioElement.play().catch(error => {
         console.log('Autoplay prevented:', error);
-        this.isMuted = false;
-        this.$refs.audioElement.muted = true;
       });
+
+      // Add a click event listener to start the audio when user interacts
+      document.addEventListener("click", this.enableAudio, { once: true });
     }
 
   },
@@ -291,12 +295,24 @@ export default {
     hideInfo() {
       this.hoveredPlanet = null;
     },
+    enableAudio() {
+      if (this.$refs.audioElement) {
+        this.$refs.audioElement.muted = false;
+        this.$refs.audioElement.play()
+          .then(() => {
+            this.isMuted = false;
+          })
+          .catch(error => console.log("Playback failed:", error));
+      }
+    },
+
     toggleAudio() {
       if (this.$refs.audioElement) {
         this.$refs.audioElement.muted = !this.$refs.audioElement.muted;
         this.isMuted = this.$refs.audioElement.muted;
       }
-    },
+    }
+
 
   }
 }
@@ -307,7 +323,7 @@ export default {
   <div class="container">
     <aumeter />
     <div class="relative">
-      <audio ref="audioElement" loop class="hidden">
+      <audio ref="audioElement" loop autoplay muted class="hidden">
         <source src="@/assets/music/dead-space-style-ambient-music.mp3" type=" audio/mpeg">
         Your browser does not support the audio element.
       </audio>
@@ -888,6 +904,7 @@ export default {
   display: flex;
   flex-direction: column;
   scroll-snap-type: y mandatory;
+  overflow: hidden;
 }
 
 .screen {
