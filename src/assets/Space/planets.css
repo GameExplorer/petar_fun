@@ -824,6 +824,18 @@
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
+.solar-system {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .jupiter {
   width: 280px;
   height: 280px;
@@ -848,6 +860,7 @@
   position: relative;
   animation: planetRotate 15s infinite linear;
   filter: contrast(110%) brightness(105%);
+  z-index: 10;
 }
 
 .jupiter::before {
@@ -901,12 +914,44 @@
   animation: jupiterBandsRotate 20s infinite linear;
 }
 
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.io-orbit {
+  width: 360px;
+  height: 360px;
+}
+
+.europa-orbit {
+  width: 420px;
+  height: 420px;
+}
+
+.ganymede-orbit {
+  width: 480px;
+  height: 480px;
+}
+
+.callisto-orbit {
+  width: 540px;
+  height: 540px;
+}
+
 .moons {
   border-radius: 50%;
   position: absolute;
   box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.8),
               inset 4px 4px 8px rgba(255, 255, 255, 0.3),
               0 0 10px rgba(255, 255, 255, 0.2);
+  transform-origin: center;
+  z-index: 5;
 }
 
 .io {
@@ -924,6 +969,10 @@
   box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.7),
               inset 5px 5px 15px rgba(255, 255, 255, 0.3),
               0 0 15px rgba(255, 215, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  margin-left: -22.5px;
+  margin-top: -22.5px;
   animation: ioOrbit 21.5s infinite linear;
 }
 
@@ -954,12 +1003,11 @@
       rgba(255, 215, 0, 0.6) 4px,
       transparent 8px
     );
-      
-  }
+}
 
 .europa {
   width: 25px;
-  height:   25px;
+  height: 25px;
   background: linear-gradient(
     135deg,
     #f0f8ff 0%,
@@ -971,7 +1019,10 @@
   box-shadow: inset -4px -4px 12px rgba(0, 0, 0, 0.5),
               inset 4px 4px 12px rgba(255, 255, 255, 0.8),
               0 0 15px rgba(173, 216, 230, 0.6);
-  transform: translateX(200px);
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
   animation: europaOrbit 42s infinite linear;
 }
 
@@ -1017,6 +1068,10 @@
   box-shadow: inset -6px -6px 15px rgba(0, 0, 0, 0.7),
               inset 6px 6px 15px rgba(255, 255, 255, 0.3),
               0 0 15px rgba(169, 169, 169, 0.4);
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
   animation: ganymedeOrbit 80s infinite linear;
 }
 
@@ -1063,6 +1118,10 @@
   box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.8),
               inset 5px 5px 15px rgba(255, 255, 255, 0.2),
               0 0 15px rgba(105, 105, 105, 0.3);
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
   animation: callistoOrbit 100s infinite linear;
 }
 
@@ -1101,40 +1160,360 @@
     );
 }
 
-@keyframes ioOrbit {
-  from {
-    transform: rotate(0deg) translateX(calc(25vw + 40px)) rotate(0deg);
+.titan-orbit {
+  width: 600px;
+  height: 600px;
+}
+
+.titan {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(
+    135deg,
+    #f3df88 0%,
+    #e8d984 20%,
+    #dbcb7e 40%,
+    #dbcb7e 60%,
+    #e8d984 80%,
+    #f3df88 100%
+  );
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.7),
+              inset 5px 5px 15px rgba(255, 255, 255, 0.3),
+              0 0 15px rgba(255, 215, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  margin-left: -22.5px;
+  margin-top: -22.5px;
+  animation: titanOrbit 45s infinite linear;
+}
+
+.titan::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: 
+    /* Hazy atmosphere effect */
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 222, 173, 0.4) 80%,
+      rgba(233, 202, 157, 0.6) 90%,
+      rgba(222, 184, 135, 0.7) 100%
+    ),
+    /* Surface features */
+    radial-gradient(
+      circle at 30% 40%,
+      rgba(210, 180, 140, 0.5) 5px,
+      transparent 10px
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(222, 184, 135, 0.6) 8px,
+      transparent 15px
+    ),
+    radial-gradient(
+      circle at 40% 70%,
+      rgba(200, 170, 120, 0.5) 7px,
+      transparent 12px
+    );
+}
+
+@keyframes titanOrbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(300px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg) translateX(calc(25vw + 40px)) rotate(-360deg);
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(300px) rotate(-360deg);
+  }
+}
+
+@keyframes planetRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jupiterBandsRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ioOrbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
   }
 }
 
 @keyframes europaOrbit {
-  from {
-    transform: rotate(0deg) translateX(calc(28vw + 40px)) rotate(0deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(210px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg) translateX(calc(28vw + 40px)) rotate(-360deg);
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(210px) rotate(-360deg);
   }
 }
 
 @keyframes ganymedeOrbit {
-  from {
-    transform: rotate(0deg) translateX(calc(32vw + 40px)) rotate(0deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(240px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg) translateX(calc(32vw + 40px)) rotate(-360deg);
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(240px) rotate(-360deg);
   }
 }
 
 @keyframes callistoOrbit {
-  from {
-    transform: rotate(0deg) translateX(calc(36vw + 40px)) rotate(0deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(270px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg) translateX(calc(36vw + 40px)) rotate(-360deg);
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(270px) rotate(-360deg);
   }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .solar-system {
+    height: 500px;
+  }
+  
+  .jupiter {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .io-orbit {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .europa-orbit {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .ganymede-orbit {
+    width: 340px;
+    height: 340px;
+  }
+  
+  .callisto-orbit {
+    width: 380px;
+    height: 380px;
+  }
+
+  .titan-orbit {
+    width: 380px;
+    height: 380px;
+  }
+  
+  @keyframes ioOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(130px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(130px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes europaOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes ganymedeOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(170px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(170px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes callistoOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(190px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(190px) rotate(-360deg);
+    }
+  }
+
+  @keyframes titanOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(110px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(110px) rotate(-360deg);
+    }
+  }
+  
+  .io {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+  
+  .europa {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  
+  .ganymede {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  
+  .callisto {
+    width: 35px;
+    height: 35px;
+    margin-left: -17.5px;
+    margin-top: -17.5px;
+  }
+
+  .titan {
+    width: 40px;
+    height: 40px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solar-system {
+    height: 400px;
+  }
+  
+  .jupiter {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .io-orbit {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .europa-orbit {
+    width: 210px;
+    height: 210px;
+  }
+  
+  .ganymede-orbit {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .callisto-orbit {
+    width: 270px;
+    height: 270px;
+  }
+
+  .titan-orbit {
+    width: 300px;
+    height: 300px;
+  }
+  
+  @keyframes ioOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(90px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(90px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes europaOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(105px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(105px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes ganymedeOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes callistoOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(135px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(135px) rotate(-360deg);
+    }
+  }
+
+  @keyframes titanOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(70px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(70px) rotate(-360deg);
+    }
+  }
+  
+  .io {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  
+  .europa {
+    width: 15px;
+    height: 15px;
+    margin-left: -7.5px;
+    margin-top: -7.5px;
+  }
+  
+  .ganymede {
+    width: 25px;
+    height: 25px;
+    margin-left: -12.5px;
+    margin-top: -12.5px;
+  }
+  
+  .callisto {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+   .titan {
+    width: 40px;
+    height: 40px;
+    margin-left: -11px;
+    margin-top: -11px;
+  }
+
 }
 
 .saturn {
@@ -1195,23 +1574,7 @@
   );
 }
 
-.titan {
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(
-    135deg,
-    #f3df88 0%,
-    #e8d984 20%,
-    #dbcb7e 40%,
-    #dbcb7e 60%,
-    #e8d984 80%,
-    #f3df88 100%
-  );
-  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.7),
-              inset 5px 5px 15px rgba(255, 255, 255, 0.3),
-              0 0 15px rgba(255, 215, 0, 0.5);
-  animation: ioOrbit 120s infinite linear;
-}
+
 
 .uranus {
   width: 90px;
