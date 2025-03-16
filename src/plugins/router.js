@@ -53,6 +53,24 @@ const routes = [
         },
         component: () => import('@/views/Life.vue'),
     },
+    {
+        path: '/guess_the_us_states',
+        name: 'Guess the US States',
+        meta: {
+            title: 'Guess the US States',
+            pageIcon: '/Icons/leaf.svg',
+        },
+        component: () => import('@/views/States.vue'),
+    },
+    {
+        path: '/history_of_the_programming_languages',
+        name: 'Programming Languages',
+        meta: {
+            title: 'History of the Programming Languages',
+            pageIcon: '/Icons/leaf.svg',
+        },
+        component: () => import('@/views/ProgrammingLanguages.vue'),
+    },
     {   // This is a catch all route in case none of the above matches, it will redirect to the home page (instead of 404 page)
         path: '/catchAll(.*)*',
         redirect: { name: 'Home'}

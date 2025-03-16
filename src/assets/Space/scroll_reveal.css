@@ -1,0 +1,29 @@
+.scroll-reveal {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Stargaze";
+}
+
+.scroll-reveal span {
+  color: hsl(0 0% 100% / 0.25);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 98%, 0.9) 0%,
+    hsl(0 0% 100% / 0.9) 50%,
+    hsl(0 0% 100% / 0.9) 100%
+  );
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+  animation-range: contain;
+  animation-range-start: cover 30vh;
+  animation-range-end: cover 60vh;
+}
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
