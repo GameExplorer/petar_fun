@@ -30,7 +30,7 @@ export default {
         { name: "Mountains", to: { name: "Mountains" }, image: "/Images/PageIcons/mountains_button.png" },
         { name: "F1 Champions", to: { name: "F1 Champions" }, image: "/Images/PageIcons/F1Champions.png" },
         { name: "Life in Weeks", to: { name: "Life in Weeks" }, image: "/Images/PageIcons/LifeInWeeks.png" },
-        //{ name: 'Space', to: { name: 'Space' }, image: '/Images/PageIcons/SpaceImage.png' },
+        { name: 'Space', to: { name: 'Space' }, image: '/Images/PageIcons/SpaceImage.png' },
       ],
     }
   }
