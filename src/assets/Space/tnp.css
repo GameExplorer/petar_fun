@@ -1,0 +1,228 @@
+.pluto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #fff1d5 0%,
+    #ddc4af 30%,
+    #968570 50%,
+    #ddc4af 70%,
+    #fff1d5 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.6),
+    inset 4px 4px 8px rgba(139, 69, 19, 0.4), 0 0 15px rgba(160, 82, 45, 0.3);
+  position: relative;
+  animation: planetRotate 20s infinite linear;
+}
+
+.pluto::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(205, 133, 63, 0.4) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      rgba(139, 69, 19, 0.3) 3px,
+      transparent 5px
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(160, 82, 45, 0.4) 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(205, 133, 63, 0.3) 4px,
+      transparent 6px
+    );
+  filter: blur(0.5px);
+}
+
+.haumea {
+  width: 35px;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #e8e8e8 0%,
+    #ffffff 30%,
+    #f5f5f5 50%,
+    #e0e0e0 70%,
+    #d3d3d3 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.3);
+  position: relative;
+  animation: planetRotate 2s infinite linear;
+  transform: skew(-10deg);
+}
+
+.haumea::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      ellipse at 30% 30%,
+      rgba(255, 255, 255, 0.8) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      ellipse at 70% 60%,
+      rgba(220, 220, 220, 0.6) 3px,
+      transparent 5px
+    ),
+    radial-gradient(
+      ellipse at 40% 80%,
+      rgba(240, 240, 240, 0.7) 2px,
+      transparent 3px
+    );
+  filter: blur(0.5px);
+}
+
+.makemake {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #760202 0%,
+    #a52a2a 30%,
+    #cd5c5c 50%,
+    #a52a2a 70%,
+    #760202 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.5),
+    inset 4px 4px 8px rgba(139, 0, 0, 0.3), 0 0 15px rgba(165, 42, 42, 0.4);
+  position: relative;
+  animation: planetRotate 20s infinite linear;
+}
+
+.makemake::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 25% 25%,
+      rgba(205, 92, 92, 0.5) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(139, 0, 0, 0.4) 3px,
+      transparent 5px
+    ),
+    radial-gradient(
+      circle at 45% 75%,
+      rgba(165, 42, 42, 0.4) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(205, 92, 92, 0.3) 1px,
+      transparent 3px
+    );
+  filter: blur(0.5px);
+}
+
+.eris {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #f0f8ff 0%,
+    #e6e6fa 30%,
+    #ffffff 50%,
+    #e6e6fa 70%,
+    #f0f8ff 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.9),
+    0 0 15px rgba(230, 230, 250, 0.5);
+  position: relative;
+  animation: planetRotate 25s infinite linear;
+}
+
+.eris::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.9) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      rgba(240, 248, 255, 0.7) 3px,
+      transparent 5px
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(230, 230, 250, 0.8) 2px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.7) 4px,
+      transparent 6px
+    );
+  filter: blur(0.5px);
+}
+
+.sedna {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #800000 0%,
+    #b22222 30%,
+    #dc143c 50%,
+    #b22222 70%,
+    #800000 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.6),
+    inset 4px 4px 8px rgba(220, 20, 60, 0.3), 0 0 15px rgba(178, 34, 34, 0.4);
+  position: relative;
+  animation: planetRotate 22s infinite linear;
+}
+
+.sedna::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 25% 25%,
+      rgba(220, 20, 60, 0.5) 2px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(128, 0, 0, 0.4) 3px,
+      transparent 5px
+    ),
+    radial-gradient(
+      circle at 45% 75%,
+      rgba(178, 34, 34, 0.4) 2px,
+      transparent 4px
+    );
+  filter: blur(0.5px);
+}
+

@@ -2,6 +2,7 @@
   font-size: 2rem;
   text-align: center;
   font-family: "Stargaze";
+  overflow: visible;
 }
 
 .scroll-reveal span {
