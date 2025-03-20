@@ -28,9 +28,9 @@ export default {
                     particle.classList.add('comet');
                 }
 
-                const phi = Math.random() * Math.PI * 2; 
-                const theta = Math.acos(2 * Math.random() - 1); 
-                const radius = 40 + Math.random() * 50; 
+                const phi = Math.random() * Math.PI * 2;
+                const theta = Math.acos(2 * Math.random() - 1);
+                const radius = 40 + Math.random() * 50;
 
                 const sphereX = radius * Math.sin(theta) * Math.cos(phi);
                 const sphereY = radius * Math.sin(theta) * Math.sin(phi);
@@ -81,13 +81,14 @@ export default {
 
 <template>
     <div class="oort-cloud">
-        <h1 class="oort-cloud-title">Oort Cloud</h1>
+        <div class="relative mb-[25rem]">
+            <h1 class="oort-cloud-title">Oort Cloud</h1>
+        </div>
         <div class="oort-info-box">
             <h2 class="oort-info-title">Oort Cloud</h2>
             <p class="oort-info-text">
                 A theoretical cloud of predominantly icy objects believed to surround the Sun at distances from 2,000 to
                 100,000 AU.
-                It is the source of long-period comets and may contain trillions of icy bodies.
             </p>
         </div>
         <div class="oort-sphere"></div>
@@ -114,6 +115,7 @@ export default {
     color: #fff;
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 2rem;
     z-index: 10;
     font-family: "Equinox", sans-serif;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
@@ -131,7 +133,7 @@ export default {
     color: #fff;
     font-family: "SpaceOdyssey", sans-serif;
     backdrop-filter: blur(5px);
-    max-width: 400px;
+    max-width: 420px;
     text-align: center;
     z-index: 10;
     opacity: 0.9;

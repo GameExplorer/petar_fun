@@ -80,7 +80,6 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow:hidden;
   background-color: black;
   z-index: -1;
 }
@@ -97,8 +96,8 @@ export default {
 .content {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: min-content;
 }
 
 .space-cursor {
@@ -115,9 +114,15 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-   .space-cursor {
+  .space-cursor {
     display: none;
    }
+
+ 
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
   
 }
 </style>

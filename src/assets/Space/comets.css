@@ -1,0 +1,441 @@
+.halleys-comet {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 40% 40%,
+    #ffffff 0%,
+    #f0f8ff 20%,
+    #e6e6fa 40%,
+    #b0c4de 60%,
+    #4682b4 80%,
+    #36648b 100%
+  );
+  box-shadow: 0 0 15px #ffffff, 0 0 25px #87cefa, 0 0 35px rgba(135, 206, 250, 0.5);
+  z-index: 5;
+  transform-origin: center center;
+  animation: halleyPath 40s linear infinite;
+}
+
+.halleys-comet::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    #87cefa 0%,
+    #b0e0e6 15%,
+    #e6e6fa 30%,
+    rgba(230, 230, 250, 0.7) 50%,
+    rgba(240, 248, 255, 0.4) 75%,
+    transparent 100%
+  );
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: halleyTailFade 6s infinite alternate;
+}
+
+.halleys-comet::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 104, 163, 0.8) 0%,
+    rgba(43, 170, 230, 0.7) 15%,
+    rgba(70, 170, 250, 0.6) 30%,
+    rgba(10, 104, 163, 0.4) 50%,
+    rgba(43, 161, 234, 0.2) 75%,
+    transparent 100%
+  );
+  top: 0px;
+  right: 35px;
+  transform: translateY(-70%) rotate(-170deg);
+  border-radius: 50%;
+  filter: blur(1.5px);
+  z-index: -10;
+}
+
+.halleys-dust-tail {
+  position: absolute;
+  width: 180px;
+  height: 28px;
+  background: linear-gradient(
+    90deg,
+    rgba(222, 184, 135, 0.7) 0%,
+    rgba(245, 222, 179, 0.6) 20%,
+    rgba(255, 228, 196, 0.5) 40%,
+    rgba(255, 235, 205, 0.3) 60%,
+    rgba(255, 245, 238, 0.2) 80%,
+    transparent 100%
+  );
+  top: 65%;
+  right: 10px;
+  transform: translateY(-50%) rotate(10deg);
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: 4;
+  animation: halleyDustTailFade 7s infinite alternate;
+}
+
+.halleys-nucleus {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 35%,
+    rgba(255, 255, 255, 0.9) 1%,
+    rgba(240, 248, 255, 0.8) 3%,
+    rgba(230, 230, 250, 0.6) 6%,
+    rgba(176, 196, 222, 0.5) 12%,
+    rgba(70, 130, 180, 0.4) 20%,
+    transparent 30%
+  );
+  filter: blur(1px);
+  animation: nucleusPulse 3s infinite ease-in-out;
+}
+
+.halleys-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  filter: blur(1px);
+  opacity: 0;
+  animation: halleyShimmer 4s infinite;
+}
+
+@keyframes halleyPath {
+  0% {
+    transform: translate(-200px, -400px) rotate(40deg) scale(0.6);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(30vw, 80vh) rotate(-40deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes halleyTailFade {
+  0% {
+    width: 120px;
+    opacity: 0.8;
+    background: linear-gradient(
+      90deg,
+      #87cefa 0%,
+      #b0e0e6 20%,
+      #e6e6fa 40%,
+      rgba(230, 230, 250, 0.6) 70%,
+      transparent 100%
+    );
+  }
+  100% {
+    width: 160px;
+    opacity: 1;
+    background: linear-gradient(
+      90deg,
+      #87cefa 0%,
+      #b0e0e6 15%,
+      #e6e6fa 30%,
+      rgba(230, 230, 250, 0.7) 50%,
+      rgba(240, 248, 255, 0.4) 75%,
+      transparent 100%
+    );
+  }
+}
+
+@keyframes halleyTailPulse {
+  0% {
+    width: 180px;
+    filter: blur(1px);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 161, 234, 0.8) 0%,
+      rgba(43, 170, 230, 0.7) 20%,
+      rgba(70, 170, 250, 0.5) 40%,
+      rgba(43, 170, 230, 0.3) 70%,
+      transparent 100%
+    );
+  }
+  100% {
+    width: 220px;
+    filter: blur(2px);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 161, 234, 0.8) 0%,
+      rgba(43, 170, 230, 0.7) 15%,
+      rgba(70, 170, 250, 0.6) 30%,
+      rgba(43, 170, 230, 0.4) 50%,
+      rgba(43, 161, 234, 0.2) 75%,
+      transparent 100%
+    );
+  }
+}
+
+@keyframes halleyDustTailFade {
+  0% {
+    width: 160px;
+    opacity: 0.7;
+    filter: blur(1.5px);
+  }
+  100% {
+    width: 200px;
+    opacity: 0.9;
+    filter: blur(2.5px);
+  }
+}
+
+@keyframes nucleusPulse {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes halleyShimmer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hale-bopp {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 40% 40%,
+    #ffffff 0%,
+    #f0f8ff 20%,
+    #e6e6fa 40%,
+    #b0c4de 80%,
+    #4682b4 100%
+  );
+  box-shadow: 0 0 15px #ffffff, 0 0 25px #87cefa;
+  z-index: 5;
+  animation: cometPath 40s linear infinite;
+  transform-origin: center center;
+}
+
+.hale-bopp::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 45px;
+  background: linear-gradient(
+    90deg,
+    #87cefa 0%,
+    #b0e0e6 20%,
+    #e6e6fa 40%,
+    rgba(230, 230, 250, 0.7) 60%,
+    rgba(240, 248, 255, 0.4) 80%,
+    transparent 100%
+  );
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: tailFade 4s infinite alternate;
+}
+
+.hale-bopp::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 32px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 161, 234, 0.8) 0%,
+    rgba(43, 170, 230, 0.7) 20%,
+    rgba(70, 170, 250, 0.6) 40%,
+    rgba(43, 170, 230, 0.4) 60%,
+    rgba(43, 161, 234, 0.2) 80%,
+    transparent 100%
+  );
+  top: -27px;
+  right: 15px;
+  transform: translateY(-90%) rotate(-150deg);
+  border-radius: 50%;
+  filter: blur(1.5px);
+  z-index: -40;
+  animation: tailPulse 5s infinite alternate;
+}
+
+@keyframes cometPath {
+  0% {
+    transform: translate(-200px, -300px) rotate(30deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(35vw), calc(80vh)) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes tailFade {
+  0% {
+    width: 100px;
+    opacity: 0.8;
+    background: linear-gradient(
+      90deg,
+      #87cefa 0%,
+      #b0e0e6 20%,
+      #e6e6fa 40%,
+      rgba(230, 230, 250, 0.6) 70%,
+      transparent 100%
+    );
+  }
+  100% {
+    width: 140px;
+    opacity: 1;
+    background: linear-gradient(
+      90deg,
+      #87cefa 0%,
+      #b0e0e6 15%,
+      #e6e6fa 30%,
+      rgba(230, 230, 250, 0.7) 50%,
+      rgba(240, 248, 255, 0.4) 75%,
+      transparent 100%
+    );
+  }
+}
+
+@keyframes tailPulse {
+  0% {
+    width: 160px;
+    filter: blur(1px);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 161, 234, 0.8) 0%,
+      rgba(43, 170, 230, 0.7) 20%,
+      rgba(70, 170, 250, 0.5) 40%,
+      rgba(43, 170, 230, 0.3) 70%,
+      transparent 100%
+    );
+  }
+  100% {
+    width: 200px;
+    filter: blur(2px);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 161, 234, 0.8) 0%,
+      rgba(43, 170, 230, 0.7) 15%,
+      rgba(70, 170, 250, 0.6) 30%,
+      rgba(43, 170, 230, 0.4) 50%,
+      rgba(43, 161, 234, 0.2) 75%,
+      transparent 100%
+    );
+  }
+}
+
+.hale-bopp-dust {
+  position: absolute;
+  width: 190px;
+  height: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(222, 184, 135, 0.7) 0%,
+    rgba(245, 222, 179, 0.6) 20%,
+    rgba(255, 228, 196, 0.5) 40%,
+    rgba(255, 235, 205, 0.3) 60%,
+    rgba(255, 245, 238, 0.2) 80%,
+    transparent 100%
+  );
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%) rotate(5deg);
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: 4;
+  animation: dustTailFade 6s infinite alternate;
+}
+
+@keyframes dustTailFade {
+  0% {
+    width: 170px;
+    opacity: 0.8;
+    filter: blur(1.5px);
+  }
+  100% {
+    width: 210px;
+    opacity: 1;
+    filter: blur(2.5px);
+  }
+}
+
+.comet-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(1px);
+  animation: particleFade 3s infinite linear;
+}
+
+@keyframes particleFade {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-100px, 10px);
+    opacity: 0;
+  }
+}
+
+.tail-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  filter: blur(1px);
+  opacity: 0;
+  animation: shimmerFade 5s infinite;
+}
+
+@keyframes shimmerFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}

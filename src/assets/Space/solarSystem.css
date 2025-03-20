@@ -1,0 +1,186 @@
+.sun {
+  width: min(70vw, 1200px);
+  height: min(70vw, 1200px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at center,
+    #fff7e6 0%,
+    #ffdb4d 5%,
+    #ffd700 20%,
+    #ff8c00 40%,
+    #ff4500 100%
+  );
+  box-shadow: 0 0 60px #ff4500, 0 0 120px #ff8c00, 0 0 180px #ffd700,
+    0 0 240px rgba(255, 215, 0, 0.3);
+  animation: sunPulse 8s infinite ease-in-out, sunGlow 4s infinite alternate;
+  position: relative;
+}
+
+.sun::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 160, 0, 0.4) 0%,
+    rgba(255, 140, 0, 0.2) 40%,
+    rgba(255, 69, 0, 0) 100%
+  );
+  animation: coronaRotate 60s infinite linear;
+}
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes sunGlow {
+  from {
+    box-shadow: 0 0 60px #ff4500, 0 0 120px #ff8c00, 0 0 180px #ffd700,
+      0 0 240px rgba(255, 215, 0, 0.3);
+  }
+
+  to {
+    box-shadow: 0 0 80px #ff4500, 0 0 160px #ff8c00, 0 0 240px #ffd700,
+      0 0 320px rgba(255, 215, 0, 0.3);
+  }
+}
+
+@keyframes coronaRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.solar-system {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.heliosphere-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Main curved bow shock line with improved visuals - removed box shadow */
+.bow-shock {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 400px;
+  border-radius: 0 0 50% 50%;
+  border: none;
+  border-bottom: 18px solid rgba(255, 220, 0, 0.8);
+  filter: blur(3px);
+  /* Removed box-shadow */
+  animation: pulseLine 6s infinite ease-in-out;
+}
+
+/* Enhanced pulse waves with better physics - only bottom border */
+.pulse-wave {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 400px;
+  border-radius: 0 0 50% 50%;
+  border: none;
+  border-bottom: 18px solid rgba(255, 220, 0, 0.5);
+  filter: blur(2px);
+  opacity: 0;
+  animation: downPulse 4s infinite;
+}
+
+/* Multiple pulse waves with different timing */
+.pulse-wave:nth-child(2) {
+  animation-delay: 1.25s;
+}
+
+.pulse-wave:nth-child(3) {
+  animation-delay: 2.5s;
+}
+
+.pulse-wave:nth-child(4) {
+  animation-delay: 3.75s;
+  border-bottom-color: rgba(255, 220, 0, 0.4);
+}
+
+/* Improved animations */
+@keyframes pulseLine {
+  0%,
+  100% {
+    border-bottom-color: rgba(255, 220, 0, 0.8);
+    filter: blur(3px);
+  }
+  50% {
+    border-bottom-color: rgba(255, 220, 0, 1);
+    filter: blur(4px);
+  }
+}
+
+@keyframes downPulse {
+  0% {
+    top: 20%;
+    height: 400px;
+    width: 80%;
+    opacity: 0.8;
+    border-bottom-width: 8px;
+  }
+  100% {
+    top: 38%;
+    height: 500px;
+    width: 88%;
+    opacity: 0;
+    border-bottom-width: 4px;
+  }
+}
+
+
+.voyager1 {
+  animation: voyagerPath 300s linear infinite;
+}
+
+@keyframes voyagerPath {
+  
+  0% {
+    transform: translate(0, 1200px);
+  }
+
+  50% {
+    transform: translate(0, -1200px);
+  }
+  100% {
+    transform: translate(0, 1200px);
+  }
+}

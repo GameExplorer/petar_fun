@@ -1,0 +1,377 @@
+.mercury {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #827d7d 0%,
+    #b7b8b9 20%,
+    #d3d3d3 40%,
+    #b7b8b9 60%,
+    #827d7d 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.4),
+    0 0 15px rgba(183, 184, 185, 0.5);
+  position: relative;
+  animation: planetRotate 20s infinite linear;
+}
+
+.mercury::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 4px
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.2) 3px, transparent 5px),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 4px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.2) 2px, transparent 4px);
+}
+
+.mercury::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  border-radius: 50%;
+  background: radial-gradient(
+      ellipse at top,
+      rgba(255, 0, 0, 0.6) 0%,
+      transparent 70%
+    ),
+    radial-gradient(ellipse at bottom, rgba(0, 0, 255, 0.6) 0%, transparent 70%);
+  animation: gradientPulse 20s infinite;
+  opacity: 0;
+}
+
+@keyframes gradientPulse {
+  0%,
+  95%,
+  100% {
+    opacity: 0;
+  }
+
+  0%,
+  5% {
+    opacity: 1;
+  }
+}
+
+@keyframes planetRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes venusRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.venus {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #d4a048 0%,
+    #e1af63 20%,
+    #f5d485 40%,
+    #e1af63 60%,
+    #d4a048 80%,
+    #c49442 100%
+  );
+  box-shadow: inset -4px -12px 8px rgba(165, 124, 27, 0.6),
+    inset 4px 16px 8px rgba(245, 212, 133, 0.4),
+    0 0 20px rgba(232, 183, 109, 0.4);
+  position: relative;
+  animation: venusRotate 20s infinite linear;
+}
+
+.venus::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      ellipse at 30% 40%,
+      rgba(245, 212, 133, 0.3) 10%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 70% 30%,
+      rgba(245, 212, 133, 0.2) 15%,
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 50% 60%,
+      rgba(245, 212, 133, 0.25) 20%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(245, 212, 133, 0.15) 10%,
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 40% 20%,
+      rgba(245, 212, 133, 0.2) 8%,
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 60% 80%,
+      rgba(245, 212, 133, 0.3) 12%,
+      transparent 40%
+    );
+  filter: blur(1px);
+  animation: venusCloudRotate 30s infinite linear;
+  opacity: 0.8;
+}
+
+@keyframes venusCloudRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.venus::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(232, 183, 109, 0.4) 0%,
+    rgba(232, 183, 109, 0.2) 40%,
+    rgba(232, 183, 109, 0.1) 60%,
+    transparent 80%
+  );
+  filter: blur(2px);
+}
+
+.earth {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #4b9cd3 0%,
+    #4b9cd3 30%,
+    #6da7cd 60%,
+    #4b9cd3 70%,
+    #4b9cd3 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(75, 156, 211, 0.5);
+  position: relative;
+  animation: planetRotate 20s infinite linear;
+}
+
+.earth::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 30% 30%, #3c8432 0%, transparent 35%),
+    radial-gradient(ellipse at 30% 70%, #3c8432 0%, transparent 25%),
+    radial-gradient(ellipse at 80% 35%, #3c8432 0%, transparent 30%),
+    radial-gradient(ellipse at 50% 90%, #f3f4f6 0%, transparent 30%);
+  animation: continentRotate 20s infinite linear;
+}
+
+.earth::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+
+.moon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    185deg,
+    #827d7d 0%,
+    #b7b8b9 20%,
+    #d3d3d3 40%,
+    #b7b8b9 60%,
+    #827d7d 100%
+  );
+  box-shadow: inset -4px -7px 4px rgba(0, 0, 0, 0.6),
+    inset 4px 16px 12px rgba(255, 255, 255, 0.4),
+    0 0 15px rgba(183, 184, 185, 0.5);
+  position: absolute;
+  animation: moonRotateAroundEarth 20s infinite linear;
+}
+
+.moon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 4px
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.2) 3px, transparent 5px),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 4px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.2) 2px, transparent 4px);
+}
+
+@keyframes continentRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moonRotateAroundEarth {
+  from {
+    transform: rotate(0deg) translateX(180px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(180px) rotate(-360deg);
+  }
+}
+
+.mars {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #c1440e 0%,
+    #e77d11 20%,
+    #e77d11 60%,
+    #c1440e 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.7),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.4),
+    0 0 15px rgba(183, 184, 185, 0.5);
+  position: relative;
+  animation: planetRotate 20s infinite linear;
+}
+
+.mars::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 7px
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.2) 3px, transparent 5px),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 4px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.2) 2px, transparent 4px);
+}
+
+.phobos {
+  width: 17px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(
+    185deg,
+    #9d9797 0%,
+    #c1c2c3 20%,
+    #d3d3d3 40%,
+    #c1c2c3 60%,
+    #9d9797 100%
+  );
+  box-shadow: inset -4px -2px 4px rgba(42, 42, 42, 0.5),
+    inset 5px 6px 8px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(183, 184, 185, 0.6);
+  position: absolute;
+  animation: phobosRotateAroundMars 10s infinite linear;
+}
+
+.phobos::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 4px
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.2) 3px, transparent 5px),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 4px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.2) 2px, transparent 4px);
+}
+
+.deimos {
+  width: 15px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(
+    185deg,
+    #6c6767 0%,
+    #acadae 20%,
+    #d3d3d3 40%,
+    #acadae 60%,
+    #6c6767 100%
+  );
+  box-shadow: inset -4px -7px 4px rgba(0, 0, 0, 0.25),
+    inset 4px 16px 12px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(183, 184, 185, 0.8);
+  position: absolute;
+  animation: deimosRotateAroundMars 30s infinite linear;
+}
+
+.deimos::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 4px
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.2) 3px, transparent 5px),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 4px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.2) 2px, transparent 4px);
+}
