@@ -1,5 +1,6 @@
 <script>
 import "@/assets/Space/innerplanets.css"
+
 export default {
     name: "InnerPlanets",
     props: {
