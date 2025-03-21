@@ -116,9 +116,11 @@ export default {
 @media screen and (max-width: 1200px) {
   .space-cursor {
     display: none;
-   }
+  }
 
- 
+  .content {
+    max-width: none;
+  }
 
   ::-webkit-scrollbar {
     display: none;
