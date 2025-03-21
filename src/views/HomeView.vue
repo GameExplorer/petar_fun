@@ -26,11 +26,11 @@ export default {
   data() {
     return {
       links: [
+        { name: 'Space', to: { name: 'Space' }, image: '/Images/PageIcons/SpaceImage.png' },
+        { name: "Life in Weeks", to: { name: "Life in Weeks" }, image: "/Images/PageIcons/LifeInWeeks.png" },
+        { name: "F1 Champions", to: { name: "F1 Champions" }, image: "/Images/PageIcons/F1Champions.png" },
         { name: "Game of Thrones", to: { name: "Game of Thrones" }, image: "/Images/PageIcons/thrones_button.png" },
         { name: "Mountains", to: { name: "Mountains" }, image: "/Images/PageIcons/mountains_button.png" },
-        { name: "F1 Champions", to: { name: "F1 Champions" }, image: "/Images/PageIcons/F1Champions.png" },
-        { name: "Life in Weeks", to: { name: "Life in Weeks" }, image: "/Images/PageIcons/LifeInWeeks.png" },
-        { name: 'Space', to: { name: 'Space' }, image: '/Images/PageIcons/SpaceImage.png' },
       ],
     }
   }
