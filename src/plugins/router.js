@@ -41,6 +41,7 @@ const routes = [
         name: 'Space',
         meta: {
             title: 'Space and Beyond',
+            pageIcon: '/Icons/space.svg',
         },
         component: () => import('@/views/Space.vue'),
     },
