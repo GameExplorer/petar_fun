@@ -58,6 +58,6 @@
 
 <script>
 export default {
-  name: "AlphaTauriStats",
+  name: "RacingBullStats",
 };
 </script>
