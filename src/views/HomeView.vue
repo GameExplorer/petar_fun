@@ -7,11 +7,7 @@
     <ul class="grid grid-rows grid-cols-1 xl:grid-cols-3 gap-2 justify-content-center px-4 pt-4 xl:px-32 ">
       <li v-for="link in links" :key="link.name" class="flex items-center justify-center">
         <RouterLink :to="link.to">
-          <img
-            :src="link.image"
-            alt="{{ link.name }} page"
-            class="hover:scale-105 transition-all duration-500"
-          />
+          <img :src="link.image" alt="{{ link.name }} page" class="hover:scale-105 transition-all duration-500" />
         </RouterLink>
       </li>
     </ul>
