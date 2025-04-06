@@ -91,7 +91,7 @@ export default {
         <source src="@/assets/music/dead-space-style-ambient-music.mp3" type=" audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <img :src="isMuted ? 'src/assets/Space/Images/volume-silent-icon.png' : 'src/assets/Space/Images/volume-icon.png'" alt="Volume Icon"
+      <img :src="isMuted ? '@/assets/Space/Images/volume-silent-icon.png' : '@/assets/Space/Images/volume-icon.png'" alt="Volume Icon"
         class="bg-transparent p-2 mt-4 rounded cursor-pointer hover:bg-gray-900 fixed z-50" @click="toggleAudio">
     </div>
     <div class="mainTitle">
