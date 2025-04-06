@@ -5,7 +5,7 @@
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">MAIDEN TITLES WINS IN 2010</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/vettel2010.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/vettel2010.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           2010 season was one of the more memorable seasons in F1. New points
@@ -31,7 +31,7 @@
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">BACK TO BACK TITLE WINS</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/vettel2011.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/vettel2011.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           Pirelli returned as the tyre supplier for the 2011 season and also the
@@ -51,7 +51,7 @@
           HAT TRICK IN 2012</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/vettel2012.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/vettel2012.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           Regarded as one of the best seasons in Formula 1. The 2012 season saw
@@ -81,7 +81,7 @@
           FOUR IN A ROW</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/vettel2013.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/vettel2013.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           The 2013 season was the final year the series used 2.4 litre V8 engine
@@ -110,7 +110,7 @@
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">THE START OF THE DOMINATION</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/verstappen2022.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/verstappen2022.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           New regulations were introduced in 2022, the new regulations were
@@ -135,7 +135,7 @@
           SUPER MAX!</span>
       </div>
       <div class="text-xl">
-        <img src="src/assets/Formula/Images/RedBull/verstappen2023.png" alt="VettelWinsFirstTitle"
+        <img src="@/assets/Formula/Images/RedBull/verstappen2023.png" alt="VettelWinsFirstTitle"
           class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           The 2023 season was dominated by one single driver. MAX VERSTAPPEN. He

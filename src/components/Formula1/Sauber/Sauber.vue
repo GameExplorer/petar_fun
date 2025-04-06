@@ -7,7 +7,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber1993.avif" alt="First Sauber car" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber1993.avif" alt="First Sauber car" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -26,7 +26,6 @@
       </div>
     </div>
 
-    <!-- 1995 Section -->
     <div id="1995" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -34,7 +33,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber1995.png" alt="Frentzen on the podium in Monza" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber1995.png" alt="Frentzen on the podium in Monza" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -52,7 +51,6 @@
       </div>
     </div>
 
-    <!-- 2001 Section -->
     <div id="2001" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -60,7 +58,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber2001.avif" alt="Sauber C20" class="history-image" @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2001.avif" alt="Sauber C20" class="history-image" @error="handleImageError" />
         <div class="section-text">
           <p>
             The C20 turned out to be one of Sauber's most competitive chassis,
@@ -77,7 +75,6 @@
       </div>
     </div>
 
-    <!-- 2008 Section -->
     <div id="2008" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -85,7 +82,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber2008.avif" alt="Kubica and Heidfeld 1-2 in Canada" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber2008.avif" alt="Kubica and Heidfeld 1-2 in Canada" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -104,7 +101,6 @@
       </div>
     </div>
 
-    <!-- 2012 Section -->
     <div id="2012" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -112,7 +108,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber2012.avif" alt="Sauber C31 in Spa" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber2012.avif" alt="Sauber C31 in Spa" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -130,7 +126,6 @@
       </div>
     </div>
 
-    <!-- 2014 Section -->
     <div id="2014" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -138,7 +133,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber2014.avif" alt="Maldonado flips Guiterez in Bahrain" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber2014.avif" alt="Maldonado flips Guiterez in Bahrain" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -159,7 +154,6 @@
       </div>
     </div>
 
-    <!-- 2024 Section -->
     <div id="2024" class="history-section">
       <div class="section-header">
         <h2 class="section-title">
@@ -167,7 +161,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="src/assets/Formula/Images/Sauber/sauber2024.jpg" alt="Kick Sauber 2024 car" class="history-image"
+        <img src="@/assets/Formula/Images/Sauber/sauber2024.jpg" alt="Kick Sauber 2024 car" class="history-image"
           @error="handleImageError" />
         <div class="section-text">
           <p>
@@ -188,7 +182,7 @@ export default {
   name: "SauberHistory",
   methods: {
     handleImageError(event) {
-      event.target.src = 'src/assets/Formula/Images/placeholder.png';
+      event.target.src = '@/assets/Formula/Images/placeholder.png';
     }
   }
 };
