@@ -1,127 +1,67 @@
 <template>
   <div>
     <div class="mountain" ref="container">
-      <div
-        class="height-indicator"
-        ref="heightIndicator"
-        :class="backgroundColor"
-        @scroll="handleScroll"
-      >
+      <AtmosphericPanel v-if="showAtmosphericEffects" :oxygenLevel="oxygenLevel" :temperature="temperature"
+        :windSpeed="windSpeed" />
+
+      <button class="toggle-effects-btn" @click="toggleAtmosphericEffects">
+        {{ showAtmosphericEffects ? '❌ Hide Effects' : '✅ Show Effects' }}
+      </button>
+
+      <div class="height-indicator" ref="heightIndicator" :class="backgroundColor" @scroll="handleScroll">
         <div class="height-scale">
-          <div
-            v-for="height in heightMarks"
-            :key="height"
-            class="height-mark"
-            :class="heightMarkColor"
-            :style="{ bottom: height + 'px' }"
-          >
+          <div v-for="height in heightMarks" :key="height" class="height-mark z-40" :class="heightMarkColor"
+            :style="{ bottom: height + 'px' }">
             {{ height }}m
-            <div
-              v-if="height == 8000"
-              class="border-b-8 border-dashed border-red-600 text-red-600 text-3xl"
-            >
-              💀 Death Zone
-            </div>
-            <div v-if="height == 9600" class="cloud-container">
-              <div
-                v-for="cloudClass in cloudClasses"
-                :key="cloudClass"
-                :class="cloudClass"
-              ></div>
-            </div>
-            <div
-              v-if="height == 4000"
-              class="text-left ml-2 text-white"
-            >
-              Snow covers are persistent
-            </div>
-            <div v-if="height == 800" class="text-white text-left">
-              <span class="m-12 text-2xl"
-                >Tallest building in the world - Burj Khalifa (828m)</span
-              >
-            </div>
-          </div>
-          <div
-            v-for="card in cards"
-            :key="card.height"
-            class="card mx-4"
-            :class="card.position"
-            :style="{
-              bottom: card.alignedHeight + 'px',
-              left: card.offset + '%',
-            }"
-          >
-            <div class="card-wrapper">
-              <img
-                v-if="card.imageSrc"
-                :src="card.imageSrc"
-                :alt="card.imageAlt"
-                class="iconImage opacity-50 rounded-xl card-image"
-              />
-              <div
-                class="bg-gradient-to-b from-emerald-100 to-emerald-500 border-2 border-black rounded-xl p-4 card-content"
-              >
-                <img
-                  v-if="card.imageSrc"
-                  :src="card.imageSrc"
-                  :alt="card.imageAlt"
-                  class="z-20 my-2 rounded-xl border-2 border-black shadow-md shadow-black"
-                />
-                <h1
-                  class="text-4xl lg:text-5xl uppercase text-center my-4 font-semibold"
-                >
-                  {{ card.title }}
-                </h1>
-                <div
-                  class="grid grid-cols-1 lg:grid-cols-2 text-2xl rounded-xl border-2 border-black p-4 bg-orange-200"
-                >
-                  <div class="py-2 flex items-center">
-                    📏
-                    <span class="ml-2"
-                      >Elevation:
-                      <b>{{ card.height }}m/{{ card.feet }}ft</b></span
-                    >
-                  </div>
-                  <div class="py-2 flex items-center">
-                    🌍 <span class="ml-2">Country: {{ card.country }}</span>
-                  </div>
-                  <div class="py-2 flex items-center">
-                    🏔️
-                    <span class="ml-2"
-                      >Mountain Range: <b>{{ card.range }}</b></span
-                    >
-                  </div>
-                  <div class="py-2 flex items-center">
-                    🧗‍♂️
-                    <span class="ml-2"
-                      >First Ascent: <b>{{ card.ascent }}</b></span
-                    >
-                  </div>
+            <div class="RandomHeightFacts">
+              <div v-if="height == 0" class="grass-container">
+                <div class="trees-container">
+                  <div class="tree tree-1"></div>
+                  <div class="tree tree-2 conifer"></div>
+                  <div class="tree tree-3"></div>
+                  <div class="tree tree-4 pine"></div>
+                  <div class="tree tree-5"></div>
+                  <div class="tree tree-6 conifer"></div>
+                  <div class="tree tree-7 pine"></div>
+                  <div class="tree tree-8"></div>
                 </div>
-                <div class="text-2xl">
-                  <div
-                    class="border-2 border-black bg-yellow-200 rounded-lg p-4"
-                  >
-                    📜<br />
-                    {{ card.content }}
-                  </div>
-                </div>
+                <div class="grass"></div>
+              </div>
+              <div v-if="height == 800" class="text-white text-center">
+                <span class="lg:text-2xl text-lg">Tallest building in the world - Burj Khalifa (828m)</span>
+              </div>
+              <div v-if="height == 1500" class="flying-vehicle-container">
+                <img src="@/assets/Mountains/Images/helicopter.svg" alt="helicopter" class="flying-vehicle" />
+              </div>
+              <div v-if="height == 2200" class="text-white text-center">
+                <span class="lg:text-2xl text-lg">End of tree line in Swiss Alps</span>
+              </div>
+              <div v-if="height == 4000" class="text-center text-white">
+                Snow covers become persistent
+              </div>
+              <div v-if="height == 8000" class="border-b-8 border-dashed border-red-600 text-red-600 text-3xl">
+                💀 Death Zone
+              </div>
+              <div v-if="height == 9600" class="cloud-container">
+                <div v-for="cloudClass in cloudClasses" :key="cloudClass" :class="cloudClass"></div>
               </div>
             </div>
           </div>
+          <MountainCard v-for="card in cards" :key="card.height" :card="card" />
         </div>
-        <div class="my-4 text-3xl text-center text-white">
-          <div class="text-4xl">Made by Petar</div>
-          <div class="mt-4">
-            <i class="text-lg">Hover on images for more detailed information</i>
+        <Footer class="bg-white">
+          <div class="my-4 text-3xl text-center">
+            <div class="text-4xl">Made by Petar</div>
+            <div class="mt-4">
+              <i class="text-lg">Hover on images for more detailed information</i>
+            </div>
           </div>
-        </div>
-        <Footer class="bg-white"></Footer>
+        </Footer>
       </div>
     </div>
 
-    <div class="scroll-indicator" :class="scrollIndicatorColor">
-      {{ currentHeight }}
+    <div class="scroll-indicator text-3xl text-center" :class="scrollIndicatorColor">
+      {{ currentHeight }}m
       <div v-if="height < 2000"></div>
     </div>
   </div>
@@ -129,12 +69,19 @@
 
 <script>
 import MountainData from "@/components/Mountains/MountainsData.vue";
-import "@/assets/Mountains/mountains.css";
+import "@/assets/Mountains/heightScale.css";
 import "@/assets/Mountains/clouds.scss";
+import "@/assets/Mountains/groundFloor.css";
+import "@/assets/Mountains/flyingObjects.css";
 import Footer from "./Footer/Footer.vue";
+import AtmosphericPanel from "./Mountains/AtmosphericPanel.vue";
+import MountainCard from "./Mountains/MountainCard.vue";
+
 export default {
   components: {
     Footer,
+    AtmosphericPanel,
+    MountainCard,
   },
   data() {
     return {
@@ -175,6 +122,10 @@ export default {
       cards: [],
       positions: [5, 15, 30, 45, 65, 70],
       positionsMobile: [5],
+      oxygenLevel: 100,
+      temperature: 20,
+      windSpeed: 5,
+      showAtmosphericEffects: true,
     };
   },
   created() {
@@ -189,26 +140,26 @@ export default {
       return marks;
     },
     backgroundColor() {
-      if (this.currentHeight < 1800) {
-        return "dif1-background";
-      } else if (this.currentHeight < 3000) {
-        return "dif2-background";
-      } else if (this.currentHeight < 5000) {
-        return "dif3-background";
-      } else if (this.currentHeight < 7900) {
-        return "dif4-background";
-      } else {
-        return "dif5-background";
+      switch (true) {
+        case this.currentHeight < 1800:
+          return "dif1-background";
+        case this.currentHeight < 3000:
+          return "dif2-background";
+        case this.currentHeight < 5000:
+          return "dif3-background";
+        case this.currentHeight < 7999:
+          return "dif4-background";
+        default:
+          return "dif5-background";
       }
     },
-
     heightMarkColor() {
       if (this.currentHeight > 8000) {
         return "height-mark-8k";
       }
     },
     scrollIndicatorColor() {
-      if (this.currentHeight >= 4000 && this.currentHeight < 7900) {
+      if (this.currentHeight >= 4000 && this.currentHeight < 7999) {
         return "scroll-indicator--blue ";
       } else if (this.currentHeight > 8000) {
         return "scroll-indicator--red";
@@ -226,28 +177,25 @@ export default {
     this.animationEndPosition = `${this.fullWidth}px`;
     this.alignCardHeights();
     this.setInitialScrollPosition();
+    this.calculateAtmosphericConditions();
   },
   methods: {
     alignCardHeights() {
       const isMobile = window.innerWidth <= 1200;
       const positions = isMobile ? this.positionsMobile : this.positions;
-      const minVerticalGap = 100; // Minimum visual gap for 8000m+ peaks
+      const minVerticalGap = 100;
 
-      // Sort the cards by height, descending
       this.cards.sort((a, b) => b.height - a.height);
 
       let lastPeakAbove8000 = null;
 
       this.cards.forEach((card, index) => {
-        // Set alignedHeight to actual height for correct positioning
         card.alignedHeight = card.height;
 
-        // For peaks above 8000m, adjust visual representation
         if (card.height >= 8000) {
           if (lastPeakAbove8000) {
             const heightDifference = lastPeakAbove8000.height - card.height;
             if (heightDifference < minVerticalGap) {
-              // Add a visual offset without changing alignedHeight
               card.visualOffset = minVerticalGap - heightDifference;
             }
           }
@@ -273,7 +221,7 @@ export default {
 
         card.offset =
           availablePositions[
-            Math.floor(Math.random() * availablePositions.length)
+          Math.floor(Math.random() * availablePositions.length)
           ];
       }
     },
@@ -284,18 +232,39 @@ export default {
         this.totalHeight - heightIndicator.scrollTop
       );
     },
+
+    calculateAtmosphericConditions() {
+      this.oxygenLevel = Math.max(100 - (this.currentHeight / 8848 * 67), 33);
+      this.temperature = Math.round(20 - (this.currentHeight / 1000 * 6.5));
+      this.windSpeed = Math.round(5 + (this.currentHeight / 8000 * 95));
+    },
+
+    toggleAtmosphericEffects() {
+      this.showAtmosphericEffects = !this.showAtmosphericEffects;
+
+      if (this.showAtmosphericEffects && this.audioEnabled) {
+        this.updateAtmosphericEffects();
+      }
+    },
+
     handleScroll() {
       const heightIndicator = this.$refs.heightIndicator;
       this.currentHeight = Math.floor(
         this.totalHeight - heightIndicator.scrollTop - 50
       );
 
+      if (this.currentHeight >= 8848) {
+        this.currentHeight = 8848;
+      }
+
       if (this.currentHeight <= 0) {
         this.currentHeight = Math.floor(
           this.totalHeight - heightIndicator.scrollTop - this.currentHeight - 50
         );
       }
-    },
+
+      this.calculateAtmosphericConditions();
+    }
   },
   watch: {
     cards() {
@@ -307,25 +276,62 @@ export default {
 </script>
 
 <style scoped>
-::-webkit-scrollbar-track {
-  border: 1px solid black;
-  background-color: #f5f5f5;
+@font-face {
+  font-family: Maston;
+  src: url("@/assets/Fonts/MRKMaston-Bold.woff2") format("truetype");
+}
+
+.mountain {
+  font-family: Maston;
+  height: 100vh;
+  overflow: hidden;
+  transition: background 0.8s ease-in-out;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #f5f5f5;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(122, 153, 217)),
-    color-stop(0.72, rgb(73, 125, 189)),
-    color-stop(0.86, rgb(28, 58, 148))
-  );
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+  display: none;
+}
+
+.toggle-effects-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: Maston, sans-serif;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.toggle-effects-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1100px) {
+  .toggle-effects-btn {
+    display: none;
+  }
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="grid-container">
+    <slot></slot>
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <li v-for="link in randomLinks" :key="link.name" class="flex items-center justify-center rounded-lg text-white px-4 py-4">
         <RouterLink :to="link.to">
