@@ -9,7 +9,7 @@
 
       <div class="section-content">
         <figure class="section-image section-image-left">
-          <img src="/Images/Alpine/Alonso2005.png" alt="Fernando Alonso racing during the 2005 season"
+          <img src="src/assets/Formula/Images/Alpine/Alonso2005.png" alt="Fernando Alonso racing during the 2005 season"
             class="history-image" />
           <figcaption class="image-caption">Fernando Alonso, 2005 World Champion</figcaption>
         </figure>
@@ -47,7 +47,7 @@
 
       <div class="section-content">
         <figure class="section-image section-image-right">
-          <img src="/Images/Alpine/Alonso2005.png" alt="Fernando Alonso racing during the 2006 season"
+          <img src="src/assets/Formula/Images/Alpine/Alonso2005.png" alt="Fernando Alonso racing during the 2006 season"
             class="history-image" />
           <figcaption class="image-caption">Fernando Alonso's championship-winning 2006 season</figcaption>
         </figure>

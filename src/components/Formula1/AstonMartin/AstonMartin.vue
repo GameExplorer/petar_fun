@@ -12,7 +12,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = '2021'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === '2021' }">
-              <img src="/Images/AstonMartin/azerbaijan2021.png" alt="Azerbaijan 2021" />
+              <img src="src/assets/Formula/Images/AstonMartin/azerbaijan2021.png" alt="Azerbaijan 2021" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === '2021' }">
@@ -44,7 +44,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'bahrain2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'bahrain2023' }">
-              <img src="/Images/AstonMartin/alonsoBahrain.png" alt="Bahrain 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoBahrain.png" alt="Bahrain 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'bahrain2023' }">
@@ -72,7 +72,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'saudi2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'saudi2023' }">
-              <img src="/Images/AstonMartin/alonsoSaudia.png" alt="Saudi Arabia 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoSaudia.png" alt="Saudi Arabia 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'saudi2023' }">
@@ -99,7 +99,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'australia2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'australia2023' }">
-              <img src="/Images/AstonMartin/alonsoAustralia.png" alt="Australia 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoAustralia.png" alt="Australia 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'australia2023' }">
@@ -127,7 +127,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'miami2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'miami2023' }">
-              <img src="/Images/AstonMartin/alonsoMiami.png" alt="Miami 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoMiami.png" alt="Miami 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'miami2023' }">
@@ -154,7 +154,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'monaco2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'monaco2023' }">
-              <img src="/Images/AstonMartin/alonsoMonaco.png" alt="Monaco 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoMonaco.png" alt="Monaco 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'monaco2023' }">
@@ -181,7 +181,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'canada2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'canada2023' }">
-              <img src="/Images/AstonMartin/alonsoCanada.png" alt="Canada 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoCanada.png" alt="Canada 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'canada2023' }">
@@ -209,7 +209,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'dutch2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'dutch2023' }">
-              <img src="/Images/AstonMartin/alonsoDutch.png" alt="Netherlands 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoDutch.png" alt="Netherlands 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'dutch2023' }">
@@ -237,7 +237,7 @@
         <div class="timeline-content">
           <div class="timeline-card" @mouseover="activeCard = 'brazil2023'" @mouseleave="activeCard = null">
             <div class="timeline-image" :class="{ 'image-active': activeCard === 'brazil2023' }">
-              <img src="/Images/AstonMartin/alonsoBrazil.png" alt="Brazil 2023" />
+              <img src="src/assets/Formula/Images/AstonMartin/alonsoBrazil.png" alt="Brazil 2023" />
               <div class="image-overlay"></div>
             </div>
             <div class="timeline-info" :class="{ 'info-active': activeCard === 'brazil2023' }">
