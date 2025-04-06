@@ -33,9 +33,9 @@ export default {
   data() {
     return {
       images: [
-        { src: "/Images/Haas/Haas2016.png", alt: "Haas 2016", position: "ml-4" },
-        { src: "/Images/Haas/haas2022.png", alt: "Haas 2022", position: "" },
-        { src: "/Images/Haas/Haas2023.png", alt: "Haas 2023", position: "mr-4" },
+        { src: "src/assets/Formula/Images/Haas/Haas2016.png", alt: "Haas 2016", position: "ml-4" },
+        { src: "src/assets/Formula/Images/Haas/haas2022.png", alt: "Haas 2022", position: "" },
+        { src: "src/assets/Formula/Images/Haas/Haas2023.png", alt: "Haas 2023", position: "mr-4" },
       ],
       events: [
         {

@@ -91,7 +91,7 @@ export default {
         <source src="@/assets/music/dead-space-style-ambient-music.mp3" type=" audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <img :src="isMuted ? '/Images/Space/volume-silent-icon.png' : '/Images/Space/volume-icon.png'" alt="Volume Icon"
+      <img :src="isMuted ? 'src/assets/Space/Images/volume-silent-icon.png' : 'src/assets/Space/Images/volume-icon.png'" alt="Volume Icon"
         class="bg-transparent p-2 mt-4 rounded cursor-pointer hover:bg-gray-900 fixed z-50" @click="toggleAudio">
     </div>
     <div class="mainTitle">
@@ -148,7 +148,7 @@ export default {
         <div class="body-info-wrapper order-2 md:order-2">
           <div class="relative" @mouseenter="showInfo('voyager1')" @mouseleave="hideInfo">
             <div class="voyager1"></div>
-            <img src="/Images/Space/voyager1.png" alt="Voyager 1" class="w-full max-w-xs mx-auto" />
+            <img src="@/assets/Space/Images/voyager1.png" alt="Voyager 1" class="w-full max-w-xs mx-auto" />
             <div v-if="hoveredPlanet === 'voyager1'" class="info-card">
               <h3 class="info-card-title">{{ planetData.voyager1.name }}</h3>
               <ul class="info-card-list">

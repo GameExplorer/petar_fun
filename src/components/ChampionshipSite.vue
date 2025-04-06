@@ -56,7 +56,7 @@
               </span>
               <div class="text-3xl pt-2">CURRENT DRIVERS:</div>
               <span class="text-4xl underline">Max Verstappen<br />
-                Liam Lawson</span>
+               Yuki Tsunoda</span>
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedFr">
               <span class="text-5xl tracking-wider">Days elapsed since<br />
@@ -107,7 +107,7 @@
                 Constructor's Championship</span>
               <br />
               <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
-              <span class="text-6xl">Fernando Alonso<br />
+              <span class="text-6xl underline">Fernando Alonso<br />
                 Lance Stroll</span>
             </div>
             <div class="pt-2 uppercase font-bold" v-else-if="buttonClickedAl">
@@ -145,15 +145,15 @@
                 has never won<br />
                 Constructor's Championship </span><br />
               <div class="pt-8 pb-10 text-5xl">CURRENT DRIVERS:</div>
-              <span class="text-7xl">Isaack Hadjar<br />
-                Yuki Tsunoda</span>
+              <span class="text-7xl underline">Isaack Hadjar<br />
+                Liam Lawson</span>
             </div>
             <div class="pt-2 pb-24 uppercase font-extrabold text-4xl" v-else-if="buttonClickedSa">
               <span class="text-5xl tracking-wider">Sauber<br />
                 has never won<br />
                 Constructor's Championship</span><br />
               <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
-              <span class="text-7xl">Nico Hulkenberg<br />
+              <span class="text-7xl underline">Nico Hulkenberg<br />
                 Gabriel Bortoleto</span>
             </div>
             <div class="pt-2 pb-24 uppercase font-bold text-black" v-else-if="buttonClickedHa">
@@ -162,8 +162,8 @@
                 Constructor's Championship</span>
               <br />
               <div class="pt-6 pb-10 text-5xl">CURRENT DRIVERS:</div>
-              <div class="text-7xl pb-4">Oliver Bearman</div>
-              <div class="text-7xl">Esteban Ocon</div>
+              <div class="text-7xl pb-4 underline">Oliver Bearman</div>
+              <div class="text-7xl underline">Esteban Ocon</div>
             </div>
           </div>
         </div>
@@ -899,7 +899,7 @@ export default {
 </script>
 
 <style>
-@import "@/assets/Formula_Styles/border_animations.css";
+@import "@/assets/Formula/border_animations.css";
 
 body {
   margin: 0;

@@ -2,15 +2,11 @@
   <div>
     <div id="2010" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
-        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed"
-          >MAIDEN TITLES WINS IN 2010</span>
+        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">MAIDEN TITLES WINS IN 2010</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/vettel2010.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/vettel2010.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           2010 season was one of the more memorable seasons in F1. New points
           system was introduced and Mercedes re-entered Formula 1. This was also
@@ -32,16 +28,11 @@
     </div>
     <div id="2011" class="p-12 mb-32">
       <div class="text-4xl md:text-5xl text-left font-bold pb-8">
-        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed"
-          >BACK TO BACK TITLE WINS</span
-        >
+        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">BACK TO BACK TITLE WINS</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/vettel2011.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/vettel2011.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           Pirelli returned as the tyre supplier for the 2011 season and also the
           inaugural running of the Indian Grand Prix. Vettel and Red Bull
@@ -57,18 +48,14 @@
     <div id="2012" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold pt-16 pb-8">
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">
-          HAT TRICK IN 2012</span
-        >
+          HAT TRICK IN 2012</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/vettel2012.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/vettel2012.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           Regarded as one of the best seasons in Formula 1. The 2012 season saw
-          7 different winners in the first 7 races. 
+          7 different winners in the first 7 races.
           Alonso led the championship for the most part of the season, his luck
           ran out at the end of the season allowing Vettel to catch. At the last
           race Vettel had 13 point lead over Alonso.
@@ -91,15 +78,11 @@
     <div id="2013" class="p-12 mb-6">
       <div class="text-5xl text-left font-bold py-10">
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">
-          FOUR IN A ROW</span
-        >
+          FOUR IN A ROW</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/vettel2013.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/vettel2013.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           The 2013 season was the final year the series used 2.4 litre V8 engine
           configuration which was introduced in 2006, a new 1.6 litre
@@ -124,16 +107,11 @@
     </div>
     <div id="2022" class="p-12 mb-6">
       <div class="text-4xl md:text-5xl text-left font-bold py-10">
-        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed"
-          >THE START OF THE DOMINATION</span
-        >
+        <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">THE START OF THE DOMINATION</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/verstappen2022.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/verstappen2022.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           New regulations were introduced in 2022, the new regulations were
           introduced to make the sport more competitive and to reduce the gap
@@ -154,15 +132,11 @@
     <div id="2023" class="p-12 mb-12">
       <div class="text-5xl text-left font-bold py-10">
         <span class="pr-8 border-red-400 lg:border-b-8 text-6xl lg:border-dashed">
-          SUPER MAX!</span
-        >
+          SUPER MAX!</span>
       </div>
       <div class="text-xl">
-        <img
-          src="/Images/verstappen2023.png"
-          alt="VettelWinsFirstTitle"
-          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg"
-        />
+        <img src="@/assets/Formula/Images/RedBull/verstappen2023.png" alt="VettelWinsFirstTitle"
+          class="xl:w-2/5 w-full ml-2 mr-12 mb-4 float-left cursor-default rbimg" />
         <div class="pt-4 pb-4 lg:text-4xl text-3xl text-justify">
           The 2023 season was dominated by one single driver. MAX VERSTAPPEN. He
           went on to win 19 out of 22 Grand Prixs, failing to win in Singapore
