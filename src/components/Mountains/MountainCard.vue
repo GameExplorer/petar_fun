@@ -9,8 +9,6 @@
                 class="iconImage opacity-50 rounded-xl card-image" />
             <div
                 class="bg-gradient-to-b from-emerald-100 to-emerald-500 border-2 border-black rounded-xl p-4 card-content">
-                <img v-if="card.imageSrc" :src="card.imageSrc" :alt="card.imageAlt"
-                    class="z-20 my-2 rounded-xl border-2 border-black shadow-md shadow-black" />
                 <h1 class="text-2xl lg:text-4xl uppercase text-center my-1 lg:my-4 font-semibold">
                     {{ card.title }}
                 </h1>
@@ -48,8 +46,6 @@
                                     <div
                                         class="bg-gradient-to-b from-emerald-100 to-emerald-500 border-2 border-black rounded-xl p-4 card-content">
                                         <span v-if="isSevenSummit" class="seven-summit-badge">★</span>
-                                        <img v-if="card.imageSrc" :src="card.imageSrc" :alt="card.imageAlt"
-                                            class="z-20 my-2 rounded-xl border-2 border-black shadow-md shadow-black" />
                                         <h1
                                             class="text-2xl lg:text-4xl uppercase text-center my-1 lg:my-4 font-semibold">
                                             {{ card.title }}
@@ -100,31 +96,29 @@ export default {
         }
     },
     computed: {
-        // Check if this mountain is one of the Seven Summits
         isSevenSummit() {
             const sevenSummits = [
-                "Mount Everest", // Asia
-                "Aconcagua", // South America
-                "Mount Denali", // North America
-                "Mount Kilimanjaro", // Africa
-                "Mount Elbrus", // Europe
-                "Vinson Massif", // Antarctica
-                "Mount Kosciuszko" // Australia (Oceania)
+                "Mount Everest",
+                "Aconcagua", 
+                "Mount Denali", 
+                "Mount Kilimanjaro", 
+                "Mount Elbrus", 
+                "Vinson Massif", 
+                "Mount Kosciuszko" 
             ];
 
             return sevenSummits.includes(this.card.title);
         },
 
-        // Determine the rank/position within the Seven Summits
         summitRank() {
             const sevenSummitsRanked = {
-                "Mount Everest": 1, // Highest
+                "Mount Everest": 1, 
                 "Aconcagua": 2,
                 "Mount Denali": 3,
                 "Mount Kilimanjaro": 4,
                 "Mount Elbrus": 5,
                 "Vinson Massif": 6,
-                "Mount Kosciuszko": 7 // Lowest
+                "Mount Kosciuszko": 7 
             };
 
             return this.isSevenSummit ? sevenSummitsRanked[this.card.title] : null;

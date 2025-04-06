@@ -899,7 +899,7 @@ export default {
 </script>
 
 <style>
-@import "@/assets/Formula_Styles/border_animations.css";
+@import "@/assets/Formula/border_animations.css";
 
 body {
   margin: 0;
