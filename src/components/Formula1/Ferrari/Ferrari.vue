@@ -22,7 +22,7 @@ export default {
           id: "1961",
           title: "FIRST OF MANY",
           description: "The first Constructor's title was won 1961. Ferrari dominated the whole season failing to win only in Germany and Monaco. Phil Hill of Ferrari won his only Drivers' Championship after his teammate and rival Wolfgang von Trips was killed at the Italian Grand Prix, the penultimate race of the season.",
-          imageSrc: "src/assets/Formula/Images/Ferrari/ferrari1961.png",
+          imageSrc: "@/assets/Formula/Images/Ferrari/ferrari1961.png",
           alt: "ferrari 1961"
         },
         {
