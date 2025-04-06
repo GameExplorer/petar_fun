@@ -1,0 +1,60 @@
+.flying-vehicle-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flying-vehicle {
+  width: 60px;
+  position: absolute;
+  left: -60px;
+  animation: fly-across 15s linear infinite;
+}
+
+@keyframes fly-across {
+  0% {
+    left: -60px;
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(-10px);
+  }
+
+  20% {
+    transform: translateY(5px);
+  }
+
+  30% {
+    transform: translateY(-15px);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+
+  70% {
+    transform: translateY(-15px);
+  }
+
+  80% {
+    transform: translateY(5px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    left: 80%;
+    transform: translateY(0);
+  }
+}
