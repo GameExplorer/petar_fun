@@ -16,8 +16,8 @@ export default {
           country: "United States",
           ascent: "Unknown",
           content:
-            "The unique profile of Diamond Head (Lē‘ahi) sits prominently near the eastern edge of Waikiki’s coastline. Hawaii’s most recognized landmark is known for its historic hiking trail, stunning coastal views, and military history.",
-          imageSrc: "src/assets/Mountains/Images/diamond-head.jpg",
+            "The unique profile of Diamond Head (Lē'ahi) sits prominently near the eastern edge of Waikiki's coastline. Hawaii's most recognized landmark is known for its historic hiking trail, stunning coastal views, and military history.",
+          imageSrc: new URL('@/assets/Mountains/Images/diamond-head.jpg', import.meta.url).href,
           imageAlt: "Diamond Head",
         },
         {
@@ -29,7 +29,7 @@ export default {
           ascent: "Unknown",
           content:
             "Translated to Great Egg Mountain is the highest peak in Estonia.",
-          imageSrc: "src/assets/Mountains/Images/Suur_Munamagi.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Suur_Munamagi.jpg', import.meta.url).href,
           imageAlt: "Surr MunaMägi",
         },
         {
@@ -41,7 +41,7 @@ export default {
           ascent: "Unknown",
           content:
             "An isolated hill which rises abruptly from a wide expanse of marshy lowland to a height of 537 m. The fell has smooth, rounded outlines with no crags. ",
-          imageSrc: "src/assets/Mountains/Images/Greatmellfell.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Greatmellfell.jpg', import.meta.url).href,
           imageAlt: "Great Mell Fell",
         },
         {
@@ -52,10 +52,9 @@ export default {
           country: "Denmark",
           ascent: "Unknown",
           content: "Qalorujoorneq is the highest peak in Greenland.",
-          imageSrc: "src/assets/Mountains/Images/Saajat.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Saajat.jpg', import.meta.url).href,
           imageAlt: "Qalorujoorneq",
         },
-
         {
           title: "Table Mountain",
           height: 1085,
@@ -65,7 +64,7 @@ export default {
           ascent: "Unknown",
           content:
             "Table Mountain is a flat-topped mountain forming a prominent landmark overlooking the city of Cape Town.",
-          imageSrc: "src/assets/Mountains/Images/tableMountain.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/tableMountain.webp', import.meta.url).href,
           imageAlt: "Table Mountain",
         },
         {
@@ -76,7 +75,7 @@ export default {
           country: "Mali",
           ascent: "Unknown",
           content: "Highest point in Mali. It is a sandstone plateau.",
-          imageSrc: "src/assets/Mountains/Images/hombori.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/hombori.jpg', import.meta.url).href,
           imageAlt: "Mount Hombori",
         },
         {
@@ -87,7 +86,7 @@ export default {
           country: "Scotland",
           ascent: "1771",
           content: "Highest peak in Scotland, UK and British Isles",
-          imageSrc: "src/assets/Mountains/Images/bennevis.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/bennevis.jpg', import.meta.url).href,
           imageAlt: "Ben Nevis",
         },
         {
@@ -99,7 +98,7 @@ export default {
           ascent: "Unknown",
           content:
             "It is a glacier-covered stratovanocano in western Iceland. ",
-          imageSrc: "src/assets/Mountains/Images/Snaefellsjokull.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Snaefellsjokull.jpg', import.meta.url).href,
           imageAlt: "Snæfellsjökull",
         },
         {
@@ -111,7 +110,7 @@ export default {
           ascent: "Unknown",
           content:
             "The highest point in the Czech Republic. Borders with Poland.",
-          imageSrc: "src/assets/Mountains/Images/snezka.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/snezka.webp', import.meta.url).href,
           imageAlt: "Snezka",
         },
         {
@@ -123,7 +122,7 @@ export default {
           ascent: "1642",
           content:
             "The mountain is notorious for its erratic weather. The highest recorded wind speed at the summit was 372 kmh the highest wind speed not associated with tornado or cyclone.",
-          imageSrc: "src/assets/Mountains/Images/washington.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/washington.jpg', import.meta.url).href,
           imageAlt: "Mount Washington",
         },
         {
@@ -135,7 +134,7 @@ export default {
           ascent: "1854",
           content:
             "Highest mountain in Victoria, Australia. It is part of the Australian Alps National Park. ",
-          imageSrc: "src/assets/Mountains/Images/bogong.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/bogong.jpg', import.meta.url).href,
           imageAlt: "Mount Bogong",
         },
         {
@@ -147,7 +146,7 @@ export default {
           ascent: "1966",
           content:
             "The peak was named in 1963 by members of the Mountaineering Club of Alaska because snow patch on its north face resembles a Polar bear skin.",
-          imageSrc: "src/assets/Mountains/Images/Polar_Bear_Peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Polar_Bear_Peak.jpg', import.meta.url).href,
           imageAlt: "Polar Bear Peak",
         },
         {
@@ -159,7 +158,7 @@ export default {
           ascent: "Unknown",
           content:
             "Tallest mountain in Australia and one of the seven summits.",
-          imageSrc: "src/assets/Mountains/Images/mount-kosciuszko.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/mount-kosciuszko.jpg', import.meta.url).href,
           imageAlt: "Mount Kosciuszko",
         },
         {
@@ -171,7 +170,7 @@ export default {
           ascent: "1778",
           content:
             'Špik is a mountain in the Slovenian Julian Alps. The mountain\'s name is a cognate of the English "spike," derived from its pointed shape.',
-          imageSrc: "src/assets/Mountains/Images/spik.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/spik.jpg', import.meta.url).href,
           imageAlt: "Spik",
         },
         {
@@ -183,7 +182,7 @@ export default {
           ascent: "1967",
           content:
             "The mountain was named in 1969 after Marius Barbeau, a Canadian anthropologist whose research into First Nations and Inuit cultures gained him international acclaim.",
-          imageSrc: "src/assets/Mountains/Images/Barbeau_Peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Barbeau_Peak.jpg', import.meta.url).href,
           imageAlt: "Barbeau Peak",
         },
         {
@@ -195,7 +194,7 @@ export default {
           ascent: "18",
           content:
             "The highest mountain in Slovenia and the highest peak of the Julian Alps. The mountain is the pre-eminent symbol of the Slovene nation, appearing on the coat of arms and flag of Slovenia. ",
-          imageSrc: "src/assets/Mountains/Images/triglav.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/triglav.jpg', import.meta.url).href,
           imageAlt: "Triglav",
         },
         {
@@ -207,10 +206,9 @@ export default {
           ascent: "400BC/1913 - Modern Ascent",
           content:
             "In Greek mythology, Olympus is the home of the Greek gods, on Mytikas peak. The mountain has exceptional biodiversity and rich flora.",
-          imageSrc: "src/assets/Mountains/Images/olympus.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/olympus.jpg', import.meta.url).href,
           imageAlt: "",
         },
-
         {
           title: "Glacier Peak",
           height: 3213,
@@ -220,7 +218,7 @@ export default {
           ascent: "1898",
           content:
             "Also known as Dakobed or Takobia it is the most isolated of the five major stratovolcanoes of the Cascade Volcanic Arc in the U.S state of Washington.  ",
-          imageSrc: "src/assets/Mountains/Images/glacier_peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/glacier_peak.jpg', import.meta.url).href,
           imageAlt: "Glacier Peak",
         },
         {
@@ -232,7 +230,7 @@ export default {
           ascent: "1867",
           content:
             "Its north-face overlooking the Swiss Alps is considered one of the six great north faces of the Alps.",
-          imageSrc: "src/assets/Mountains/Images/Badile.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Badile.jpg', import.meta.url).href,
           imageAlt: "Piz Badile",
         },
         {
@@ -244,7 +242,7 @@ export default {
           ascent: "Unknown",
           content:
             'The name Semeru is derived from Meru, the central world mountain in Hinduism, or Sumeru, the abode of gods. This stratovolcano is Mahameru, meaning "The Great Mountain" in Sanskrit.',
-          imageSrc: "src/assets/Mountains/Images/semeru.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/semeru.jpg', import.meta.url).href,
           imageAlt: "Semeru",
         },
         {
@@ -256,7 +254,7 @@ export default {
           ascent: "1894",
           content:
             "Aoraki / Mount Cook consists of three summits: from south to north, the Low Peak (3,593 m or 11,788 ft), the Middle Peak (3,717 m or 12,195 ft) and the High Peak.",
-          imageSrc: "src/assets/Mountains/Images/aoraki.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/aoraki.webp', import.meta.url).href,
           imageAlt: "Aoraki / Mount Cook",
         },
         {
@@ -268,7 +266,7 @@ export default {
           ascent: "663",
           content:
             'Is an active stratovolcano  It is one of the Japan\'s  "Three Holy Mountains " and the tallest mountain in Japan. It is often depicted in art and photography.',
-          imageSrc: "src/assets/Mountains/Images/fuji.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/fuji.jpg', import.meta.url).href,
           imageAlt: "Mount Fuji",
         },
         {
@@ -280,7 +278,7 @@ export default {
           ascent: "1858",
           content:
             "The most notable feature of Eiger is its nearly 1800 metre high north face of rock and ice named Eiger-Nordwand, Eigerwand or just Nordwand, which is the biggest north face in the Alps.",
-          imageSrc: "src/assets/Mountains/Images/eiger.jpeg",
+          imageSrc: new URL('@/assets/Mountains/Images/eiger.jpeg', import.meta.url).href,
           imageAlt: "Eiger",
         },
         {
@@ -292,7 +290,7 @@ export default {
           ascent: "1851",
           content:
             "The mountain and its surroundings are among the most important biological sites in the world.",
-          imageSrc: "src/assets/Mountains/Images/kinabalu.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/kinabalu.webp', import.meta.url).href,
           imageAlt: "Mount Kinabalu",
         },
         {
@@ -304,10 +302,9 @@ export default {
           ascent: "1964",
           content:
             " The peak was named in 1965 by the Mountaineering Club of Alaska for the first ship ever built in Russian America, the Phoenix, which was constructed in 1794 by Russians in nearby Resurrection Bay.",
-          imageSrc: "src/assets/Mountains/Images/Phoenix_Peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Phoenix_Peak.jpg', import.meta.url).href,
           imageAlt: "Phoenix Peak",
         },
-
         {
           title: "Mount Rainier",
           height: 4392,
@@ -317,10 +314,9 @@ export default {
           ascent: "1870",
           content:
             "A large active stratovolcano in the Cascade Range of the Pacific Northwest in the United States.",
-          imageSrc: "src/assets/Mountains/Images/Phoenix_Peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Phoenix_Peak.jpg', import.meta.url).href,
           imageAlt: "Mount Rainier",
         },
-
         {
           title: "Matterhorn",
           height: 4478,
@@ -330,7 +326,7 @@ export default {
           ascent: "1865",
           content:
             "Translated to Peak of Meadows. Matterhorn has a pyramidal shape nearly all four faces face compass points. It is one of the most famous north faces.",
-          imageSrc: "src/assets/Mountains/Images/matterhorn.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/matterhorn.jpg', import.meta.url).href,
           imageAlt: "Matterhorn",
         },
         {
@@ -342,7 +338,7 @@ export default {
           ascent: "1786",
           content:
             "It is the highest peak in the Alps and Europe. It is the second most prominent mountain in Europe. It gives its name to the Mont Blanc massif, which straddles parts of France, Italy and Switzerland. ",
-          imageSrc: "src/assets/Mountains/Images/mont_blanc.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/mont_blanc.jpg', import.meta.url).href,
           imageAlt: "Mont Blanc",
         },
         {
@@ -354,7 +350,7 @@ export default {
           ascent: "1966",
           content:
             "Highest peak in Antarctica and one of the seven summits. It lies within the Sentinel Range of the Ellsworth Mountains. ",
-          imageSrc: "src/assets/Mountains/Images/vinson.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/vinson.jpg', import.meta.url).href,
           imageAlt: "Mount Vinson",
         },
         {
@@ -366,10 +362,9 @@ export default {
           ascent: "1935",
           content:
             "The highest mountain in Venezuela. The peak is named after the Venezuelan independence hero Simón Bolívar.",
-          imageSrc: "src/assets/Mountains/Images/bolivar.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/bolivar.jpg', import.meta.url).href,
           imageAlt: "Pico Bolivar",
         },
-
         {
           title: "Vinicunca",
           height: 5200,
@@ -379,7 +374,7 @@ export default {
           ascent: "Unknown",
           content:
             "According to the Cultural Landscape Office of the Decentralization of the City of Cusco, the seven colors of the mountain are due to its mineralogical composition.",
-          imageSrc: "src/assets/Mountains/Images/vinicunca.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/vinicunca.jpg', import.meta.url).href,
           imageAlt: "Vinicunca",
         },
         {
@@ -391,7 +386,7 @@ export default {
           ascent: "1519",
           content:
             "an active stratovolcano located in the states of Puebla, Morelos, and Mexico in central Mexico. It lies in the eastern half of the Trans-Mexican volcanic belt. It is the second highest peak in Mexico.",
-          imageSrc: "src/assets/Mountains/Images/popocatepetl.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/popocatepetl.jpg', import.meta.url).href,
           imageAlt: "Popocatepetl",
         },
         {
@@ -403,7 +398,7 @@ export default {
           ascent: "1829",
           content:
             "Highest peak in Russia and in Europe. It is the highest stratovolcano in Eurasia. It has two summits.",
-          imageSrc: "src/assets/Mountains/Images/elbrus.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/elbrus.jpg', import.meta.url).href,
           imageAlt: "Mount Elbrus",
         },
         {
@@ -415,7 +410,7 @@ export default {
           ascent: "1889",
           content:
             "Mt. Kilimanjaro is a dormant volcano. It is the highest peak in Africa and the highest single free standing mountain above sea level in the world.",
-          imageSrc: "src/assets/Mountains/Images/kilimanjaro.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/kilimanjaro.jpg', import.meta.url).href,
           imageAlt: "Mount Kilimanjaro",
         },
         {
@@ -427,7 +422,7 @@ export default {
           ascent: "1919",
           content:
             "Located near El Alto and La Paz is the most popular climb in Bolivia.",
-          imageSrc: "src/assets/Mountains/Images/potosi.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/potosi.jpg', import.meta.url).href,
           imageAlt: "Huayna Potosi",
         },
         {
@@ -439,7 +434,7 @@ export default {
           ascent: "1913",
           content:
             "Is the highest peak in the North America and one of the seven summits. It is the tallest mountain in the world from base to peak on land (5500m). During a winter temperatures can get low as -50 degrees.",
-          imageSrc: "src/assets/Mountains/Images/denali.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/denali.webp', import.meta.url).href,
           imageAlt: "Mount Denali",
         },
         {
@@ -451,7 +446,7 @@ export default {
           ascent: "1932",
           content:
             "It is a snow capped mountain with four peaks and the second highest peak in Cordillera Blanca",
-          imageSrc: "src/assets/Mountains/Images/huandoy.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/huandoy.jpg', import.meta.url).href,
           imageAlt: "Uandoy",
         },
         {
@@ -463,7 +458,7 @@ export default {
           ascent: "Unclimbed",
           content:
             "Mount Kailash is a sacred mountain in Hinduism, Buddhism, Jainism and Bon religion. People undertake pilgrimage to the mountain. Because of this it is prohibited to climb the mountain.",
-          imageSrc: "src/assets/Mountains/Images/kailash.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/kailash.jpg', import.meta.url).href,
           imageAlt: "Mount Kailash",
         },
         {
@@ -475,7 +470,7 @@ export default {
           ascent: "1897",
           content:
             "It is the highest mountain in the Americas and highest outside of the Asia.",
-          imageSrc: "src/assets/Mountains/Images/aconcagua.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/aconcagua.jpg', import.meta.url).href,
           imageAlt: "Aconcagua",
         },
         {
@@ -487,7 +482,7 @@ export default {
           ascent: "Unclimbed",
           content:
             "Is a mountain situated in the Annapurna massif. Its highest peak has never been officially climbed due to being prohibited by the Nepali government.",
-          imageSrc: "src/assets/Mountains/Images/machapuchare.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/machapuchare.jpg', import.meta.url).href,
           imageAlt: "Machapuchare",
         },
         {
@@ -499,7 +494,7 @@ export default {
           ascent: "1928",
           content:
             "Originally it was named Mount Kaufmann after first Governor-General of the Russian Turkestan but it was later renamed after Soviet Union first leader.",
-          imageSrc: "src/assets/Mountains/Images/lenin_peak.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/lenin_peak.webp', import.meta.url).href,
           imageAlt: "Lenin Peak",
         },
         {
@@ -511,7 +506,7 @@ export default {
           ascent: "1956",
           content:
             " It straddles the border of the Gilgit–Baltistan region of Pakistan and the Xinjiang Uyghur Autonomous Region of China. Muztagh Tower is located between the basins of the Baltoro and Sarpo Laggo glaciers.",
-          imageSrc: "src/assets/Mountains/Images/tower.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/tower.jpg', import.meta.url).href,
           imageAlt: "Muztagh Tower",
         },
         {
@@ -523,7 +518,7 @@ export default {
           ascent: "Unclimbed",
           content:
             "It is the highest unclimbed mountain in the world. In Dzongkha language its name means White Peak of the Three Spiritual Brothers. In Bhutan all mountaineering is banned.",
-          imageSrc: "src/assets/Mountains/Images/gangkhar.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/gangkhar.webp', import.meta.url).href,
           imageAlt: "Gangkhar Peunsum",
         },
         {
@@ -535,7 +530,7 @@ export default {
           ascent: "1936",
           content:
             'For a time it was consider the highest mountain in the world. The peakk whose name means "Bliss Giving Goddess" is regarded as the patron goddess of the Garhwall and Kumaon Himalayas.',
-          imageSrc: "src/assets/Mountains/Images/nanda_devi.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/nanda_devi.webp', import.meta.url).href,
           imageAlt: "Nanda Devi",
         },
         {
@@ -547,7 +542,7 @@ export default {
           ascent: "1956",
           content:
             "With Everest to the north and Nuptse to the west, Lhotse forms the apex of the massive horseshoe-shaped arc of the Everest massif. It is the least prominent of the eight-thousanders.",
-          imageSrc: "src/assets/Mountains/Images/lhotse.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/lhotse.jpg', import.meta.url).href,
           imageAlt: "Lhotse",
         },
         {
@@ -559,7 +554,7 @@ export default {
           ascent: "1955",
           content:
             "Kangchenjunga is the third highest mountain in the world. It is located on the border between Nepal and the Indian state of Sikkim. ",
-          imageSrc: "src/assets/Mountains/Images/kangchenjunga.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/kangchenjunga.jpg', import.meta.url).href,
           imageAlt: "Kangchenjunga",
         },
         {
@@ -571,7 +566,7 @@ export default {
           ascent: "1954",
           content:
             "Sixth highest mountain in the world. The mountain is the westernmost major peak of the Khumbu sub-section of the Mahalangur Himalaya 20 km west of Mount Everest.",
-          imageSrc: "src/assets/Mountains/Images/cho-oyu.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/cho-oyu.jpg', import.meta.url).href,
           imageAlt: "Cho Oyu",
         },
         {
@@ -583,7 +578,7 @@ export default {
           ascent: "1956",
           content:
             "Manaslu is the eighth highest mountain in the world. It is located in the Mansiri Himal, part of the Nepalese Himalayas, in the west-central part of Nepal.",
-          imageSrc: "src/assets/Mountains/Images/manaslu.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/manaslu.jpg', import.meta.url).href,
           imageAlt: "Manaslu",
         },
         {
@@ -595,7 +590,7 @@ export default {
           ascent: "1958",
           content:
             "Gasherbrum I is the 11th highest mountain in the world. It is one of the Gasherbrum Peaks, located in the Karakoram Range of the Himalayas.",
-          imageSrc: "src/assets/Mountains/Images/Gasherbrum.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Gasherbrum.jpg', import.meta.url).href,
           imageAlt: "Gasherbrum I",
         },
         {
@@ -607,10 +602,9 @@ export default {
           ascent: "1957",
           content:
             "Broad Peak is the 12th highest mountain in the world. It is located in the Karakoram mountain range in Pakistan.",
-          imageSrc: "src/assets/Mountains/Images/broad_peak.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/broad_peak.jpg', import.meta.url).href,
           imageAlt: "Broad Peak",
         },
-
         {
           title: "Gasherbrum II",
           height: 8035,
@@ -620,10 +614,9 @@ export default {
           ascent: "1956",
           content:
             "Gasherbrum II is the 13th highest mountain in the world. It is one of the Gasherbrum Peaks, located in the Karakoram Range of the Himalayas.",
-          imageSrc: "src/assets/Mountains/Images/Gasherbrum_II.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/Gasherbrum_II.jpg', import.meta.url).href,
           imageAlt: "Gasherbrum II",
         },
-
         {
           title: "Nanga Parbat",
           height: 8126,
@@ -633,7 +626,7 @@ export default {
           ascent: "1953",
           content:
             "Nanga Parbat is the ninth highest mountain in the world. It is the western anchor of the Himalayas around which the Indus river skirts before it debouches into the plains of Pakistan.",
-          imageSrc: "src/assets/Mountains/Images/Nanga-Parbat.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/Nanga-Parbat.webp', import.meta.url).href,
           imageAlt: "Nanga Parbat",
         },
         {
@@ -645,7 +638,7 @@ export default {
           ascent: "1964",
           content:
             "The only eight-thousander entirely within Chinese territory. It is the 14th highest mountain in the world and the lowest of the eight-thousanders.",
-          imageSrc: "src/assets/Mountains/Images/shishapangma.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/shishapangma.jpg', import.meta.url).href,
           imageAlt: "Shishapangma",
         },
         {
@@ -657,7 +650,7 @@ export default {
           ascent: "1950",
           content:
             "Named after a Hindu goddess of food and nourishment, who is said to reside there. Name derives from Sanskrit meaning 'everlasting food'.",
-          imageSrc: "src/assets/Mountains/Images/annapurna.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/annapurna.webp', import.meta.url).href,
           imageAlt: "Annapurna I",
         },
         {
@@ -669,7 +662,7 @@ export default {
           ascent: "1954",
           content:
             "Known as Savage Mountain by George Bell K2 is second highest mountain and by some metrics the deadliest.",
-          imageSrc: "src/assets/Mountains/Images/k2.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/k2.jpg', import.meta.url).href,
           imageAlt: "K2 Mountain",
         },
         {
@@ -681,7 +674,7 @@ export default {
           ascent: "1953",
           content:
             "Highest mountain above sea level. Everest's Nepali/Sanskrit name is Sagarmāthā meaning goddess of the sky.",
-          imageSrc: "src/assets/Mountains/Images/everest.webp",
+          imageSrc: new URL('@/assets/Mountains/Images/everest.webp', import.meta.url).href,
           imageAlt: "Mount Everest",
         },
         {
@@ -693,7 +686,7 @@ export default {
           ascent: "1960",
           content:
             "Seventh highest mountain in the world and the highest mountain within the borders of a single country. Dhaulagiri means dazzlig, white, beautiful (Sanskrit).",
-          imageSrc: "src/assets/Mountains/Images/dhaulagiri.jpg",
+          imageSrc: new URL('@/assets/Mountains/Images/dhaulagiri.jpg', import.meta.url).href,
           imageAlt: "Dhaulagiri",
         },
         {
@@ -705,7 +698,7 @@ export default {
           ascent: "1955",
           content:
             "Fifth highest mountain on Earth. It is an isolated peak shaped as a four-sided pyramid. It is located 19km (12mi) from Mount Everest",
-          imageSrc: "src/assets/Mountains/Images/makalu.avif",
+          imageSrc: new URL('@/assets/Mountains/Images/makalu.avif', import.meta.url).href,
           imageAlt: "Makalu",
         },
       ],
