@@ -20,6 +20,8 @@ export default {
       hoveredPlanet: null,
       isMuted: true,
       planetData: planetData,
+      volumeMutedIconSrc: new URL('@/assets/Space/Images/volume-silent-icon.png', import.meta.url).href,
+      volumeIconSrc: new URL('@/assets/Space/Images/volume-icon.png', import.meta.url).href,
       methods: {
         showInfo(planet) {
           this.$emit('update:hoveredPlanet', planet);
@@ -40,6 +42,11 @@ export default {
     OortCloud,
     TimeInSpace,
     Footer,
+  },
+  computed: {
+    currentVolumeIcon() {
+      return this.isMuted ? this.volumeMutedIconSrc : this.volumeIconSrc;
+    }
   },
   mounted() {
     if (this.$refs.audioElement) {
@@ -91,7 +98,7 @@ export default {
         <source src="@/assets/music/dead-space-style-ambient-music.mp3" type=" audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <img :src="isMuted ? 'Images/Space/volume-silent-icon.png' : '/Images/Space/volume-icon.png'" alt="Volume Icon"
+      <img :src="currentVolumeIcon" alt="Volume Icon"
         class="bg-transparent p-2 mt-4 rounded cursor-pointer hover:bg-gray-900 fixed z-50" @click="toggleAudio">
     </div>
     <div class="mainTitle">
