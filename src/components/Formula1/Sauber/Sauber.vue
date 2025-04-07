@@ -7,8 +7,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber1993.avif" alt="First Sauber car" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber1993.avif" alt="First Sauber car" class="history-image" />
         <div class="section-text">
           <p>
             Lehto contributed to a promising start with a 5th-place finish in
@@ -33,8 +32,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber1995.png" alt="Frentzen on the podium in Monza" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber1995.png" alt="Frentzen on the podium in Monza" class="history-image" />
         <div class="section-text">
           <p>
             The car was launched and raced in the season's early races with a
@@ -58,7 +56,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber2001.avif" alt="Sauber C20" class="history-image" @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2001.avif" alt="Sauber C20" class="history-i" />
         <div class="section-text">
           <p>
             The C20 turned out to be one of Sauber's most competitive chassis,
@@ -82,8 +80,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber2008.avif" alt="Kubica and Heidfeld 1-2 in Canada" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2008.avif" alt="Kubica and Heidfeld 1-2 in Canada" class="history-image" />
         <div class="section-text">
           <p>
             Radical F1.08 proves highly effective, powering Robert Kubica to the
@@ -108,8 +105,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber2012.avif" alt="Sauber C31 in Spa" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2012.avif" alt="Sauber C31 in Spa" class="history-image" />
         <div class="section-text">
           <p>
             Season starts well, with Perez earning high praise for impressive
@@ -133,8 +129,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber2014.avif" alt="Maldonado flips Guiterez in Bahrain" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2014.avif" alt="Maldonado flips Guiterez in Bahrain" class="history-image" />
         <div class="section-text">
           <p>
             The car was plagued by weight issues early in the season, to the point
@@ -161,8 +156,7 @@
         </h2>
       </div>
       <div class="section-content">
-        <img src="@/assets/Formula/Images/Sauber/sauber2024.jpg" alt="Kick Sauber 2024 car" class="history-image"
-          @error="handleImageError" />
+        <img src="@/assets/Formula/Images/Sauber/sauber2024.jpg" alt="Kick Sauber 2024 car" class="history-image" />
         <div class="section-text">
           <p>
             Another disappointing season for Kick Sauber. They managed to score only 4 points at the Qatar GP, with Zhou
@@ -180,11 +174,6 @@
 <script>
 export default {
   name: "SauberHistory",
-  methods: {
-    handleImageError(event) {
-      event.target.src = '@/assets/Formula/Images/placeholder.png';
-    }
-  }
 };
 </script>
 
