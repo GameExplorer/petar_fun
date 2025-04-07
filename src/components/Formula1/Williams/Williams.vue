@@ -24,7 +24,7 @@ export default {
           id: "1980",
           title: "First title",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1980.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1980.png', import.meta.url).href,
           alt: "Alan Jones",
           description: [
             "The Williams was formed in 1977 and just after 3 years they won their first Constructor's title with Alan Jones. Jones won the opening race in Argentina and then followed with four more wins at French GP, British GP, Canadian GP and the win at the last race in United States.",
@@ -36,7 +36,7 @@ export default {
           id: "1981",
           title: "Make it double",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1981.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1981.png', import.meta.url).href,
           alt: "Williams FW07C 1981",
           description: [
             "Williams won four races in 1981, Jones won the first race US GP and the last race of the season at Caesars Palace. Reutemann won the Brazilian GP and the Belgian GP.",
@@ -48,7 +48,7 @@ export default {
           id: "1986",
           title: "The Gang of Four",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/theGangFour.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/theGangFour.png', import.meta.url).href,
           alt: "The Gang of Four",
           description: [
             "The 1986 season was dominated by the four drivers from the 'Gang of Four' teams – Alain Prost, Nigel Mansell, Nelson Piquet and Ayrton Senna – who won all but one of the 16 races that season.",
@@ -62,7 +62,7 @@ export default {
           id: "1987",
           title: "Williams-Honda",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1987.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1987.png', import.meta.url).href,
           alt: "Williams-Honda",
           description: [
             "The 1987 season brought Williams-Honda their second constructor's and the first and only driver's title for Nelson Piquet. Nelson won three races while his teammate Nigel won six but due his crash in Japanese GP he lost the title to the Piquet.",
@@ -74,7 +74,7 @@ export default {
           id: "1992",
           title: "Mansell domination",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/mansell.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/mansell.png', import.meta.url).href,
           alt: "Nigel Mansell, 1992",
           description: [
             "Mansell dominated the opening race in South Africa winning with the margin of over 24 seconds. Mansell continued his domination winning the next four races. Mansell winning five opening races set the new record in Formula One. Mansell went on to record for more wins, ending the season with a record high nine season wins which was the new record in Formula One.",
@@ -87,7 +87,7 @@ export default {
           title: "ACTIVE SUSPENSION",
           float: "left",
           margin: "6",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1992.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1992.png', import.meta.url).href,
           alt: "Williams 1993",
           description: [
             "The Williams FW15C was an extremely dominant car, with active suspension and traction control systems beyond anything available to the other teams.",
@@ -100,7 +100,7 @@ export default {
           id: "1994",
           title: "Senna & HILL",
           float: "left",
-          imageSrc: "src/assets/Formula/Images/Williams/senna.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/senna.png', import.meta.url).href,
           alt: "Senna 1994",
           description: [
             "Williams signed with Rothmans as their title sponsor. The team retained Hill and signed Senna. Prost retired completely from the sport. The FIA banned the active suspension and traction control systems.",
@@ -113,7 +113,7 @@ export default {
           title: "Williams Domination",
           float: "left",
           margin: "6",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1996.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1996.png', import.meta.url).href,
           alt: "Damon Hill in Williams 1996",
           description: [
             "Hill won four out of five races in the opening season. Williams won then three races in a row. They won in Canada, France, Hungary and Germany. Villeneuve mounted a title challenge going into the final race of the season at Japan, but Hill reasserted his dominance to take the race and the 1996 title, while Villeneuve lost a wheel and retired.",
@@ -126,7 +126,7 @@ export default {
           title: "The Last title",
           float: "left",
           margin: "4",
-          imageSrc: "src/assets/Formula/Images/Williams/williams1997.png",
+          imageSrc: new URL('@/assets/Formula/Images/Williams/williams1997.png', import.meta.url).href,
           alt: "Jacques Villeneuve in Williams 1997",
           description: [
             "The 1997 season was the last season of Williams-Renault and the last Williams' car designed by Adrian Newey. Jacques Villeneuve won seven races that season with his teammate winning only one. At the British GP Williams achieved their 100th GP wins. Coming to the final round of the season at Jerez, Schumacher led Villeneuve by 1 point; however, on lap 48, Schumacher and Villeneuve collided. Schumacher was disqualified from second place in the championship as the accident was deemed by the FIA as 'avoidable'.",

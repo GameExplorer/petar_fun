@@ -6,15 +6,13 @@
           <span class="title-highlight">START OF NEW REIGN</span>
         </h2>
       </div>
-
       <div class="section-content">
         <figure class="section-image section-image-left">
           <img src="@/assets/Formula/Images/Alpine/Alonso2005.png" alt="Fernando Alonso racing during the 2005 season"
             class="history-image" />
           <figcaption class="image-caption">Fernando Alonso, 2005 World Champion</figcaption>
         </figure>
-
-        <div class="section-text">
+        <div class="section-text text-xl lg:text-2xl">
           <p>
             Giancarlo Fisichella replaced Jarno Trulli for the 2005 season.
             Fisichella won the first race of the season. Fernando Alonso won the
@@ -44,15 +42,13 @@
           <span class="title-highlight">FIERCE RIVALRY</span>
         </h2>
       </div>
-
       <div class="section-content">
         <figure class="section-image section-image-right">
           <img src="@/assets/Formula/Images/Alpine/Alonso2006.png" alt="Fernando Alonso racing during the 2006 season"
             class="history-image" />
           <figcaption class="image-caption">Fernando Alonso's championship-winning 2006 season</figcaption>
         </figure>
-
-        <div class="section-text">
+        <div class="section-text text-xl lg:text-2xl">
           <p>
             The 2006 season was highlighted by the rivalry between Alonso and
             Schumacher, each winning seven races. Both drivers dominated the field;
@@ -62,7 +58,6 @@
             (like in 1956). From this season onwards until 2013, Formula 1 used
             2.4L V8 engines.
           </p>
-
           <p>
             In September 2006, Michael Schumacher announced his retirement. He was
             replaced by Kimi Raikkonen. Juan Pablo Montoya left McLaren mid-season
@@ -74,7 +69,6 @@
             rebrandings and name changes. In 2021, they rebranded themselves as
             the Alpine F1 Team.
           </p>
-
           <cite class="source-citation">Source: Wikipedia</cite>
         </div>
       </div>
@@ -146,7 +140,6 @@ export default {
 .section-content {
   display: flex;
   flex-direction: column;
-  font-size: 1.25rem;
   text-align: justify;
 }
 

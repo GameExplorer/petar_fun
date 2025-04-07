@@ -55,13 +55,13 @@ const routes = [
         component: () => import('@/views/Life.vue'),
     },
     {
-        path: '/guess_the_us_states',
-        name: 'Guess the US States',
+        path: '/iWantToBeBillionaire',
+        name: 'I Want to be a Billionaire',
         meta: {
-            title: 'Guess the US States',
+            title: 'I Want to be a Billionaire',
             pageIcon: '/Icons/leaf.svg',
         },
-        component: () => import('@/views/States.vue'),
+        component: () => import('@/views/IWantToBeBillionaire.vue'),
     },
     {
         path: '/history_of_the_programming_languages',
