@@ -28,7 +28,7 @@ const routes = [
         component: () => import('@/views/Mountains.vue'),
     },
     {
-        path: '/f1_construstor_champions',
+        path: '/f1_constructors_champions',
         name: 'F1 Champions',
         meta: {
             title: 'F1 Champions',
